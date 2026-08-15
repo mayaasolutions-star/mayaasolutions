@@ -544,3 +544,17 @@ export const PRODUCTS_DATA: ProductItem[] = [
     ]
   }
 ];
+
+export const getProductBySlug = (slug: string): ProductItem | undefined => {
+  if (!slug) return undefined;
+  const aliasMap: Record<string, string> = {
+    'before-you-build-a-brand': 'before-you-build-a-brand-guide',
+    'before-you-design': 'before-you-design-guide',
+    'before-you-prompt': 'before-you-ask-ai',
+    'pm-behind-the-interview': 'pm-behind-the-interview-scenes',
+    'pm-resume-cover': 'pm-resume-cover-templates',
+    'make-my-brand-premium': 'make-brand-premium',
+  };
+  const normalizedSlug = aliasMap[slug] || slug;
+  return PRODUCTS_DATA.find((p) => p.slug === normalizedSlug || p.id === normalizedSlug || p.slug === slug || p.id === slug);
+};

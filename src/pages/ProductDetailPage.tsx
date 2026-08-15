@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
-import { PRODUCTS_DATA, ProductItem } from '../constants/productsData';
+import { PRODUCTS_DATA, ProductItem, getProductBySlug } from '../constants/productsData';
 import { ArrowLeft, CheckCircle2, Clock, ChevronDown, ChevronUp, Lock, ShieldCheck, FileText, Check, ArrowRight, Zap, Sparkles, BookOpen, Layers } from 'lucide-react';
 
 interface ProductDetailPageProps {
@@ -11,7 +11,7 @@ interface ProductDetailPageProps {
 
 export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenCheckout }) => {
   const { slug } = useParams<{ slug: string }>();
-  const product = PRODUCTS_DATA.find((p) => p.slug === slug) || PRODUCTS_DATA[0];
+  const product = getProductBySlug(slug || '') || PRODUCTS_DATA[0];
 
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 

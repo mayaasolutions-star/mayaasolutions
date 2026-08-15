@@ -160,9 +160,21 @@ export const MASTER_PRODUCTS_MAP: Record<string, MasterProduct> = {
   }
 };
 
+export const SLUG_ALIASES: Record<string, string> = {
+  'before-you-build-a-brand': 'before-you-build-a-brand-guide',
+  'before-you-design': 'before-you-design-guide',
+  'before-you-prompt': 'before-you-ask-ai',
+  'pm-behind-the-interview': 'pm-behind-the-interview-scenes',
+  'pm-resume-cover': 'pm-resume-cover-templates',
+  'make-my-brand-premium': 'make-brand-premium',
+};
+
 export const getMasterProductBySlug = (slug: string): MasterProduct | undefined => {
+  if (!slug) return undefined;
+  const normalizedSlug = SLUG_ALIASES[slug] || slug;
+  if (MASTER_PRODUCTS_MAP[normalizedSlug]) return MASTER_PRODUCTS_MAP[normalizedSlug];
   if (MASTER_PRODUCTS_MAP[slug]) return MASTER_PRODUCTS_MAP[slug];
   return Object.values(MASTER_PRODUCTS_MAP).find(
-    (p) => p.slug === slug || p.id === slug
+    (p) => p.slug === normalizedSlug || p.id === normalizedSlug || p.slug === slug || p.id === slug
   );
 };
