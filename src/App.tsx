@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
@@ -25,6 +25,25 @@ import { ProductItem as ProductDataItem } from './constants/productsData';
 import { ProjectItem } from './constants/portfolioData';
 import { AnalyticsTracker } from './components/AnalyticsTracker';
 
+const PaymentSuccessHandler: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const location = useLocation();
+
+  const search = location.search || (typeof window !== 'undefined' ? window.location.search : '');
+  const pathname = location.pathname || (typeof window !== 'undefined' ? window.location.pathname : '');
+
+  const isPaymentSuccess =
+    pathname.includes('payment-success') ||
+    search.includes('payment-success') ||
+    search.includes('order_id=') ||
+    search.includes('cf_id=');
+
+  if (isPaymentSuccess && pathname !== '/payment-success') {
+    return <PaymentSuccessPage />;
+  }
+
+  return <>{children}</>;
+};
+
 export const App: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
   const [checkoutProduct, setCheckoutProduct] = useState<ProductDataItem | null>(null);
@@ -36,15 +55,16 @@ export const App: React.FC = () => {
         <Navbar />
 
         <div className="flex-1">
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <HomePage
-                  onSelectProject={(project) => setSelectedProject(project)}
-                />
-              }
-            />
+          <PaymentSuccessHandler>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <HomePage
+                    onSelectProject={(project) => setSelectedProject(project)}
+                  />
+                }
+              />
             <Route path="/about" element={<AboutPage />} />
             
             {/* Core Services Hub & Detail Pages */}
@@ -116,7 +136,8 @@ export const App: React.FC = () => {
             {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-        </div>
+        </PaymentSuccessHandler>
+      </div>
 
         <Footer />
         <ScrollToTop />

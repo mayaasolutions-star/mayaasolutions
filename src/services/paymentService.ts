@@ -54,9 +54,10 @@ export const createPaymentOrder = async (
     };
   }
 
-  // Save to session storage for post-redirect tracking
+  // Save to session and local storage for post-redirect tracking
   try {
     sessionStorage.setItem('last_ordered_product', masterProduct.slug);
+    localStorage.setItem('last_ordered_product', masterProduct.slug);
   } catch (e) {
     // Ignore storage restrictions
   }
@@ -128,9 +129,17 @@ export const createPaymentOrder = async (
       };
     }
 
+    const createdOrderId = responseData?.order_id;
+    if (createdOrderId) {
+      try {
+        sessionStorage.setItem('last_order_id', createdOrderId);
+        localStorage.setItem('last_order_id', createdOrderId);
+      } catch (e) {}
+    }
+
     return {
       success: true,
-      order_id: responseData?.order_id,
+      order_id: createdOrderId,
       payment_session_id: responseData?.payment_session_id || responseData?.cf_payment_session_id
     };
   } catch (err: any) {

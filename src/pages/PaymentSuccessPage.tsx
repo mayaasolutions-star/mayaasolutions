@@ -6,9 +6,30 @@ import { verifyPaymentOrder } from '../services/paymentService';
 
 export const PaymentSuccessPage: React.FC = () => {
   const [searchParams] = useSearchParams();
-  const rawSlug = searchParams.get('product') || searchParams.get('slug');
-  const orderId = searchParams.get('order_id') || (typeof window !== 'undefined' ? sessionStorage.getItem('last_order_id') : null);
-  const slug = rawSlug || (typeof window !== 'undefined' ? sessionStorage.getItem('last_ordered_product') : null);
+
+  const getParam = (paramName: string): string | null => {
+    let val = searchParams.get(paramName);
+    if (val) return val;
+
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      val = urlParams.get(paramName);
+      if (val) return val;
+
+      const rawSearch = window.location.search;
+      if (rawSearch.includes(`${paramName}=`)) {
+        const match = rawSearch.match(new RegExp(`[?&]${paramName}=([^&~]+)`));
+        if (match && match[1]) return decodeURIComponent(match[1]);
+      }
+    }
+    return null;
+  };
+
+  const rawSlug = getParam('product') || getParam('slug');
+  const orderId = getParam('order_id') || 
+    (typeof window !== 'undefined' ? (sessionStorage.getItem('last_order_id') || localStorage.getItem('last_order_id')) : null);
+  const slug = rawSlug || 
+    (typeof window !== 'undefined' ? (sessionStorage.getItem('last_ordered_product') || localStorage.getItem('last_ordered_product')) : null);
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
