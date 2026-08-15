@@ -22,6 +22,8 @@ export interface ProductItem {
   downloadUrl?: string;
 }
 
+export const SUPABASE_STORAGE_BASE_URL = 'https://jiffohgricelcmrgkimp.supabase.co/storage/v1/object/public/products/';
+
 export const PRODUCTS_DATA: ProductItem[] = [
   // ==================== 5 SERVICES / PERSONALISED PRODUCTS ====================
   {
@@ -167,9 +169,9 @@ export const PRODUCTS_DATA: ProductItem[] = [
     ]
   },
   {
-    id: 'make-brand-premium',
-    slug: 'make-brand-premium',
-    name: 'Make My Brand Look Premium',
+    id: 'make-my-brand-premium',
+    slug: 'make-my-brand-premium',
+    name: 'Make My Brand Premium',
     categoryType: 'service',
     categoryLabel: 'Brand Elevation Service',
     tagline: 'Personalised Brand Makeover Report',
@@ -250,6 +252,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     price: '₹9',
     priceNum: 9,
     deliveryTime: 'Instant Download',
+    downloadUrl: `${SUPABASE_STORAGE_BASE_URL}beforeyoupublish.pdf`,
     heroImage: '/images/before-you-publish-hero.webp',
     summary: 'Catch costly mistakes before you publish anything. A practical review framework for websites, landing pages, advertisements, presentations, emails, social media posts and marketing campaigns.',
     features: [
@@ -282,7 +285,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
   },
   {
     id: 'before-you-design',
-    slug: 'before-you-design-guide',
+    slug: 'before-you-design',
     name: 'Before You Design',
     categoryType: 'digital',
     categoryLabel: 'Professional Design Guide',
@@ -290,6 +293,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     price: '₹19',
     priceNum: 19,
     deliveryTime: 'Instant Download',
+    downloadUrl: `${SUPABASE_STORAGE_BASE_URL}beforeyoudesign.pdf`,
     heroImage: '/images/before-you-design-hero.webp',
     summary: 'Discover professional design principles, visual communication frameworks and practical techniques that will help you create more effective, strategic and visually compelling designs.',
     features: [
@@ -318,15 +322,16 @@ export const PRODUCTS_DATA: ProductItem[] = [
     ]
   },
   {
-    id: 'before-you-ask-ai',
-    slug: 'before-you-ask-ai',
-    name: 'Before You Ask AI',
+    id: 'before-you-prompt',
+    slug: 'before-you-prompt',
+    name: 'Before You Prompt',
     categoryType: 'digital',
     categoryLabel: 'Professional AI Prompting Guide',
     tagline: 'Stop Guessing and Start Prompting Like a Professional',
     price: '₹29',
     priceNum: 29,
     deliveryTime: 'Instant Download',
+    downloadUrl: `${SUPABASE_STORAGE_BASE_URL}beforeyouprompt.pdf`,
     heroImage: '/images/before-you-ask-ai-hero.webp',
     summary: 'Write better prompts and get better AI results from ChatGPT, Gemini, Claude, Grok, Perplexity and Copilot. Learn practical prompting frameworks to save time and improve accuracy.',
     features: [
@@ -355,8 +360,8 @@ export const PRODUCTS_DATA: ProductItem[] = [
     ]
   },
   {
-    id: 'before-you-build-a-brand-guide',
-    slug: 'before-you-build-a-brand-guide',
+    id: 'before-you-build-a-brand',
+    slug: 'before-you-build-a-brand',
     name: 'Before You Build a Brand',
     categoryType: 'digital',
     categoryLabel: 'Brand Building Strategy Guide',
@@ -364,6 +369,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     price: '₹49',
     priceNum: 49,
     deliveryTime: 'Instant Download',
+    downloadUrl: `${SUPABASE_STORAGE_BASE_URL}beforeyoubuildabrand.pdf`,
     heroImage: '/images/before-you-build-a-brand-hero.webp',
     summary: 'Learn a practical brand-building framework to define your positioning, audience, communication and visual identity before spending money on design. A complete brand strategy guide.',
     features: [
@@ -402,6 +408,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     price: '₹99',
     priceNum: 99,
     deliveryTime: 'Instant Download',
+    downloadUrl: `${SUPABASE_STORAGE_BASE_URL}beforeyoulaunch.pdf`,
     heroImage: '/images/before-you-launch-hero.webp',
     summary: 'Launch your business, website, app, product or service with a complete preparation framework. One overlooked mistake can cost far more than ₹99. Invest once, launch right every time.',
     features: [
@@ -431,8 +438,8 @@ export const PRODUCTS_DATA: ProductItem[] = [
     ]
   },
   {
-    id: 'pm-resume-cover-templates',
-    slug: 'pm-resume-cover-templates',
+    id: 'pm-resume-cover',
+    slug: 'pm-resume-cover',
     name: 'Product Manager Resume & Cover Letter Templates',
     categoryType: 'digital',
     categoryLabel: 'PM Career Toolkit',
@@ -440,6 +447,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     price: '₹149',
     priceNum: 149,
     deliveryTime: 'Instant Download',
+    downloadUrl: `${SUPABASE_STORAGE_BASE_URL}pm-resumecover.pdf`,
     heroImage: '/images/pm-resume-toolkit-hero.webp',
     summary: 'Create a recruiter-ready Product Manager resume and cover letter. Most templates only change how your resume looks. This toolkit improves how it performs — built specifically for PM roles.',
     features: [
@@ -478,6 +486,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     price: '₹199',
     priceNum: 199,
     deliveryTime: 'Instant Download',
+    downloadUrl: `${SUPABASE_STORAGE_BASE_URL}pm-careeradvancement.pdf`,
     heroImage: '/images/pm-career-growth-hero.webp',
     summary: 'Accelerate your Product Management career with a practical guide for building strong product foundations, delivering high-impact work, thinking like a senior PM, and growing your influence.',
     features: [
@@ -506,8 +515,8 @@ export const PRODUCTS_DATA: ProductItem[] = [
     ]
   },
   {
-    id: 'pm-behind-the-interview-scenes',
-    slug: 'pm-behind-the-interview-scenes',
+    id: 'pm-behind-the-interview',
+    slug: 'pm-behind-the-interview',
     name: 'Behind the Interview Scenes (Product Management)',
     categoryType: 'digital',
     categoryLabel: 'PM Interview Guide',
@@ -515,6 +524,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     price: '₹249',
     priceNum: 249,
     deliveryTime: 'Instant Download',
+    downloadUrl: `${SUPABASE_STORAGE_BASE_URL}pm-behindtheinterview.pdf`,
     heroImage: '/images/pm-interview-guide-hero.webp',
     summary: 'Learn how Product Managers are actually evaluated by recruiters, interviewers and hiring managers. Interview success is not just about giving the right answers — it is about understanding how hiring decisions are made.',
     features: [
@@ -548,12 +558,12 @@ export const PRODUCTS_DATA: ProductItem[] = [
 export const getProductBySlug = (slug: string): ProductItem | undefined => {
   if (!slug) return undefined;
   const aliasMap: Record<string, string> = {
-    'before-you-build-a-brand': 'before-you-build-a-brand-guide',
-    'before-you-design': 'before-you-design-guide',
-    'before-you-prompt': 'before-you-ask-ai',
-    'pm-behind-the-interview': 'pm-behind-the-interview-scenes',
-    'pm-resume-cover': 'pm-resume-cover-templates',
-    'make-my-brand-premium': 'make-brand-premium',
+    'before-you-build-a-brand-guide': 'before-you-build-a-brand',
+    'before-you-design-guide': 'before-you-design',
+    'before-you-ask-ai': 'before-you-prompt',
+    'pm-behind-the-interview-scenes': 'pm-behind-the-interview',
+    'pm-resume-cover-templates': 'pm-resume-cover',
+    'make-brand-premium': 'make-my-brand-premium',
   };
   const normalizedSlug = aliasMap[slug] || slug;
   return PRODUCTS_DATA.find((p) => p.slug === normalizedSlug || p.id === normalizedSlug || p.slug === slug || p.id === slug);

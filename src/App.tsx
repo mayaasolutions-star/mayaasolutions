@@ -72,20 +72,28 @@ export const App: React.FC = () => {
             {/* Dedicated Intent Routes */}
             <Route path="/intent/:type" element={<IntentPage />} />
             
-            {/* Legacy HTML Route Redirects for ALL 13 Products */}
+            {/* Legacy HTML & Alias Route Redirects for ALL 13 Products */}
             <Route path="/buildmybrand.html" element={<Navigate to="/products/build-my-brand" replace />} />
             <Route path="/buildmywebsite.html" element={<Navigate to="/products/build-my-website" replace />} />
             <Route path="/designmylogo.html" element={<Navigate to="/products/design-my-logo" replace />} />
-            <Route path="/makebrandpremium.html" element={<Navigate to="/products/make-brand-premium" replace />} />
+            <Route path="/makebrandpremium.html" element={<Navigate to="/products/make-my-brand-premium" replace />} />
             <Route path="/namemybusiness.html" element={<Navigate to="/products/name-my-business" replace />} />
             <Route path="/beforeyoupublish.html" element={<Navigate to="/products/before-you-publish" replace />} />
-            <Route path="/beforeyoudesign.html" element={<Navigate to="/products/before-you-design-guide" replace />} />
-            <Route path="/beforeyouprompt.html" element={<Navigate to="/products/before-you-ask-ai" replace />} />
-            <Route path="/beforeyoubuildabrand.html" element={<Navigate to="/products/before-you-build-a-brand-guide" replace />} />
+            <Route path="/beforeyoudesign.html" element={<Navigate to="/products/before-you-design" replace />} />
+            <Route path="/beforeyouprompt.html" element={<Navigate to="/products/before-you-prompt" replace />} />
+            <Route path="/beforeyoubuildabrand.html" element={<Navigate to="/products/before-you-build-a-brand" replace />} />
             <Route path="/beforeyoulaunch.html" element={<Navigate to="/products/before-you-launch" replace />} />
-            <Route path="/pm-resumecover.html" element={<Navigate to="/products/pm-resume-cover-templates" replace />} />
+            <Route path="/pm-resumecover.html" element={<Navigate to="/products/pm-resume-cover" replace />} />
             <Route path="/pm-careeradvancement.html" element={<Navigate to="/products/pm-career-advancement" replace />} />
-            <Route path="/pm-behindtheinterview.html" element={<Navigate to="/products/pm-behind-the-interview-scenes" replace />} />
+            <Route path="/pm-behindtheinterview.html" element={<Navigate to="/products/pm-behind-the-interview" replace />} />
+
+            {/* Backwards-compatible alias route redirects */}
+            <Route path="/products/before-you-ask-ai" element={<Navigate to="/products/before-you-prompt" replace />} />
+            <Route path="/products/before-you-design-guide" element={<Navigate to="/products/before-you-design" replace />} />
+            <Route path="/products/before-you-build-a-brand-guide" element={<Navigate to="/products/before-you-build-a-brand" replace />} />
+            <Route path="/products/pm-resume-cover-templates" element={<Navigate to="/products/pm-resume-cover" replace />} />
+            <Route path="/products/pm-behind-the-interview-scenes" element={<Navigate to="/products/pm-behind-the-interview" replace />} />
+            <Route path="/products/make-brand-premium" element={<Navigate to="/products/make-my-brand-premium" replace />} />
 
             <Route path="/service-branding.html" element={<Navigate to="/services/branding" replace />} />
             <Route path="/service-website.html" element={<Navigate to="/services/website" replace />} />

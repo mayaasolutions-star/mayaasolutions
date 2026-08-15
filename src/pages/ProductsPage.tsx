@@ -19,22 +19,22 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenCheckout }) =>
     'build-my-brand',
     'build-my-website',
     'design-my-logo',
-    'make-brand-premium',
+    'make-my-brand-premium',
     'name-my-business',
-    'before-you-build-a-brand-guide',
+    'before-you-build-a-brand',
     'before-you-launch',
   ]);
 
   const creatorProducts = getProductsByIds([
     'before-you-publish',
-    'before-you-design-guide',
-    'before-you-ask-ai',
+    'before-you-design',
+    'before-you-prompt',
   ]);
 
   const pmProducts = getProductsByIds([
-    'pm-resume-cover-templates',
+    'pm-resume-cover',
     'pm-career-advancement',
-    'pm-behind-the-interview-scenes',
+    'pm-behind-the-interview',
   ]);
 
   const audienceGroups = [

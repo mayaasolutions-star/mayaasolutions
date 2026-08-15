@@ -69,7 +69,7 @@ export const IntentPage: React.FC = () => {
       seoTitle: 'Design My Logo | Premium Logo Identity Design',
       seoDesc: 'Professional logo design and visual mark creation by Mayaa Solutions.'
     },
-    'make-brand-premium': {
+    'make-my-brand-premium': {
       title: 'Make My Brand Premium',
       headline: 'Elevate Your Existing Brand to Command High-Margin Pricing.',
       tagline: 'Strategic visual refresh, elevated touchpoints, and premium market repositioning.',

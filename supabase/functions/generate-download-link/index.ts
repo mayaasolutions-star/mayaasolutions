@@ -1,5 +1,4 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -7,10 +6,13 @@ const corsHeaders = {
   "Access-Control-Allow-Methods": "POST, OPTIONS",
 };
 
+const STORAGE_BASE_URL = "https://jiffohgricelcmrgkimp.supabase.co/storage/v1/object/public/products/";
+
 const FULFILLMENT_MAP: Record<
   string,
-  { name: string; type: "service" | "digital"; downloadUrl?: string; deliveryMessage?: string }
+  { name: string; type: "service" | "digital"; downloadUrl?: string; storageFile?: string; deliveryMessage?: string }
 > = {
+  // 5 SERVICE PRODUCTS
   "build-my-brand": {
     name: "Build My Brand",
     type: "service",
@@ -26,56 +28,75 @@ const FULFILLMENT_MAP: Record<
     type: "service",
     deliveryMessage: "Thank you for ordering Design My Logo! Our design team will contact you within 24 hours to start your logo concepts.",
   },
-  "make-brand-premium": {
-    name: "Make Brand Premium",
+  "make-my-brand-premium": {
+    name: "Make My Brand Premium",
     type: "service",
-    deliveryMessage: "Thank you for ordering Make Brand Premium! We will reach out to analyze your existing visual touchpoints and deliver your brand upgrade plan.",
+    deliveryMessage: "Thank you for ordering Make My Brand Premium! We will reach out to analyze your existing visual touchpoints and deliver your brand upgrade plan.",
   },
   "name-my-business": {
     name: "Name My Business",
     type: "service",
     deliveryMessage: "Thank you for ordering Name My Business! Our branding team will review your business brief and send 5 trademark-ready business names within 48 hours.",
   },
-  "before-you-publish": {
-    name: "Before You Publish",
+
+  // 8 DIGITAL PRODUCTS & PDF MAPPINGS
+  "before-you-build-a-brand": {
+    name: "Before You Build a Brand",
     type: "digital",
-    downloadUrl: "/downloads/before-you-publish-guide.pdf",
+    storageFile: "beforeyoubuildabrand.pdf",
+    downloadUrl: `${STORAGE_BASE_URL}beforeyoubuildabrand.pdf`,
   },
-  "before-you-design-guide": {
-    name: "Before You Design Guide",
+  "before-you-design": {
+    name: "Before You Design",
     type: "digital",
-    downloadUrl: "/downloads/before-you-design-guide.pdf",
-  },
-  "before-you-ask-ai": {
-    name: "Before You Ask AI",
-    type: "digital",
-    downloadUrl: "/downloads/before-you-ask-ai-framework.pdf",
-  },
-  "before-you-build-a-brand-guide": {
-    name: "Before You Build a Brand Guide",
-    type: "digital",
-    downloadUrl: "/downloads/before-you-build-a-brand-guide.pdf",
+    storageFile: "beforeyoudesign.pdf",
+    downloadUrl: `${STORAGE_BASE_URL}beforeyoudesign.pdf`,
   },
   "before-you-launch": {
     name: "Before You Launch",
     type: "digital",
-    downloadUrl: "/downloads/before-you-launch-playbook.pdf",
+    storageFile: "beforeyoulaunch.pdf",
+    downloadUrl: `${STORAGE_BASE_URL}beforeyoulaunch.pdf`,
   },
-  "pm-resume-cover-templates": {
-    name: "PM Resume & Cover Letter Templates",
+  "before-you-prompt": {
+    name: "Before You Prompt",
     type: "digital",
-    downloadUrl: "/downloads/pm-resume-cover-templates.pdf",
+    storageFile: "beforeyouprompt.pdf",
+    downloadUrl: `${STORAGE_BASE_URL}beforeyouprompt.pdf`,
+  },
+  "before-you-publish": {
+    name: "Before You Publish",
+    type: "digital",
+    storageFile: "beforeyoupublish.pdf",
+    downloadUrl: `${STORAGE_BASE_URL}beforeyoupublish.pdf`,
+  },
+  "pm-behind-the-interview": {
+    name: "Behind the Interview Scenes",
+    type: "digital",
+    storageFile: "pm-behindtheinterview.pdf",
+    downloadUrl: `${STORAGE_BASE_URL}pm-behindtheinterview.pdf`,
   },
   "pm-career-advancement": {
-    name: "PM Career Advancement",
+    name: "Tips & Tricks for Career Advancement in Product Management",
     type: "digital",
-    downloadUrl: "/downloads/pm-career-advancement-guide.pdf",
+    storageFile: "pm-careeradvancement.pdf",
+    downloadUrl: `${STORAGE_BASE_URL}pm-careeradvancement.pdf`,
   },
-  "pm-behind-the-interview-scenes": {
-    name: "PM Behind the Interview Scenes",
+  "pm-resume-cover": {
+    name: "Product Manager Resume & Cover Letter Templates",
     type: "digital",
-    downloadUrl: "/downloads/pm-behind-the-interview-scenes.pdf",
+    storageFile: "pm-resumecover.pdf",
+    downloadUrl: `${STORAGE_BASE_URL}pm-resumecover.pdf`,
   },
+};
+
+const SLUG_ALIASES: Record<string, string> = {
+  "before-you-build-a-brand-guide": "before-you-build-a-brand",
+  "before-you-design-guide": "before-you-design",
+  "before-you-ask-ai": "before-you-prompt",
+  "pm-behind-the-interview-scenes": "pm-behind-the-interview",
+  "pm-resume-cover-templates": "pm-resume-cover",
+  "make-brand-premium": "make-my-brand-premium",
 };
 
 serve(async (req) => {
@@ -86,9 +107,11 @@ serve(async (req) => {
   try {
     const { slug, order_id } = await req.json();
 
-    const product = FULFILLMENT_MAP[slug];
+    const normalizedSlug = SLUG_ALIASES[slug] || slug;
+    const product = FULFILLMENT_MAP[normalizedSlug] || FULFILLMENT_MAP[slug];
+
     if (!product) {
-      return new Response(JSON.stringify({ error: "Invalid product slug" }), {
+      return new Response(JSON.stringify({ error: `Invalid product slug: ${slug}` }), {
         status: 400,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
@@ -97,9 +120,12 @@ serve(async (req) => {
     return new Response(
       JSON.stringify({
         success: true,
+        orderId: order_id || undefined,
+        productSlug: normalizedSlug,
         productName: product.name,
         type: product.type,
         downloadUrl: product.downloadUrl,
+        storageFile: product.storageFile,
         deliveryMessage: product.deliveryMessage,
       }),
       { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }

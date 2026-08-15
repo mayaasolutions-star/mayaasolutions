@@ -8,8 +8,11 @@ export interface MasterProduct {
   fulfillmentType: 'EMAIL_DELIVERY' | 'DOWNLOAD';
   deliveryTime: string;
   downloadPath?: string;
+  storageFileName?: string;
   deliveryMessage?: string;
 }
+
+export const SUPABASE_STORAGE_BASE_URL = 'https://jiffohgricelcmrgkimp.supabase.co/storage/v1/object/public/products/';
 
 export const MASTER_PRODUCTS_MAP: Record<string, MasterProduct> = {
   // ==================== 5 SERVICE PRODUCTS ====================
@@ -46,16 +49,16 @@ export const MASTER_PRODUCTS_MAP: Record<string, MasterProduct> = {
     deliveryTime: '48 Hours',
     deliveryMessage: 'Thank you for ordering Design My Logo! Our design team will contact you within 24 hours to start your logo concepts.'
   },
-  'make-brand-premium': {
-    id: 'make-brand-premium',
-    slug: 'make-brand-premium',
-    name: 'Make Brand Premium',
+  'make-my-brand-premium': {
+    id: 'make-my-brand-premium',
+    slug: 'make-my-brand-premium',
+    name: 'Make My Brand Premium',
     priceNum: 799,
     priceStr: '₹799',
     categoryType: 'service',
     fulfillmentType: 'EMAIL_DELIVERY',
     deliveryTime: '48 Hours',
-    deliveryMessage: 'Thank you for ordering Make Brand Premium! We will reach out to analyze your existing visual touchpoints and deliver your brand upgrade plan.'
+    deliveryMessage: 'Thank you for ordering Make My Brand Premium! We will reach out to analyze your existing visual touchpoints and deliver your brand upgrade plan.'
   },
   'name-my-business': {
     id: 'name-my-business',
@@ -70,49 +73,29 @@ export const MASTER_PRODUCTS_MAP: Record<string, MasterProduct> = {
   },
 
   // ==================== 8 DIGITAL GUIDES & TOOLKITS ====================
-  'before-you-publish': {
-    id: 'before-you-publish',
-    slug: 'before-you-publish',
-    name: 'Before You Publish',
-    priceNum: 399,
-    priceStr: '₹399',
-    categoryType: 'digital',
-    fulfillmentType: 'DOWNLOAD',
-    deliveryTime: 'Instant',
-    downloadPath: '/downloads/before-you-publish-guide.pdf'
-  },
-  'before-you-design-guide': {
-    id: 'before-you-design-guide',
-    slug: 'before-you-design-guide',
-    name: 'Before You Design Guide',
+  'before-you-build-a-brand': {
+    id: 'before-you-build-a-brand',
+    slug: 'before-you-build-a-brand',
+    name: 'Before You Build a Brand',
     priceNum: 499,
     priceStr: '₹499',
     categoryType: 'digital',
     fulfillmentType: 'DOWNLOAD',
     deliveryTime: 'Instant',
-    downloadPath: '/downloads/before-you-design-guide.pdf'
+    storageFileName: 'beforeyoubuildabrand.pdf',
+    downloadPath: `${SUPABASE_STORAGE_BASE_URL}beforeyoubuildabrand.pdf`
   },
-  'before-you-ask-ai': {
-    id: 'before-you-ask-ai',
-    slug: 'before-you-ask-ai',
-    name: 'Before You Ask AI',
-    priceNum: 299,
-    priceStr: '₹299',
-    categoryType: 'digital',
-    fulfillmentType: 'DOWNLOAD',
-    deliveryTime: 'Instant',
-    downloadPath: '/downloads/before-you-ask-ai-framework.pdf'
-  },
-  'before-you-build-a-brand-guide': {
-    id: 'before-you-build-a-brand-guide',
-    slug: 'before-you-build-a-brand-guide',
-    name: 'Before You Build a Brand Guide',
+  'before-you-design': {
+    id: 'before-you-design',
+    slug: 'before-you-design',
+    name: 'Before You Design',
     priceNum: 499,
     priceStr: '₹499',
     categoryType: 'digital',
     fulfillmentType: 'DOWNLOAD',
     deliveryTime: 'Instant',
-    downloadPath: '/downloads/before-you-build-a-brand-guide.pdf'
+    storageFileName: 'beforeyoudesign.pdf',
+    downloadPath: `${SUPABASE_STORAGE_BASE_URL}beforeyoudesign.pdf`
   },
   'before-you-launch': {
     id: 'before-you-launch',
@@ -123,50 +106,78 @@ export const MASTER_PRODUCTS_MAP: Record<string, MasterProduct> = {
     categoryType: 'digital',
     fulfillmentType: 'DOWNLOAD',
     deliveryTime: 'Instant',
-    downloadPath: '/downloads/before-you-launch-playbook.pdf'
+    storageFileName: 'beforeyoulaunch.pdf',
+    downloadPath: `${SUPABASE_STORAGE_BASE_URL}beforeyoulaunch.pdf`
   },
-  'pm-resume-cover-templates': {
-    id: 'pm-resume-cover-templates',
-    slug: 'pm-resume-cover-templates',
-    name: 'PM Resume & Cover Letter Templates',
+  'before-you-prompt': {
+    id: 'before-you-prompt',
+    slug: 'before-you-prompt',
+    name: 'Before You Prompt',
+    priceNum: 299,
+    priceStr: '₹299',
+    categoryType: 'digital',
+    fulfillmentType: 'DOWNLOAD',
+    deliveryTime: 'Instant',
+    storageFileName: 'beforeyouprompt.pdf',
+    downloadPath: `${SUPABASE_STORAGE_BASE_URL}beforeyouprompt.pdf`
+  },
+  'before-you-publish': {
+    id: 'before-you-publish',
+    slug: 'before-you-publish',
+    name: 'Before You Publish',
     priceNum: 399,
     priceStr: '₹399',
     categoryType: 'digital',
     fulfillmentType: 'DOWNLOAD',
     deliveryTime: 'Instant',
-    downloadPath: '/downloads/pm-resume-cover-templates.pdf'
+    storageFileName: 'beforeyoupublish.pdf',
+    downloadPath: `${SUPABASE_STORAGE_BASE_URL}beforeyoupublish.pdf`
   },
-  'pm-career-advancement': {
-    id: 'pm-career-advancement',
-    slug: 'pm-career-advancement',
-    name: 'PM Career Advancement',
-    priceNum: 499,
-    priceStr: '₹499',
-    categoryType: 'digital',
-    fulfillmentType: 'DOWNLOAD',
-    deliveryTime: 'Instant',
-    downloadPath: '/downloads/pm-career-advancement-guide.pdf'
-  },
-  'pm-behind-the-interview-scenes': {
-    id: 'pm-behind-the-interview-scenes',
-    slug: 'pm-behind-the-interview-scenes',
-    name: 'PM Behind the Interview Scenes',
+  'pm-behind-the-interview': {
+    id: 'pm-behind-the-interview',
+    slug: 'pm-behind-the-interview',
+    name: 'Behind the Interview Scenes',
     priceNum: 699,
     priceStr: '₹699',
     categoryType: 'digital',
     fulfillmentType: 'DOWNLOAD',
     deliveryTime: 'Instant',
-    downloadPath: '/downloads/pm-behind-the-interview-scenes.pdf'
+    storageFileName: 'pm-behindtheinterview.pdf',
+    downloadPath: `${SUPABASE_STORAGE_BASE_URL}pm-behindtheinterview.pdf`
+  },
+  'pm-career-advancement': {
+    id: 'pm-career-advancement',
+    slug: 'pm-career-advancement',
+    name: 'Tips & Tricks for Career Advancement in Product Management',
+    priceNum: 499,
+    priceStr: '₹499',
+    categoryType: 'digital',
+    fulfillmentType: 'DOWNLOAD',
+    deliveryTime: 'Instant',
+    storageFileName: 'pm-careeradvancement.pdf',
+    downloadPath: `${SUPABASE_STORAGE_BASE_URL}pm-careeradvancement.pdf`
+  },
+  'pm-resume-cover': {
+    id: 'pm-resume-cover',
+    slug: 'pm-resume-cover',
+    name: 'Product Manager Resume & Cover Letter Templates',
+    priceNum: 399,
+    priceStr: '₹399',
+    categoryType: 'digital',
+    fulfillmentType: 'DOWNLOAD',
+    deliveryTime: 'Instant',
+    storageFileName: 'pm-resumecover.pdf',
+    downloadPath: `${SUPABASE_STORAGE_BASE_URL}pm-resumecover.pdf`
   }
 };
 
 export const SLUG_ALIASES: Record<string, string> = {
-  'before-you-build-a-brand': 'before-you-build-a-brand-guide',
-  'before-you-design': 'before-you-design-guide',
-  'before-you-prompt': 'before-you-ask-ai',
-  'pm-behind-the-interview': 'pm-behind-the-interview-scenes',
-  'pm-resume-cover': 'pm-resume-cover-templates',
-  'make-my-brand-premium': 'make-brand-premium',
+  'before-you-build-a-brand-guide': 'before-you-build-a-brand',
+  'before-you-design-guide': 'before-you-design',
+  'before-you-ask-ai': 'before-you-prompt',
+  'pm-behind-the-interview-scenes': 'pm-behind-the-interview',
+  'pm-resume-cover-templates': 'pm-resume-cover',
+  'make-brand-premium': 'make-my-brand-premium',
 };
 
 export const getMasterProductBySlug = (slug: string): MasterProduct | undefined => {
