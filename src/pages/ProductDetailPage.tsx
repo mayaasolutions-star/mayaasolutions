@@ -189,7 +189,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenChec
                     {/* Header Label */}
                     <div className="flex justify-between items-center border-b border-studio-850 pb-4">
                       <span className="text-[10px] font-mono font-extrabold uppercase tracking-widest text-studio-400">
-                        {isDigital ? 'MAYAASOLUTIONS • DIGITAL PRODUCT' : 'MAYAASOLUTIONS • STUDIO PACKAGE'}
+                        {isDigital ? 'MAYAASOLUTIONS • DIGITAL PRODUCT' : 'MAYAASOLUTIONS • SERVICE PACKAGE'}
                       </span>
                       <span className="px-2 py-0.5 rounded bg-studio-100 text-white text-[10px] font-mono font-bold shadow-sm">{product.price}</span>
                     </div>

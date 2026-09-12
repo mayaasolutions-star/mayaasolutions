@@ -9,7 +9,7 @@ export const ArticlesPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Insights & Strategy Guides | Mayaa Solutions Growth Studio"
+        title="Insights & Strategy Guides | Mayaa Solutions"
         description="Read strategic essays and frameworks on brand building, website UX, business strategy, and digital growth."
       />
 
@@ -17,7 +17,7 @@ export const ArticlesPage: React.FC = () => {
         <section className="max-w-7xl mx-auto px-6 md:px-12 pb-16">
           <div className="max-w-3xl space-y-6">
             <span className="text-xs font-semibold tracking-widest text-studio-400 uppercase">
-              Studio Thought Leadership
+              Insights & Perspectives
             </span>
             <h1 className="text-4xl sm:text-6xl font-extrabold text-[#171717] leading-tight tracking-tight">
               Insights & Strategic <br />

@@ -65,7 +65,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenCheckout }) =>
         description="Practical resources and personalised services for businesses, creatives and product professionals."
       />
 
-      <main className="pt-20 pb-16 bg-studio-950">
+      <main className="pt-24 sm:pt-28 pb-16 bg-studio-950">
         
         {/* Editorial Centered Products Hero Section */}
         <section className="relative max-w-4xl mx-auto px-6 text-center pt-8 pb-10 border-b border-studio-850 mb-8 space-y-4">

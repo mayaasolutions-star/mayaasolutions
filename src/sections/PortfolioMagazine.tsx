@@ -12,29 +12,29 @@ export const PortfolioMagazine: React.FC<PortfolioMagazineProps> = ({ onSelectPr
   const featuredProjects = PORTFOLIO_PROJECTS.slice(0, 6);
 
   return (
-    <section className="py-24 bg-studio-950 relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12 space-y-16">
+    <section className="py-18 md:py-20 bg-studio-950 relative">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12 space-y-10 md:space-y-12">
         
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
-          <div className="max-w-2xl space-y-2">
-            <span className="text-xs sm:text-sm font-extrabold tracking-widest text-studio-400 uppercase block">
-              Featured Work
-            </span>
-            <h2 className="text-3xl sm:text-5xl font-extrabold text-studio-100 leading-tight">
-              Selected Client Projects.
-            </h2>
-            <p className="text-sm sm:text-base text-studio-300 font-normal leading-relaxed">
-              A curated look at brand identities, web platforms, and digital systems built for client growth.
-            </p>
+        {/* Section Header (Centered) */}
+        <div className="max-w-3xl mx-auto text-center space-y-3">
+          <span className="text-xs sm:text-sm font-extrabold tracking-widest text-studio-400 uppercase block">
+            FEATURED WORK
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-studio-100 leading-tight">
+            Selected Client Projects.
+          </h2>
+          <p className="text-sm sm:text-base text-studio-300 font-normal leading-relaxed max-w-2xl mx-auto">
+            Real brand identities, custom websites, and digital systems built for established businesses.
+          </p>
+          <div className="pt-2">
+            <Link
+              to="/our-work"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold text-studio-100 hover:text-studio-400 uppercase tracking-wider transition-colors"
+            >
+              <span>EXPLORE ALL WORK</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
           </div>
-
-          <Link
-            to="/our-work"
-            className="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold text-studio-100 hover:text-studio-300 uppercase tracking-wider transition-colors shrink-0"
-          >
-            Explore All Work
-          </Link>
         </div>
 
         {/* Poster Exhibition Cards */}

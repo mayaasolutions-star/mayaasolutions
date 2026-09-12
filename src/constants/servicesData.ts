@@ -1,4 +1,4 @@
-export interface ServiceItem {
+﻿export interface ServiceItem {
   id: string;
   slug: string;
   number: string;
@@ -6,6 +6,8 @@ export interface ServiceItem {
   tagline: string;
   shortDesc: string;
   fullDesc: string;
+  ctaText: string;
+  capabilities: string[];
   heroImage: string;
   challengeImage: string;
   outcomes: string[];
@@ -20,36 +22,45 @@ export const SERVICES_DATA: ServiceItem[] = [
     slug: 'branding',
     number: '01',
     title: 'Brand Building',
-    tagline: 'Build a Brand People Remember',
-    shortDesc: 'Help businesses create a clear visual identity, stronger market positioning, and a brand people remember across all customer touchpoints.',
-    fullDesc: 'Help businesses create a clear visual identity, stronger market positioning, and a brand people remember across all customer touchpoints.',
+    tagline: 'A brand is more than a logo.',
+    shortDesc: 'Build a brand with a clear position, identity and visual system.',
+    fullDesc: 'We help businesses define their market positioning and create complete brand systems that establish credibility, command recognition, and connect across every touchpoint.',
+    ctaText: 'Explore Brand Building',
+    capabilities: [
+      'Brand strategy',
+      'Positioning',
+      'Naming',
+      'Visual identity',
+      'Brand guidelines',
+      'Brand refresh / rebrand'
+    ],
     heroImage: '/images/brand-building-hero.webp',
     challengeImage: '/images/brand-challenge.webp',
     outcomes: [
-      'Clear market positioning that commands premium pricing',
-      'Instant credibility across all digital and print touchpoints',
-      'Consistent brand standards as your business expands'
+      'Clear market positioning that commands premium perception',
+      'Instant credibility across digital, physical, and print touchpoints',
+      'Consistent brand standards that scale as your business expands'
     ],
     deliverables: [
-      'Brand Strategy & Positioning Framework',
-      'Logo Architecture & Visual Identity',
-      'Color Palette & Typography Standards',
-      'Brand Guidelines Manual'
+      'Brand Strategy & Positioning Document',
+      'Visual Identity System & Logo Architecture',
+      'Typography & Color Palette Guidelines',
+      'Brand Guidelines Manual & Production Assets'
     ],
     process: [
-      { title: '01. Market Audit', desc: 'We analyze your business goals, competitors, and target audience to find your positioning.' },
-      { title: '02. Brand Strategy', desc: 'We define your core message, brand voice, and value proposition.' },
-      { title: '03. Identity Design', desc: 'We design your logo, typography, colors, and visual assets.' },
-      { title: '04. Asset Handoff', desc: 'We deliver comprehensive guidelines and production-ready files.' }
+      { title: '01. Understand', desc: 'We analyze your commercial goals, audience, and market context.' },
+      { title: '02. Plan', desc: 'We clarify core positioning, messaging strategy, and value proposition.' },
+      { title: '03. Design', desc: 'We craft the logo, visual system, typography, and identity assets.' },
+      { title: '04. Launch', desc: 'We deliver complete brand guidelines and production-ready asset libraries.' }
     ],
     faqs: [
       {
         question: 'What is included in a Brand Building project?',
-        answer: 'Our engagement includes market positioning strategy, logo identity design, color systems, typography standards, brand guidelines, and core marketing templates.'
+        answer: 'Our engagement includes brand strategy, positioning, naming or name refinement, logo and visual identity, typography and color standards, and comprehensive brand guidelines.'
       },
       {
         question: 'How long does a brand identity project take?',
-        answer: 'Most brand strategy and identity projects take 3 to 4 weeks from research to final handoff.'
+        answer: 'Most brand strategy and identity engagements take 3 to 4 weeks from discovery to final delivery.'
       }
     ]
   },
@@ -57,37 +68,46 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: 'website-design',
     slug: 'website',
     number: '02',
-    title: 'Website Design',
-    tagline: 'Websites That Drive Business',
-    shortDesc: 'Fast, mobile-first custom web platforms built to establish credibility, improve user experience, and convert visitors into paying clients.',
-    fullDesc: 'Fast, mobile-first custom web platforms built to establish credibility, improve user experience, and convert visitors into paying clients.',
+    title: 'Website Design & Development',
+    tagline: 'Complete Digital Experiences',
+    shortDesc: 'Build a website that represents the business properly and gives customers a better digital experience.',
+    fullDesc: 'We handle website projects from requirement through launch, combining strategic planning, bespoke UX/UI design, and modern development to build platforms that represent your brand and convert visitors.',
+    ctaText: 'Explore Website Design',
+    capabilities: [
+      'Website strategy',
+      'UX/UI Design',
+      'Custom Development',
+      'Content Management (CMS)',
+      'System Integrations',
+      'Conversion-focused experiences'
+    ],
     heroImage: '/images/website-design-hero.webp',
     challengeImage: '/images/website-strategy.webp',
     outcomes: [
-      'Higher visitor engagement and conversion rates',
-      'Fast loading speed optimized for mobile and search',
-      'Clear user journeys that guide prospects to action'
+      'Higher visitor engagement and qualified conversion rates',
+      'Fast loading speed optimized for mobile devices and search engines',
+      'Intuitive user journeys that guide prospects directly to action'
     ],
     deliverables: [
-      'Custom UI/UX Wireframes & Prototypes',
-      'Modern React Web Development',
-      'Mobile Responsive Layouts',
-      'Search Engine Optimization (SEO)'
+      'Information Architecture & User Journey Maps',
+      'Custom UI/UX Prototypes & Component System',
+      'Modern, High-Performance Web Development',
+      'CMS Setup, Integrations & Launch Verification'
     ],
     process: [
-      { title: '01. User Journey Mapping', desc: 'We plan site architecture and user paths focused on conversions.' },
-      { title: '02. Custom UI Design', desc: 'We design modern, responsive interfaces tailored to your brand.' },
-      { title: '03. Web Development', desc: 'We build clean, fast, and secure code using modern web standards.' },
-      { title: '04. Optimization & Launch', desc: 'We test performance, verify mobile layouts, and launch your site.' }
+      { title: '01. Understand', desc: 'We evaluate your business objectives, audience needs, and user pathways.' },
+      { title: '02. Plan', desc: 'We define the site structure, content hierarchy, and technical architecture.' },
+      { title: '03. Design', desc: 'We design intuitive, responsive interfaces tailored to your brand identity.' },
+      { title: '04. Build & Launch', desc: 'We engineer clean code, integrate required tools, test, and launch.' }
     ],
     faqs: [
       {
         question: 'Do you build custom websites or use templates?',
-        answer: 'Every website is custom-designed and coded specifically for your business objectives. We do not use pre-made templates.'
+        answer: 'Every website is custom-designed and coded specifically for your business objectives. We do not rely on pre-made generic templates.'
       },
       {
         question: 'Can our team update content easily?',
-        answer: 'Yes, we set up simple content management tools so you can update text, images, and articles without coding.'
+        answer: 'Yes. We set up simple, intuitive content management so your team can easily update copy, imagery, and journal entries without coding.'
       }
     ]
   },
@@ -96,9 +116,19 @@ export const SERVICES_DATA: ServiceItem[] = [
     slug: 'marketing',
     number: '03',
     title: 'Growth Marketing',
-    tagline: 'Marketing That Creates Momentum',
-    shortDesc: 'Targeted search engine optimization, strategic content, and advertising campaigns focused on visibility, lead acquisition, and business growth.',
-    fullDesc: 'Targeted search engine optimization, strategic content, and advertising campaigns focused on visibility, lead acquisition, and business growth.',
+    tagline: 'Strategic Marketing Built Around the Business',
+    shortDesc: 'Marketing that supports the brand and business, not marketing for the sake of posting.',
+    fullDesc: 'We deliver strategic marketing focused on sustainable customer acquisition, search authority, and high-intent campaigns that support real business growth.',
+    ctaText: 'Explore Growth Marketing',
+    capabilities: [
+      'Marketing strategy',
+      'Search / SEO',
+      'Paid advertising',
+      'Campaign strategy',
+      'Content strategy',
+      'Lead generation',
+      'Digital growth planning'
+    ],
     heroImage: '/images/growth-marketing-hero.webp',
     challengeImage: '/images/marketing-challenge.webp',
     outcomes: [
@@ -107,20 +137,25 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Lower acquisition costs through optimized funnels'
     ],
     deliverables: [
-      'Search Engine Optimization (SEO)',
-      'Targeted Ad Campaigns',
-      'Content Strategy',
-      'Lead Acquisition Funnels'
+      'Comprehensive Acquisition & Channel Strategy',
+      'Search Engine Optimization (Technical & On-Page)',
+      'Targeted Campaign Creative & Ad Management',
+      'Lead Generation Funnels & Attribution Reporting'
     ],
     process: [
-      { title: '01. Channel Audit', desc: 'We evaluate your market opportunities and audience acquisition paths.' },
-      { title: '02. Campaign Setup', desc: 'We launch targeted search optimization and high-intent ad creative.' },
-      { title: '03. Optimization', desc: 'We continuously test and refine campaign performance based on lead data.' }
+      { title: '01. Understand', desc: 'We analyze your market landscape, customer segments, and commercial targets.' },
+      { title: '02. Plan', desc: 'We map out the channel strategy, key search terms, and campaign timelines.' },
+      { title: '03. Execute', desc: 'We launch targeted campaigns, optimized landing flows, and content assets.' },
+      { title: '04. Measure', desc: 'We track real customer inquiries and refine targeting for continuous return.' }
     ],
     faqs: [
       {
+        question: 'Does Mayaa do daily social media posting?',
+        answer: 'No. We focus on strategic marketing, search engine optimization, paid acquisition, and campaign systems that generate qualified inquiries rather than routine posting for the sake of activity.'
+      },
+      {
         question: 'How soon can we expect results from marketing?',
-        answer: 'Targeted ad campaigns generate inquiries within days, while organic SEO builds compounding growth over 60 to 90 days.'
+        answer: 'Targeted campaigns generate inquiries quickly, while organic search optimization builds compounding inbound demand over 60 to 90 days.'
       }
     ]
   },
@@ -128,32 +163,46 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: 'business-growth',
     slug: 'business-growth',
     number: '04',
-    title: 'Business Growth',
-    tagline: 'Sustainable Business Expansion',
-    shortDesc: 'Help businesses identify opportunities, solve challenges, and build practical strategies for sustainable growth and market leadership.',
-    fullDesc: 'Help businesses identify opportunities, solve challenges, and build practical strategies for sustainable growth and market leadership.',
+    title: 'Business Strategy',
+    tagline: 'Practical Decisions for Brand & Digital Growth',
+    shortDesc: 'Helping businesses make better brand and digital decisions from requirement to execution.',
+    fullDesc: 'We help business leaders clarify challenges, identify digital opportunities, optimize customer journeys, and build actionable roadmaps for sustainable growth.',
+    ctaText: 'Explore Business Strategy',
+    capabilities: [
+      'Business & digital strategy',
+      'Digital transformation',
+      'Customer journey',
+      'Digital roadmap',
+      'Product planning',
+      'Process improvement'
+    ],
     heroImage: '/images/business-growth-hero.webp',
     challengeImage: '/images/business-growth-challenge.webp',
     outcomes: [
-      'Clear business direction and strategic roadmap',
-      'Improved customer experience and retention',
-      'Stronger market positioning and competitive advantage'
+      'Clear strategic roadmap and prioritized digital initiatives',
+      'Streamlined customer journey and improved client retention',
+      'Practical digital tools and automated operational workflows'
     ],
     deliverables: [
-      'Business Strategy & Growth Roadmap',
-      'Market Positioning Framework',
-      'Customer Experience Optimization',
-      'Business Performance Advisory'
+      'Business & Digital Opportunity Assessment',
+      'Customer Journey Mapping & Experience Plan',
+      'Digital Product & Systems Roadmap',
+      'Operational Process Optimization Blueprint'
     ],
     process: [
-      { title: '01. Operations Audit', desc: 'We examine your sales process, client journey, and operational bottlenecks.' },
-      { title: '02. Growth Roadmap', desc: 'We build a clear action plan focused on profit margin and expansion.' },
-      { title: '03. Implementation', desc: 'We build automated workflows and optimized customer funnels.' }
+      { title: '01. Understand', desc: 'We review your operations, business goals, and existing digital friction.' },
+      { title: '02. Evaluate', desc: 'We identify commercial opportunities, customer touchpoints, and technical gaps.' },
+      { title: '03. Plan', desc: 'We develop a practical roadmap prioritizing high-impact digital decisions.' },
+      { title: '04. Execute', desc: 'We support the rollout of systems, digital tools, and operational improvements.' }
     ],
     faqs: [
       {
-        question: 'Who is Business Growth advisory designed for?',
-        answer: 'This service is built for business owners, founders, and growing companies looking to refine positioning, improve customer retention, and scale operations predictably.'
+        question: 'Who is Business Strategy advisory designed for?',
+        answer: 'It is designed for founders, owners, and leadership teams seeking clear direction on digital transformation, customer journey improvement, and technology investment.'
+      },
+      {
+        question: 'How does strategy connect to design and development at Mayaa?',
+        answer: 'Strategy directly informs our brand building, website development, and digital tools—ensuring every design and technical decision serves a defined commercial purpose.'
       }
     ]
   }

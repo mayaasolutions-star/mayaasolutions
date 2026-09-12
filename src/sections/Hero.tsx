@@ -9,7 +9,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
   return (
-    <section className="relative min-h-[75vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-20 bg-studio-950 text-left overflow-hidden border-b border-studio-850">
+    <section className="relative flex items-center pt-28 pb-14 md:pt-32 md:pb-18 bg-studio-950 text-left overflow-hidden border-b border-studio-850">
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
@@ -25,7 +25,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
             >
               <span className="w-2 h-2 rounded-full bg-studio-100 inline-block" />
               <span className="text-xs font-extrabold text-studio-100 uppercase tracking-widest">
-                Business Growth Studio
+                Mayaa Solutions
               </span>
             </motion.div>
 
@@ -36,8 +36,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171717] tracking-tight leading-[1.08]"
             >
-              Designed for Growth. <br />
-              <span className="text-[#171717] font-extrabold">Built for Business.</span>
+              We build brands, <br />
+              websites, digital products <br />
+              <span className="text-[#171717] font-extrabold">& business tools.</span>
             </motion.h1>
 
             {/* Supporting Text */}
@@ -47,7 +48,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base sm:text-lg text-[#333333] font-normal leading-relaxed max-w-xl"
             >
-              We combine branding, websites, marketing and business strategy to help businesses grow with confidence.
+              For businesses that want to build something meaningful. Strategy, design, and engineering focused on real business momentum.
             </motion.p>
 
             {/* CTAs */}
@@ -81,7 +82,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="relative rounded-3xl overflow-hidden border border-studio-850 shadow-xl h-[280px] sm:h-[480px] lg:h-[520px] bg-studio-900 group"
+              className="relative rounded-3xl overflow-hidden border border-studio-850 shadow-xl h-[280px] sm:h-[400px] lg:h-[450px] bg-studio-900 group"
             >
               <video
                 autoPlay

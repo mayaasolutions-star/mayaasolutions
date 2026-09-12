@@ -67,7 +67,7 @@ export const AboutPage: React.FC = () => {
                 <div className="relative rounded-3xl overflow-hidden border border-studio-850 shadow-xl h-[340px] sm:h-[420px] bg-studio-900 group">
                   <img
                     src="/images/about-story.webp"
-                    alt="Mayaa Solutions Studio Workspace"
+                    alt="Mayaa Solutions Workspace"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-studio-950/40 via-transparent to-transparent pointer-events-none" />

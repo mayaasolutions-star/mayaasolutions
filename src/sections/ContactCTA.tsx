@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const ContactCTA: React.FC = () => {
   return (
-    <section className="py-24 bg-studio-900 border-t border-b border-studio-850 relative overflow-hidden">
+    <section className="py-16 md:py-20 bg-studio-900 border-t border-b border-studio-850 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute inset-0 bg-noise opacity-15 pointer-events-none" />
 

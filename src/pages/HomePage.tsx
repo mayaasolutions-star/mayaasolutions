@@ -3,6 +3,7 @@ import { SEO } from '../components/SEO';
 import { Hero } from '../sections/Hero';
 import { StudioOverview } from '../sections/StudioOverview';
 import { ServicesEditorial } from '../sections/ServicesEditorial';
+import { IndustryPreview } from '../sections/IndustryPreview';
 import { StatsCounter } from '../sections/StatsCounter';
 import { PortfolioMagazine } from '../sections/PortfolioMagazine';
 import { ProcessTimeline } from '../sections/ProcessTimeline';
@@ -18,13 +19,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onSelectProject }) => {
   return (
     <>
       <SEO
-        title="Mayaa Solutions | Premium Business Growth Studio • Branding, Websites & Digital Strategy"
-        description="Mayaa Solutions is a bespoke business growth studio crafting high-end brand identities, website design, growth marketing, and business strategy."
+        title="Mayaa Solutions | Brands, Websites, Digital Products & Business Tools"
+        description="Mayaa Solutions builds brands, websites, digital products and business tools for businesses that want to build something meaningful."
       />
       <main className="overflow-hidden">
         <Hero />
         <StudioOverview />
         <ServicesEditorial />
+        <IndustryPreview />
         <StatsCounter />
         <PortfolioMagazine onSelectProject={onSelectProject} />
         <ProcessTimeline />

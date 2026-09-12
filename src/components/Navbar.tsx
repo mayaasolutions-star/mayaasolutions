@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
-    { name: 'Products', path: '/products' },
+    { name: 'Industries', path: '/industries' },
     { name: 'Our Work', path: '/our-work' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },

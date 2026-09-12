@@ -4,7 +4,7 @@ import { STUDIO_STATS } from '../constants/testimonialsData';
 
 export const StatsCounter: React.FC = () => {
   return (
-    <section className="py-20 bg-studio-900 border-t border-b border-studio-850">
+    <section className="py-14 md:py-16 bg-studio-900 border-t border-b border-studio-850">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {STUDIO_STATS.map((stat, idx) => (

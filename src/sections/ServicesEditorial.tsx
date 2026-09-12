@@ -4,8 +4,8 @@ import { SERVICES_DATA } from '../constants/servicesData';
 
 export const ServicesEditorial: React.FC = () => {
   return (
-    <section className="py-24 bg-studio-950 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 space-y-12">
+    <section className="py-16 md:py-20 bg-studio-950 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 space-y-10">
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3">
@@ -13,10 +13,10 @@ export const ServicesEditorial: React.FC = () => {
             What We Do
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-studio-100 leading-tight">
-            Services Built to Scale Your Business.
+            Capabilities Built for Impact.
           </h2>
           <p className="text-base sm:text-lg text-studio-300 font-normal leading-relaxed">
-            We help businesses grow through brand building, website design, growth marketing, and strategic business consulting.
+            From brand strategy and custom web platforms to digital products and business tools.
           </p>
         </div>
 

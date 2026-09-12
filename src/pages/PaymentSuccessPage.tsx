@@ -150,7 +150,7 @@ export const PaymentSuccessPage: React.FC = () => {
 
           <div className="pt-4">
             <Link to="/" className="inline-flex items-center gap-2 text-xs font-medium text-studio-400 hover:text-studio-100 transition-colors">
-              <ArrowLeft className="w-4 h-4" /> Return to Studio Homepage
+              <ArrowLeft className="w-4 h-4" /> Return to Homepage
             </Link>
           </div>
         </div>

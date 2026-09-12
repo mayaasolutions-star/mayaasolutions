@@ -17,7 +17,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
         description="Explore selected client projects across brand identity, custom website design, growth marketing, and digital product strategy."
       />
 
-      {/* PREMIUM STUDIO SHOWCASE */}
+      {/* PORTFOLIO SHOWCASE */}
       <main className="pt-28 pb-16 bg-studio-950 text-studio-100 min-h-screen">
         
         {/* HIGH-DENSITY BALANCED GALLERY GRID */}

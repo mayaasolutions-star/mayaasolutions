@@ -9,9 +9,9 @@ interface SEOProps {
 }
 
 export const SEO: React.FC<SEOProps> = ({
-  title = 'Mayaa Solutions | Premium Business Growth Studio • Branding & Digital Strategy',
+  title = 'Mayaa Solutions | Brands, Websites, Digital Products & Business Tools',
   description = 'Mayaa Solutions helps ambitious startups, enterprises, and growing brands with bespoke brand strategy, website design, growth marketing, and business growth advisory.',
-  keywords = 'branding studio, website design, luxury growth agency, brand strategy, digital marketing, business growth, Mayaa Solutions',
+  keywords = 'brand building, website design, digital products, business tools, digital marketing, business growth, Mayaa Solutions',
   ogImage = 'https://mayaasolutions.in/images/og-image.jpg',
 }) => {
   const location = useLocation();

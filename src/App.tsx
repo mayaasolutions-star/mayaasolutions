@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { ProductHeader } from './components/ProductHeader';
+import { ProductFooter } from './components/ProductFooter';
 import { ScrollToTop } from './components/ScrollToTop';
 import { ProjectModal } from './components/ProjectModal';
 import { ProductCheckoutModal } from './components/ProductCheckoutModal';
@@ -15,6 +17,7 @@ import { ServiceGrowthPage } from './pages/ServiceGrowthPage';
 import { ProductsPage } from './pages/ProductsPage';
 import { ProductDetailPage } from './pages/ProductDetailPage';
 import { PortfolioPage } from './pages/PortfolioPage';
+import { IndustriesPage } from './pages/IndustriesPage';
 import { ContactPage } from './pages/ContactPage';
 import { IntentPage } from './pages/IntentPage';
 import { ArticlesPage } from './pages/ArticlesPage';
@@ -44,17 +47,25 @@ const PaymentSuccessHandler: React.FC<{ children: React.ReactNode }> = ({ childr
   return <>{children}</>;
 };
 
-export const App: React.FC = () => {
-  const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
-  const [checkoutProduct, setCheckoutProduct] = useState<ProductDataItem | null>(null);
+const AppContent: React.FC<{
+  selectedProject: ProjectItem | null;
+  setSelectedProject: (project: ProjectItem | null) => void;
+  checkoutProduct: ProductDataItem | null;
+  setCheckoutProduct: (product: ProductDataItem | null) => void;
+}> = ({
+  selectedProject,
+  setSelectedProject,
+  checkoutProduct,
+  setCheckoutProduct,
+}) => {
+  const location = useLocation();
+  const isProductRoute = location.pathname.startsWith('/products');
 
   return (
-    <Router>
-      <AnalyticsTracker />
-      <div className="min-h-screen flex flex-col bg-studio-950 text-studio-100 selection:bg-studio-100 selection:text-white font-sans antialiased">
-        <Navbar />
+    <div className="min-h-screen flex flex-col bg-studio-950 text-studio-100 selection:bg-studio-100 selection:text-white font-sans antialiased">
+      {isProductRoute ? <ProductHeader /> : <Navbar />}
 
-        <div className="flex-1">
+      <div className="flex-1">
           <PaymentSuccessHandler>
             <Routes>
               <Route
@@ -87,6 +98,7 @@ export const App: React.FC = () => {
                 />
               }
             />
+            <Route path="/industries" element={<IndustriesPage />} />
             <Route path="/contact" element={<ContactPage />} />
 
             {/* Dedicated Intent Routes */}
@@ -124,6 +136,7 @@ export const App: React.FC = () => {
             <Route path="/contact.html" element={<Navigate to="/contact" replace />} />
             <Route path="/services.html" element={<Navigate to="/services" replace />} />
             <Route path="/products.html" element={<Navigate to="/products" replace />} />
+            <Route path="/industries.html" element={<Navigate to="/industries" replace />} />
 
             {/* Articles & Insights */}
             <Route path="/insights" element={<ArticlesPage />} />
@@ -139,7 +152,7 @@ export const App: React.FC = () => {
         </PaymentSuccessHandler>
       </div>
 
-        <Footer />
+        {isProductRoute ? <ProductFooter /> : <Footer />}
         <ScrollToTop />
 
         <ProjectModal
@@ -153,6 +166,22 @@ export const App: React.FC = () => {
           onClose={() => setCheckoutProduct(null)}
         />
       </div>
+  );
+};
+
+export const App: React.FC = () => {
+  const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
+  const [checkoutProduct, setCheckoutProduct] = useState<ProductDataItem | null>(null);
+
+  return (
+    <Router>
+      <AnalyticsTracker />
+      <AppContent
+        selectedProject={selectedProject}
+        setSelectedProject={setSelectedProject}
+        checkoutProduct={checkoutProduct}
+        setCheckoutProduct={setCheckoutProduct}
+      />
     </Router>
   );
 };
