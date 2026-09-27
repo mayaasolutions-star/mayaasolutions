@@ -1,203 +1,114 @@
-﻿import React from 'react';
-import { SEO } from '../components/SEO';
-import { SERVICES_DATA } from '../constants/servicesData';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import { ContactCTA } from '../sections/ContactCTA';
+import { SEO } from '../components/SEO';
+
+interface ServiceRow {
+  number: string;
+  title: string;
+  problem: string;
+  solution: string;
+  path: string;
+}
 
 export const ServicesPage: React.FC = () => {
-  const principles = [
+  const services: ServiceRow[] = [
     {
-      title: 'Strategy to Execution',
-      desc: 'We do not hand off abstract decks. We define the strategy and engineer the brand, website, or digital solution directly.'
+      number: '01',
+      title: 'BRAND BUILDING',
+      problem: 'Starting from zero? We build the brand from the ground up.',
+      solution: 'Strategy, identity, design, launch & execution.',
+      path: '/services/brand-building',
     },
     {
-      title: 'Connected Capabilities',
-      desc: 'Branding connects to your website, websites support your marketing, and marketing serves defined commercial targets.'
+      number: '02',
+      title: 'DIGITAL DESIGN',
+      problem: 'Your business needs a stronger digital presence.',
+      solution: 'We design websites and digital experiences that work.',
+      path: '/services/digital-design',
     },
     {
-      title: 'Direct Partnership',
-      desc: 'You work directly with senior practitioners who understand commercial requirements and care about detail.'
+      number: '03',
+      title: 'GROWTH',
+      problem: 'Your brand is built. Now it needs to be seen.',
+      solution: 'We support growth through content, campaigns & marketing.',
+      path: '/services/growth',
     },
     {
-      title: 'Built for Longevity',
-      desc: 'We design clear systems and write clean code that continue serving your business as operations expand.'
-    }
+      number: '04',
+      title: 'BUSINESS',
+      problem: "Your business is growing. Your systems aren't.",
+      solution: 'We build smarter ways to work.',
+      path: '/business-tools',
+    },
   ];
 
   return (
     <>
       <SEO
-        title="Services | Brand Building, Websites, Growth Marketing & Business Strategy"
-        description="Strategy, brand and digital execution for businesses ready to build something better. Explore Mayaa Solutions' core capabilities."
+        title="Services | Mayaa Solutions"
+        description="What does your business need to build? Explore Mayaa Solutions' core capabilities: Brand Building, Digital Design, Growth, and Business Systems."
       />
+      <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black font-sans antialiased overflow-x-hidden pt-28 pb-20 md:pt-36 md:pb-28 px-6 md:px-12">
+        <div className="max-w-7xl mx-auto">
 
-      <main className="pt-20 pb-20 bg-studio-950">
-        
-        {/* Editorial Services Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center pt-10 pb-12 md:pt-16 md:pb-16 overflow-hidden bg-studio-950 text-left border-b border-studio-850">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-              
-              {/* Left Content Column */}
-              <div className="lg:col-span-6 space-y-6">
-                <div className="flex items-center gap-2.5">
-                  <span className="w-2 h-2 rounded-full bg-studio-100 inline-block" />
-                  <span className="text-xs font-extrabold text-studio-100 uppercase tracking-widest">
-                    Services
-                  </span>
-                </div>
-
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171717] tracking-tight leading-[1.08]">
-                  Strategy, brand & digital execution <br />
-                  <span className="text-[#171717] font-extrabold">for businesses ready to build something better.</span>
-                </h1>
-
-                <p className="text-base sm:text-lg text-[#333333] font-normal leading-relaxed max-w-xl">
-                  What can Mayaa help your business build or improve? We partner with founders and established teams across industries to take projects from initial requirement through to launch.
-                </p>
-
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#171717] text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-full hover:bg-[#292825] transition-all shadow-md"
-                  >
-                    <span>Start a Project</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                  <Link
-                    to="/our-work"
-                    className="inline-flex items-center justify-center px-8 py-4 bg-white border border-[#171717] text-[#171717] font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-full hover:bg-studio-900 transition-all shadow-sm"
-                  >
-                    View Our Work
-                  </Link>
-                </div>
-              </div>
-
-              {/* Right Media Frame */}
-              <div className="lg:col-span-6">
-                <div className="relative rounded-3xl overflow-hidden border border-studio-850 shadow-xl h-[340px] sm:h-[420px] bg-studio-900 group">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="auto"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  >
-                    <source src="/images/services-page-hero-video.mp4" type="video/mp4" />
-                  </video>
-                  <div className="absolute inset-0 bg-gradient-to-t from-studio-950/40 via-transparent to-transparent pointer-events-none" />
-                </div>
-              </div>
-
-            </div>
+          {/* Header Section (Centered 2-line headline) */}
+          <div className="mb-10 md:mb-14 text-center">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.08] max-w-4xl lg:max-w-5xl mx-auto text-center"
+            >
+              What does your business <br className="hidden sm:inline" />
+              need to build?
+            </motion.h1>
           </div>
-        </section>
 
-        {/* Services Showcase Cards */}
-        <section id="services-list" className="max-w-7xl mx-auto px-6 md:px-12 space-y-12 pt-16 pb-24 bg-studio-950">
-          {SERVICES_DATA.map((service, idx) => {
-            const isEven = idx % 2 === 0;
-            return (
-              <div
-                key={service.id}
-                className={`p-8 md:p-12 rounded-3xl bg-white border border-studio-850 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-10 items-center ${
-                  isEven ? '' : 'lg:flex-row-reverse'
-                }`}
+          {/* Service Rows (Exact 7% | 25% | 30% | 30% | 8% desktop column grid) */}
+          <div className="border-b border-neutral-900">
+            {services.map((service, idx) => (
+              <motion.div
+                key={service.number}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.08 }}
               >
-                {/* Text Content */}
-                <div className={`lg:col-span-7 space-y-5 ${isEven ? '' : 'lg:order-2'}`}>
-                  <span className="text-xs font-extrabold px-3.5 py-1 bg-studio-900 text-studio-100 border border-studio-850 rounded-full inline-block uppercase tracking-wider font-mono">
-                    Service {service.number}
-                  </span>
-
-                  <div className="space-y-2">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-studio-100 tracking-tight">
-                      {service.title}
-                    </h2>
-                    <p className="text-sm font-semibold text-studio-400">
-                      {service.tagline}
-                    </p>
+                <Link
+                  to={service.path}
+                  className="grid grid-cols-1 md:grid-cols-[7%_25%_30%_30%_8%] gap-4 md:gap-0 items-center py-7 md:py-8 border-t border-neutral-900 min-h-[120px] md:min-h-[140px] group hover:border-neutral-700 transition-colors duration-300 block"
+                >
+                  {/* 7% - Number */}
+                  <div className="text-xs font-mono text-[#A0A0A0] tracking-wider">
+                    {service.number}
                   </div>
 
-                  <p className="text-base sm:text-lg text-studio-300 font-normal leading-relaxed">
-                    {service.shortDesc}
-                  </p>
-
-                  {/* Capabilities List */}
-                  <div className="space-y-2 pt-1">
-                    <span className="text-xs font-extrabold uppercase tracking-wider text-studio-400 block">
-                      Core Capabilities
-                    </span>
-                    <div className="flex flex-wrap gap-2">
-                      {service.capabilities.map((cap, i) => (
-                        <span
-                          key={i}
-                          className="px-3.5 py-1.5 text-xs font-semibold rounded-full bg-studio-900 border border-studio-850 text-studio-200"
-                        >
-                          {cap}
-                        </span>
-                      ))}
-                    </div>
+                  {/* 25% - Service Name */}
+                  <div className="text-lg sm:text-xl font-extrabold text-white tracking-wider uppercase md:pr-4">
+                    {service.title}
                   </div>
 
-                  {/* Direct Explore CTA Button */}
-                  <div className="pt-3">
-                    <Link
-                      to={`/services/${service.slug}`}
-                      className="inline-flex items-center gap-2 px-6 py-3.5 bg-studio-100 text-studio-950 font-extrabold text-xs uppercase tracking-wider rounded-full hover:bg-studio-200 transition-colors shadow-sm"
-                    >
-                      <span>{service.ctaText}</span>
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
+                  {/* 30% - Problem / Need */}
+                  <div className="text-sm sm:text-base text-[#A0A0A0] font-normal leading-relaxed md:pr-6">
+                    {service.problem}
                   </div>
-                </div>
 
-                {/* Visual Frame */}
-                <div className={`lg:col-span-5 ${isEven ? '' : 'lg:order-1'}`}>
-                  <div className="rounded-2xl overflow-hidden border border-studio-850 h-80 sm:h-96 relative shadow-sm group">
-                    <img
-                      src={service.heroImage}
-                      alt={service.title}
-                      loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
+                  {/* 30% - Solution */}
+                  <div className="text-sm sm:text-base text-white font-medium leading-relaxed md:pr-4">
+                    {service.solution}
                   </div>
-                </div>
-              </div>
-            );
-          })}
-        </section>
 
-        {/* The Mayaa Difference: Connected Capabilities */}
-        <section className="py-20 bg-studio-900 border-t border-b border-studio-850">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-12">
-            <div className="max-w-3xl mx-auto text-center space-y-3">
-              <span className="text-xs sm:text-sm font-semibold text-studio-400 uppercase tracking-widest">
-                How It Works Together
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-extrabold text-studio-100 leading-tight">
-                Strategy Connected to Execution.
-              </h2>
-              <p className="text-base sm:text-lg text-studio-300 font-normal leading-relaxed">
-                Branding is not isolated from digital. Websites are not isolated from brand. Marketing is not isolated from business. The capabilities work together when your project requires it.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {principles.map((pt, idx) => (
-                <div key={idx} className="p-6 rounded-2xl bg-white border border-studio-850 shadow-sm space-y-2">
-                  <h3 className="text-lg font-bold text-studio-100">{pt.title}</h3>
-                  <p className="text-sm text-studio-300 font-normal leading-relaxed">{pt.desc}</p>
-                </div>
-              ))}
-            </div>
+                  {/* 8% - Arrow */}
+                  <div className="flex justify-end text-xl text-neutral-500 group-hover:text-white group-hover:translate-x-2 transition-all duration-300">
+                    →
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
-        </section>
 
-        <ContactCTA />
-
+        </div>
       </main>
     </>
   );

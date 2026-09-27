@@ -40,6 +40,7 @@ export const Footer: React.FC = () => {
             <ul className="flex flex-col gap-3 text-sm font-semibold text-studio-300">
               <li><Link to="/" className="hover:text-studio-100 transition-colors">Home</Link></li>
               <li><Link to="/services" className="hover:text-studio-100 transition-colors">Services</Link></li>
+              <li><Link to="/business-tools" className="hover:text-studio-100 transition-colors">Business Tools</Link></li>
               <li><Link to="/industries" className="hover:text-studio-100 transition-colors">Industries</Link></li>
               <li><Link to="/our-work" className="hover:text-studio-100 transition-colors">Our Work</Link></li>
               <li><Link to="/contact" className="hover:text-studio-100 transition-colors">Contact</Link></li>
@@ -55,7 +56,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/services/branding" className="hover:text-studio-100 transition-colors">Brand Building</Link></li>
               <li><Link to="/services/website" className="hover:text-studio-100 transition-colors">Website Design & Development</Link></li>
               <li><Link to="/services/marketing" className="hover:text-studio-100 transition-colors">Growth Marketing</Link></li>
-              <li><Link to="/services/business-growth" className="hover:text-studio-100 transition-colors">Business Strategy</Link></li>
+              <li><Link to="/business-tools" className="hover:text-studio-100 transition-colors">Business Tools</Link></li>
             </ul>
           </div>
 

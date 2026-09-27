@@ -14,6 +14,7 @@ import { ServiceBrandingPage } from './pages/ServiceBrandingPage';
 import { ServiceWebsitePage } from './pages/ServiceWebsitePage';
 import { ServiceMarketingPage } from './pages/ServiceMarketingPage';
 import { ServiceGrowthPage } from './pages/ServiceGrowthPage';
+import { BusinessToolsPage } from './pages/BusinessToolsPage';
 import { ProductsPage } from './pages/ProductsPage';
 import { ProductDetailPage } from './pages/ProductDetailPage';
 import { PortfolioPage } from './pages/PortfolioPage';
@@ -68,22 +69,19 @@ const AppContent: React.FC<{
       <div className="flex-1">
           <PaymentSuccessHandler>
             <Routes>
-              <Route
-                path="/"
-                element={
-                  <HomePage
-                    onSelectProject={(project) => setSelectedProject(project)}
-                  />
-                }
-              />
+              <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             
             {/* Core Services Hub & Detail Pages */}
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/services/branding" element={<ServiceBrandingPage />} />
+            <Route path="/services/brand-building" element={<ServiceBrandingPage />} />
             <Route path="/services/website" element={<ServiceWebsitePage />} />
+            <Route path="/services/digital-design" element={<ServiceWebsitePage />} />
             <Route path="/services/marketing" element={<ServiceMarketingPage />} />
-            <Route path="/services/business-growth" element={<ServiceGrowthPage />} />
+            <Route path="/services/growth" element={<ServiceGrowthPage />} />
+            <Route path="/services/business-growth" element={<BusinessToolsPage />} />
+            <Route path="/business-tools" element={<BusinessToolsPage />} />
 
             {/* Products & Starter Packages Hub & Detail Pages (All 13 Products) */}
             <Route path="/products" element={<ProductsPage onOpenCheckout={(prod) => setCheckoutProduct(prod)} />} />
@@ -152,7 +150,9 @@ const AppContent: React.FC<{
         </PaymentSuccessHandler>
       </div>
 
-        {isProductRoute ? <ProductFooter /> : <Footer />}
+        {!location.pathname.startsWith('/') || location.pathname !== '/' ? (
+          isProductRoute ? <ProductFooter /> : <Footer />
+        ) : null}
         <ScrollToTop />
 
         <ProjectModal

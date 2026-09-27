@@ -1,4 +1,4 @@
-﻿export interface ServiceItem {
+export interface ServiceItem {
   id: string;
   slug: string;
   number: string;
@@ -161,13 +161,13 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'business-growth',
-    slug: 'business-growth',
+    slug: 'business-tools',
     number: '04',
-    title: 'Business Strategy',
-    tagline: 'Practical Decisions for Brand & Digital Growth',
-    shortDesc: 'Helping businesses make better brand and digital decisions from requirement to execution.',
-    fullDesc: 'We help business leaders clarify challenges, identify digital opportunities, optimize customer journeys, and build actionable roadmaps for sustainable growth.',
-    ctaText: 'Explore Business Strategy',
+    title: 'Business Tools',
+    tagline: 'Custom Business Management Software',
+    shortDesc: 'A personalised Business Management Tool built around how your business works.',
+    fullDesc: 'We build personalised Business Management Tools that unify your leads, tasks, team, and operations into one clean system.',
+    ctaText: 'Explore Business Tools',
     capabilities: [
       'Business & digital strategy',
       'Digital transformation',
