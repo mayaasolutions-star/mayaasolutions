@@ -15,6 +15,7 @@ import { ServiceWebsitePage } from './pages/ServiceWebsitePage';
 import { ServiceMarketingPage } from './pages/ServiceMarketingPage';
 import { ServiceGrowthPage } from './pages/ServiceGrowthPage';
 import { BusinessToolsPage } from './pages/BusinessToolsPage';
+import { WebsitesPage } from './pages/WebsitesPage';
 import { ProductsPage } from './pages/ProductsPage';
 import { ProductDetailPage } from './pages/ProductDetailPage';
 import { PortfolioPage } from './pages/PortfolioPage';
@@ -82,6 +83,7 @@ const AppContent: React.FC<{
             <Route path="/services/growth" element={<ServiceGrowthPage />} />
             <Route path="/services/business-growth" element={<BusinessToolsPage />} />
             <Route path="/business-tools" element={<BusinessToolsPage />} />
+            <Route path="/websites" element={<WebsitesPage />} />
 
             {/* Products & Starter Packages Hub & Detail Pages (All 13 Products) */}
             <Route path="/products" element={<ProductsPage onOpenCheckout={(prod) => setCheckoutProduct(prod)} />} />

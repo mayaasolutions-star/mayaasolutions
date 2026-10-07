@@ -40,9 +40,9 @@ export const Footer: React.FC = () => {
             <ul className="flex flex-col gap-3 text-sm font-semibold text-studio-300">
               <li><Link to="/" className="hover:text-studio-100 transition-colors">Home</Link></li>
               <li><Link to="/services" className="hover:text-studio-100 transition-colors">Services</Link></li>
-              <li><Link to="/business-tools" className="hover:text-studio-100 transition-colors">Business Tools</Link></li>
               <li><Link to="/industries" className="hover:text-studio-100 transition-colors">Industries</Link></li>
               <li><Link to="/our-work" className="hover:text-studio-100 transition-colors">Our Work</Link></li>
+              <li><Link to="/about" className="hover:text-studio-100 transition-colors">About</Link></li>
               <li><Link to="/contact" className="hover:text-studio-100 transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -54,8 +54,9 @@ export const Footer: React.FC = () => {
             </span>
             <ul className="flex flex-col gap-3 text-sm font-semibold text-studio-300">
               <li><Link to="/services/branding" className="hover:text-studio-100 transition-colors">Brand Building</Link></li>
-              <li><Link to="/services/website" className="hover:text-studio-100 transition-colors">Website Design & Development</Link></li>
-              <li><Link to="/services/marketing" className="hover:text-studio-100 transition-colors">Growth Marketing</Link></li>
+              <li><Link to="/services/growth" className="hover:text-studio-100 transition-colors">Growth Management</Link></li>
+              <li><Link to="/products" className="hover:text-studio-100 transition-colors">Product Management</Link></li>
+              <li><Link to="/websites" className="hover:text-studio-100 transition-colors">Websites</Link></li>
               <li><Link to="/business-tools" className="hover:text-studio-100 transition-colors">Business Tools</Link></li>
             </ul>
           </div>
