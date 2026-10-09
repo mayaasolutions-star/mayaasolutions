@@ -33,8 +33,8 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
     solution: 'Engineered a unified brand identity, high-converting digital storefront, and integrated marketing campaign strategy.',
     deliverables: ['Brand Architecture & Guidelines', 'E-Commerce Website & UI/UX', 'Product Packaging Strategy', 'Digital Marketing Campaigns'],
     metrics: [
-      { label: 'Growth Velocity', value: '+240%' },
-      { label: 'Brand Recall', value: '88%' }
+      { label: 'Platform Scope', value: 'E-Commerce' },
+      { label: 'Delivery Status', value: 'Full Launch' }
     ],
     galleryImages: ['/images/creative_page_work_thumbnail_ajavu.webp']
   },
@@ -53,8 +53,8 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
     solution: 'Crafted a bold dark-mode web application with seamless tour booking integration.',
     deliverables: ['Brand Identity & Logo Architecture', 'Custom Web Application (React)', 'Mobile UI/UX Design'],
     metrics: [
-      { label: 'Booking Rate', value: '+180%' },
-      { label: 'Community Engagement', value: '4.9/5' }
+      { label: 'Tech Stack', value: 'React Web App' },
+      { label: 'Core Workflow', value: 'Tour Booking' }
     ],
     galleryImages: ['/images/creative_page_work_thumbnail_mototrek.webp']
   },
@@ -74,15 +74,15 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
   },
   {
     id: 'myma',
-    title: 'MYMA App',
+    title: 'Myma App',
     category: 'Brand Building • Product • Growth',
     categorySlug: 'product',
-    client: 'MYMA Culinary Platform',
+    client: 'Myma Platform',
     year: '2024',
     image: '/images/creative_page_work_largethumbnail_myma.webp',
     cardType: 'portrait',
     summary: 'Shaped business strategy, product vision, UX/UI design, brand identity, and growth initiatives, reaching 100k+ home chef connections.',
-    overview: 'MYMA connected home chefs with food enthusiasts through an intuitive mobile ordering platform.',
+    overview: 'Myma connected home chefs with food enthusiasts through an intuitive mobile ordering platform.',
     problem: 'Complex user onboarding caused drop-offs during registration.',
     solution: 'Redesigned the multi-step mobile workflow and established a warm, authentic culinary brand.',
     deliverables: ['Mobile Product UX/UI', 'Brand Guidelines & Design System', 'Growth Marketing Funnels'],
@@ -351,5 +351,18 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
     summary: 'Designed branding, apparel packaging, and outdoor lifestyle graphics reflecting adventurous brand identity.',
     deliverables: ['Apparel Brand Identity', 'Product Hangtags & Packaging', 'E-Commerce Social Assets'],
     galleryImages: ['/images/creative_page_work_thumbnail_urth_trooper.webp']
+  },
+  {
+    id: 'adwebstar',
+    title: 'AD Webstar',
+    category: 'Marketing Communication • Digital Design',
+    categorySlug: 'marketing',
+    client: 'AD Webstar Digital',
+    year: '2023',
+    image: '/images/creative_page_work_thumbnail_ad_webstar.webp',
+    cardType: 'square',
+    summary: 'Developed multi-industry digital campaigns and visual communication strengthening audience engagement across platforms.',
+    deliverables: ['Marketing Campaign Creatives', 'Social Media Templates', 'Visual Communication Guidelines'],
+    galleryImages: ['/images/creative_page_work_thumbnail_ad_webstar.webp']
   }
 ];

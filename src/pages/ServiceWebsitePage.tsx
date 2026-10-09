@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getServiceSchema, getBreadcrumbSchema } from '../utils/seoMetadata';
 
 export const ServiceWebsitePage: React.FC = () => {
   const workPillars = [
@@ -34,6 +35,20 @@ export const ServiceWebsitePage: React.FC = () => {
       <SEO
         title="Website Design & Development | Mayaa Solutions"
         description="Build a website that represents the business properly and gives customers a better digital experience. From requirement to launch."
+        canonicalUrl="https://mayaasolutions.in/services/website"
+        schema={[
+          getServiceSchema(
+            'Website Design & Development',
+            'Build a website that represents the business properly and gives customers a better digital experience. From requirement to launch.',
+            'Custom Web Design & Development',
+            '/services/website'
+          ),
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Services', urlPath: '/services' },
+            { name: 'Website Design & Development', urlPath: '/services/website' },
+          ]),
+        ]}
       />
 
       <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black font-sans antialiased overflow-x-hidden">

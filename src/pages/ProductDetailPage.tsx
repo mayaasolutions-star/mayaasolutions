@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getProductSchema, getBreadcrumbSchema, getFaqSchema } from '../utils/seoMetadata';
 import { PRODUCTS_DATA, ProductItem, getProductBySlug } from '../constants/productsData';
 import { ArrowLeft, CheckCircle2, Clock, ChevronDown, ChevronUp, Lock, ShieldCheck, FileText, Check, ArrowRight, Zap, Sparkles, BookOpen, Layers } from 'lucide-react';
 
@@ -86,8 +87,20 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenChec
   return (
     <>
       <SEO
-        title={`${product.name} (${product.price}) | Mayaa Solutions Digital Product`}
+        title={`${product.name}${product.categoryType === 'digital' ? ' Guidebook' : ''} (${product.price}) | Mayaa Solutions`}
         description={product.summary}
+        ogType="product"
+        ogImage={product.heroImage}
+        canonicalUrl={`https://mayaasolutions.in/products/${product.slug}`}
+        schema={[
+          getProductSchema(product),
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Products', urlPath: '/products' },
+            { name: product.name, urlPath: `/products/${product.slug}` },
+          ]),
+          ...(product.faqs ? [getFaqSchema(product.faqs)] : []),
+        ].filter(Boolean) as Record<string, any>[]}
       />
 
       <main className="pt-24 sm:pt-28 pb-20 bg-studio-950 text-studio-100">

@@ -1,11 +1,22 @@
 import React from 'react';
 import { SEO } from '../components/SEO';
+import { getBreadcrumbSchema } from '../utils/seoMetadata';
 import { ShieldCheck } from 'lucide-react';
 
 export const TermsPage: React.FC = () => {
   return (
     <>
-      <SEO title="Terms & Conditions | Mayaa Solutions" description="Terms and conditions governing services, proposals, and client engagements at Mayaa Solutions." />
+      <SEO 
+        title="Terms & Conditions | Mayaa Solutions" 
+        description="Terms and conditions governing services, proposals, and client engagements at Mayaa Solutions." 
+        canonicalUrl="https://mayaasolutions.in/terms-conditions"
+        schema={[
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Terms & Conditions', urlPath: '/terms-conditions' },
+          ]),
+        ]}
+      />
 
       <main className="pt-32 pb-24 bg-studio-950 text-studio-100">
         <div className="max-w-4xl mx-auto px-6 md:px-12 space-y-8">

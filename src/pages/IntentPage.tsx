@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getBreadcrumbSchema } from '../utils/seoMetadata';
 import { Button } from '../components/Button';
 import { CheckCircle2, Sparkles, ArrowRight, ShieldCheck, Star } from 'lucide-react';
 import { ContactCTA } from '../sections/ContactCTA';
@@ -105,11 +106,23 @@ export const IntentPage: React.FC = () => {
     }
   };
 
+  const activeType = type || 'build-my-brand';
   const config = (type && intentConfigs[type]) ? intentConfigs[type] : intentConfigs['build-my-brand'];
 
   return (
     <>
-      <SEO title={config.seoTitle} description={config.seoDesc} />
+      <SEO
+        title={config.seoTitle}
+        description={config.seoDesc}
+        canonicalUrl={`https://mayaasolutions.in/intent/${activeType}`}
+        schema={[
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Services', urlPath: '/services' },
+            { name: config.title, urlPath: `/intent/${activeType}` },
+          ]),
+        ]}
+      />
 
       <main className="pt-32 pb-20 bg-studio-950">
         <section className="max-w-7xl mx-auto px-6 md:px-12 pb-20">

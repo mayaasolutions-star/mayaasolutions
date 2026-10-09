@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getBreadcrumbSchema } from '../utils/seoMetadata';
 import { ArrowRight } from 'lucide-react';
 
 interface PriorityIndustry {
@@ -171,7 +172,14 @@ export const IndustriesPage: React.FC = () => {
     <>
       <SEO
         title="Industries We Build For | Mayaa Solutions"
-        description="We build across industries. From premium brands and hospitality to professional services and technology, Mayaa builds brands, websites, digital products and business tools."
+        description="We build across industries. From premium brands and hospitality to professional services and technology, Mayaa builds brands, websites, digital products and business systems."
+        canonicalUrl="https://mayaasolutions.in/industries"
+        schema={[
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Industries', urlPath: '/industries' },
+          ]),
+        ]}
       />
 
       <main className="bg-studio-950">
@@ -192,7 +200,7 @@ export const IndustriesPage: React.FC = () => {
             </h1>
 
             <p className="text-lg sm:text-xl text-[#333333] font-normal leading-relaxed text-center max-w-3xl mx-auto">
-              From premium brands and hospitality to professional services, specialist businesses and growing companies, Mayaa builds brands, websites, digital products and business tools across industries.
+              From premium brands and hospitality to professional services, specialist businesses and growing companies, Mayaa builds brands, websites, digital products and business systems across industries.
             </p>
 
             <div className="pt-1">

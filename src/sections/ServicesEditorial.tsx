@@ -16,7 +16,7 @@ export const ServicesEditorial: React.FC = () => {
             Capabilities Built for Impact.
           </h2>
           <p className="text-base sm:text-lg text-studio-300 font-normal leading-relaxed">
-            From brand strategy and custom web platforms to digital products and business tools.
+            From brand strategy and custom web platforms to digital products and business systems.
           </p>
         </div>
 

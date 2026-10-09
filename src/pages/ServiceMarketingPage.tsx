@@ -2,30 +2,31 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getServiceSchema, getBreadcrumbSchema } from '../utils/seoMetadata';
 
 export const ServiceMarketingPage: React.FC = () => {
   const growthSteps = [
-    { num: '01', title: 'Growth Strategy', desc: 'Define commercial roadmaps, audience dynamics, and high-leverage market opportunities.' },
-    { num: '02', title: 'Acquisition', desc: 'Drive high-intent customer demand through SEO and targeted campaign architecture.' },
-    { num: '03', title: 'Conversion', desc: 'Engineer high-converting landing pages, inquiry funnels, and optimized touchpoints.' },
-    { num: '04', title: 'Retention', desc: 'Streamline customer experience and touchpoints to maximize repeat value and retention.' },
-    { num: '05', title: 'Measurement & Iteration', desc: 'Transparent inquiry attribution, revenue tracking, and continuous data-driven optimization.' },
+    { num: '01', title: 'Demand Discovery', desc: 'Identify where qualified decision-makers seek solutions and map high-intent keyword opportunities.' },
+    { num: '02', title: 'Search & SEO', desc: 'Engineer technical SEO and informational architecture to capture compounding organic demand.' },
+    { num: '03', title: 'Conversion Design', desc: 'Craft high-converting landing pages, value propositions, and friction-free inquiry funnels.' },
+    { num: '04', title: 'B2B Collateral', desc: 'Produce authoritative case summaries, guides, and presentation decks that answer buyer concerns.' },
+    { num: '05', title: 'Attribution Tracking', desc: 'Track verified lead sources, conversion rates, and revenue impact without vanity metrics.' },
   ];
 
   const approachSteps = [
-    { num: '01', title: 'Strategy', desc: 'We evaluate your business economics, target customer profiles, and commercial goals.' },
-    { num: '02', title: 'Target', desc: 'We map out high-intent channels, search opportunities, and conversion pathways.' },
-    { num: '03', title: 'Execute', desc: 'We deploy targeted campaigns, technical SEO, and conversion-optimized touchpoints.' },
-    { num: '04', title: 'Measure', desc: 'We track verified inbound inquiries and optimize for sustainable compounding growth.' },
+    { num: '01', title: 'Diagnose', desc: 'We examine your buyer journey, existing inquiry sources, and commercial economics.' },
+    { num: '02', title: 'Channel Focus', desc: 'We select high-leverage search and inbound channels where decision-makers actively look.' },
+    { num: '03', title: 'Build Assets', desc: 'We deploy conversion-optimized landing assets, clear copy, and inquiry mechanisms.' },
+    { num: '04', title: 'Track & Refine', desc: 'We measure verified lead quality and refine messaging based on customer responses.' },
   ];
 
   const deliverables = [
-    'Comprehensive Growth & Acquisition Strategy',
+    'Inbound Acquisition & Search Intent Strategy',
     'Technical & On-Page SEO Architecture',
-    'Targeted Campaign Creative & Channel Setup',
-    'High-Converting Landing Pages & Inquiry Funnels',
-    'Customer Touchpoint & Retention Framework',
-    'Attribution & Growth Analytics Dashboard',
+    'High-Converting Landing Page Design & Copy',
+    'B2B Sales Collateral & Case Presentation Decks',
+    'Inquiry Tracking & Analytics Attribution Setup',
+    'Customer Inquiry Qualification Framework',
   ];
 
   return (
@@ -33,6 +34,20 @@ export const ServiceMarketingPage: React.FC = () => {
       <SEO
         title="Growth Marketing & Strategy | Mayaa Solutions"
         description="Strategic marketing built around the business. Marketing that supports the brand, not marketing for the sake of posting."
+        canonicalUrl="https://mayaasolutions.in/services/marketing"
+        schema={[
+          getServiceSchema(
+            'Growth Marketing & Strategy',
+            'Strategic marketing built around the business. Marketing that supports the brand, not marketing for the sake of posting. High-intent acquisition and SEO.',
+            'B2B Growth Marketing & Search Optimization',
+            '/services/marketing'
+          ),
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Services', urlPath: '/services' },
+            { name: 'Growth Marketing', urlPath: '/services/marketing' },
+          ]),
+        ]}
       />
 
       <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black font-sans antialiased overflow-x-hidden">

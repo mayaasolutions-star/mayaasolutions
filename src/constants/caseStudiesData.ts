@@ -30,7 +30,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I worked closely on building the business from the ground up, contributing to its overall strategy, digital presence and communication. My role extended beyond design to creating a cohesive brand experience that aligned business objectives with customer expectations.",
+        text: "We worked closely on building the business from the ground up, contributing to its overall strategy, digital presence and communication. Our role extended beyond design to creating a cohesive brand experience that aligned business objectives with customer expectations.",
         tags: ["Brand Strategy", "Business Planning", "Product Strategy", "Website Planning", "UX & UI Design", "Content Strategy", "Marketing Strategy", "Creative Direction"]
       },
       {
@@ -83,7 +83,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I contributed to building the brand from the ground up by defining its positioning, communication strategy and customer experience. My role included planning the overall brand direction while creating marketing communication that supported long-term business growth.",
+        text: "We contributed to building the brand from the ground up by defining its positioning, communication strategy and customer experience. Our role included planning the overall brand direction while creating marketing communication that supported long-term business growth.",
         tags: ["Brand Strategy", "Business Planning", "Brand Positioning", "Content Strategy", "Marketing Strategy", "Creative Direction", "Campaign Planning", "Visual Communication"]
       },
       {
@@ -130,7 +130,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I contributed to shaping MotoTrek's brand identity, communication strategy and digital presence. My role focused on creating a consistent visual language, planning marketing campaigns and developing creative assets that reflected the brand's adventurous spirit while strengthening customer engagement.",
+        text: "We contributed to shaping MotoTrek's brand identity, communication strategy and digital presence. Our role focused on creating a consistent visual language, planning marketing campaigns and developing creative assets that reflected the brand's adventurous spirit while strengthening customer engagement.",
         tags: ["Brand Strategy", "Brand Identity", "Website Design", "Content Strategy", "Marketing Strategy", "Campaign Planning", "Creative Direction", "Community Communication"]
       },
       {
@@ -309,7 +309,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I developed the complete creative communication for the campaign, from researching occasions and generating campaign ideas to writing the copy, designing the visuals and maintaining a consistent brand voice across every festive communication.",
+        text: "We developed the complete creative communication for the campaign, from researching occasions and generating campaign ideas to writing the copy, designing the visuals and maintaining a consistent brand voice across every festive communication.",
         tags: ["Content Strategy", "Campaign Ideation", "Copywriting", "Creative Direction", "Social Media Design", "Brand Communication"]
       },
       {
@@ -352,7 +352,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I led the brand design process from concept to execution, exploring visual directions, defining the creative identity and developing a cohesive brand system that reflected the restaurant's personality and values.",
+        text: "We led the brand design process from concept to execution, exploring visual directions, defining the creative identity and developing a cohesive brand system that reflected the restaurant's personality and values.",
         tags: ["Brand Strategy", "Brand Identity Design", "Creative Concept Development", "Visual Identity System", "Typography & Colour Direction", "Brand Communication"]
       },
       {
@@ -389,7 +389,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I played a cross-functional leadership role throughout the product lifecycle, contributing from the initial business idea to day-to-day execution. My responsibilities extended beyond product management to business planning, user experience, operations, marketing and continuous product improvement, ensuring every part of the platform worked together to create value for both customers and home chefs.",
+        text: "We played a cross-functional leadership role throughout the product lifecycle, contributing from the initial business idea to day-to-day execution. Our responsibilities extended beyond product management to business planning, user experience, operations, marketing and continuous product improvement, ensuring every part of the platform worked together to create value for both customers and home chefs.",
         tags: ["Business Strategy", "Product Strategy", "Product Management", "Feature Ideation & Prioritisation", "User Research", "UX Planning", "Customer Journey Design", "Operations Planning", "Marketing Strategy", "Campaign Ideation", "Content Strategy", "Copywriting", "Brand Communication", "Creative Direction", "Growth Initiatives", "Cross-functional Collaboration"]
       },
       {
@@ -413,7 +413,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Marketing & Brand Communication",
-        text: "Alongside product development, I led the ideation, planning, copywriting and creative direction for marketing initiatives that supported customer acquisition, home chef onboarding, feature awareness, seasonal campaigns and community engagement. Every communication was designed to educate, build trust and strengthen the Myma brand while supporting business growth.",
+        text: "Alongside product development, We led the ideation, planning, copywriting and creative direction for marketing initiatives that supported customer acquisition, home chef onboarding, feature awareness, seasonal campaigns and community engagement. Every communication was designed to educate, build trust and strengthen the Myma brand while supporting business growth.",
         images: [
           "/images/Myma_Marketing_Post_1.webp",
           "/images/Myma_Marketing_Post_2.webp",
@@ -467,7 +467,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I led the brand design process from concept to execution, exploring visual directions, defining the brand personality and creating a cohesive identity system that reflected the elegance and professionalism of the business.",
+        text: "We led the brand design process from concept to execution, exploring visual directions, defining the brand personality and creating a cohesive identity system that reflected the elegance and professionalism of the business.",
         tags: ["Brand Strategy", "Brand Identity Design", "Creative Concept Development", "Logo & Visual Identity", "Typography & Colour Direction", "Brand Communication"]
       },
       {
@@ -508,7 +508,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I was involved with Swayampoorna Foundation from its early stages, contributing across strategy, execution and day-to-day operations. My role extended beyond creative work to helping shape the foundation's vision, build communities, streamline operations and create communication that encouraged long-term engagement and trust.",
+        text: "We were involved with Swayampoorna Foundation from its early stages, contributing across strategy, execution and day-to-day operations. Our role extended beyond creative work to helping shape the foundation's vision, build communities, streamline operations and create communication that encouraged long-term engagement and trust.",
         tags: ["Business Strategy", "Community Building", "Program Ideation", "Operations Management", "Marketing Strategy", "Campaign Planning", "Content Strategy", "Copywriting", "Social Media Management", "Creative Direction", "Visual Design", "Brand Communication", "Stakeholder Coordination"]
       },
       {
@@ -563,7 +563,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I developed the creative communication for festive and marketing campaigns by researching occasions, generating campaign ideas, writing copy, defining creative concepts and designing the final visuals. Every campaign was planned to strengthen customer relationships while maintaining a consistent and trustworthy brand identity.",
+        text: "We developed the creative communication for festive and marketing campaigns by researching occasions, generating campaign ideas, writing copy, defining creative concepts and designing the final visuals. Every campaign was planned to strengthen customer relationships while maintaining a consistent and trustworthy brand identity.",
         tags: ["Campaign Ideation", "Content Strategy", "Copywriting", "Marketing Communication", "Creative Direction", "Social Media Design", "Brand Communication"]
       },
       {
@@ -612,7 +612,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I led the complete identity design process for each brand, beginning with understanding the business, its goals, customers and positioning. Every concept was carefully explored before developing a visual identity that aligned with the brand's personality and long-term direction.",
+        text: "We led the complete identity design process for each brand, beginning with understanding the business, its goals, customers and positioning. Every concept was carefully explored before developing a visual identity that aligned with the brand's personality and long-term direction.",
         tags: ["Brand Discovery", "Business Understanding", "Brand Positioning", "Creative Concept Development", "Logo Design", "Typography Selection", "Colour Strategy", "Visual Identity Design"]
       },
       {
@@ -656,7 +656,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I was involved throughout the product journey, from understanding business requirements and researching operational challenges to defining product experiences and supporting implementation. As the product evolved, I also led marketing communication by conceptualising campaigns, writing content and designing creatives that introduced features, educated users and strengthened product adoption.",
+        text: "We were involved throughout the product journey, from understanding business requirements and researching operational challenges to defining product experiences and supporting implementation. As the product evolved, I also led marketing communication by conceptualising campaigns, writing content and designing creatives that introduced features, educated users and strengthened product adoption.",
         tags: ["Business Research", "Product Strategy", "Product Management", "Feature Ideation", "User Research", "Workflow Design", "UX Planning", "Operations Planning", "Stakeholder Collaboration", "Implementation Support", "Marketing Strategy", "Campaign Ideation", "Content Strategy", "Copywriting", "Creative Direction", "Visual Design"]
       },
       {
@@ -680,7 +680,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Marketing & Product Communication",
-        text: "Alongside product development, I led the ideation, content planning, copywriting and creative direction for marketing campaigns that introduced new features, explained product capabilities and encouraged user engagement. Every campaign translated operational concepts into simple, relevant communication while maintaining a consistent brand identity across digital channels.",
+        text: "Alongside product development, We led the ideation, content planning, copywriting and creative direction for marketing campaigns that introduced new features, explained product capabilities and encouraged user engagement. Every campaign translated operational concepts into simple, relevant communication while maintaining a consistent brand identity across digital channels.",
         images: [
           "/images/Pavanraje_Multistate_Social_Media_Post_1.webp",
           "/images/Pavanraje_Multistate_Social_Media_Post_2.webp",
@@ -726,7 +726,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I contributed throughout the product and service journey by understanding customer needs, planning operational workflows and improving the overall service experience. Alongside product thinking, I managed day-to-day operations and led the brand's social media communication through campaign ideation, content planning, copywriting and creative execution to build trust and educate customers.",
+        text: "We contributed throughout the product and service journey by understanding customer needs, planning operational workflows and improving the overall service experience. Alongside product thinking, We managed day-to-day operations and led the brand's social media communication through campaign ideation, content planning, copywriting and creative execution to build trust and educate customers.",
         tags: ["Business Research", "Product Strategy", "Service Design", "User Journey Planning", "Workflow Design", "Operations Management", "Customer Experience", "Marketing Strategy", "Campaign Ideation", "Content Strategy", "Copywriting", "Social Media Management", "Creative Direction", "Brand Communication"]
       },
       {
@@ -757,7 +757,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I led the brand identity design process by understanding the clinic's vision, target audience and desired positioning before developing a cohesive visual identity. Every design decision was made to create a timeless and versatile brand that could be consistently applied across customer touchpoints.",
+        text: "We led the brand identity design process by understanding the clinic's vision, target audience and desired positioning before developing a cohesive visual identity. Every design decision was made to create a timeless and versatile brand that could be consistently applied across customer touchpoints.",
         tags: ["Brand Discovery", "Brand Positioning", "Creative Concept Development", "Logo Design", "Visual Identity Design", "Typography Selection", "Colour Strategy", "Stationery Design"]
       },
       {
@@ -795,7 +795,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I independently conceptualised and designed the campaign creatives by exploring layouts, typography, imagery and colour palettes. The project strengthened my understanding of advertising principles and how design choices influence brand perception within the fashion industry.",
+        text: "We conceptualised and designed the campaign creatives by exploring layouts, typography, imagery and colour palettes. The project strengthened our deep understanding of advertising principles and how design choices influence brand perception within the fashion industry.",
         tags: ["Creative Concept Development", "Advertising Design", "Visual Storytelling", "Layout Design", "Typography", "Image Composition", "Presentation Design"]
       },
       {
@@ -827,7 +827,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I developed the packaging concept by understanding the product, defining the visual direction and creating a layout that balanced branding with product communication. Every design decision, from typography and colour selection to information hierarchy, was made to improve usability while strengthening brand recognition.",
+        text: "We developed the packaging concept by understanding the product, defining the visual direction and creating a layout that balanced branding with product communication. Every design decision, from typography and colour selection to information hierarchy, was made to improve usability while strengthening brand recognition.",
         tags: ["Product Understanding", "Packaging Concept Development", "Visual Design", "Packaging Layout Design", "Typography", "Colour Strategy", "Information Hierarchy", "Brand Communication"]
       },
       {
@@ -863,7 +863,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I managed the community-building and marketing initiatives by planning engagement activities, coordinating communication and developing educational campaigns that encouraged long-term participation. My work included campaign ideation, content strategy, copywriting, creative direction and social media management to strengthen both community engagement and brand presence.",
+        text: "We managed the community-building and marketing initiatives by planning engagement activities, coordinating communication and developing educational campaigns that encouraged long-term participation. Our work included campaign ideation, content strategy, copywriting, creative direction and social media management to strengthen both community engagement and brand presence.",
         tags: ["Community Building", "Community Management", "Engagement Strategy", "Marketing Management", "Campaign Ideation", "Content Strategy", "Copywriting", "Educational Marketing", "Social Media Management", "Creative Direction", "Visual Design", "Brand Communication"]
       },
       {
@@ -908,7 +908,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I managed the day-to-day operations of the initiative by coordinating participant activities, streamlining communication and ensuring smooth program execution. Alongside operational management, I planned and created content that educated, guided and encouraged participants throughout their learning journey.",
+        text: "We managed the day-to-day operations of the initiative by coordinating participant activities, streamlining communication and ensuring smooth program execution. Alongside operational management, I planned and created content that educated, guided and encouraged participants throughout their learning journey.",
         tags: ["Operations Management", "Community Coordination", "Participant Engagement", "Content Planning", "Content Creation", "Communication Management", "Process Improvement", "Workflow Coordination"]
       },
       {
@@ -939,7 +939,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I designed print advertisements by planning layouts, organising content and establishing clear visual hierarchies that improved readability without compromising visual appeal. Every creative was developed to communicate important information effectively while maintaining a professional educational brand image.",
+        text: "We designed print advertisements by planning layouts, organising content and establishing clear visual hierarchies that improved readability without compromising visual appeal. Every creative was developed to communicate important information effectively while maintaining a professional educational brand image.",
         tags: ["Print Advertisement Design", "Layout Design", "Information Hierarchy", "Typography", "Visual Communication", "Print Production Design", "Creative Direction"]
       },
       {
@@ -978,7 +978,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I developed marketing communication by planning creative concepts, designing promotional campaigns and creating visually engaging content that aligned with the salon's premium positioning. Every campaign was designed to communicate services effectively while strengthening brand recognition and customer engagement.",
+        text: "We developed marketing communication by planning creative concepts, designing promotional campaigns and creating visually engaging content that aligned with the salon's premium positioning. Every campaign was designed to communicate services effectively while strengthening brand recognition and customer engagement.",
         tags: ["Marketing Communication", "Campaign Ideation", "Content Strategy", "Creative Direction", "Social Media Design", "Promotional Campaign Design", "Visual Communication", "Brand Consistency"]
       },
       {
@@ -1015,7 +1015,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I contributed to branding and marketing initiatives by developing creative concepts, planning campaigns and designing digital communication for businesses across diverse industries. Every project involved understanding the brand's identity and translating it into visually engaging campaigns that supported business goals while maintaining consistency across digital platforms.",
+        text: "We contributed to branding and marketing initiatives by developing creative concepts, planning campaigns and designing digital communication for businesses across diverse industries. Every project involved understanding the brand's identity and translating it into visually engaging campaigns that supported business goals while maintaining consistency across digital platforms.",
         tags: ["Brand Communication", "Branding Support", "Marketing Communication", "Campaign Ideation", "Content Planning", "Creative Direction", "Social Media Design", "Visual Storytelling", "Digital Marketing Creatives"]
       },
       {
@@ -1054,7 +1054,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I developed the brand identity by understanding the brand's vision, target audience and positioning before translating those insights into a cohesive visual system. Every design decision, from colours and typography to supporting brand assets, was made to communicate sustainability while maintaining a clean and premium aesthetic.",
+        text: "We developed the brand identity by understanding the brand's vision, target audience and positioning before translating those insights into a cohesive visual system. Every design decision, from colours and typography to supporting brand assets, was made to communicate sustainability while maintaining a clean and premium aesthetic.",
         tags: ["Brand Discovery", "Brand Positioning", "Creative Concept Development", "Visual Identity Design", "Logo Application", "Typography Selection", "Colour Strategy", "Brand Communication"]
       },
       {
@@ -1092,7 +1092,7 @@ export const CASE_STUDIES_DATA: Record<string, CaseStudyData> = {
       },
       {
         title: "Work Delivered",
-        text: "I contributed to marketing initiatives by developing campaign concepts, planning communication and designing social media creatives for multiple brands. Every campaign was tailored to the client's objectives, ensuring that visual storytelling and messaging worked together to strengthen brand visibility and audience engagement.",
+        text: "We contributed to marketing initiatives by developing campaign concepts, planning communication and designing social media creatives for multiple brands. Every campaign was tailored to the client's objectives, ensuring that visual storytelling and messaging worked together to strengthen brand visibility and audience engagement.",
         tags: ["Marketing Communication", "Campaign Ideation", "Content Planning", "Creative Direction", "Social Media Design", "Visual Communication", "Campaign Design", "Brand Consistency"]
       },
       {

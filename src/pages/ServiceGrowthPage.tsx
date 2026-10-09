@@ -2,30 +2,31 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getServiceSchema, getBreadcrumbSchema } from '../utils/seoMetadata';
 
 export const ServiceGrowthPage: React.FC = () => {
   const growthSteps = [
-    { num: '01', title: 'Growth Strategy', desc: 'Define commercial roadmaps, audience dynamics, and high-leverage market opportunities.' },
-    { num: '02', title: 'Acquisition', desc: 'Drive high-intent customer demand through SEO and targeted campaign architecture.' },
-    { num: '03', title: 'Conversion', desc: 'Engineer high-converting landing pages, inquiry funnels, and optimized touchpoints.' },
-    { num: '04', title: 'Retention', desc: 'Streamline customer experience and touchpoints to maximize repeat value and retention.' },
-    { num: '05', title: 'Measurement & Iteration', desc: 'Transparent inquiry attribution, revenue tracking, and continuous data-driven optimization.' },
+    { num: '01', title: 'Offering Architecture', desc: 'Structure core service tiers, packages, and scopes so clients understand value and commit with confidence.' },
+    { num: '02', title: 'Pipeline Velocity', desc: 'Engineer inquiry qualification stages, proposal turnaround protocols, and proactive follow-ups.' },
+    { num: '03', title: 'Operational Capacity', desc: 'Align delivery teams, resource management, and client onboarding to handle increased project volume.' },
+    { num: '04', title: 'Client Lifetime Value', desc: 'Construct structured progression pathways for existing clients to engage across multiple phases.' },
+    { num: '05', title: 'Executive Visibility', desc: 'Deliver clear dashboards tracking deal pipeline health, team capacity, and gross commercial margins.' },
   ];
 
   const approachSteps = [
-    { num: '01', title: 'Strategy', desc: 'We evaluate your business economics, target customer profiles, and commercial goals.' },
-    { num: '02', title: 'Target', desc: 'We map out high-intent channels, search opportunities, and conversion pathways.' },
-    { num: '03', title: 'Execute', desc: 'We deploy targeted campaigns, technical SEO, and conversion-optimized touchpoints.' },
-    { num: '04', title: 'Measure', desc: 'We track verified inbound inquiries and optimize for sustainable compounding growth.' },
+    { num: '01', title: 'Audit Economics', desc: 'We examine your project margins, operational bottlenecks, and where deals stall in the sales cycle.' },
+    { num: '02', title: 'Model Architecture', desc: 'We design clear service tiers, milestone boundaries, and transparent client engagement agreements.' },
+    { num: '03', title: 'Align Operations', desc: 'We connect commercial promises to backend execution so scaling never compromises delivery standards.' },
+    { num: '04', title: 'Review & Expand', desc: 'We conduct regular reviews to refine workflow throughput and adjust capacity as client demands expand.' },
   ];
 
   const deliverables = [
-    'Comprehensive Growth & Acquisition Strategy',
-    'Technical & On-Page SEO Architecture',
-    'Targeted Campaign Creative & Channel Setup',
-    'High-Converting Landing Pages & Inquiry Funnels',
-    'Customer Touchpoint & Retention Framework',
-    'Attribution & Growth Analytics Dashboard',
+    'Commercial Offering & Scope Architecture',
+    'End-to-End Sales Pipeline & Stage Gates',
+    'Client Onboarding & Project Milestone Protocols',
+    'Account Expansion & Retention Framework',
+    'Operational Visibility & Pipeline Dashboard',
+    'Scalable Team Delivery SOPs (Standard Operating Procedures)',
   ];
 
   return (
@@ -33,6 +34,20 @@ export const ServiceGrowthPage: React.FC = () => {
       <SEO
         title="Business Strategy & Digital Advisory | Mayaa Solutions"
         description="Practical decisions for brand and digital growth. Helping businesses make better brand and digital decisions from requirement to execution."
+        canonicalUrl="https://mayaasolutions.in/services/growth"
+        schema={[
+          getServiceSchema(
+            'Business Strategy & Digital Advisory',
+            'Practical decisions for brand and digital growth. Helping businesses make better brand and digital decisions from requirement to execution.',
+            'Business Strategy Consulting & Digital Advisory',
+            '/services/growth'
+          ),
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Services', urlPath: '/services' },
+            { name: 'Business Strategy & Growth', urlPath: '/services/growth' },
+          ]),
+        ]}
       />
 
       <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black font-sans antialiased overflow-x-hidden">

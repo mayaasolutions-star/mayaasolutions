@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getArticleSchema, getBreadcrumbSchema } from '../utils/seoMetadata';
 import { ARTICLES_DATA } from '../constants/articlesData';
 import { ArrowLeft, Clock, Share2, Linkedin, Twitter } from 'lucide-react';
 import { ContactCTA } from '../sections/ContactCTA';
@@ -11,7 +12,21 @@ export const ArticleDetailPage: React.FC = () => {
 
   return (
     <>
-      <SEO title={`${article.title} | Mayaa Solutions Insights`} description={article.summary} />
+      <SEO
+        title={`${article.title} | Mayaa Solutions Insights`}
+        description={article.summary}
+        ogType="article"
+        ogImage={article.heroImage}
+        canonicalUrl={`https://mayaasolutions.in/insights/${article.slug}`}
+        schema={[
+          getArticleSchema(article),
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Insights', urlPath: '/insights' },
+            { name: article.title, urlPath: `/insights/${article.slug}` },
+          ]),
+        ]}
+      />
 
       <main className="pt-32 pb-24 bg-studio-950">
         <article className="max-w-4xl mx-auto px-6 md:px-12 space-y-12">
@@ -77,6 +92,37 @@ export const ArticleDetailPage: React.FC = () => {
                 )}
               </div>
             ))}
+          </div>
+
+          {/* Contextual Related Capability Link */}
+          <div className="pt-6">
+            <div className="p-6 md:p-8 bg-white border border-studio-850 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+              <div className="space-y-1">
+                <span className="text-xs font-mono uppercase tracking-wider text-studio-400 font-bold">Related Capability</span>
+                <p className="text-base font-extrabold text-studio-100">
+                  {article.slug === 'before-you-build-a-brand' && 'Looking to establish or elevate your market positioning?'}
+                  {article.slug === 'before-you-design' && 'Planning a high-converting B2B website or digital experience?'}
+                  {article.slug === 'pm-behind-the-interview' && 'Looking to connect digital workflows and operational systems?'}
+                </p>
+              </div>
+              <Link
+                to={
+                  article.slug === 'before-you-build-a-brand'
+                    ? '/brand'
+                    : article.slug === 'before-you-design'
+                    ? '/websites'
+                    : '/business-systems'
+                }
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-studio-100 text-white rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-studio-200 transition-colors shrink-0"
+              >
+                <span>
+                  {article.slug === 'before-you-build-a-brand' && 'Explore Brand Building'}
+                  {article.slug === 'before-you-design' && 'Explore Website Design'}
+                  {article.slug === 'pm-behind-the-interview' && 'Explore Business Systems'}
+                </span>
+                <ArrowLeft className="w-3.5 h-3.5 rotate-180" />
+              </Link>
+            </div>
           </div>
 
         </article>

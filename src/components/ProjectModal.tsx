@@ -97,16 +97,36 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
               </div>
               <div>
                 <span className="text-studio-400 block font-medium uppercase tracking-wider text-[10px]">Year</span>
-                <span className="text-studio-100 font-extrabold text-sm">{project.year}</span>
+                <span className="text-studio-100 font-extrabold text-sm font-mono">{project.year}</span>
               </div>
               <div>
-                <span className="text-studio-400 block font-medium uppercase tracking-wider text-[10px]">Service Area</span>
-                <span className="text-studio-100 font-extrabold text-sm">{project.categorySlug.toUpperCase()}</span>
+                <span className="text-studio-400 block font-medium uppercase tracking-wider text-[10px]">Primary Capability</span>
+                <Link
+                  to={
+                    project.categorySlug === 'branding'
+                      ? '/brand'
+                      : project.categorySlug === 'website'
+                      ? '/websites'
+                      : project.categorySlug === 'product'
+                      ? '/business-systems'
+                      : '/services/growth'
+                  }
+                  onClick={onClose}
+                  className="text-studio-100 hover:text-studio-400 font-extrabold text-sm inline-flex items-center gap-1 underline underline-offset-2 transition-colors"
+                >
+                  {project.categorySlug === 'branding'
+                    ? 'Brand Building'
+                    : project.categorySlug === 'website'
+                    ? 'Websites'
+                    : project.categorySlug === 'product'
+                    ? 'Business Systems'
+                    : 'Growth Management'} →
+                </Link>
               </div>
               <div>
-                <span className="text-studio-400 block font-medium uppercase tracking-wider text-[10px]">Status</span>
+                <span className="text-studio-400 block font-medium uppercase tracking-wider text-[10px]">Execution Status</span>
                 <span className="text-emerald-700 font-extrabold text-sm flex items-center gap-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> Completed
+                  <CheckCircle2 className="w-3.5 h-3.5" /> Delivered & Handed Over
                 </span>
               </div>
             </div>
@@ -246,13 +266,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
           {/* Modal Footer */}
           <div className="p-6 border-t border-studio-850 bg-studio-900 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <span className="text-xs text-studio-400 font-medium">Want similar results for your business?</span>
+            <span className="text-xs text-studio-400 font-medium">Interested in a similar solution for your business?</span>
             <Link
-              to="/contact"
+              to={`/contact?service=${project.categorySlug}`}
               onClick={onClose}
               className="w-full sm:w-auto px-6 py-3 bg-studio-100 text-studio-950 font-extrabold text-xs uppercase tracking-wider rounded-full hover:bg-studio-200 transition-colors flex items-center justify-center gap-2 shadow-sm"
             >
-              Get In Touch <ArrowRight className="w-4 h-4" />
+              Discuss a Similar Project <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </motion.div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getBreadcrumbSchema } from '../utils/seoMetadata';
 import { ARTICLES_DATA } from '../constants/articlesData';
 import { ArrowUpRight, BookOpen, Clock } from 'lucide-react';
 import { ContactCTA } from '../sections/ContactCTA';
@@ -11,6 +12,13 @@ export const ArticlesPage: React.FC = () => {
       <SEO
         title="Insights & Strategy Guides | Mayaa Solutions"
         description="Read strategic essays and frameworks on brand building, website UX, business strategy, and digital growth."
+        canonicalUrl="https://mayaasolutions.in/insights"
+        schema={[
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Insights', urlPath: '/insights' },
+          ]),
+        ]}
       />
 
       <main className="pt-32 pb-20 bg-studio-950">

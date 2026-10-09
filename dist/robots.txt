@@ -1,0 +1,6 @@
+# Mayaa Solutions - Technical SEO robots.txt
+User-agent: *
+Allow: /
+Disallow: /payment-success
+
+Sitemap: https://mayaasolutions.in/sitemap.xml

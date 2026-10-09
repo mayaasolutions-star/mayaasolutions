@@ -81,7 +81,12 @@ export const PaymentSuccessPage: React.FC = () => {
 
   return (
     <>
-      <SEO title="Payment Confirmed | Mayaa Solutions" description="Your purchase has been verified and processed." />
+      <SEO 
+        title="Payment Confirmed | Mayaa Solutions" 
+        description="Your purchase has been verified and processed." 
+        noindex={true}
+        robots="noindex, nofollow"
+      />
 
       <main className="min-h-screen pt-32 pb-24 bg-studio-950 flex items-center justify-center">
         <div className="max-w-lg w-full mx-auto px-6 text-center space-y-6">

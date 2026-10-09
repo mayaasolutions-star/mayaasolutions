@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getBreadcrumbSchema } from '../utils/seoMetadata';
 
 interface ServiceRow {
   number: string;
@@ -16,30 +17,30 @@ export const ServicesPage: React.FC = () => {
     {
       number: '01',
       title: 'BRAND BUILDING',
-      problem: 'Starting from zero? We build the brand from the ground up.',
-      solution: 'Strategy, identity, design, launch & execution.',
-      path: '/services/brand-building',
+      problem: 'Need authoritative market positioning that commands trust?',
+      solution: 'Brand strategy, visual identity architecture, and rollout systems.',
+      path: '/brand',
     },
     {
       number: '02',
-      title: 'DIGITAL DESIGN',
-      problem: 'Your business needs a stronger digital presence.',
-      solution: 'We design websites and digital experiences that work.',
-      path: '/services/digital-design',
+      title: 'WEBSITES & DIGITAL EXPERIENCES',
+      problem: 'Your business needs a digital headquarters that converts.',
+      solution: 'High-performance React websites with sub-second speeds.',
+      path: '/websites',
     },
     {
       number: '03',
-      title: 'GROWTH',
-      problem: 'Your brand is built. Now it needs to be seen.',
-      solution: 'We support growth through content, campaigns & marketing.',
-      path: '/services/growth',
+      title: 'BUSINESS MANAGEMENT SYSTEMS',
+      problem: "Your business is scaling, but spreadsheets are slowing you down.",
+      solution: 'Custom operational software, CRM, and team workflows.',
+      path: '/business-systems',
     },
     {
       number: '04',
-      title: 'BUSINESS',
-      problem: "Your business is growing. Your systems aren't.",
-      solution: 'We build smarter ways to work.',
-      path: '/business-tools',
+      title: 'COMMERCIAL GROWTH & MARKETING',
+      problem: 'Your brand and systems are built. Now demand must scale.',
+      solution: 'High-intent search acquisition, positioning advisory, and conversion funnels.',
+      path: '/services/growth',
     },
   ];
 
@@ -48,6 +49,13 @@ export const ServicesPage: React.FC = () => {
       <SEO
         title="Services | Mayaa Solutions"
         description="What does your business need to build? Explore Mayaa Solutions' core capabilities: Brand Building, Digital Design, Growth, and Business Systems."
+        canonicalUrl="https://mayaasolutions.in/services"
+        schema={[
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Services', urlPath: '/services' },
+          ]),
+        ]}
       />
       <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black font-sans antialiased overflow-x-hidden pt-28 pb-20 md:pt-36 md:pb-28 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
@@ -106,6 +114,33 @@ export const ServicesPage: React.FC = () => {
                 </Link>
               </motion.div>
             ))}
+          </div>
+
+          {/* Bottom Conversion & Work Exploration Section */}
+          <div className="pt-16 pb-12 flex flex-col md:flex-row items-center justify-between gap-8 border-t border-neutral-900 mt-12">
+            <div className="space-y-2 text-center md:text-left">
+              <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#A0A0A0]">
+                Proof & Action
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
+                See what these capabilities look like in practice.
+              </h2>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <Link
+                to="/our-work"
+                className="px-7 py-3.5 bg-neutral-900 border border-neutral-800 text-white font-extrabold text-xs uppercase tracking-wider rounded-full hover:bg-neutral-800 transition-all inline-flex items-center gap-2"
+              >
+                <span>View Selected Work</span> →
+              </Link>
+              <Link
+                to="/contact"
+                className="px-7 py-3.5 bg-white text-black font-extrabold text-xs uppercase tracking-wider rounded-full hover:bg-neutral-200 transition-all inline-flex items-center gap-2"
+              >
+                <span>Start a Project</span> →
+              </Link>
+            </div>
           </div>
 
         </div>

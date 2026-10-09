@@ -26,6 +26,28 @@ import { ArticlesPage } from './pages/ArticlesPage';
 import { ArticleDetailPage } from './pages/ArticleDetailPage';
 import { TermsPage } from './pages/TermsPage';
 import { PaymentSuccessPage } from './pages/PaymentSuccessPage';
+import { GlobalMarketsPage } from './pages/GlobalMarketsPage';
+import { MarketDetailPage } from './pages/MarketDetailPage';
+import { DubaiMarketPage } from './pages/DubaiMarketPage';
+import { UsaMarketPage } from './pages/UsaMarketPage';
+import { AustraliaMarketPage } from './pages/AustraliaMarketPage';
+import { UkMarketPage } from './pages/UkMarketPage';
+import { SingaporeMarketPage } from './pages/SingaporeMarketPage';
+import { GermanyMarketPage } from './pages/GermanyMarketPage';
+import { ParisMarketPage } from './pages/ParisMarketPage';
+import { SaudiArabiaMarketPage } from './pages/SaudiArabiaMarketPage';
+import { AbuDhabiMarketPage } from './pages/AbuDhabiMarketPage';
+import { NorwayMarketPage } from './pages/NorwayMarketPage';
+import { IrelandMarketPage } from './pages/IrelandMarketPage';
+import { AustriaMarketPage } from './pages/AustriaMarketPage';
+import { PolandMarketPage } from './pages/PolandMarketPage';
+import { SwitzerlandMarketPage } from './pages/SwitzerlandMarketPage';
+import { NetherlandsMarketPage } from './pages/NetherlandsMarketPage';
+import { DenmarkMarketPage } from './pages/DenmarkMarketPage';
+import { SwedenMarketPage } from './pages/SwedenMarketPage';
+import { BelgiumMarketPage } from './pages/BelgiumMarketPage';
+import { FinlandMarketPage } from './pages/FinlandMarketPage';
+import { LuxembourgMarketPage } from './pages/LuxembourgMarketPage';
 import { ProductItem as ProductDataItem } from './constants/productsData';
 import { ProjectItem } from './constants/portfolioData';
 import { AnalyticsTracker } from './components/AnalyticsTracker';
@@ -70,20 +92,55 @@ const AppContent: React.FC<{
       <div className="flex-1">
           <PaymentSuccessHandler>
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route
+                path="/"
+                element={
+                  <HomePage
+                    onSelectProject={(project) => setSelectedProject(project)}
+                  />
+                }
+              />
             <Route path="/about" element={<AboutPage />} />
             
             {/* Core Services Hub & Detail Pages */}
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/brand" element={<ServiceBrandingPage />} />
             <Route path="/services/branding" element={<ServiceBrandingPage />} />
             <Route path="/services/brand-building" element={<ServiceBrandingPage />} />
-            <Route path="/services/website" element={<ServiceWebsitePage />} />
-            <Route path="/services/digital-design" element={<ServiceWebsitePage />} />
+            <Route path="/services/website" element={<Navigate to="/websites" replace />} />
+            <Route path="/services/digital-design" element={<Navigate to="/websites" replace />} />
             <Route path="/services/marketing" element={<ServiceMarketingPage />} />
             <Route path="/services/growth" element={<ServiceGrowthPage />} />
-            <Route path="/services/business-growth" element={<BusinessToolsPage />} />
-            <Route path="/business-tools" element={<BusinessToolsPage />} />
+            <Route path="/business-systems" element={<BusinessToolsPage />} />
+            <Route path="/business-tools" element={<Navigate to="/business-systems" replace />} />
+            <Route path="/services/business-growth" element={<Navigate to="/business-systems" replace />} />
             <Route path="/websites" element={<WebsitesPage />} />
+
+            {/* Global Markets Hub & Dedicated Target Market Pages (All 20 Markets) */}
+            <Route path="/global-markets" element={<GlobalMarketsPage />} />
+            <Route path="/global-markets/dubai" element={<DubaiMarketPage />} />
+            <Route path="/global-markets/uae" element={<Navigate to="/global-markets/dubai" replace />} />
+            <Route path="/global-markets/usa" element={<UsaMarketPage />} />
+            <Route path="/global-markets/australia" element={<AustraliaMarketPage />} />
+            <Route path="/global-markets/uk" element={<UkMarketPage />} />
+            <Route path="/global-markets/singapore" element={<SingaporeMarketPage />} />
+            <Route path="/global-markets/germany" element={<GermanyMarketPage />} />
+            <Route path="/global-markets/paris" element={<ParisMarketPage />} />
+            <Route path="/global-markets/netherlands" element={<NetherlandsMarketPage />} />
+            <Route path="/global-markets/saudi-arabia" element={<SaudiArabiaMarketPage />} />
+            <Route path="/global-markets/denmark" element={<DenmarkMarketPage />} />
+            <Route path="/global-markets/abu-dhabi" element={<AbuDhabiMarketPage />} />
+            <Route path="/global-markets/sweden" element={<SwedenMarketPage />} />
+            <Route path="/global-markets/norway" element={<NorwayMarketPage />} />
+            <Route path="/global-markets/switzerland" element={<SwitzerlandMarketPage />} />
+            <Route path="/global-markets/ireland" element={<IrelandMarketPage />} />
+            <Route path="/global-markets/belgium" element={<BelgiumMarketPage />} />
+            <Route path="/global-markets/austria" element={<AustriaMarketPage />} />
+            <Route path="/global-markets/finland" element={<FinlandMarketPage />} />
+            <Route path="/global-markets/poland" element={<PolandMarketPage />} />
+            <Route path="/global-markets/luxembourg" element={<LuxembourgMarketPage />} />
+            <Route path="/global-markets/france" element={<Navigate to="/global-markets/paris" replace />} />
+            <Route path="/global-markets/:countrySlug" element={<MarketDetailPage />} />
 
             {/* Products & Starter Packages Hub & Detail Pages (All 13 Products) */}
             <Route path="/products" element={<ProductsPage onOpenCheckout={(prod) => setCheckoutProduct(prod)} />} />
@@ -152,9 +209,7 @@ const AppContent: React.FC<{
         </PaymentSuccessHandler>
       </div>
 
-        {!location.pathname.startsWith('/') || location.pathname !== '/' ? (
-          isProductRoute ? <ProductFooter /> : <Footer />
-        ) : null}
+        {isProductRoute ? <ProductFooter /> : <Footer />}
         <ScrollToTop />
 
         <ProjectModal

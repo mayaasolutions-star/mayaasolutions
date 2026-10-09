@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Instagram, Linkedin, Facebook, Mail, Globe } from 'lucide-react';
+import { Mail, Globe, Linkedin, Instagram, Facebook } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -18,16 +18,16 @@ export const Footer: React.FC = () => {
               />
             </Link>
             <p className="text-studio-300 text-sm leading-relaxed max-w-md font-medium">
-              We build brands, websites, digital products and business tools for businesses that want to build something meaningful.
+              We build brands, websites, digital products and business management systems for businesses that want to build something meaningful.
             </p>
 
             <div className="flex items-center gap-4 pt-2">
               <a
-                href="mailto:contact@mayaasolutions.com"
+                href="mailto:contact@mayaasolutions.in"
                 className="inline-flex items-center gap-2 text-sm font-bold text-studio-100 hover:text-studio-400 transition-colors"
               >
                 <Mail className="w-4 h-4 text-studio-100" />
-                contact@mayaasolutions.com
+                contact@mayaasolutions.in
               </a>
             </div>
           </div>
@@ -40,24 +40,26 @@ export const Footer: React.FC = () => {
             <ul className="flex flex-col gap-3 text-sm font-semibold text-studio-300">
               <li><Link to="/" className="hover:text-studio-100 transition-colors">Home</Link></li>
               <li><Link to="/services" className="hover:text-studio-100 transition-colors">Services</Link></li>
-              <li><Link to="/industries" className="hover:text-studio-100 transition-colors">Industries</Link></li>
+              <li><Link to="/business-systems" className="hover:text-studio-100 transition-colors">Business Systems</Link></li>
               <li><Link to="/our-work" className="hover:text-studio-100 transition-colors">Our Work</Link></li>
+              <li><Link to="/global-markets" className="hover:text-studio-100 transition-colors">Global Markets</Link></li>
               <li><Link to="/about" className="hover:text-studio-100 transition-colors">About</Link></li>
               <li><Link to="/contact" className="hover:text-studio-100 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
-          {/* Core Services */}
+          {/* Core Services & Resources */}
           <div className="md:col-span-3 flex flex-col gap-4">
             <span className="text-xs font-bold uppercase tracking-wider text-studio-400">
-              Services
+              <Link to="/services" className="hover:text-studio-100 transition-colors">Capabilities & Insights</Link>
             </span>
             <ul className="flex flex-col gap-3 text-sm font-semibold text-studio-300">
-              <li><Link to="/services/branding" className="hover:text-studio-100 transition-colors">Brand Building</Link></li>
+              <li><Link to="/brand" className="hover:text-studio-100 transition-colors">Brand Building</Link></li>
+              <li><Link to="/websites" className="hover:text-studio-100 transition-colors">Websites & Digital Experiences</Link></li>
+              <li><Link to="/business-systems" className="hover:text-studio-100 transition-colors">Personalised Business Systems</Link></li>
               <li><Link to="/services/growth" className="hover:text-studio-100 transition-colors">Growth Management</Link></li>
-              <li><Link to="/products" className="hover:text-studio-100 transition-colors">Product Management</Link></li>
-              <li><Link to="/websites" className="hover:text-studio-100 transition-colors">Websites</Link></li>
-              <li><Link to="/business-tools" className="hover:text-studio-100 transition-colors">Business Tools</Link></li>
+              <li><Link to="/insights" className="hover:text-studio-100 transition-colors">Articles & Insights</Link></li>
+              <li><Link to="/products" className="hover:text-studio-100 transition-colors">Starter Packages & Products</Link></li>
             </ul>
           </div>
 

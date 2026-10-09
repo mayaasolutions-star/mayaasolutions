@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import { getBreadcrumbSchema } from '../utils/seoMetadata';
 import { PRODUCTS_DATA, ProductItem } from '../constants/productsData';
 import { ArrowRight, CheckCircle2, Clock } from 'lucide-react';
 
@@ -63,6 +64,13 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenCheckout }) =>
       <SEO
         title="Products & Resources | Mayaa Solutions"
         description="Practical resources and personalised services for businesses, creatives and product professionals."
+        canonicalUrl="https://mayaasolutions.in/products"
+        schema={[
+          getBreadcrumbSchema([
+            { name: 'Home', urlPath: '/' },
+            { name: 'Products', urlPath: '/products' },
+          ]),
+        ]}
       />
 
       <main className="pt-24 sm:pt-28 pb-16 bg-studio-950">
@@ -79,8 +87,8 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenCheckout }) =>
             Made to Help You <br className="hidden sm:block" />
             <span className="text-[#171717] font-extrabold">Build Better.</span>
           </h1>
-          <p className="text-base sm:text-lg text-[#333333] font-normal leading-relaxed max-w-xl mx-auto">
-            Resources and personalized services designed to help you make better business decisions.
+          <p className="text-base sm:text-lg text-studio-300 font-normal leading-relaxed max-w-2xl mx-auto">
+            Practical diagnostic blueprints and starter service packages designed for founders and early-stage entrepreneurs. All fees paid for starter packages (₹499–₹999) are 100% credited toward full bespoke brand and web engagements with Mayaa Solutions.
           </p>
         </section>
 
