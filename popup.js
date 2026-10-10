@@ -498,6 +498,6 @@ async function startPayment() {
 function onPaymentSuccess(){
   setPanel('fsThanks');
   document.getElementById('stepTitle').textContent='Thank you';
-  document.getElementById('stepLabel').textContent='Design — one last step';
+  document.getElementById('stepLabel').textContent='Design: one last step';
   document.getElementById('pbar').style.display='none';
 }

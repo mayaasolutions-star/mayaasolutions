@@ -51,7 +51,7 @@ const GERMANY_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements and invoicing structured for German enterprises?',
     answer:
-      'We quote and invoice directly in Euros (EUR) on transparent, milestone-governed contracts. Every phase—from process mapping and blueprinting to delivery and deployment—is tied to explicit acceptance criteria. Furthermore, our bespoke systems have zero perpetual per-user licensing fees, ensuring predictable capital allocation.',
+      'We quote and invoice directly in Euros (EUR) on transparent, milestone-governed contracts. Every phase, from process mapping and blueprinting to delivery and deployment, is tied to explicit acceptance criteria. Furthermore, our bespoke systems have zero perpetual per-user licensing fees, ensuring predictable capital allocation.',
   },
 ];
 
@@ -183,7 +183,7 @@ export const GermanyMarketPage: React.FC = () => {
 
       <div className="bg-[#080B10] text-[#F3F4F6] min-h-screen selection:bg-white selection:text-black font-sans antialiased">
 
-        {/* 01. HERO — THE BLUEPRINT OPENING */}
+        {/* 01. HERO: THE BLUEPRINT OPENING */}
         <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 px-6 md:px-12 border-b border-white/[0.08] overflow-hidden">
           {/* Subtle architectural engineering background texture */}
           <div className="absolute inset-0 z-0 opacity-15 pointer-events-none mix-blend-luminosity">
@@ -331,19 +331,19 @@ export const GermanyMarketPage: React.FC = () => {
                 </div>
                 <ul className="space-y-3 text-xs text-[#9CA3AF] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-[#EAB308] font-mono">—</span>
+                    <span className="text-[#EAB308] font-mono">-</span>
                     <span>Costing formulas living inside one senior engineer's personal spreadsheet.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#EAB308] font-mono">—</span>
+                    <span className="text-[#EAB308] font-mono">-</span>
                     <span>Customer agreements and technical requirements buried across email threads.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#EAB308] font-mono">—</span>
+                    <span className="text-[#EAB308] font-mono">-</span>
                     <span>Project milestones and sub-trade statuses discussed verbally but unrecorded.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#EAB308] font-mono">—</span>
+                    <span className="text-[#EAB308] font-mono">-</span>
                     <span>Geschäftsführung needing manual summaries to verify project margins.</span>
                   </li>
                 </ul>

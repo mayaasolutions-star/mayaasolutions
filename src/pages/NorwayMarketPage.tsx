@@ -42,7 +42,7 @@ const NORWAY_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements and invoicing structured for Norwegian enterprises?',
     answer:
-      'Contracts are fixed-scope, milestone-governed, and invoiced transparently in Norwegian Krone (NOK) or Euros (EUR). Each phase—from workflow discovery to final rollout—has explicit acceptance criteria. Clients retain 100% intellectual property ownership of the codebase upon delivery, with zero recurring per-seat SaaS license fees.',
+      'Contracts are fixed-scope, milestone-governed, and invoiced transparently in Norwegian Krone (NOK) or Euros (EUR). Each phase, from workflow discovery to final rollout, has explicit acceptance criteria. Clients retain 100% intellectual property ownership of the codebase upon delivery, with zero recurring per-seat SaaS license fees.',
   },
 ];
 
@@ -641,7 +641,7 @@ export const NorwayMarketPage: React.FC = () => {
                   >
                     <span className="text-base sm:text-lg font-light">{faq.question}</span>
                     <span className="text-xs font-mono text-white/50 flex-shrink-0">
-                      {openFaq === idx ? '—' : '+'}
+                      {openFaq === idx ? '-' : '+'}
                     </span>
                   </button>
                   <AnimatePresence>

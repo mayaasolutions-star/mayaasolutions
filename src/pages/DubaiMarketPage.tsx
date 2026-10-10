@@ -42,7 +42,7 @@ const DUBAI_FAQS: FAQItem[] = [
   {
     question: 'Can your business systems integrate with WhatsApp Business and our current workflow?',
     answer:
-      'Yes. In Dubai, WhatsApp is the dominant commercial communication channel. We engineer tailored connectors using the official WhatsApp Business Cloud API to capture incoming inquiries, assign them to team members, trigger automated follow-up cadences, and log conversations directly into your centralized client workspace—eliminating lost messages and unassigned leads.',
+      'Yes. In Dubai, WhatsApp is the dominant commercial communication channel. We engineer tailored connectors using the official WhatsApp Business Cloud API to capture incoming inquiries, assign them to team members, trigger automated follow-up cadences, and log conversations directly into your centralized client workspace, eliminating lost messages and unassigned leads.',
   },
   {
     question: 'How do you ensure data confidentiality and infrastructure security for UAE companies?',
@@ -52,7 +52,7 @@ const DUBAI_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements and invoicing structured for Dubai businesses?',
     answer:
-      'We quote and invoice transparently in UAE Dirhams (AED) on fixed-scope, milestone-based agreements. Each development phase—from workflow mapping to production deployment—has defined acceptance criteria. Furthermore, our bespoke systems carry zero perpetual per-user software licensing fees, giving your business predictable capital expenditure.',
+      'We quote and invoice transparently in UAE Dirhams (AED) on fixed-scope, milestone-based agreements. Each development phase, from workflow mapping to production deployment, has defined acceptance criteria. Furthermore, our bespoke systems carry zero perpetual per-user software licensing fees, giving your business predictable capital expenditure.',
   },
 ];
 
@@ -393,7 +393,7 @@ export const DubaiMarketPage: React.FC = () => {
                   </div>
 
                   <p className="text-sm sm:text-base text-[#9CA3AF] leading-relaxed font-light">
-                    Scaling in Dubai should mean larger contracts and higher margins—not having leadership chase five people to find the status of one invoice or delivery milestone.
+                    Scaling in Dubai should mean larger contracts and higher margins, not having leadership chase five people to find the status of one invoice or delivery milestone.
                   </p>
                   <p className="text-sm sm:text-base text-[#9CA3AF] leading-relaxed font-light">
                     Mayaa builds the bespoke operational layer: capturing incoming interest, coordinating team responsibilities, and giving owners continuous visibility.
@@ -718,7 +718,7 @@ export const DubaiMarketPage: React.FC = () => {
             <div className="space-y-3 text-base sm:text-xl text-[#9CA3AF] font-light leading-relaxed max-w-2xl mx-auto">
               <p>Tell us how you currently manage inquiries, client negotiations, project handoffs, and teams.</p>
               <p className="text-[#D1D5DB]">
-                We'll identify where your business is losing time, visibility, or revenue—and outline exactly what could be engineered to support your growth.
+                We'll identify where your business is losing time, visibility, or revenue, and outline exactly what could be engineered to support your growth.
               </p>
             </div>
 

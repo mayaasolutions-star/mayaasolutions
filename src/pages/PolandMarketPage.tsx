@@ -444,7 +444,7 @@ export const PolandMarketPage: React.FC = () => {
               <span className="text-[#9CA3AF]">MAKE THE SOFTWARE FIT THE BUSINESS.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
-              Generic off-the-shelf software is designed for averages. Your business is not average. Mayaa studies how your organisation actually calculates, sells, coordinates and delivers work—then builds a personalized system around that workflow.
+              Generic off-the-shelf software is designed for averages. Your business is not average. Mayaa studies how your organisation actually calculates, sells, coordinates and delivers work, then builds a personalized system around that workflow.
             </p>
 
             {/* The 6-Stage Process Flow */}
@@ -545,7 +545,7 @@ export const PolandMarketPage: React.FC = () => {
                 In competitive markets, the client experience begins long before the order is delivered. Quality is also how quickly an initial enquiry is answered, how clearly a technical proposal is presented, how easily an international customer grasps your capabilities, and how consistently your team follows a proven process.
               </p>
               <p>
-                It is also how quickly leadership can view active project timelines, and how confidently the company presents itself in international tenders. Brand, digital experience, and operations are not separate problems—they are parts of the same commercial engine.
+                It is also how quickly leadership can view active project timelines, and how confidently the company presents itself in international tenders. Brand, digital experience, and operations are not separate problems; they are parts of the same commercial engine.
               </p>
             </div>
 
@@ -729,7 +729,7 @@ export const PolandMarketPage: React.FC = () => {
                   >
                     <span className="text-base sm:text-lg font-light">{faq.question}</span>
                     <span className="text-xs font-mono text-white/50 flex-shrink-0">
-                      {openFaq === idx ? '—' : '+'}
+                      {openFaq === idx ? '-' : '+'}
                     </span>
                   </button>
                   <AnimatePresence>

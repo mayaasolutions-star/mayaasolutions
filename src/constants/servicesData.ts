@@ -202,7 +202,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       },
       {
         question: 'How does strategy connect to design and development at Mayaa?',
-        answer: 'Strategy directly informs our brand building, website development, and digital tools—ensuring every design and technical decision serves a defined commercial purpose.'
+        answer: 'Strategy directly informs our brand building, website development, and digital tools, ensuring every design and technical decision serves a defined commercial purpose.'
       }
     ]
   }

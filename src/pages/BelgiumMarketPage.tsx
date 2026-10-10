@@ -53,7 +53,7 @@ const BELGIUM_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements and invoicing structured?',
     answer:
-      'We quote and invoice transparently in Euros (EUR) on fixed-scope, milestone-governed contracts. Each development phase—from process mapping to production handover—has explicit acceptance criteria. Furthermore, our bespoke systems carry zero recurring per-user software licensing fees, ensuring predictable capital allocation.',
+      'We quote and invoice transparently in Euros (EUR) on fixed-scope, milestone-governed contracts. Each development phase, from process mapping to production handover, has explicit acceptance criteria. Furthermore, our bespoke systems carry zero recurring per-user software licensing fees, ensuring predictable capital allocation.',
   },
 ];
 
@@ -236,19 +236,19 @@ export const BelgiumMarketPage: React.FC = () => {
                 </div>
                 <ul className="space-y-3 text-xs text-[#9CA3AF] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-[#D97706] font-mono">—</span>
+                    <span className="text-[#D97706] font-mono">-</span>
                     <span>Multilingual inquiries arriving via web forms and email without automatic routing.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#D97706] font-mono">—</span>
+                    <span className="text-[#D97706] font-mono">-</span>
                     <span>Contract variations and scope amendments buried in personal email threads.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#D97706] font-mono">—</span>
+                    <span className="text-[#D97706] font-mono">-</span>
                     <span>Project milestones managed in offline spreadsheets that desynchronize instantly.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#D97706] font-mono">—</span>
+                    <span className="text-[#D97706] font-mono">-</span>
                     <span>Executive leadership needing manual summaries to verify monthly operational margins.</span>
                   </li>
                 </ul>

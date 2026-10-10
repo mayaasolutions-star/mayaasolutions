@@ -85,24 +85,29 @@ export const HomeSystemsShowcase: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
           {/* Video Container (7 cols) */}
           <div className="lg:col-span-7">
-            <div className="relative rounded-2xl overflow-hidden border border-neutral-800 bg-black shadow-2xl group">
-              <video
-                src="/images/BMS - Tool.mp4"
-                poster="/images/service_business_growth.webp"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-auto aspect-video object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-mono text-neutral-400 pointer-events-none">
-                <span className="px-2.5 py-1 rounded bg-black/80 backdrop-blur border border-neutral-800 text-neutral-300">
-                  Mayaa BMS · Workflow Architecture Demo
-                </span>
-                <span className="hidden sm:inline text-neutral-500">
-                  Custom Engineering · Zero Licensing Bloat
-                </span>
+            <div className="relative rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-950 p-2 sm:p-2.5 shadow-2xl group">
+              <div
+                className="relative rounded-xl overflow-hidden bg-black border border-neutral-900 w-full"
+                style={{ aspectRatio: '1920 / 920' }}
+              >
+                <video
+                  src="/images/BMS - Tool.mp4"
+                  poster="/images/service_business_growth.webp"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-contain"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono text-neutral-400 pointer-events-none">
+                  <span className="px-2.5 py-1 rounded bg-black/85 backdrop-blur border border-neutral-800 text-neutral-200">
+                    Mayaa BMS · Workflow Architecture Demo
+                  </span>
+                  <span className="hidden sm:inline text-neutral-400">
+                    Custom Engineering · Zero Licensing Bloat
+                  </span>
+                </div>
               </div>
             </div>
           </div>

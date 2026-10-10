@@ -145,14 +145,28 @@ export const WebsitePreviewCard: React.FC<WebsitePreviewCardProps> = ({
 
       {/* 3. Subtle Action Row */}
       <div className="mt-3.5 flex items-center justify-between gap-2 text-xs font-bold text-studio-100">
-        <span className="inline-flex items-center gap-1 group-hover:translate-x-0.5 transition-transform duration-200 shrink-0">
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="inline-flex items-center gap-1 group-hover:translate-x-0.5 transition-transform duration-200 shrink-0 hover:underline"
+          title={`Open ${project.displayUrl} in a new tab`}
+        >
           <span>Explore Website</span>
           <span className="text-studio-400 group-hover:text-studio-100 transition-colors">↗</span>
-        </span>
+        </a>
 
-        <span className="text-[11px] font-mono text-studio-400 font-normal truncate">
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="text-[11px] font-mono text-studio-400 hover:text-studio-100 font-normal truncate transition-colors"
+          title={`Open ${project.displayUrl} in a new tab`}
+        >
           {project.displayUrl}
-        </span>
+        </a>
       </div>
     </article>
   );

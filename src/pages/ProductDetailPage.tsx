@@ -113,7 +113,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenChec
         </div>
 
         {/* ================================================== */}
-        {/* 1. PRODUCT STORE HERO — EDITORIAL COVER & PREVIEW   */}
+        {/* 1. PRODUCT STORE HERO: EDITORIAL COVER & PREVIEW   */}
         {/* ================================================== */}
         <section className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12 pb-16">
           <div className="rounded-3xl p-6 sm:p-10 md:p-12 bg-white border border-studio-850 shadow-sm relative overflow-hidden">
@@ -259,7 +259,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenChec
         </section>
 
         {/* ================================================== */}
-        {/* 3. WHAT YOU GET — NUMBERED EDITORIAL ROWS          */}
+        {/* 3. WHAT YOU GET: NUMBERED EDITORIAL ROWS          */}
         {/* ================================================== */}
         <section className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12 pb-20 space-y-12">
           <div className="border-b border-studio-850 pb-4 space-y-2 text-center max-w-3xl mx-auto">
@@ -327,7 +327,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenChec
         </section>
 
         {/* ================================================== */}
-        {/* 4. WHO IT'S FOR — TARGET PROFILE STRIP              */}
+        {/* 4. WHO IT'S FOR: TARGET PROFILE STRIP              */}
         {/* ================================================== */}
         <section className="py-16 bg-studio-900 border-t border-b border-studio-850 mb-20">
           <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12 space-y-8">

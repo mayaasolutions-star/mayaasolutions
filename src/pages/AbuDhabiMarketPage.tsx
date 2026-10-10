@@ -50,7 +50,7 @@ const ABU_DHABI_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements and invoicing structured?',
     answer:
-      'We quote and invoice transparently in UAE Dirhams (AED) on fixed-scope, milestone-governed contracts. Each phase—from institutional workflow mapping to deployment and handover—is tied to explicit verification criteria. Our bespoke systems carry zero recurring per-user software licensing fees, ensuring predictable capital allocation.',
+      'We quote and invoice transparently in UAE Dirhams (AED) on fixed-scope, milestone-governed contracts. Each phase, from institutional workflow mapping to deployment and handover, is tied to explicit verification criteria. Our bespoke systems carry zero recurring per-user software licensing fees, ensuring predictable capital allocation.',
   },
 ];
 

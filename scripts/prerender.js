@@ -305,8 +305,9 @@ const ROUTE_METADATA = {
   },
 };
 
-// 20 Country Markets
+// Country Markets
 const MARKETS_LIST = [
+  { slug: 'india', name: 'India (Bharat)', title: 'India (Bharat) | Brand Building, Websites & Custom Business Systems | Mayaa Solutions', desc: 'Mayaa Solutions helps businesses across India build distinctive brands, professional digital experiences, and custom operational software designed for sustainable growth.' },
   { slug: 'dubai', name: 'Dubai', title: 'Strategic Brand, Digital Experience & Business Systems for Dubai | Mayaa Solutions', desc: 'Built around how Dubai businesses actually operate. Strategic brand design, high-conversion digital experiences, and personalised business management systems.' },
   { slug: 'usa', name: 'United States', title: 'Brand, Digital Experiences & Business Systems for USA | Mayaa Solutions', desc: 'Your business is moving fast. Your system should too. Mayaa builds brands, high-performing digital experiences, and personalized business management systems for growing US businesses.' },
   { slug: 'australia', name: 'Australia', title: 'Brand, Digital Experiences & Business Systems for Australia | Mayaa Solutions', desc: 'Built around how Australian businesses actually operate. Strategic brand design, high-clarity websites, and personalised business management systems.' },

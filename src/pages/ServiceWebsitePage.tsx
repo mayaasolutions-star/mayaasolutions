@@ -53,7 +53,7 @@ export const ServiceWebsitePage: React.FC = () => {
 
       <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black font-sans antialiased overflow-x-hidden">
         
-        {/* SECTION 01 — HERO */}
+        {/* SECTION 01: HERO */}
         <section className="relative pt-28 pb-20 md:pt-40 md:pb-28 px-6 md:px-12 max-w-4xl mx-auto text-center flex flex-col items-center justify-center">
           <div className="w-full space-y-6 sm:space-y-8 flex flex-col items-center">
 
@@ -94,7 +94,7 @@ export const ServiceWebsitePage: React.FC = () => {
           </div>
         </section>
 
-        {/* SECTION 02 — DIGITAL DESIGN COVERAGE */}
+        {/* SECTION 02: DIGITAL DESIGN COVERAGE */}
         <section className="py-16 sm:py-20 md:py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-neutral-900">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -136,7 +136,7 @@ export const ServiceWebsitePage: React.FC = () => {
           </div>
         </section>
 
-        {/* SECTION 03 — WHO IT IS FOR */}
+        {/* SECTION 03: WHO IT IS FOR */}
         <section className="py-16 sm:py-20 md:py-24 px-6 md:px-12 max-w-4xl mx-auto border-t border-neutral-900 text-center">
           <motion.span
             initial={{ opacity: 0, y: 15 }}
@@ -165,11 +165,11 @@ export const ServiceWebsitePage: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-base sm:text-xl text-[#A0A0A0] font-normal max-w-2xl mx-auto leading-relaxed"
           >
-            Built for businesses whose website is a critical commercial asset—founders launching new ventures, established companies outgrowing template builders, and practices requiring a refined digital flagship.
+            Built for businesses whose website is a critical commercial asset: founders launching new ventures, established companies outgrowing template builders, and practices requiring a refined digital flagship.
           </motion.p>
         </section>
 
-        {/* SECTION 04 — HOW WE APPROACH IT */}
+        {/* SECTION 04: HOW WE APPROACH IT */}
         <section className="py-16 sm:py-20 md:py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-neutral-900">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -201,7 +201,7 @@ export const ServiceWebsitePage: React.FC = () => {
           </div>
         </section>
 
-        {/* SECTION 05 — DELIVERABLES */}
+        {/* SECTION 05: DELIVERABLES */}
         <section className="py-16 sm:py-20 md:py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-neutral-900">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -235,7 +235,7 @@ export const ServiceWebsitePage: React.FC = () => {
           </div>
         </section>
 
-        {/* SECTION 06 — FINAL CTA */}
+        {/* SECTION 06: FINAL CTA */}
         <section className="py-20 sm:py-28 md:py-32 px-6 md:px-12 max-w-4xl mx-auto text-center border-t border-neutral-900">
           <motion.span
             initial={{ opacity: 0, y: 15 }}

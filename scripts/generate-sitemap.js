@@ -28,8 +28,9 @@ export const CANONICAL_ROUTES = [
   { path: 'industries', changefreq: 'monthly', priority: '0.8' },
   { path: 'our-work', changefreq: 'monthly', priority: '0.8' },
 
-  // Global Markets Hub & Country/City Specific Pages (20 Markets)
+  // Global Markets Hub & Country/City Specific Pages
   { path: 'global-markets', changefreq: 'weekly', priority: '0.9' },
+  { path: 'global-markets/india', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/dubai', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/usa', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/australia', changefreq: 'monthly', priority: '0.85' },

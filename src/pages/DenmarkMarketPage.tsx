@@ -39,7 +39,7 @@ const DENMARK_FAQS: FAQItem[] = [
   {
     question: 'How do you ensure GDPR compliance and data privacy for Danish businesses?',
     answer:
-      'All custom business systems, automated workflows, and database layers are deployed directly onto client-owned cloud tenancies in European regions—such as AWS Frankfurt/Stockholm, Microsoft Azure West Europe, or Nordic hosts. Mayaa never stores, sells, or monetizes client customer data. Systems are built with strict role-based access control (RBAC), multi-factor authentication, and exportable audit logs complying fully with EU and Danish Datatilsynet data protection guidelines.',
+      'All custom business systems, automated workflows, and database layers are deployed directly onto client-owned cloud tenancies in European regions, such as AWS Frankfurt/Stockholm, Microsoft Azure West Europe, or Nordic hosts. Mayaa never stores, sells, or monetizes client customer data. Systems are built with strict role-based access control (RBAC), multi-factor authentication, and exportable audit logs complying fully with EU and Danish Datatilsynet data protection guidelines.',
   },
   {
     question: 'Can your systems integrate with Danish platforms like e-conomic, Dinero, or Billy?',
@@ -137,7 +137,7 @@ export const DenmarkMarketPage: React.FC = () => {
       problem: 'OUR DIGITAL EXPERIENCE DOES NOT REFLECT OUR QUALITY.',
       diagnosis: 'Your website and customer journey may need to communicate your value more effectively.',
       capability: 'WEBSITE & DIGITAL EXPERIENCE',
-      detail: 'When prospective clients research your company, their digital impression directly impacts their confidence. We create high-calibre web experiences engineered around real customer journeys—removing hesitation, clarifying complex offerings, and making the next commercial step obvious.',
+      detail: 'When prospective clients research your company, their digital impression directly impacts their confidence. We create high-calibre web experiences engineered around real customer journeys, removing hesitation, clarifying complex offerings, and making the next commercial step obvious.',
       deliverables: ['Editorial Web Architecture', 'Bespoke Frontend Engineering', 'Product & Service Clarity', 'Frictionless Enquiry Flows']
     },
     {
@@ -153,7 +153,7 @@ export const DenmarkMarketPage: React.FC = () => {
       problem: 'OUR EXISTING TOOLS DO NOT WORK WELL TOGETHER.',
       diagnosis: 'The first step is understanding where information and work get disconnected.',
       capability: 'INTEGRATION & WORKFLOW COHERENCE',
-      detail: 'You likely already invest in robust Danish and European platforms—such as e-conomic, Microsoft Business Central, HubSpot, or Jira. The friction is rarely the individual tools; it is the manual copy-pasting and fractured status handoffs between them. We create focused integrations and custom lightweight interfaces that unite them.',
+      detail: 'You likely already invest in robust Danish and European platforms, such as e-conomic, Microsoft Business Central, HubSpot, or Jira. The friction is rarely the individual tools; it is the manual copy-pasting and fractured status handoffs between them. We create focused integrations and custom lightweight interfaces that unite them.',
       deliverables: ['Data Flow Mapping', 'API & Platform Bridges', 'Automated Trigger Routing', 'Unified Operational Dashboards']
     }
   ];
@@ -899,7 +899,7 @@ export const DenmarkMarketPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
               <div className="md:col-span-8 space-y-3">
                 <div className="text-xs font-mono text-[#52947F] uppercase tracking-wider">
-                  STAGE 0{activeWorkflowStep + 1}: {workflowNodes[activeWorkflowStep].stage} — {workflowNodes[activeWorkflowStep].role}
+                  STAGE 0{activeWorkflowStep + 1}: {workflowNodes[activeWorkflowStep].stage} · {workflowNodes[activeWorkflowStep].role}
                 </div>
                 <p className="text-base text-[#D4CEBF] leading-relaxed">
                   {workflowNodes[activeWorkflowStep].description}
@@ -1039,7 +1039,7 @@ export const DenmarkMarketPage: React.FC = () => {
               </h2>
 
               <p className="text-base text-[#B4BAC3] leading-relaxed font-light">
-                Denmark has substantial digital and AI adoption. The strategic opportunity is to deploy practical automation where it genuinely saves time—preserving human judgment and oversight.
+                Denmark has substantial digital and AI adoption. The strategic opportunity is to deploy practical automation where it genuinely saves time, preserving human judgment and oversight.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-mono text-[#D4CEBF]">
@@ -1315,7 +1315,7 @@ export const DenmarkMarketPage: React.FC = () => {
                 >
                   <span className="text-base font-light">{faq.question}</span>
                   <span className="text-xs font-mono text-[#767E8A] flex-shrink-0">
-                    {openFaq === idx ? '—' : '+'}
+                    {openFaq === idx ? '-' : '+'}
                   </span>
                 </button>
                 <AnimatePresence>

@@ -1,190 +1,202 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   ArrowRight, 
-  Globe2, 
-  MapPin, 
-  Compass, 
-  Layers, 
-  Cpu, 
-  Clock, 
-  CreditCard, 
-  ShieldCheck, 
+  ArrowDown, 
   Sparkles, 
-  CheckCircle2, 
-  ExternalLink 
+  TrendingUp, 
+  Cpu,
+  Globe 
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { getBreadcrumbSchema } from '../utils/seoMetadata';
-import { TARGET_MARKETS_LIST, TargetMarket } from '../constants/globalMarketsData';
 
-type RegionFilter = 'all' | 'gcc' | 'europe' | 'nordics' | 'apac_americas';
-
-interface MarketWithRegion extends TargetMarket {
-  regionKey: RegionFilter;
-  commercialFocus: string;
+interface MarketCardItem {
+  id: string;
+  slug: string;
+  name: string;
+  country: string;
+  flag: string;
+  description: string;
 }
 
-const ENRICHED_MARKETS: MarketWithRegion[] = TARGET_MARKETS_LIST.map((market) => {
-  let regionKey: RegionFilter = 'europe';
-  let commercialFocus = 'Bespoke brand architecture, high-clarity websites, and tailored operational software.';
-
-  switch (market.slug) {
-    case 'dubai':
-      regionKey = 'gcc';
-      commercialFocus = 'Commercial velocity, luxury practice positioning, and rapid operational leverage.';
-      break;
-    case 'abu-dhabi':
-      regionKey = 'gcc';
-      commercialFocus = 'Institutional trust, capital discipline, and enterprise operational governance.';
-      break;
-    case 'saudi-arabia':
-      regionKey = 'gcc';
-      commercialFocus = 'Vision 2030 transformation, operational scaling, and corporate market credibility.';
-      break;
-    case 'uk':
-      regionKey = 'europe';
-      commercialFocus = 'Corporate reputation, professional service authority, and operational alignment.';
-      break;
-    case 'germany':
-      regionKey = 'europe';
-      commercialFocus = 'Mittelstand engineering substance, process clarity, and data-sovereign systems.';
-      break;
-    case 'paris':
-      regionKey = 'europe';
-      commercialFocus = 'Design distinction, luxury commerce, and bespoke digital experiences for creative practices.';
-      break;
-    case 'netherlands':
-      regionKey = 'europe';
-      commercialFocus = 'Pragmatic business flow, unified digital touchpoints, and unbloated systems.';
-      break;
-    case 'switzerland':
-      regionKey = 'europe';
-      commercialFocus = 'Precision engineering, institutional discretion, and high-trust digital standards.';
-      break;
-    case 'ireland':
-      regionKey = 'europe';
-      commercialFocus = 'Relationship-driven commerce, digital accessibility, and operational clarity.';
-      break;
-    case 'belgium':
-      regionKey = 'europe';
-      commercialFocus = 'Multilingual operational coherence, logistics systems, and cross-border trade.';
-      break;
-    case 'austria':
-      regionKey = 'europe';
-      commercialFocus = 'Engineering precision, dependable workflows, and high-standard B2B platforms.';
-      break;
-    case 'luxembourg':
-      regionKey = 'europe';
-      commercialFocus = 'International perspective, institutional governance, and cross-border financial systems.';
-      break;
-    case 'poland':
-      regionKey = 'europe';
-      commercialFocus = 'Central European industrial momentum, manufacturing workflows, and international reach.';
-      break;
-    case 'denmark':
-      regionKey = 'nordics';
-      commercialFocus = 'Craftsmanship, digital fluency, and minimal unnecessary operational complexity.';
-      break;
-    case 'sweden':
-      regionKey = 'nordics';
-      commercialFocus = 'Functional elegance, collaborative momentum, and robust digital product delivery.';
-      break;
-    case 'norway':
-      regionKey = 'nordics';
-      commercialFocus = 'Clarity, maritime & industrial operations, and sustainable long-term platforms.';
-      break;
-    case 'finland':
-      regionKey = 'nordics';
-      commercialFocus = 'Signal over noise, technical reliability, and pragmatic operational software.';
-      break;
-    case 'usa':
-      regionKey = 'apac_americas';
-      commercialFocus = 'Operational complexity reduction, commercial clarity, and zero-licensing-trap software.';
-      break;
-    case 'singapore':
-      regionKey = 'apac_americas';
-      commercialFocus = 'Regional hub efficiency, unified CRM pipelines, and scalable cloud systems.';
-      break;
-    case 'australia':
-      regionKey = 'apac_americas';
-      commercialFocus = 'Construction, trade & property operational systems built around how businesses actually run.';
-      break;
-    default:
-      regionKey = 'europe';
-      commercialFocus = 'Bespoke brand architecture, high-clarity websites, and tailored operational software.';
-  }
-
-  return {
-    ...market,
-    regionKey,
-    commercialFocus,
-  };
-});
-
-const COLLABORATION_PILLARS = [
+const MARKETS_LIST: MarketCardItem[] = [
   {
-    icon: Clock,
-    title: 'Timezone Alignment & Asynchronous Rigor',
-    desc: 'Our Bangalore team maintains scheduled working overlap with Europe, the Middle East, Asia-Pacific, and the Americas—complemented by recorded design walkthroughs and clear written sprint boards.',
+    id: 'india',
+    slug: 'india',
+    name: 'India (Bharat)',
+    country: 'India',
+    flag: '/flags/in.svg',
+    description: 'Distinctive brand building, professional digital flagships, and custom business management software.',
   },
   {
-    icon: ShieldCheck,
-    title: 'Direct Senior Access',
-    desc: 'You work directly with the strategists, UX designers, and software engineers executing your project. We eliminate junior account management intermediaries and bureaucratic overhead.',
+    id: 'dubai',
+    slug: 'dubai',
+    name: 'Dubai',
+    country: 'United Arab Emirates',
+    flag: '/flags/ae.svg',
+    description: 'Brand strategy, digital flagships, and operational management systems for high-growth enterprises.',
   },
   {
-    icon: CreditCard,
-    title: 'Multi-Currency & Clean Commercials',
-    desc: 'We support international B2B invoicing in your local currency (USD, GBP, EUR, AED, SAR, SGD, AUD, or INR) with clear milestone deliverables and zero hidden recurring licensing fees.',
+    id: 'usa',
+    slug: 'usa',
+    name: 'United States',
+    country: 'United States',
+    flag: '/flags/us.svg',
+    description: 'Clear brand architecture, modern web experiences, and custom software without licensing traps.',
   },
   {
-    icon: Cpu,
-    title: 'Complete IP & Data Ownership',
-    desc: 'All bespoke code, vector design assets, and database architecture are 100% owned by your company upon project handover. Deployed securely on your chosen cloud infrastructure.',
-  },
-];
-
-const VERIFIED_GLOBAL_PROJECTS = [
-  {
-    name: 'Myma Platform',
-    category: 'Digital Product · Marketplace · Operations',
-    summary: 'Architected business strategy, product workflows, intuitive UX/UI and scalable systems connecting 2,500+ home chefs and 100k+ customer interactions.',
-    image: '/images/creative_page_work_largethumbnail_myma.webp',
+    id: 'australia',
+    slug: 'australia',
+    name: 'Australia',
+    country: 'Australia',
+    flag: '/flags/au.svg',
+    description: 'Practical digital platforms and bespoke operational systems built for trade and services.',
   },
   {
-    name: 'MotoTrek Platform',
-    category: 'E-Commerce · Digital Experience · Web App',
-    summary: 'Engineered a modern React web application and tour booking experience uniting inventory catalog, user bookings, and digital community.',
-    image: '/images/creative_page_work_thumbnail_mototrek.webp',
+    id: 'uk',
+    slug: 'uk',
+    name: 'United Kingdom',
+    country: 'United Kingdom',
+    flag: '/flags/gb.svg',
+    description: 'Authoritative brand identities, high-clarity websites, and workflow platforms for modern firms.',
   },
   {
-    name: 'SEMS / Pavanraje Multi-State',
-    category: 'Business Management Systems (BMS)',
-    summary: 'A unified operational management system replacing manual coordination with centralized lead management, team tasks, and executive reporting.',
-    image: '/images/service_business_growth.webp',
+    id: 'singapore',
+    slug: 'singapore',
+    name: 'Singapore',
+    country: 'Singapore',
+    flag: '/flags/sg.svg',
+    description: 'Corporate brand coherence, digital flagships, and scalable business software for regional hubs.',
   },
   {
-    name: 'Swaati Enterprises',
-    category: 'Industrial Manufacturing · B2B Web Presence',
-    summary: 'Designed corporate brand guidelines, technical product catalogue systems, and responsive digital identity for an industrial manufacturer.',
-    image: '/images/creative_page_work_thumbnail_swaatienterprises.webp',
+    id: 'germany',
+    slug: 'germany',
+    name: 'Germany',
+    country: 'Germany',
+    flag: '/flags/de.svg',
+    description: 'Engineering-led brand precision, structured digital platforms, and reliable operational systems.',
+  },
+  {
+    id: 'paris',
+    slug: 'paris',
+    name: 'France',
+    country: 'France',
+    flag: '/flags/fr.svg',
+    description: 'Refined visual identity, elegant digital experiences, and tailored systems for specialized practices.',
+  },
+  {
+    id: 'netherlands',
+    slug: 'netherlands',
+    name: 'Netherlands',
+    country: 'Netherlands',
+    flag: '/flags/nl.svg',
+    description: 'Pragmatic digital platforms, clear branding, and unbloated systems for international commerce.',
+  },
+  {
+    id: 'saudi-arabia',
+    slug: 'saudi-arabia',
+    name: 'Saudi Arabia',
+    country: 'Saudi Arabia',
+    flag: '/flags/sa.svg',
+    description: 'Corporate brand architecture, bilingual digital flagships, and operational systems for commercial expansion.',
+  },
+  {
+    id: 'denmark',
+    slug: 'denmark',
+    name: 'Denmark',
+    country: 'Denmark',
+    flag: '/flags/dk.svg',
+    description: 'Minimalist digital aesthetics, clear brand communication, and unbloated software workflows.',
+  },
+  {
+    id: 'abu-dhabi',
+    slug: 'abu-dhabi',
+    name: 'Abu Dhabi',
+    country: 'United Arab Emirates',
+    flag: '/flags/ae.svg',
+    description: 'Institutional brand authority, secure web experiences, and disciplined operational governance platforms.',
+  },
+  {
+    id: 'sweden',
+    slug: 'sweden',
+    name: 'Sweden',
+    country: 'Sweden',
+    flag: '/flags/se.svg',
+    description: 'User-centered digital product interfaces, thoughtful branding, and dependable team workflows.',
+  },
+  {
+    id: 'norway',
+    slug: 'norway',
+    name: 'Norway',
+    country: 'Norway',
+    flag: '/flags/no.svg',
+    description: 'Resilient digital platforms, grounded corporate branding, and purposeful operational systems.',
+  },
+  {
+    id: 'switzerland',
+    slug: 'switzerland',
+    name: 'Switzerland',
+    country: 'Switzerland',
+    flag: '/flags/ch.svg',
+    description: 'High-trust visual standards, precision digital engineering, and tailored systems for specialized practices.',
+  },
+  {
+    id: 'ireland',
+    slug: 'ireland',
+    name: 'Ireland',
+    country: 'Ireland',
+    flag: '/flags/ie.svg',
+    description: 'Engaging digital platforms, clear commercial branding, and direct business management systems.',
+  },
+  {
+    id: 'belgium',
+    slug: 'belgium',
+    name: 'Belgium',
+    country: 'Belgium',
+    flag: '/flags/be.svg',
+    description: 'Multilingual digital touchpoints, corporate identity, and unified operational tools for European trade.',
+  },
+  {
+    id: 'austria',
+    slug: 'austria',
+    name: 'Austria',
+    country: 'Austria',
+    flag: '/flags/at.svg',
+    description: 'Structured digital presence, dependable brand assets, and custom internal management software.',
+  },
+  {
+    id: 'finland',
+    slug: 'finland',
+    name: 'Finland',
+    country: 'Finland',
+    flag: '/flags/fi.svg',
+    description: 'Technical reliability, distraction-free digital interfaces, and pragmatic business management systems.',
+  },
+  {
+    id: 'poland',
+    slug: 'poland',
+    name: 'Poland',
+    country: 'Poland',
+    flag: '/flags/pl.svg',
+    description: 'Scalable web architecture, dynamic brand positioning, and robust operational software for growing businesses.',
+  },
+  {
+    id: 'luxembourg',
+    slug: 'luxembourg',
+    name: 'Luxembourg',
+    country: 'Luxembourg',
+    flag: '/flags/lu.svg',
+    description: 'Executive brand clarity, corporate digital authority, and bespoke governance workflows.',
   },
 ];
 
 export const GlobalMarketsPage: React.FC = () => {
-  const [activeRegion, setActiveRegion] = useState<RegionFilter>('all');
-
-  const filteredMarkets = activeRegion === 'all'
-    ? ENRICHED_MARKETS
-    : ENRICHED_MARKETS.filter((m) => m.regionKey === activeRegion);
-
   return (
     <>
       <SEO
         title="Global Markets Directory | Mayaa Solutions"
-        description="Explore Mayaa Solutions across 20 international markets. Headquartered in Bangalore, India, delivering bespoke brands, digital flagships, and custom business systems worldwide."
+        description="Explore Mayaa Solutions across 20 international markets. Delivering bespoke brand building, digital products, and business systems across India and global markets."
         canonicalUrl="https://mayaasolutions.in/global-markets"
         schema={[
           getBreadcrumbSchema([
@@ -194,373 +206,319 @@ export const GlobalMarketsPage: React.FC = () => {
         ]}
       />
 
-      <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black font-sans antialiased overflow-x-hidden">
+      <main className="min-h-screen bg-white text-[#111111] selection:bg-[#111111] selection:text-white font-sans antialiased overflow-x-hidden">
         
         {/* ==================================================
-            01. EDITORIAL HERO SECTION
+            01. COMPACT HERO SECTION
         ================================================== */}
-        <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 px-6 md:px-12 max-w-6xl mx-auto border-b border-neutral-900">
-          <div className="flex flex-col items-start max-w-4xl">
-            {/* Eyebrow */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-neutral-800 bg-neutral-950 mb-8"
-            >
-              <Globe2 className="w-3.5 h-3.5 text-neutral-300" />
-              <span className="text-[11px] font-mono uppercase tracking-[0.22em] text-neutral-400">
-                GLOBAL REACH · 20 REGIONAL MARKETS
-              </span>
-            </motion.div>
-
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 px-6 md:px-12 max-w-6xl mx-auto border-b border-[#E5E5E2]">
+          <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
             {/* Headline */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.04] mb-8"
-            >
-              Engineered in Bangalore. <br className="hidden sm:inline" />
-              <span className="font-light italic text-neutral-400">Built for businesses worldwide.</span>
-            </motion.h1>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#111111] tracking-tight leading-[1.1] mb-6 max-w-3xl">
+              Building Brands and <br className="hidden sm:inline" />
+              Business Experiences <br className="hidden sm:inline" />
+              Across Markets.
+            </h1>
 
-            {/* Subhead */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg sm:text-xl md:text-2xl text-neutral-300 font-normal leading-relaxed max-w-3xl mb-10"
-            >
-              We do not claim satellite offices where we do not have them. Our centralized studio in Bangalore collaborates directly with commercial leaders, founders, and practices across 20 international markets through structured asynchronous sprints, shared technical specifications, and timezone-aligned delivery.
-            </motion.p>
+            {/* Supporting text */}
+            <p className="text-base sm:text-lg text-[#333333] font-normal leading-relaxed max-w-2xl mb-8">
+              Mayaa Solutions partners with businesses to build stronger brands, create meaningful digital experiences, and develop business systems for growth across India and international markets.
+            </p>
 
-            {/* Dual CTAs */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto"
-            >
+            {/* CTA */}
+            <div className="flex items-center justify-center">
               <a
-                href="#directory"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-xl hover:bg-neutral-200 transition-all duration-300 shadow-xl group"
+                href="#markets-grid"
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-[#111111] text-white font-extrabold text-xs uppercase tracking-wider rounded-xl hover:bg-neutral-800 transition-all duration-300 shadow-sm group"
               >
-                <span>Browse Market Directory</span>
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <span>Explore Our Markets</span>
+                <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
               </a>
-
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-neutral-950 text-neutral-300 hover:text-white hover:bg-neutral-900 border border-neutral-800 font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all"
-              >
-                Discuss Global Engagement
-              </Link>
-            </motion.div>
-          </div>
-
-          {/* Metric Bar */}
-          <div className="mt-16 pt-8 border-t border-neutral-900 flex flex-wrap items-center justify-between gap-6 text-xs font-mono text-neutral-500 uppercase tracking-widest">
-            <span>Bangalore Studio Headquarters</span>
-            <span className="hidden sm:inline">•</span>
-            <span>20 Curated Market Environments</span>
-            <span className="hidden sm:inline">•</span>
-            <span>Transparent Cross-Border Delivery</span>
+            </div>
           </div>
         </section>
 
         {/* ==================================================
-            02. BANGALORE HQ ANCHOR CARD
+            02. THREE-COLUMN COUNTRY GRID (LARGE FLAGS, MINIMAL CONTENT)
         ================================================== */}
-        <section className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto border-b border-neutral-900">
-          <div className="p-8 sm:p-12 md:p-14 rounded-3xl bg-neutral-950 border border-neutral-800 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            
-            <div className="lg:col-span-8 space-y-6">
-              <div className="inline-flex items-center gap-3 px-3.5 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300">
-                <span className="w-5 h-3.5 rounded overflow-hidden inline-block border border-neutral-700">
-                  <img src="/flags/in.svg" alt="India Flag" className="w-full h-full object-cover" />
-                </span>
-                <span>Operational Headquarters & Technology Hub</span>
-              </div>
-
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
-                India: Our Technology & Craft Foundation
-              </h2>
-
-              <p className="text-base sm:text-lg text-neutral-400 font-normal leading-relaxed max-w-2xl">
-                India is both our home market and the technological engine of our global client engagements. From high-growth domestic enterprises to international brands expanding eastward, our Bangalore presence grounds us in high-velocity execution, deep engineering capabilities, and disciplined cost structures.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-neutral-900 text-xs font-mono text-neutral-400">
-                <div>
-                  <span className="text-white font-semibold block mb-0.5">Location</span>
-                  <span>Bangalore, Karnataka, India</span>
-                </div>
-                <div>
-                  <span className="text-white font-semibold block mb-0.5">Core Practice</span>
-                  <span>Brand · Web · BMS Engineering</span>
-                </div>
-                <div>
-                  <span className="text-white font-semibold block mb-0.5">Reach</span>
-                  <span>Domestic & 20 International Markets</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-4 flex flex-col justify-center items-start lg:items-end">
-              <Link
-                to="/contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white text-black font-extrabold text-xs uppercase tracking-wider rounded-xl hover:bg-neutral-200 transition-all shadow-md group"
-              >
-                <span>Connect with Bangalore HQ</span>
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </div>
-
-          </div>
-        </section>
-
-        {/* ==================================================
-            03. INTERACTIVE 20-MARKET DIRECTORY
-        ================================================== */}
-        <section id="directory" className="py-24 md:py-32 px-6 md:px-12 max-w-7xl mx-auto border-b border-neutral-900">
-          
-          {/* Section Header */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
-            <div className="max-w-2xl">
-              <span className="text-xs font-mono uppercase tracking-[0.25em] text-neutral-400 block mb-3">
-                Regional Index
-              </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                20 International Markets. Tailored Considerations.
-              </h2>
-            </div>
-            <p className="text-xs sm:text-sm text-neutral-400 max-w-md font-normal leading-relaxed">
-              Every country page features researched commercial context, market-specific business considerations, and relevant digital strategies.
-            </p>
-          </div>
-
-          {/* Filter Pills */}
-          <div className="flex flex-wrap items-center gap-2.5 mb-12 pb-6 border-b border-neutral-900">
-            {[
-              { key: 'all', label: 'All 20 Markets' },
-              { key: 'gcc', label: 'Middle East & GCC (3)' },
-              { key: 'europe', label: 'Western & Central Europe (9)' },
-              { key: 'nordics', label: 'Nordics & Scandinavia (4)' },
-              { key: 'apac_americas', label: 'Americas & Asia-Pacific (4)' },
-            ].map((tab) => (
-              <button
-                key={tab.key}
-                onClick={() => setActiveRegion(tab.key as RegionFilter)}
-                className={`px-4 py-2 rounded-xl text-xs font-mono uppercase tracking-wider transition-all cursor-pointer ${
-                  activeRegion === tab.key
-                    ? 'bg-white text-black font-bold shadow-md'
-                    : 'bg-neutral-950 text-neutral-400 hover:text-white border border-neutral-800'
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-
-          {/* Directory Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {filteredMarkets.map((market, idx) => (
-              <motion.div
-                key={market.id}
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: Math.min(idx * 0.03, 0.3) }}
-              >
-                <Link
-                  to={`/global-markets/${market.slug}`}
-                  className="group flex flex-col justify-between h-full p-6 rounded-2xl bg-neutral-950/70 border border-neutral-800/80 hover:border-neutral-600 transition-all duration-300 hover:shadow-2xl hover:shadow-neutral-900/50"
-                >
-                  <div>
-                    {/* Top Flag & Meta */}
-                    <div className="flex items-center justify-between mb-5">
-                      <div className="w-10 h-7 rounded overflow-hidden border border-neutral-700 bg-neutral-900 shadow-xs shrink-0">
-                        <img
-                          src={market.flag}
-                          alt={`${market.name} Flag`}
-                          className="w-full h-full object-cover"
-                          loading="lazy"
-                        />
-                      </div>
-                      <span className="text-[10px] font-mono text-neutral-400 uppercase tracking-wider">
-                        {market.sublabel}
-                      </span>
-                    </div>
-
-                    <h3 className="text-xl font-bold text-white tracking-tight mb-2.5 group-hover:text-white transition-colors flex items-center justify-between">
-                      <span>{market.name}</span>
-                      <ArrowRight className="w-3.5 h-3.5 text-neutral-500 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-x-0" />
-                    </h3>
-
-                    <p className="text-xs text-neutral-400 leading-relaxed font-normal mb-6">
-                      {market.commercialFocus}
-                    </p>
-                  </div>
-
-                  <div className="pt-4 border-t border-neutral-900/80 flex items-center justify-between text-xs font-mono text-neutral-400 group-hover:text-white transition-colors">
-                    <span>View Market Page</span>
-                    <span className="text-xs">→</span>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-
-        </section>
-
-        {/* ==================================================
-            04. HOW CROSS-BORDER COLLABORATION WORKS
-        ================================================== */}
-        <section className="py-24 md:py-32 px-6 md:px-12 max-w-7xl mx-auto border-b border-neutral-900">
-          <div className="max-w-3xl mb-16">
-            <span className="text-xs font-mono uppercase tracking-[0.25em] text-neutral-400 block mb-3">
-              Delivery Standards
+        <section id="markets-grid" className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto">
+          <div className="max-w-3xl mb-12 text-center mx-auto">
+            <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#666666] block mb-2 font-medium">
+              International Directory
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
-              How we work with businesses across time zones.
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#111111] tracking-tight mb-3">
+              Explore Our Markets
             </h2>
-            <p className="text-neutral-400 text-base md:text-lg leading-relaxed">
-              Cross-border collaboration succeeds through clear documentation, predictable cadences, and direct access to senior practitioners.
+            <p className="text-sm text-[#555555] leading-relaxed">
+              Discover how we adapt brand building, digital experiences, and operational systems to local business environments.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {COLLABORATION_PILLARS.map((p, idx) => {
-              const Icon = p.icon;
-              return (
-                <div
-                  key={idx}
-                  className="p-8 rounded-2xl bg-neutral-950 border border-neutral-800/80 flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white mb-6">
-                      <Icon className="w-5 h-5 text-neutral-300" />
-                    </div>
-                    <h3 className="text-lg font-bold text-white mb-3 tracking-tight">
-                      {p.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal">
-                      {p.desc}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* ==================================================
-            05. VERIFIED CROSS-BORDER WORK EVIDENCE
-        ================================================== */}
-        <section className="py-24 md:py-32 px-6 md:px-12 max-w-7xl mx-auto border-b border-neutral-900">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-            <div>
-              <span className="text-xs font-mono uppercase tracking-[0.25em] text-neutral-400 block mb-3">
-                Selected Work
-              </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                Digital experiences and platforms built to scale.
-              </h2>
-            </div>
-            <Link
-              to="/our-work"
-              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-neutral-300 hover:text-white transition-colors group shrink-0"
-            >
-              <span>Explore All Projects</span>
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {VERIFIED_GLOBAL_PROJECTS.map((proj, idx) => (
-              <div
-                key={idx}
-                className="group rounded-2xl bg-neutral-950 border border-neutral-800/80 hover:border-neutral-700 transition-all overflow-hidden flex flex-col justify-between"
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {MARKETS_LIST.map((market) => (
+              <Link
+                key={market.id}
+                to={`/global-markets/${market.slug}`}
+                className="group relative flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white border border-[#E5E5E2] hover:border-[#111111]/30 hover:shadow-md transition-all duration-300"
               >
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-900 border-b border-neutral-800">
-                  <img
-                    src={proj.image}
-                    alt={proj.name}
-                    loading="lazy"
-                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-neutral-400 block mb-1">
-                      {proj.category}
-                    </span>
-                    <h3 className="text-xl font-bold text-white">{proj.name}</h3>
+                <div>
+                  {/* 1. Large Country Flag Thumbnail (65-75% Card Width) */}
+                  <div className="w-[72%] aspect-[3/2] rounded-xl overflow-hidden border border-[#E5E5E2] bg-[#F8F8F6] flex items-center justify-center p-3 sm:p-3.5 mb-5 shadow-2xs group-hover:border-neutral-400 transition-colors">
+                    <img
+                      src={market.flag}
+                      alt={`Flag of ${market.country}`}
+                      className="max-w-full max-h-full object-contain drop-shadow-2xs"
+                      loading="lazy"
+                    />
                   </div>
-                </div>
-                <div className="p-6 md:p-8 flex flex-col justify-between flex-1">
-                  <p className="text-sm text-neutral-400 leading-relaxed mb-6 font-normal">
-                    {proj.summary}
+
+                  {/* 2. Country Name */}
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#111111] tracking-tight mb-2">
+                    {market.name}
+                  </h3>
+
+                  {/* 3. One Short Description (6-12 Words) */}
+                  <p className="text-sm text-[#444444] leading-relaxed font-normal mb-5">
+                    {market.description}
                   </p>
-                  <Link
-                    to="/our-work"
-                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white hover:text-neutral-300 transition-colors"
-                  >
-                    <span>View Project Case</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
                 </div>
-              </div>
+
+                {/* 4. Small Arrow Indicating It Opens Country Page */}
+                <div className="pt-3 border-t border-[#F0F0EE] flex items-center justify-between text-xs font-mono text-[#666666] group-hover:text-[#111111] transition-colors font-medium">
+                  <span>Explore Market</span>
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </div>
+              </Link>
             ))}
           </div>
         </section>
 
         {/* ==================================================
-            06. FINAL CONVERSION CTA
+            03. SERVICES / CAPABILITIES: HOW WE HELP BUSINESSES GROW
         ================================================== */}
-        <section className="py-28 md:py-36 px-6 md:px-12 max-w-5xl mx-auto text-center flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-neutral-800 bg-neutral-950 mb-8">
-            <Sparkles className="w-3.5 h-3.5 text-neutral-300" />
-            <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-neutral-400">
-              Cross-Border Collaboration
+        <section className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto border-t border-[#E5E5E2]">
+          <div className="max-w-3xl mb-14 text-center mx-auto">
+            <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#666666] block mb-2.5 font-medium">
+              Practical Solutions
             </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight mb-4">
+              How We Help Businesses Grow
+            </h2>
+            <p className="text-base sm:text-lg text-[#444444] font-normal leading-relaxed">
+              From building a strong brand to creating digital experiences and custom business tools, we help businesses turn their ideas and operational needs into practical solutions.
+            </p>
           </div>
 
-          <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight leading-[1.06] mb-6 max-w-4xl text-balance">
-            Ready to explore an engagement for your market?
-          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Card 1: Brand Building */}
+            <div className="p-8 sm:p-9 rounded-2xl bg-[#F9F9F8] border border-[#E5E5E2] hover:border-[#111111]/30 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-11 h-11 rounded-xl bg-white border border-[#E5E5E2] flex items-center justify-center text-[#111111] shadow-2xs">
+                    <Sparkles className="w-5 h-5" />
+                  </div>
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#666666] font-medium">
+                    Brand Building
+                  </span>
+                </div>
 
-          <p className="text-base sm:text-xl text-neutral-400 font-normal leading-relaxed max-w-2xl mb-10 text-balance">
-            Whether you are expanding operations or refining your digital presence, let’s discuss your objectives and evaluate the right delivery roadmap.
-          </p>
+                <h3 className="text-xl sm:text-2xl font-bold text-[#111111] tracking-tight mb-3">
+                  Build a Brand People Remember
+                </h3>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-12">
+                <p className="text-sm sm:text-base text-[#444444] leading-relaxed mb-6 font-normal">
+                  Create a distinctive brand identity that helps your business look professional, communicate clearly, and stand out in its market.
+                </p>
+
+                <ul className="space-y-2.5 mb-8 text-xs sm:text-sm text-[#555555]">
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Brand strategy and positioning</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Brand identity and visual direction</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Brand messaging and communication</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-5 border-t border-[#EAEAE8]">
+                <Link
+                  to="/brand"
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#111111] hover:text-neutral-600 transition-colors group"
+                >
+                  <span>Explore Brand Building</span>
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 2: Websites & Digital Experiences */}
+            <div className="p-8 sm:p-9 rounded-2xl bg-[#F9F9F8] border border-[#E5E5E2] hover:border-[#111111]/30 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-11 h-11 rounded-xl bg-white border border-[#E5E5E2] flex items-center justify-center text-[#111111] shadow-2xs">
+                    <Globe className="w-5 h-5" />
+                  </div>
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#666666] font-medium">
+                    Websites & Digital
+                  </span>
+                </div>
+
+                <h3 className="text-xl sm:text-2xl font-bold text-[#111111] tracking-tight mb-3">
+                  Give Your Business a Strong Digital Presence
+                </h3>
+
+                <p className="text-sm sm:text-base text-[#444444] leading-relaxed mb-6 font-normal">
+                  Build a professional online presence that explains what you do, earns trust, and helps potential customers take the next step.
+                </p>
+
+                <ul className="space-y-2.5 mb-8 text-xs sm:text-sm text-[#555555]">
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Business and corporate websites</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Website design and development</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Landing pages and digital experiences</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-5 border-t border-[#EAEAE8]">
+                <Link
+                  to="/websites"
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#111111] hover:text-neutral-600 transition-colors group"
+                >
+                  <span>Explore Website Services</span>
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 3: Custom Business Management Tools */}
+            <div className="p-8 sm:p-9 rounded-2xl bg-[#F9F9F8] border border-[#E5E5E2] hover:border-[#111111]/30 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-11 h-11 rounded-xl bg-white border border-[#E5E5E2] flex items-center justify-center text-[#111111] shadow-2xs">
+                    <Cpu className="w-5 h-5" />
+                  </div>
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#666666] font-medium">
+                    Business Software
+                  </span>
+                </div>
+
+                <h3 className="text-xl sm:text-2xl font-bold text-[#111111] tracking-tight mb-3">
+                  Make Business Operations Easier to Manage
+                </h3>
+
+                <p className="text-sm sm:text-base text-[#444444] leading-relaxed mb-6 font-normal">
+                  Replace scattered processes and manual tracking with custom business software designed around the way your business works.
+                </p>
+
+                <ul className="space-y-2.5 mb-8 text-xs sm:text-sm text-[#555555]">
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Custom business management software</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Lead, task, team, and workflow management</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Business dashboards and reporting</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-5 border-t border-[#EAEAE8]">
+                <Link
+                  to="/business-systems"
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#111111] hover:text-neutral-600 transition-colors group"
+                >
+                  <span>Explore Business Tools</span>
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 4: Growth & Marketing */}
+            <div className="p-8 sm:p-9 rounded-2xl bg-[#F9F9F8] border border-[#E5E5E2] hover:border-[#111111]/30 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-11 h-11 rounded-xl bg-white border border-[#E5E5E2] flex items-center justify-center text-[#111111] shadow-2xs">
+                    <TrendingUp className="w-5 h-5" />
+                  </div>
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#666666] font-medium">
+                    Growth & Marketing
+                  </span>
+                </div>
+
+                <h3 className="text-xl sm:text-2xl font-bold text-[#111111] tracking-tight mb-3">
+                  Turn Your Business Goals into Growth
+                </h3>
+
+                <p className="text-sm sm:text-base text-[#444444] leading-relaxed mb-6 font-normal">
+                  Build a more structured approach to reaching customers, improving your marketing, and supporting business growth.
+                </p>
+
+                <ul className="space-y-2.5 mb-8 text-xs sm:text-sm text-[#555555]">
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Marketing strategy and planning</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Digital growth initiatives</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0" />
+                    <span>Customer acquisition and conversion improvement</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-5 border-t border-[#EAEAE8]">
+                <Link
+                  to="/services/growth"
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#111111] hover:text-neutral-600 transition-colors group"
+                >
+                  <span>Explore Growth Services</span>
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ==================================================
+            04. SECTION B: A CLEAR NEXT STEP (CLOSING CTA)
+        ================================================== */}
+        <section className="py-20 md:py-28 px-6 md:px-12 max-w-5xl mx-auto text-center">
+          <div className="p-10 sm:p-14 md:p-16 rounded-3xl bg-[#F9F9F8] border border-[#E5E5E2] flex flex-col items-center shadow-2xs">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111111] tracking-tight leading-tight mb-5 max-w-2xl text-balance">
+              Planning to Grow Beyond Your Current Market?
+            </h2>
+
+            <p className="text-base sm:text-lg text-[#444444] font-normal leading-relaxed max-w-xl mb-9 text-balance">
+              Let's explore how your brand, digital experience, and business systems can support your next stage of growth.
+            </p>
+
             <Link
               to="/contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-9 py-4 bg-white text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-xl hover:bg-neutral-200 transition-all duration-300 shadow-xl group"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#111111] text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-xl hover:bg-neutral-800 transition-all duration-300 shadow-sm group"
             >
-              <span>Start a Conversation</span>
+              <span>Start a Project</span>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
-
-            <a
-              href="mailto:contact@mayaasolutions.in?subject=Global%20Markets%20Inquiry"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-neutral-950 text-neutral-300 hover:text-white hover:bg-neutral-900 border border-neutral-800 font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all"
-            >
-              contact@mayaasolutions.in
-            </a>
-          </div>
-
-          {/* Internal links to core capabilities */}
-          <div className="pt-8 border-t border-neutral-900 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs font-mono text-neutral-500 uppercase tracking-wider">
-            <span>Core Capabilities:</span>
-            <Link to="/brand" className="text-neutral-400 hover:text-white transition-colors underline underline-offset-4">
-              Brand Building →
-            </Link>
-            <Link to="/websites" className="text-neutral-400 hover:text-white transition-colors underline underline-offset-4">
-              Websites & Digital Experiences →
-            </Link>
-            <Link to="/business-systems" className="text-neutral-400 hover:text-white transition-colors underline underline-offset-4">
-              Personalised Business Systems →
             </Link>
           </div>
         </section>

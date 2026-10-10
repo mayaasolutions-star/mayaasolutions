@@ -51,7 +51,7 @@ const UK_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements and invoicing structured for British enterprises?',
     answer:
-      'We quote and invoice transparently in British Pounds (GBP) on fixed-scope, milestone-based contracts. Every phase—from workflow mapping to production deployment—has explicit acceptance criteria. Furthermore, our bespoke systems carry zero perpetual per-user software licensing fees, giving your business predictable capital allocation.',
+      'We quote and invoice transparently in British Pounds (GBP) on fixed-scope, milestone-based contracts. Every phase, from workflow mapping to production deployment, has explicit acceptance criteria. Furthermore, our bespoke systems carry zero perpetual per-user software licensing fees, giving your business predictable capital allocation.',
   },
 ];
 
@@ -189,7 +189,7 @@ export const UkMarketPage: React.FC = () => {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-lg sm:text-xl text-[#9CA3AF] max-w-2xl mx-auto font-light leading-relaxed mb-12"
             >
-              Mayaa connects brand identity, digital experiences, and operational systems around the way ambitious UK businesses actually work—from the first conversation to the final handover.
+              Mayaa connects brand identity, digital experiences, and operational systems around the way ambitious UK businesses actually work, from the first conversation to the final handover.
             </motion.p>
 
             {/* Focused Action CTAs */}
@@ -248,19 +248,19 @@ export const UkMarketPage: React.FC = () => {
                 </div>
                 <ul className="space-y-3 text-xs text-[#9CA3AF] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono">—</span>
+                    <span className="text-white font-mono">-</span>
                     <span>High-value commercial leads sitting unassigned across personal inboxes.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono">—</span>
+                    <span className="text-white font-mono">-</span>
                     <span>Costing formulas and margin calculations buried in personal spreadsheets.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono">—</span>
+                    <span className="text-white font-mono">-</span>
                     <span>Subcontractor dependencies and site milestones tracked verbally.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono">—</span>
+                    <span className="text-white font-mono">-</span>
                     <span>Directors having to chase project managers for weekly margin reports.</span>
                   </li>
                 </ul>

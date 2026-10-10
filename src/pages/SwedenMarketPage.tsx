@@ -52,7 +52,7 @@ const SWEDEN_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements and invoicing structured?',
     answer:
-      'We quote and invoice transparently in Swedish Krona (SEK) or Euros (EUR) on fixed-scope, milestone-governed contracts. Each development phase—from workflow mapping to production deployment—has explicit acceptance criteria. Furthermore, our bespoke systems carry zero perpetual per-user software licensing fees, giving your business predictable capital allocation.',
+      'We quote and invoice transparently in Swedish Krona (SEK) or Euros (EUR) on fixed-scope, milestone-governed contracts. Each development phase, from workflow mapping to production deployment, has explicit acceptance criteria. Furthermore, our bespoke systems carry zero perpetual per-user software licensing fees, giving your business predictable capital allocation.',
   },
 ];
 
@@ -243,19 +243,19 @@ export const SwedenMarketPage: React.FC = () => {
                 </div>
                 <ul className="space-y-3 text-xs text-[#9CA3AF] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-[#38BDF8] font-mono">—</span>
+                    <span className="text-[#38BDF8] font-mono">-</span>
                     <span>Recurring alignment syncs to confirm who owns specific project deliverables.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#38BDF8] font-mono">—</span>
+                    <span className="text-[#38BDF8] font-mono">-</span>
                     <span>High-value commercial proposals delayed while gathering specs from multiple heads.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#38BDF8] font-mono">—</span>
+                    <span className="text-[#38BDF8] font-mono">-</span>
                     <span>Customer context fragmented across personal inboxes, chat, and spreadsheets.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#38BDF8] font-mono">—</span>
+                    <span className="text-[#38BDF8] font-mono">-</span>
                     <span>Leadership having to compile manual spreadsheets to track quarterly capacity.</span>
                   </li>
                 </ul>

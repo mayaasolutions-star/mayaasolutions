@@ -449,7 +449,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     deliveryTime: 'Instant Download',
     downloadUrl: `${SUPABASE_STORAGE_BASE_URL}pm-resumecover.pdf`,
     heroImage: '/images/pm-resume-toolkit-hero.webp',
-    summary: 'Create a recruiter-ready Product Manager resume and cover letter. Most templates only change how your resume looks. This toolkit improves how it performs — built specifically for PM roles.',
+    summary: 'Create a recruiter-ready Product Manager resume and cover letter. Most templates only change how your resume looks. This toolkit improves how it performs, built specifically for PM roles.',
     features: [
       'ATS-Optimized PM Resume Templates',
       'Cover Letter Templates',
@@ -526,7 +526,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     deliveryTime: 'Instant Download',
     downloadUrl: `${SUPABASE_STORAGE_BASE_URL}pm-behindtheinterview.pdf`,
     heroImage: '/images/pm-interview-guide-hero.webp',
-    summary: 'Learn how Product Managers are actually evaluated by recruiters, interviewers and hiring managers. Interview success is not just about giving the right answers — it is about understanding how hiring decisions are made.',
+    summary: 'Learn how Product Managers are actually evaluated by recruiters, interviewers and hiring managers. Interview success is not just about giving the right answers; it is about understanding how hiring decisions are made.',
     features: [
       'How Product Managers Are Evaluated',
       'What Interviewers Look For',
@@ -549,7 +549,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
       { step: 'Step 04', title: 'Interview With Confidence', desc: 'Walk into PM interviews prepared with insider knowledge of how the process really works.' }
     ],
     faqs: [
-      { question: 'What makes this different from other interview guides?', answer: 'This guide reveals how recruiters, interviewers and hiring managers actually evaluate candidates and make decisions — not just what questions to expect.' },
+      { question: 'What makes this different from other interview guides?', answer: 'This guide reveals how recruiters, interviewers and hiring managers actually evaluate candidates and make decisions, not just what questions to expect.' },
       { question: 'How is it delivered?', answer: 'Instantly. You receive access to your download immediately after completing your secure payment.' }
     ]
   }

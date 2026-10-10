@@ -536,7 +536,7 @@ export const UaeMarketPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            07. BUSINESS SYSTEM — THE MAYAA DIFFERENCE
+            07. BUSINESS SYSTEM: THE MAYAA DIFFERENCE
         ================================================== */}
         <section className="py-24 sm:py-32 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto">
           <div className="max-w-4xl space-y-8">
@@ -595,46 +595,59 @@ export const UaeMarketPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            08. REAL PROOF — SEMS
+            08. REAL PROOF: SEMS
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-24 sm:py-32 px-6 md:px-12 lg:px-16">
-          <div className="max-w-[1400px] mx-auto space-y-10 sm:space-y-14">
-            
-            <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
-                PROVEN ARCHITECTURE · SEMS (BUSINESS MANAGEMENT SYSTEM)
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase leading-[1.02]">
-                A REAL SYSTEM. <br />
-                <span className="text-[#8E8E8A]">ALREADY BUILT.</span>
-              </h2>
-              <p className="text-base sm:text-lg text-neutral-300 font-normal leading-relaxed">
-                SEMS demonstrates how Mayaa approaches business operations: connected lead management, team coordination, task management and operational reporting in one system.
-              </p>
-            </div>
+        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-20 sm:py-28 px-6 md:px-12 lg:px-16">
+          <div className="max-w-[1400px] mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              
+              {/* Left Column: Heading, Description & Verification Points */}
+              <div className="lg:col-span-5 space-y-6">
+                <div className="space-y-4">
+                  <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+                    PROVEN ARCHITECTURE · SEMS (BUSINESS MANAGEMENT SYSTEM)
+                  </span>
+                  <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase leading-[1.02]">
+                    A REAL SYSTEM. <br />
+                    <span className="text-[#8E8E8A]">ALREADY BUILT.</span>
+                  </h2>
+                  <p className="text-base sm:text-lg text-neutral-300 font-normal leading-relaxed">
+                    SEMS demonstrates how Mayaa approaches business operations: connected lead management, team coordination, task management and operational reporting in one system.
+                  </p>
+                </div>
 
-            {/* Dashboard Visual Container */}
-            <div className="rounded-3xl overflow-hidden bg-neutral-950 border border-neutral-800 p-3 sm:p-4 shadow-2xl">
-              <div className="relative rounded-2xl overflow-hidden bg-black aspect-[16/9] border border-neutral-900">
-                <img
-                  src="/images/service_business_growth.webp"
-                  alt="SEMS (Business Management System) production dashboard demonstration"
-                  className="w-full h-full object-cover grayscale contrast-125"
-                  loading="lazy"
-                />
+                <div className="pt-2 border-t border-neutral-800/80 space-y-2.5 text-xs font-mono text-[#8E8E8A]">
+                  <p className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                    <span>A demonstration of Mayaa's system-building capability.</span>
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                    <span>Available for live demonstration during project discussions.</span>
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-[#8E8E8A] pt-2">
-              <span>A demonstration of Mayaa's system-building capability.</span>
-              <span>Available for live demonstration during project discussions.</span>
-            </div>
+              {/* Right Column: Controlled-Size Dashboard Visual Container */}
+              <div className="lg:col-span-7">
+                <div className="rounded-3xl overflow-hidden bg-neutral-950 border border-neutral-800 p-2.5 sm:p-3.5 shadow-2xl">
+                  <div className="relative rounded-2xl overflow-hidden bg-black aspect-[16/10] border border-neutral-900">
+                    <img
+                      src="/images/service_business_growth.webp"
+                      alt="SEMS (Business Management System) production dashboard demonstration"
+                      className="w-full h-full object-cover grayscale contrast-125"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
 
+            </div>
           </div>
         </section>
 
         {/* ==================================================
-            09. WEBSITES + BRAND — THE DIGITAL LAYER
+            09. WEBSITES + BRAND: THE DIGITAL LAYER
         ================================================== */}
         <section className="py-24 sm:py-32 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto">
           <div className="space-y-6 max-w-3xl mb-12 sm:mb-16">

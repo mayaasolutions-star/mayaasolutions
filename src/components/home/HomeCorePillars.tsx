@@ -52,7 +52,7 @@ const PILLARS: Pillar[] = [
     category: 'Operations Engine',
     title: 'Personalised Business Management Systems',
     description:
-      'Off-the-shelf software forces businesses into generic workflows. We architect custom operational systems configured around how your company actually functions—connecting inquiries, projects, and reporting into one unified platform.',
+      'Off-the-shelf software forces businesses into generic workflows. We architect custom operational systems configured around how your company actually functions, connecting inquiries, projects, and reporting into one unified platform.',
     deliverables: [
       'Enquiry-to-Fulfilment Workflow Automation',
       'Client, Lead & Account Portfolio Management',

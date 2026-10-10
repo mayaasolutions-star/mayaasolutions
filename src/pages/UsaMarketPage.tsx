@@ -39,7 +39,7 @@ const USA_FAQS: FAQItem[] = [
   {
     question: 'How do you handle US data privacy, CCPA, and cloud data sovereignty?',
     answer:
-      'All custom business systems, automated workflows, and database layers are deployed directly onto client-owned cloud tenancies in US data regions—including AWS us-east-1 (N. Virginia), AWS us-west-2 (Oregon), or Microsoft Azure US regions. Mayaa never stores, sells, or monetizes client customer data. Systems are built with strict role-based access control (RBAC), multi-factor authentication, and audit logs complying fully with US federal and state standards, including CCPA.',
+      'All custom business systems, automated workflows, and database layers are deployed directly onto client-owned cloud tenancies in US data regions, including AWS us-east-1 (N. Virginia), AWS us-west-2 (Oregon), or Microsoft Azure US regions. Mayaa never stores, sells, or monetizes client customer data. Systems are built with strict role-based access control (RBAC), multi-factor authentication, and audit logs complying fully with US federal and state standards, including CCPA.',
   },
   {
     question: 'Can your custom systems connect with our existing US software stack (Salesforce, QuickBooks, HubSpot, Slack)?',
@@ -430,7 +430,7 @@ export const UsaMarketPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
               <div className="md:col-span-7 space-y-6 text-[#9CA3AF] text-base sm:text-lg font-light leading-relaxed">
                 <p>
-                  A company can have exceptional operators, proven client results, and serious capabilities—while its visual identity still looks like an early-stage version of the business.
+                  A company can have exceptional operators, proven client results, and serious capabilities, while its visual identity still looks like an early-stage version of the business.
                 </p>
                 <p>
                   In a competitive American market, that gap matters. High-value clients and procurement teams evaluate your market stature before ever talking to sales.
@@ -561,19 +561,19 @@ export const UsaMarketPage: React.FC = () => {
                 </div>
                 <ul className="space-y-4 text-sm text-[#9CA3AF] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-[#EF4444]">—</span>
+                    <span className="text-[#EF4444]">-</span>
                     <span>Built for the mathematical average of 10,000 different businesses.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#EF4444]">—</span>
+                    <span className="text-[#EF4444]">-</span>
                     <span>Fixed, rigid workflows that force your team into awkward workarounds.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#EF4444]">—</span>
+                    <span className="text-[#EF4444]">-</span>
                     <span>Requires multiple add-on tools just to share data across departments.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#EF4444]">—</span>
+                    <span className="text-[#EF4444]">-</span>
                     <span>High monthly licensing fees for hundreds of features you never touch.</span>
                   </li>
                 </ul>
@@ -656,7 +656,7 @@ export const UsaMarketPage: React.FC = () => {
               <span className="text-[#9CA3AF]">saves real work.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
-              US businesses don't need AI hype. AI should remove friction from the workflow—not become another disconnected tool your team has to manage.
+              US businesses don't need AI hype. AI should remove friction from the workflow, not become another disconnected tool your team has to manage.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -879,7 +879,7 @@ export const UsaMarketPage: React.FC = () => {
                   >
                     <span className="text-base sm:text-lg font-light">{faq.question}</span>
                     <span className="text-xs font-mono text-white/50 flex-shrink-0">
-                      {openFaq === idx ? '—' : '+'}
+                      {openFaq === idx ? '-' : '+'}
                     </span>
                   </button>
                   <AnimatePresence>

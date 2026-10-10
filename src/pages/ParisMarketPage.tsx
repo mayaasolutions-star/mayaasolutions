@@ -584,7 +584,7 @@ export const ParisMarketPage: React.FC = () => {
                 The systems behind the work matter too.
               </p>
               <p className="text-sm sm:text-base text-neutral-400 pt-2">
-                Across Paris and Île-de-France — from central arrondissements to La Défense, Boulogne-Billancourt, Levallois-Perret, and Neuilly-sur-Seine — we collaborate with businesses where execution and reputation cannot be compromised.
+                Across Paris and Île-de-France, from central arrondissements to La Défense, Boulogne-Billancourt, Levallois-Perret, and Neuilly-sur-Seine, we collaborate with businesses where execution and reputation cannot be compromised.
               </p>
             </div>
           </div>
@@ -738,7 +738,7 @@ export const ParisMarketPage: React.FC = () => {
                   >
                     <span className="text-base sm:text-lg font-medium">{faq.question}</span>
                     <span className="text-xs font-mono text-neutral-500 flex-shrink-0">
-                      {openFaq === idx ? '—' : '+'}
+                      {openFaq === idx ? '-' : '+'}
                     </span>
                   </button>
                   <AnimatePresence>

@@ -35,7 +35,7 @@ const NETHERLANDS_FAQS: FAQItem[] = [
   {
     question: 'How do you handle GDPR compliance and EU data residency for Dutch companies?',
     answer:
-      'All custom business systems, automated workflows, and database layers are deployed directly onto client-owned cloud tenancies in European data regions—such as AWS Frankfurt/Ireland, Microsoft Azure West Europe (Amsterdam), or local Dutch hosts like TransIP/Hetzner. Mayaa never stores, sells, or monetizes client customer data. Systems are built with strict role-based access control (RBAC), multi-factor authentication, and exportable audit logs complying with GDPR regulations.',
+      'All custom business systems, automated workflows, and database layers are deployed directly onto client-owned cloud tenancies in European data regions, such as AWS Frankfurt/Ireland, Microsoft Azure West Europe (Amsterdam), or local Dutch hosts like TransIP/Hetzner. Mayaa never stores, sells, or monetizes client customer data. Systems are built with strict role-based access control (RBAC), multi-factor authentication, and exportable audit logs complying with GDPR regulations.',
   },
   {
     question: 'Can your business systems integrate with Dutch accounting tools like Exact Online, Moneybird, or Twinfield?',
@@ -764,7 +764,7 @@ export const NetherlandsMarketPage: React.FC = () => {
                   >
                     <span className="text-base sm:text-lg font-light">{faq.question}</span>
                     <span className="text-xs font-mono text-white/50 flex-shrink-0">
-                      {openFaq === idx ? '—' : '+'}
+                      {openFaq === idx ? '-' : '+'}
                     </span>
                   </button>
                   <AnimatePresence>
@@ -786,7 +786,7 @@ export const NetherlandsMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 23. FINAL CTA — INTERACTIVE DECISION INTERFACE */}
+        {/* 23. FINAL CTA: INTERACTIVE DECISION INTERFACE */}
         <section className="py-28 md:py-36 px-6 md:px-12 relative overflow-hidden bg-[#0A0E15]">
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#38BDF8] mb-4">

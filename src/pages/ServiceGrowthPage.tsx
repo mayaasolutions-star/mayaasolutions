@@ -52,7 +52,7 @@ export const ServiceGrowthPage: React.FC = () => {
 
       <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black font-sans antialiased overflow-x-hidden">
         
-        {/* SECTION 01 — HERO */}
+        {/* SECTION 01: HERO */}
         <section className="relative pt-28 pb-20 md:pt-40 md:pb-28 px-6 md:px-12 max-w-4xl mx-auto text-center flex flex-col items-center justify-center">
           <div className="w-full space-y-6 sm:space-y-8 flex flex-col items-center">
 
@@ -93,49 +93,51 @@ export const ServiceGrowthPage: React.FC = () => {
           </div>
         </section>
 
-        {/* SECTION 02 — THE GROWTH SYSTEM PROGRESSION */}
-        <section className="py-16 sm:py-20 md:py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-neutral-900">
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="mb-12 sm:mb-16 text-center max-w-3xl mx-auto"
-          >
-            <span className="text-xs font-mono font-bold text-[#A0A0A0] uppercase tracking-widest block mb-3">
-              THE GROWTH SYSTEM
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              Grow with Purpose
-            </h2>
-            <p className="text-base sm:text-lg text-[#A0A0A0] font-normal leading-relaxed mt-4">
-              Connecting growth activities directly to customer acquisition and sustainable business growth.
-            </p>
-          </motion.div>
+        {/* SECTION 02: THE GROWTH SYSTEM PROGRESSION */}
+        <section className="w-full bg-white text-[#171717] py-16 sm:py-20 md:py-24 px-6 md:px-12 border-t border-[#E5E5E2]">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="mb-12 sm:mb-16 text-center max-w-3xl mx-auto"
+            >
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block mb-3">
+                THE GROWTH SYSTEM
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#171717] tracking-tight leading-tight">
+                Grow with Purpose
+              </h2>
+              <p className="text-base sm:text-lg text-[#555555] font-normal leading-relaxed mt-4">
+                Connecting growth activities directly to customer acquisition and sustainable business growth.
+              </p>
+            </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 items-stretch gap-6 lg:gap-4">
-            {growthSteps.map((step) => (
-              <motion.div
-                key={step.num}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="flex flex-col h-full border-l border-neutral-800 p-5"
-              >
-                <span className="text-xs font-mono text-[#A0A0A0] block mb-3">{step.num}</span>
-                <h3 className="text-lg font-bold text-white tracking-tight leading-snug mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-xs sm:text-sm text-[#A0A0A0] font-normal leading-relaxed">
-                  {step.desc}
-                </p>
-              </motion.div>
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 items-stretch gap-6 lg:gap-4">
+              {growthSteps.map((step) => (
+                <motion.div
+                  key={step.num}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="flex flex-col h-full border-l border-[#E5E5E2] p-5"
+                >
+                  <span className="text-xs font-mono font-semibold text-[#666666] block mb-3">{step.num}</span>
+                  <h3 className="text-lg font-bold text-[#171717] tracking-tight leading-snug mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#555555] font-normal leading-relaxed">
+                    {step.desc}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* SECTION 03 — WHO IT IS FOR */}
+        {/* SECTION 03: WHO IT IS FOR */}
         <section className="py-16 sm:py-20 md:py-24 px-6 md:px-12 max-w-4xl mx-auto border-t border-neutral-900 text-center">
           <motion.span
             initial={{ opacity: 0, y: 15 }}
@@ -168,39 +170,41 @@ export const ServiceGrowthPage: React.FC = () => {
           </motion.p>
         </section>
 
-        {/* SECTION 04 — HOW WE APPROACH IT */}
-        <section className="py-16 sm:py-20 md:py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-neutral-900">
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-12 sm:mb-16"
-          >
-            <span className="text-xs font-mono font-bold text-[#A0A0A0] uppercase tracking-widest block">
-              HOW WE WORK
-            </span>
-          </motion.div>
+        {/* SECTION 04: HOW WE APPROACH IT */}
+        <section className="w-full bg-white text-[#171717] py-16 sm:py-20 md:py-24 px-6 md:px-12 border-t border-[#E5E5E2]">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-center mb-12 sm:mb-16"
+            >
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
+                HOW WE WORK
+              </span>
+            </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-stretch gap-6">
-            {approachSteps.map((step) => (
-              <motion.div
-                key={step.num}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="flex flex-col h-full border-l border-neutral-800 p-6"
-              >
-                <span className="text-xs font-mono text-[#A0A0A0] block mb-3">{step.num}</span>
-                <h3 className="text-xl font-bold text-white tracking-tight leading-snug mb-2">{step.title}</h3>
-                <p className="text-sm text-[#A0A0A0] font-normal leading-relaxed">{step.desc}</p>
-              </motion.div>
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-stretch gap-6">
+              {approachSteps.map((step) => (
+                <motion.div
+                  key={step.num}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="flex flex-col h-full border-l border-[#E5E5E2] p-6"
+                >
+                  <span className="text-xs font-mono font-semibold text-[#666666] block mb-3">{step.num}</span>
+                  <h3 className="text-xl font-bold text-[#171717] tracking-tight leading-snug mb-2">{step.title}</h3>
+                  <p className="text-sm text-[#555555] font-normal leading-relaxed">{step.desc}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* SECTION 05 — DELIVERABLES */}
+        {/* SECTION 05: DELIVERABLES */}
         <section className="py-16 sm:py-20 md:py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-neutral-900">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -234,42 +238,44 @@ export const ServiceGrowthPage: React.FC = () => {
           </div>
         </section>
 
-        {/* SECTION 06 — FINAL CTA */}
-        <section className="py-20 sm:py-28 md:py-32 px-6 md:px-12 max-w-4xl mx-auto text-center border-t border-neutral-900">
-          <motion.span
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-xs font-mono font-bold text-[#A0A0A0] uppercase tracking-widest block mb-4"
-          >
-            READY TO GROW YOUR BUSINESS?
-          </motion.span>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-5xl sm:text-7xl md:text-8xl font-black text-white tracking-tight mb-8 sm:mb-10"
-          >
-            Let's talk.
-          </motion.h2>
-
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center gap-3 px-9 py-4 sm:px-10 sm:py-4.5 bg-white text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-xl hover:bg-neutral-200 transition-all duration-300 shadow-xl group"
+        {/* SECTION 06: FINAL CTA */}
+        <section className="w-full bg-white text-[#171717] py-20 sm:py-28 md:py-32 px-6 md:px-12 text-center border-t border-[#E5E5E2]">
+          <div className="max-w-4xl mx-auto">
+            <motion.span
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block mb-4"
             >
-              <span>Start a Project</span>
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </Link>
-          </motion.div>
+              READY TO GROW YOUR BUSINESS?
+            </motion.span>
+
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-5xl sm:text-7xl md:text-8xl font-black text-[#171717] tracking-tight mb-8 sm:mb-10"
+            >
+              Let's talk.
+            </motion.h2>
+
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-3 px-9 py-4 sm:px-10 sm:py-4.5 bg-[#171717] text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-xl hover:bg-neutral-800 transition-all duration-300 shadow-xl group"
+              >
+                <span>Start a Project</span>
+                <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </Link>
+            </motion.div>
+          </div>
         </section>
 
       </main>

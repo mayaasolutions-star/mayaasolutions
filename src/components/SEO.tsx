@@ -113,9 +113,6 @@ export const SEO: React.FC<SEOProps> = ({
       document.head.appendChild(script);
     }
 
-    // Scroll to top on route change
-    window.scrollTo({ top: 0, behavior: 'instant' });
-
     return () => {
       // Cleanup dynamic schema on unmount
       document.querySelectorAll('script[data-dynamic-schema]').forEach((el) => el.remove());
@@ -134,6 +131,11 @@ export const SEO: React.FC<SEOProps> = ({
     hreflang,
     location.pathname,
   ]);
+
+  // Scroll to top ONLY on genuine route pathname changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [location.pathname]);
 
   return null;
 };

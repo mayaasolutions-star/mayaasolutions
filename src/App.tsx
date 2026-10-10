@@ -28,6 +28,7 @@ import { TermsPage } from './pages/TermsPage';
 import { PaymentSuccessPage } from './pages/PaymentSuccessPage';
 import { GlobalMarketsPage } from './pages/GlobalMarketsPage';
 import { MarketDetailPage } from './pages/MarketDetailPage';
+import { IndiaMarketPage } from './pages/IndiaMarketPage';
 import { DubaiMarketPage } from './pages/DubaiMarketPage';
 import { UsaMarketPage } from './pages/UsaMarketPage';
 import { AustraliaMarketPage } from './pages/AustraliaMarketPage';
@@ -116,8 +117,10 @@ const AppContent: React.FC<{
             <Route path="/services/business-growth" element={<Navigate to="/business-systems" replace />} />
             <Route path="/websites" element={<WebsitesPage />} />
 
-            {/* Global Markets Hub & Dedicated Target Market Pages (All 20 Markets) */}
+            {/* Global Markets Hub & Dedicated Target Market Pages */}
             <Route path="/global-markets" element={<GlobalMarketsPage />} />
+            <Route path="/global-markets/india" element={<IndiaMarketPage />} />
+            <Route path="/global-markets/bharat" element={<Navigate to="/global-markets/india" replace />} />
             <Route path="/global-markets/dubai" element={<DubaiMarketPage />} />
             <Route path="/global-markets/uae" element={<Navigate to="/global-markets/dubai" replace />} />
             <Route path="/global-markets/usa" element={<UsaMarketPage />} />
@@ -209,7 +212,9 @@ const AppContent: React.FC<{
         </PaymentSuccessHandler>
       </div>
 
-        {isProductRoute ? <ProductFooter /> : <Footer />}
+        {!location.pathname.startsWith('/') || location.pathname !== '/' ? (
+          isProductRoute ? <ProductFooter /> : <Footer />
+        ) : null}
         <ScrollToTop />
 
         <ProjectModal

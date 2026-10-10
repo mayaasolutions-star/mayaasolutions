@@ -147,7 +147,7 @@ export const FinlandMarketPage: React.FC = () => {
       />
 
       {/* =========================================================================
-          01. EDITORIAL HERO — THE SIGNAL
+          01. EDITORIAL HERO: THE SIGNAL
       ========================================================================= */}
       <section className="relative pt-36 pb-24 md:pt-44 md:pb-32 border-b border-[#1A222D] overflow-hidden">
         {/* Subtle grid pattern */}

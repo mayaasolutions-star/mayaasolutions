@@ -16,7 +16,6 @@ import {
   Zap,
   Lock
 } from 'lucide-react';
-import { ContactCTA } from '../sections/ContactCTA';
 
 export const AboutPage: React.FC = () => {
   const problemsWeSolve = [
@@ -92,32 +91,32 @@ export const AboutPage: React.FC = () => {
 
   const deliveryPrinciples = [
     {
-      icon: <Building2 className="w-5 h-5 text-studio-100" />,
-      title: 'Bangalore HQ Delivery',
-      desc: 'Engineered from Bangalore, India—the nation\'s premier technology capital—giving our clients direct access to senior architectural depth and world-class engineering execution.'
+      icon: <Building2 className="w-5 h-5 text-white" />,
+      title: 'India HQ Delivery',
+      desc: 'Engineered from India, giving our clients direct access to senior architectural depth and world-class engineering execution without intermediary overhead.'
     },
     {
-      icon: <Clock className="w-5 h-5 text-studio-100" />,
+      icon: <Clock className="w-5 h-5 text-white" />,
       title: 'Structured Timezone Overlap',
       desc: 'Seamless collaboration across UK/Europe (BST/CET), Middle East (GST/AST), Asia-Pacific (SGT/AEST), and North America (EST/PST) with disciplined daily synchronous windows.'
     },
     {
-      icon: <Lock className="w-5 h-5 text-studio-100" />,
+      icon: <Lock className="w-5 h-5 text-white" />,
       title: '100% IP & Code Ownership',
       desc: 'You retain complete, unencumbered ownership of all source code, design assets, and databases upon milestone completion. No vendor lock-in or recurring seat licenses.'
     },
     {
-      icon: <Globe2 className="w-5 h-5 text-studio-100" />,
+      icon: <Globe2 className="w-5 h-5 text-white" />,
       title: 'Client Cloud Sovereignty',
       desc: 'All web platforms and business systems are deployed exclusively to your own cloud accounts (AWS, Azure, GCP) in your jurisdiction, adhering to GDPR, CCPA, and PDPA compliance.'
     },
     {
-      icon: <Target className="w-5 h-5 text-studio-100" />,
+      icon: <Target className="w-5 h-5 text-white" />,
       title: 'Transparent Milestone Pricing',
       desc: 'Fixed-fee project milestones invoiced in your local currency (USD, EUR, GBP, AED, SGD, AUD, or INR). Clear scopes, predictable costs, and zero surprise hourly billing.'
     },
     {
-      icon: <ShieldCheck className="w-5 h-5 text-studio-100" />,
+      icon: <ShieldCheck className="w-5 h-5 text-white" />,
       title: 'Confidentiality & Governance',
       desc: 'Strict bilateral non-disclosure agreements (NDAs) protect your proprietary business logic, operational data, and strategic roadmaps from day one.'
     }
@@ -138,10 +137,10 @@ export const AboutPage: React.FC = () => {
         ]}
       />
 
-      <main className="pt-16 pb-20 bg-studio-950">
+      <main className="pt-16 bg-studio-950">
         
         {/* Editorial Asymmetric Hero Section */}
-        <section className="relative min-h-[55vh] flex items-center pt-24 pb-16 overflow-hidden bg-studio-950 text-left border-b border-studio-850 mb-16">
+        <section className="relative min-h-[55vh] flex items-center pt-24 pb-16 overflow-hidden bg-studio-950 text-left border-b border-studio-850">
           <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
               
@@ -150,7 +149,7 @@ export const AboutPage: React.FC = () => {
                 <div className="flex items-center gap-2.5">
                   <span className="w-2 h-2 rounded-full bg-studio-100 inline-block" />
                   <span className="text-xs font-extrabold text-studio-100 uppercase tracking-widest font-mono">
-                    About Mayaa Solutions • Bangalore HQ & Global Delivery
+                    About Mayaa Solutions • India HQ & Global Delivery
                   </span>
                 </div>
 
@@ -193,7 +192,7 @@ export const AboutPage: React.FC = () => {
                   <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-studio-850 shadow-lg flex items-center justify-between text-xs">
                     <div>
                       <span className="text-studio-400 block font-semibold uppercase tracking-wider text-[10px]">Strategic Operating Base</span>
-                      <span className="text-studio-100 font-bold text-sm">Bangalore, Karnataka, India</span>
+                      <span className="text-studio-100 font-bold text-sm">India</span>
                     </div>
                     <div className="text-right">
                       <span className="text-studio-400 block font-semibold uppercase tracking-wider text-[10px]">Cross-Border Reach</span>
@@ -208,34 +207,36 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* Who We Are: Strategic Positioning Statement */}
-        <section className="max-w-7xl mx-auto px-6 md:px-12 pb-20">
-          <div className="p-8 sm:p-12 md:p-16 rounded-3xl bg-white border border-studio-850 shadow-sm space-y-6 text-left">
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest">
-                Our Identity & Purpose
-              </span>
-            </div>
-            
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-studio-100 leading-tight max-w-4xl">
-              We are not another generic digital marketing agency. We are a business-focused solutions partner.
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-base text-studio-300 font-normal leading-relaxed pt-2">
-              <p>
-                Too many agencies operate on surface-level churn: running disconnected ad campaigns, reselling rigid WordPress themes, or pushing pre-packaged tech stacks without understanding business unit economics. The result is visual noise that fails to convert and software that creates operational friction.
-              </p>
-              <p>
-                Mayaa Solutions was built on an opposite principle: <strong className="text-studio-100 font-semibold">diagnose the commercial bottleneck before recommending a solution</strong>. Whether creating a new corporate brand identity, building a high-speed web application, or automating back-office business operations, every system we design is built to generate measurable commercial value.
-              </p>
+        <section className="w-full bg-black text-white py-20 md:py-24 border-t border-b border-neutral-900">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="p-8 sm:p-12 md:p-16 rounded-3xl bg-neutral-950 border border-neutral-800 shadow-sm space-y-6 text-center max-w-5xl mx-auto">
+              <div className="flex items-center justify-center gap-2">
+                <span className="text-xs font-mono font-bold text-neutral-400 uppercase tracking-widest">
+                  Our Identity & Purpose
+                </span>
+              </div>
+              
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-white leading-tight max-w-4xl mx-auto">
+                We are not another generic digital marketing agency. We are a business-focused solutions partner.
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-base text-neutral-400 font-normal leading-relaxed pt-2 text-left">
+                <p>
+                  Too many agencies operate on surface-level churn: running disconnected ad campaigns, reselling rigid WordPress themes, or pushing pre-packaged tech stacks without understanding business unit economics. The result is visual noise that fails to convert and software that creates operational friction.
+                </p>
+                <p>
+                  Mayaa Solutions was built on an opposite principle: <strong className="text-white font-semibold">diagnose the commercial bottleneck before recommending a solution</strong>. Whether creating a new corporate brand identity, building a high-speed web application, or automating back-office business operations, every system we design is built to generate measurable commercial value.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* The Business Problems We Solve */}
-        <section className="py-20 bg-studio-900 border-t border-b border-studio-850">
+        <section className="py-20 md:py-24 bg-studio-900 border-t border-b border-studio-850">
           <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-12">
-            <div className="max-w-3xl space-y-3">
-              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest">
+            <div className="max-w-3xl space-y-3 text-center mx-auto">
+              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest block">
                 Problem Diagnosis
               </span>
               <h2 className="text-3xl sm:text-5xl font-extrabold text-studio-100 leading-tight">
@@ -246,9 +247,9 @@ export const AboutPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
               {problemsWeSolve.map((item) => (
-                <div key={item.number} className="p-8 rounded-2xl bg-white border border-studio-850 shadow-sm space-y-5 flex flex-col justify-between">
+                <div key={item.number} className="p-8 sm:p-9 rounded-2xl bg-white border border-studio-850 shadow-sm space-y-5 flex flex-col justify-between">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="text-2xl font-mono font-extrabold text-studio-100">{item.number}</span>
@@ -271,38 +272,38 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* Our Three Core Capabilities */}
-        <section className="py-20 bg-studio-950">
+        <section className="w-full py-20 md:py-24 bg-black text-white border-t border-b border-neutral-900">
           <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-12">
-            <div className="max-w-3xl space-y-3">
-              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest">
+            <div className="max-w-3xl space-y-3 text-center mx-auto">
+              <span className="text-xs font-mono font-bold text-neutral-400 uppercase tracking-widest block">
                 Core Capabilities
               </span>
-              <h2 className="text-3xl sm:text-5xl font-extrabold text-studio-100 leading-tight">
+              <h2 className="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
                 Three Integrated Disciplines.
               </h2>
-              <p className="text-base text-studio-300 font-normal leading-relaxed">
+              <p className="text-base text-neutral-400 font-normal leading-relaxed">
                 Rather than spreading ourselves thin across hundreds of fragmented services, we concentrate on three interconnected domains that build resilient, scalable businesses.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
               {coreCapabilities.map((cap) => (
-                <div key={cap.title} className="p-8 rounded-3xl bg-white border border-studio-850 shadow-sm space-y-6 flex flex-col justify-between group hover:border-studio-700 transition-all">
+                <div key={cap.title} className="p-8 rounded-3xl bg-neutral-950 border border-neutral-800 shadow-sm space-y-6 flex flex-col justify-between group hover:border-neutral-700 transition-all">
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
-                      <span className="px-3 py-1 bg-studio-900 border border-studio-850 text-studio-100 text-[11px] font-mono font-bold uppercase rounded-full">
+                      <span className="px-3 py-1 bg-neutral-900 border border-neutral-800 text-neutral-300 text-[11px] font-mono font-bold uppercase rounded-full">
                         {cap.badge}
                       </span>
                     </div>
-                    <h3 className="text-2xl font-bold text-studio-100">{cap.title}</h3>
-                    <p className="text-sm text-studio-300 leading-relaxed font-normal">
+                    <h3 className="text-2xl font-bold text-white">{cap.title}</h3>
+                    <p className="text-sm text-neutral-400 leading-relaxed font-normal">
                       {cap.desc}
                     </p>
                   </div>
-                  <div className="pt-6 border-t border-studio-850">
+                  <div className="pt-6 border-t border-neutral-800">
                     <Link
                       to={cap.path}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-studio-100 hover:text-studio-300 transition-colors"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white hover:text-neutral-300 transition-colors"
                     >
                       Explore {cap.title} <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                     </Link>
@@ -314,10 +315,10 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* Consulting Methodology: Understand Before We Build */}
-        <section className="py-20 bg-studio-900 border-t border-b border-studio-850">
+        <section className="py-20 md:py-24 bg-studio-900 border-t border-b border-studio-850">
           <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-12">
-            <div className="max-w-3xl space-y-3">
-              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest">
+            <div className="max-w-3xl space-y-3 text-center mx-auto">
+              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest block">
                 Consulting Methodology
               </span>
               <h2 className="text-3xl sm:text-5xl font-extrabold text-studio-100 leading-tight">
@@ -328,11 +329,13 @@ export const AboutPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {methodologySteps.map((step) => (
-                <div key={step.step} className="p-7 rounded-2xl bg-white border border-studio-850 shadow-sm space-y-4">
-                  <span className="text-3xl font-extrabold text-studio-100 font-mono block">{step.step}</span>
-                  <h3 className="text-lg font-bold text-studio-100">{step.title}</h3>
+                <div key={step.step} className="p-7 sm:p-8 rounded-2xl bg-white border border-studio-850 shadow-sm space-y-4 flex flex-col justify-between">
+                  <div className="space-y-4">
+                    <span className="text-3xl font-extrabold text-studio-100 font-mono block">{step.step}</span>
+                    <h3 className="text-lg font-bold text-studio-100">{step.title}</h3>
+                  </div>
                   <p className="text-xs sm:text-sm text-studio-300 font-normal leading-relaxed">{step.desc}</p>
                 </div>
               ))}
@@ -340,43 +343,43 @@ export const AboutPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Bangalore HQ & Cross-Border Delivery Model */}
-        <section className="py-20 bg-studio-950">
+        {/* India HQ & Cross-Border Delivery Model */}
+        <section className="w-full py-20 md:py-24 bg-black text-white border-t border-b border-neutral-900">
           <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-12">
-            <div className="max-w-3xl space-y-3">
-              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest">
+            <div className="max-w-3xl space-y-3 text-center mx-auto">
+              <span className="text-xs font-mono font-bold text-neutral-400 uppercase tracking-widest block">
                 Global Operations & Delivery Governance
               </span>
-              <h2 className="text-3xl sm:text-5xl font-extrabold text-studio-100 leading-tight">
-                Bangalore Precision. Global Reach.
+              <h2 className="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+                Engineering Precision. Global Reach.
               </h2>
-              <p className="text-base text-studio-300 font-normal leading-relaxed">
-                Operating from Bangalore, Karnataka, India—the heart of India’s technology ecosystem—we deliver world-class digital systems to businesses across India, North America, Europe, the Middle East, and Asia-Pacific.
+              <p className="text-base text-neutral-400 font-normal leading-relaxed">
+                Operating from India, we deliver world-class digital systems to businesses across India, North America, Europe, the Middle East, and Asia-Pacific.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {deliveryPrinciples.map((item, idx) => (
-                <div key={idx} className="p-7 rounded-2xl bg-white border border-studio-850 shadow-sm space-y-4">
-                  <div className="w-10 h-10 rounded-xl bg-studio-900 border border-studio-850 flex items-center justify-center">
+                <div key={idx} className="p-7 rounded-2xl bg-neutral-950 border border-neutral-800 shadow-sm space-y-4">
+                  <div className="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white">
                     {item.icon}
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-studio-100">{item.title}</h3>
-                  <p className="text-xs sm:text-sm text-studio-300 font-normal leading-relaxed">{item.desc}</p>
+                  <h3 className="text-base sm:text-lg font-bold text-white">{item.title}</h3>
+                  <p className="text-xs sm:text-sm text-neutral-400 font-normal leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
 
-            <div className="p-8 rounded-3xl bg-studio-900 border border-studio-850 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div className="p-8 sm:p-10 rounded-3xl bg-neutral-950 border border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-6 max-w-6xl mx-auto">
               <div className="space-y-1 text-center sm:text-left">
-                <h4 className="text-lg font-bold text-studio-100">Explore Our Country-Specific Delivery Frameworks</h4>
-                <p className="text-xs sm:text-sm text-studio-300">
+                <h4 className="text-lg font-bold text-white">Explore Our Country-Specific Delivery Frameworks</h4>
+                <p className="text-xs sm:text-sm text-neutral-400">
                   Review how we work with clients in the UK, USA, UAE, Germany, Singapore, Switzerland, Australia, and more.
                 </p>
               </div>
               <Link
                 to="/global-markets"
-                className="px-6 py-3 bg-white text-studio-100 font-extrabold text-xs uppercase tracking-wider rounded-full border border-studio-850 hover:bg-studio-950 transition-all shrink-0"
+                className="px-6 py-3 bg-white text-black font-extrabold text-xs uppercase tracking-wider rounded-full hover:bg-neutral-200 transition-all shrink-0"
               >
                 View Global Markets Hub
               </Link>
@@ -385,10 +388,10 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* Transparent Capability Matrix */}
-        <section className="py-20 bg-studio-900 border-t border-studio-850">
+        <section className="py-20 md:py-24 bg-studio-900 border-t border-studio-850">
           <div className="max-w-5xl mx-auto px-6 md:px-12 space-y-8">
             <div className="text-center space-y-3">
-              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest">
+              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest block">
                 Our Standards
               </span>
               <h2 className="text-3xl sm:text-5xl font-extrabold text-studio-100 leading-tight">
@@ -420,7 +423,27 @@ export const AboutPage: React.FC = () => {
           </div>
         </section>
 
-        <ContactCTA />
+        {/* CTA: Ready to Build, Launch or Scale? */}
+        <section className="w-full py-20 md:py-28 bg-black text-white border-t border-neutral-900 relative overflow-hidden">
+          <div className="max-w-4xl mx-auto px-6 md:px-12 text-center relative z-10 space-y-6">
+            <h2 className="text-4xl sm:text-6xl font-extrabold text-white leading-tight">
+              Ready to Build, Launch or Scale?
+            </h2>
+
+            <p className="text-lg sm:text-xl text-neutral-400 max-w-xl mx-auto font-normal leading-relaxed">
+              Tell us about your business and we will help you map out the right strategy.
+            </p>
+
+            <div className="pt-2 flex justify-center">
+              <Link
+                to="/contact"
+                className="px-9 py-4 bg-white text-black font-extrabold text-sm uppercase tracking-wider rounded-full hover:bg-neutral-200 transition-all shadow-md inline-block"
+              >
+                Get In Touch
+              </Link>
+            </div>
+          </div>
+        </section>
 
       </main>
     </>

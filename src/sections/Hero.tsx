@@ -433,20 +433,8 @@ export const Hero: React.FC<HeroProps> = () => {
           </motion.h1>
         </div>
 
-        {/* Supporting Capability Clarity */}
-        {mainStatementRevealed && (
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="text-xs sm:text-sm md:text-base text-neutral-400 font-normal max-w-xl mx-auto mt-4 sm:mt-6 leading-relaxed"
-          >
-            Brand Building · High-Performance Websites · Personalised Business Systems for businesses in India & internationally.
-          </motion.p>
-        )}
-
-        {/* STEP 4: Dual CTA Pathways */}
-        <div className="mt-8 sm:mt-10 min-h-[3.5rem] flex items-center justify-center">
+        {/* STEP 4: CTA Button ("Let's Build →") */}
+        <div className="mt-10 sm:mt-12 md:mt-14 min-h-[3.5rem] flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{
@@ -454,20 +442,13 @@ export const Hero: React.FC<HeroProps> = () => {
               y: ctaRevealed ? 0 : 20,
             }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col sm:flex-row items-center gap-3.5 sm:gap-4"
           >
             <Link
-              to="/services"
-              className="inline-flex items-center justify-center gap-3 px-7 py-3.5 sm:px-8 sm:py-3.5 bg-white text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.12)] hover:shadow-[0_0_45px_rgba(255,255,255,0.35)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+              to="/business-tools"
+              className="inline-flex items-center justify-center gap-3 px-8 py-3.5 sm:px-9 sm:py-4 bg-white text-black font-extrabold text-sm sm:text-base tracking-wide rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.12)] hover:shadow-[0_0_45px_rgba(255,255,255,0.35)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
             >
-              <span>Explore Capabilities</span>
+              <span>Let's Build</span>
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center px-6 py-3.5 sm:px-7 sm:py-3.5 bg-neutral-900 text-neutral-300 hover:text-white hover:bg-neutral-800 border border-neutral-800 font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all"
-            >
-              Discuss Your Business
             </Link>
           </motion.div>
         </div>

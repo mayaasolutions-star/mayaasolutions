@@ -38,7 +38,7 @@ const AUSTRALIA_FAQS: FAQItem[] = [
   {
     question: 'How do you handle Australian data privacy and cloud sovereignty?',
     answer:
-      'All bespoke systems, automated workflows, and database layers are deployed directly onto client-owned cloud tenancies in Australian regions—such as AWS ap-southeast-2 (Sydney/Melbourne) or Microsoft Azure Australia East. Mayaa never stores, sells, or monetizes client customer data. Systems feature strict role-based access control (RBAC), multi-factor authentication, and audit logs compliant with the Australian Privacy Principles (APPs) and Privacy Act 1988.',
+      'All bespoke systems, automated workflows, and database layers are deployed directly onto client-owned cloud tenancies in Australian regions, such as AWS ap-southeast-2 (Sydney/Melbourne) or Microsoft Azure Australia East. Mayaa never stores, sells, or monetizes client customer data. Systems feature strict role-based access control (RBAC), multi-factor authentication, and audit logs compliant with the Australian Privacy Principles (APPs) and Privacy Act 1988.',
   },
   {
     question: 'Can your business systems integrate with Australian tools like Xero, MYOB, simPRO, or ServiceM8?',
@@ -1045,39 +1045,52 @@ export const AustraliaMarketPage: React.FC = () => {
         {/* ==================================================
             12. PROVEN CAPABILITY (REAL DEMONSTRATION)
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-24 sm:py-32 px-6 md:px-12 lg:px-16">
-          <div className="max-w-[1400px] mx-auto space-y-10 sm:space-y-14">
-            
-            <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
-                PROVEN SYSTEM CAPABILITY · SEMS
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase leading-[1.02]">
-                A REAL SYSTEM. <br />
-                <span className="text-[#8E8E8A]">ALREADY BUILT.</span>
-              </h2>
-              <p className="text-base sm:text-lg text-neutral-300 font-normal leading-relaxed">
-                SEMS demonstrates how Mayaa approaches operational software: unified lead tracking, staff assignments, task coordination, and management visibility configured in one practical interface.
-              </p>
-            </div>
+        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-20 sm:py-28 px-6 md:px-12 lg:px-16">
+          <div className="max-w-[1400px] mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              
+              {/* Left Column: Heading, Description & Verification Points */}
+              <div className="lg:col-span-5 space-y-6">
+                <div className="space-y-4">
+                  <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+                    PROVEN SYSTEM CAPABILITY · SEMS
+                  </span>
+                  <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase leading-[1.02]">
+                    A REAL SYSTEM. <br />
+                    <span className="text-[#8E8E8A]">ALREADY BUILT.</span>
+                  </h2>
+                  <p className="text-base sm:text-lg text-neutral-300 font-normal leading-relaxed">
+                    SEMS demonstrates how Mayaa approaches operational software: unified lead tracking, staff assignments, task coordination, and management visibility configured in one practical interface.
+                  </p>
+                </div>
 
-            {/* Dashboard Visual Container */}
-            <div className="rounded-3xl overflow-hidden bg-neutral-950 border border-neutral-800 p-3 sm:p-4 shadow-2xl">
-              <div className="relative rounded-2xl overflow-hidden bg-black aspect-[16/9] border border-neutral-900">
-                <img
-                  src="/images/service_business_growth.webp"
-                  alt="SEMS (Business Management System) production dashboard demonstration"
-                  className="w-full h-full object-cover grayscale contrast-125"
-                  loading="lazy"
-                />
+                <div className="pt-2 border-t border-neutral-800/80 space-y-2.5 text-xs font-mono text-[#8E8E8A]">
+                  <p className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                    <span>A tangible demonstration of Mayaa's custom system engineering capability.</span>
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                    <span>Available for a live walkthrough during initial consultation discussions.</span>
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-[#8E8E8A] pt-2">
-              <span>A tangible demonstration of Mayaa's custom system engineering capability.</span>
-              <span>Available for a live walkthrough during initial consultation discussions.</span>
-            </div>
+              {/* Right Column: Controlled-Size Dashboard Visual Container */}
+              <div className="lg:col-span-7">
+                <div className="rounded-3xl overflow-hidden bg-neutral-950 border border-neutral-800 p-2.5 sm:p-3.5 shadow-2xl">
+                  <div className="relative rounded-2xl overflow-hidden bg-black aspect-[16/10] border border-neutral-900">
+                    <img
+                      src="/images/service_business_growth.webp"
+                      alt="SEMS (Business Management System) production dashboard demonstration"
+                      className="w-full h-full object-cover grayscale contrast-125"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
 
+            </div>
           </div>
         </section>
 
@@ -1205,7 +1218,7 @@ export const AustraliaMarketPage: React.FC = () => {
                   >
                     <span className="text-base sm:text-lg font-medium">{faq.question}</span>
                     <span className="text-xs font-mono text-neutral-500 flex-shrink-0">
-                      {openFaq === idx ? '—' : '+'}
+                      {openFaq === idx ? '-' : '+'}
                     </span>
                   </button>
                   <AnimatePresence>
@@ -1261,7 +1274,7 @@ export const AustraliaMarketPage: React.FC = () => {
             >
               <p>Tell us how you currently manage enquiries, clients, projects and your team.</p>
               <p className="text-neutral-400">
-                We'll help you identify where the friction is — and show you what could be improved.
+                We'll help you identify where the friction is and show you what could be improved.
               </p>
             </motion.div>
 

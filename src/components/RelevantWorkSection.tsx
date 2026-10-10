@@ -16,7 +16,7 @@ export const RelevantWorkSection: React.FC<RelevantWorkSectionProps> = ({
   return (
     <section className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto border-t border-[#E5E5E2]">
       {/* Header */}
-      <div className="max-w-3xl mb-12 sm:mb-16">
+      <div className="max-w-3xl mb-12 sm:mb-16 text-center mx-auto">
         <motion.span
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}

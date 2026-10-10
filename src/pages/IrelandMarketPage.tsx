@@ -31,7 +31,7 @@ const IRELAND_FAQS: FAQItem[] = [
   {
     question: 'How do you handle Irish and EU data privacy, GDPR, and host jurisdiction?',
     answer:
-      'All custom business systems, databases, and client portals are deployed directly onto client-owned cloud infrastructure located in European regions—including AWS Ireland (eu-west-1), Microsoft Azure Ireland (North Europe), or dedicated European private clouds. Mayaa never owns, mines, or monetizes client data. Systems are built with role-based access control (RBAC), multi-factor authentication, and strict compliance with the Data Protection Commission (DPC) guidelines.',
+      'All custom business systems, databases, and client portals are deployed directly onto client-owned cloud infrastructure located in European regions, including AWS Ireland (eu-west-1), Microsoft Azure Ireland (North Europe), or dedicated European private clouds. Mayaa never owns, mines, or monetizes client data. Systems are built with role-based access control (RBAC), multi-factor authentication, and strict compliance with the Data Protection Commission (DPC) guidelines.',
   },
   {
     question: 'Can your business systems integrate with Irish and European accounting tools like Xero, Sage, or Big Red Cloud?',
@@ -551,7 +551,7 @@ export const IrelandMarketPage: React.FC = () => {
                   Technology should earn its place
                 </div>
                 <p className="text-[#9CA3AF] text-sm sm:text-base font-light leading-relaxed mb-6">
-                  We don't add software just because it exists. More software is not always the answer—better-connected work is. We build only what genuinely solves a problem, with practical AI applied only where it saves real team time.
+                  We don't add software just because it exists. More software is not always the answer; better-connected work is. We build only what genuinely solves a problem, with practical AI applied only where it saves real team time.
                 </p>
                 <div className="text-xs font-mono text-white/80 pt-4 border-t border-white/[0.06]">
                   “AI should remove repetitive work, not be added just because it is fashionable.”
@@ -681,7 +681,7 @@ export const IrelandMarketPage: React.FC = () => {
                   >
                     <span className="text-base sm:text-lg font-light">{faq.question}</span>
                     <span className="text-xs font-mono text-white/50 flex-shrink-0">
-                      {openFaq === idx ? '—' : '+'}
+                      {openFaq === idx ? '-' : '+'}
                     </span>
                   </button>
                   <AnimatePresence>

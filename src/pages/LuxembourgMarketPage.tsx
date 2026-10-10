@@ -52,7 +52,7 @@ const LUXEMBOURG_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements and invoicing structured?',
     answer:
-      'We quote and invoice directly in Euros (EUR) on transparent, milestone-governed contracts. Every stage—from discovery and wireframing to code deployment—is tied to explicit acceptance criteria. Furthermore, our bespoke systems carry zero recurring per-user licensing fees, ensuring predictable capital allocation.',
+      'We quote and invoice directly in Euros (EUR) on transparent, milestone-governed contracts. Every stage, from discovery and wireframing to code deployment, is tied to explicit acceptance criteria. Furthermore, our bespoke systems carry zero recurring per-user licensing fees, ensuring predictable capital allocation.',
   },
 ];
 
@@ -189,7 +189,7 @@ export const LuxembourgMarketPage: React.FC = () => {
       />
 
       {/* =========================================================================
-          01: HERO — LOCAL PRESENCE. INTERNATIONAL PERSPECTIVE.
+          01: HERO: LOCAL PRESENCE. INTERNATIONAL PERSPECTIVE.
           ========================================================================= */}
       <section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 border-b border-[#232834] overflow-hidden">
         {/* Ambient Plum & Slate Glow */}
@@ -356,7 +356,7 @@ export const LuxembourgMarketPage: React.FC = () => {
               <span className="font-serif italic text-[#CBD5E1]">only the beginning.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#94A3B8] font-light leading-relaxed">
-              Your business may have the right expertise, a strong offering, and the capability to serve discerning clients. But commercial momentum depends on how that capability is experienced from the outside—and delivered on the inside.
+              Your business may have the right expertise, a strong offering, and the capability to serve discerning clients. But commercial momentum depends on how that capability is experienced from the outside, and delivered on the inside.
             </p>
           </div>
 

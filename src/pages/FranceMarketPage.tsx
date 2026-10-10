@@ -478,7 +478,7 @@ export const FranceMarketPage: React.FC = () => {
             {/* Problem 01 */}
             <div className="border border-neutral-800/80 bg-neutral-950 p-7 space-y-4 hover:border-neutral-700 transition-colors">
               <div className="flex items-center justify-between text-xs font-mono text-neutral-400">
-                <span>01 — OBSTACLE</span>
+                <span>01 · OBSTACLE</span>
                 <span>FRAGMENTATION</span>
               </div>
               <h3 className="text-lg font-medium text-white uppercase tracking-tight">
@@ -492,7 +492,7 @@ export const FranceMarketPage: React.FC = () => {
             {/* Problem 02 */}
             <div className="border border-neutral-800/80 bg-neutral-950 p-7 space-y-4 hover:border-neutral-700 transition-colors">
               <div className="flex items-center justify-between text-xs font-mono text-neutral-400">
-                <span>02 — OBSTACLE</span>
+                <span>02 · OBSTACLE</span>
                 <span>COORDINATION</span>
               </div>
               <h3 className="text-lg font-medium text-white uppercase tracking-tight">
@@ -506,7 +506,7 @@ export const FranceMarketPage: React.FC = () => {
             {/* Problem 03 */}
             <div className="border border-neutral-800/80 bg-neutral-950 p-7 space-y-4 hover:border-neutral-700 transition-colors">
               <div className="flex items-center justify-between text-xs font-mono text-neutral-400">
-                <span>03 — OBSTACLE</span>
+                <span>03 · OBSTACLE</span>
                 <span>CREATIVE BALANCE</span>
               </div>
               <h3 className="text-lg font-medium text-white uppercase tracking-tight">
@@ -520,7 +520,7 @@ export const FranceMarketPage: React.FC = () => {
             {/* Problem 04 */}
             <div className="border border-neutral-800/80 bg-neutral-950 p-7 space-y-4 hover:border-neutral-700 transition-colors">
               <div className="flex items-center justify-between text-xs font-mono text-neutral-400">
-                <span>04 — OBSTACLE</span>
+                <span>04 · OBSTACLE</span>
                 <span>OVERSIGHT</span>
               </div>
               <h3 className="text-lg font-medium text-white uppercase tracking-tight">
@@ -534,7 +534,7 @@ export const FranceMarketPage: React.FC = () => {
             {/* Problem 05 */}
             <div className="border border-neutral-800/80 bg-neutral-950 p-7 space-y-4 hover:border-neutral-700 transition-colors md:col-span-2 lg:col-span-2">
               <div className="flex items-center justify-between text-xs font-mono text-neutral-400">
-                <span>05 — OBSTACLE</span>
+                <span>05 · OBSTACLE</span>
                 <span>SCALABILITY</span>
               </div>
               <h3 className="text-lg font-medium text-white uppercase tracking-tight">
@@ -647,7 +647,7 @@ export const FranceMarketPage: React.FC = () => {
             {/* Step 01 */}
             <div className="border border-neutral-800 bg-neutral-950 p-6 sm:p-7 space-y-4">
               <div className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
-                01 — STEP
+                01 · STEP
               </div>
               <h3 className="text-xl font-medium text-white uppercase tracking-tight">
                 UNDERSTAND
@@ -663,7 +663,7 @@ export const FranceMarketPage: React.FC = () => {
             {/* Step 02 */}
             <div className="border border-neutral-800 bg-neutral-950 p-6 sm:p-7 space-y-4">
               <div className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
-                02 — STEP
+                02 · STEP
               </div>
               <h3 className="text-xl font-medium text-white uppercase tracking-tight">
                 CONFIGURE
@@ -679,7 +679,7 @@ export const FranceMarketPage: React.FC = () => {
             {/* Step 03 */}
             <div className="border border-neutral-800 bg-neutral-950 p-6 sm:p-7 space-y-4">
               <div className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
-                03 — STEP
+                03 · STEP
               </div>
               <h3 className="text-xl font-medium text-white uppercase tracking-tight">
                 BUILD
@@ -695,7 +695,7 @@ export const FranceMarketPage: React.FC = () => {
             {/* Step 04 */}
             <div className="border border-neutral-800 bg-neutral-950 p-6 sm:p-7 space-y-4">
               <div className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
-                04 — STEP
+                04 · STEP
               </div>
               <h3 className="text-xl font-medium text-white uppercase tracking-tight">
                 IMPLEMENT
@@ -995,7 +995,7 @@ export const FranceMarketPage: React.FC = () => {
 
             <div className="mt-12 text-center">
               <p className="text-xs font-mono uppercase tracking-[0.2em] text-neutral-400">
-                MAYAA SOLUTIONS — DESIGNING BOTH SIDES OF THE BUSINESS.
+                MAYAA SOLUTIONS: DESIGNING BOTH SIDES OF THE BUSINESS.
               </p>
             </div>
 
@@ -1008,52 +1008,61 @@ export const FranceMarketPage: React.FC = () => {
         <section className="border-t border-neutral-900 bg-black py-20 sm:py-28 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto">
             
-            <div className="max-w-3xl mb-12 sm:mb-16">
-              <div className="text-xs font-mono uppercase tracking-[0.25em] text-neutral-400 mb-3">
-                PRODUCT ARCHITECTURE IN ACTION
-              </div>
-              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-light tracking-tight text-white uppercase leading-tight">
-                SEMS (BUSINESS MANAGEMENT SYSTEM)
-              </h2>
-              <p className="text-neutral-400 text-sm sm:text-base font-light mt-4 leading-relaxed">
-                A real example of how Mayaa approaches business management systems. SEMS brings operational areas into a connected digital environment, establishing clear visibility across teams, pipelines and delivery workflows.
-              </p>
-            </div>
-
-            {/* Video / Visual Container in True 16:9 Landscape Aspect Ratio */}
-            <div className="border border-neutral-800 bg-neutral-950 p-2 sm:p-4 rounded-none shadow-2xl">
-              <div className="relative aspect-[16/9] w-full overflow-hidden bg-black border border-neutral-900">
-                <video
-                  src="/sems-demo.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-contain"
-                />
-              </div>
-
-              {/* Module Capabilities Bar */}
-              <div className="p-4 sm:p-6 bg-neutral-950/80 border-t border-neutral-900 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 text-center">
-                {[
-                  { label: 'Lead Management', icon: 'Pipelines' },
-                  { label: 'Team Management', icon: 'Allocation' },
-                  { label: 'Tasks', icon: 'Routing' },
-                  { label: 'Operations', icon: 'Handovers' },
-                  { label: 'Reporting', icon: 'Metrics' },
-                  { label: 'User Roles', icon: 'Access Controls' },
-                  { label: 'Business Workflows', icon: 'Custom Rules' },
-                ].map((item, idx) => (
-                  <div key={idx} className="space-y-1">
-                    <div className="text-xs font-medium text-neutral-200 uppercase tracking-tight">
-                      {item.label}
-                    </div>
-                    <div className="text-[10px] font-mono text-neutral-400">
-                      {item.icon}
-                    </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              
+              {/* Left Column: Heading, Description & Capabilities Grid */}
+              <div className="lg:col-span-5 space-y-6">
+                <div>
+                  <div className="text-xs font-mono uppercase tracking-[0.25em] text-neutral-400 mb-3">
+                    PRODUCT ARCHITECTURE IN ACTION
                   </div>
-                ))}
+                  <h2 className="text-2xl sm:text-4xl lg:text-5xl font-light tracking-tight text-white uppercase leading-tight mb-4">
+                    SEMS (BUSINESS MANAGEMENT SYSTEM)
+                  </h2>
+                  <p className="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+                    A real example of how Mayaa approaches business management systems. SEMS brings operational areas into a connected digital environment, establishing clear visibility across teams, pipelines and delivery workflows.
+                  </p>
+                </div>
+
+                {/* Module Capabilities Compact Grid */}
+                <div className="pt-2 border-t border-neutral-900 grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                  {[
+                    { label: 'Lead Management', icon: 'Pipelines' },
+                    { label: 'Team Management', icon: 'Allocation' },
+                    { label: 'Tasks', icon: 'Routing' },
+                    { label: 'Operations', icon: 'Handovers' },
+                    { label: 'Reporting', icon: 'Metrics' },
+                    { label: 'User Roles', icon: 'Access Controls' },
+                    { label: 'Business Workflows', icon: 'Custom Rules' },
+                  ].map((item, idx) => (
+                    <div key={idx} className="p-2.5 rounded bg-neutral-950 border border-neutral-900 space-y-0.5">
+                      <div className="text-xs font-medium text-neutral-200 uppercase tracking-tight">
+                        {item.label}
+                      </div>
+                      <div className="text-[10px] font-mono text-neutral-400">
+                        {item.icon}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
+
+              {/* Right Column: Video / Visual Container in Controlled Aspect Ratio */}
+              <div className="lg:col-span-7">
+                <div className="border border-neutral-800 bg-neutral-950 p-2 sm:p-3 rounded-none shadow-2xl">
+                  <div className="relative aspect-[16/10] w-full overflow-hidden bg-black border border-neutral-900">
+                    <video
+                      src="/sems-demo.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-neutral-400">

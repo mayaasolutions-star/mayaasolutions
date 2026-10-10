@@ -134,7 +134,7 @@ export const ProductCheckoutModal: React.FC<ProductCheckoutModalProps> = ({ prod
           <div className="p-6 border-b border-studio-850 flex items-center justify-between bg-studio-900/95 backdrop-blur-md sticky top-0 z-20">
             <div>
               <span className="text-xs font-semibold text-studio-400 uppercase tracking-widest block">
-                Step {step} of 2 — {step === 1 ? 'Details' : 'Checkout'}
+                Step {step} of 2: {step === 1 ? 'Details' : 'Checkout'}
               </span>
               <h3 className="text-xl sm:text-2xl font-extrabold text-studio-100 mt-1">
                 {step === 1 ? (isService ? 'Personalise Your Order' : 'Download Access') : 'Order Summary & Payment'}

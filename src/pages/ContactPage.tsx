@@ -8,15 +8,44 @@ import {
   Send, 
   CheckCircle2, 
   Clock, 
-  Globe2, 
-  ShieldCheck, 
   Lock, 
   ChevronDown,
   ArrowRight,
   Building2,
-  AlertCircle
+  AlertCircle,
+  Linkedin,
+  Instagram,
+  Facebook
 } from 'lucide-react';
 import { Button } from '../components/Button';
+
+interface SocialLinkItem {
+  name: string;
+  url: string;
+  icon: React.ComponentType<{ className?: string }>;
+  hoverColorClass: string;
+}
+
+const OFFICIAL_SOCIAL_LINKS: SocialLinkItem[] = [
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/company/mayaa-solutions/',
+    icon: Linkedin,
+    hoverColorClass: 'hover:text-[#0A66C2] hover:border-[#0A66C2]/30',
+  },
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/mayaa.solutions/',
+    icon: Instagram,
+    hoverColorClass: 'hover:text-[#E4405F] hover:border-[#E4405F]/30',
+  },
+  {
+    name: 'Facebook',
+    url: 'https://www.facebook.com/mayaasolutions/',
+    icon: Facebook,
+    hoverColorClass: 'hover:text-[#1877F2] hover:border-[#1877F2]/30',
+  },
+];
 
 const MARKET_NAME_MAP: Record<string, string> = {
   'india': 'India',
@@ -103,7 +132,8 @@ export const ContactPage: React.FC = () => {
       return;
     }
 
-    if (!formData.email.trim() || !formData.email.includes('@')) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email.trim() || !emailRegex.test(formData.email.trim())) {
       setErrorMessage('Please provide a valid business email address.');
       return;
     }
@@ -171,32 +201,16 @@ export const ContactPage: React.FC = () => {
       });
     } catch (err: any) {
       console.error('[Supabase Contact Form Submission Failed]', err);
+      const isNetworkErr = err?.message === 'Failed to fetch' || err?.name === 'TypeError';
       setErrorMessage(
-        err.message || 'An error occurred while submitting your message. Please reach out directly to contact@mayaasolutions.in'
+        isNetworkErr
+          ? 'Unable to connect to the enquiry service. Please try again or reach out directly to contact@mayaasolutions.in'
+          : (err?.message || 'An error occurred while submitting your enquiry. Please reach out directly to contact@mayaasolutions.in')
       );
     } finally {
       setSubmitting(false);
     }
   };
-
-  const projectTypes = [
-    {
-      title: 'Brand Building & Positioning',
-      desc: 'Defining market positioning, brand narrative, visual identity systems, and high-trust marketing assets.'
-    },
-    {
-      title: 'Websites & Digital Experiences',
-      desc: 'Engineering fast, responsive corporate websites, high-converting storefronts, and modern web applications.'
-    },
-    {
-      title: 'Personalised Business Management Systems',
-      desc: 'Building bespoke operational platforms, CRM workflows, order tracking, and custom internal management tools.'
-    },
-    {
-      title: 'Strategic Growth Advisory',
-      desc: 'Diagnosing commercial bottlenecks, customer acquisition friction, and international digital positioning.'
-    }
-  ];
 
   const faqItems = [
     {
@@ -244,7 +258,7 @@ export const ContactPage: React.FC = () => {
                 <div className="flex items-center gap-2.5">
                   <span className="w-2 h-2 rounded-full bg-studio-100 inline-block" />
                   <span className="text-xs font-extrabold text-studio-100 uppercase tracking-widest font-mono">
-                    Start a Conversation • Bangalore HQ & Global Delivery
+                    Start a Conversation • India HQ & Global Delivery
                   </span>
                 </div>
 
@@ -284,7 +298,7 @@ export const ContactPage: React.FC = () => {
                   <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-studio-850 shadow-lg flex items-center justify-between text-xs">
                     <div>
                       <span className="text-studio-400 block font-semibold uppercase tracking-wider text-[10px]">Headquarters</span>
-                      <span className="text-studio-100 font-bold text-sm">Bangalore, Karnataka, India</span>
+                      <span className="text-studio-100 font-bold text-sm">India</span>
                     </div>
                     <div className="text-right">
                       <span className="text-studio-400 block font-semibold uppercase tracking-wider text-[10px]">Delivery Window</span>
@@ -300,124 +314,88 @@ export const ContactPage: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-16">
 
-          {/* Types of Projects We Help With */}
-          <section className="p-8 sm:p-10 rounded-3xl bg-white border border-studio-850 shadow-sm space-y-6">
-            <div className="max-w-3xl space-y-2">
-              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest">
-                Our Scope of Work
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-studio-100">
-                Types of Projects We Can Help You With.
-              </h2>
-              <p className="text-sm sm:text-base text-studio-300 font-normal leading-relaxed">
-                We take time to understand your commercial objectives, customer journey, and operational constraints before recommending solutions.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
-              {projectTypes.map((pt, idx) => (
-                <div key={idx} className="p-5 rounded-2xl bg-studio-900 border border-studio-850 space-y-2">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-studio-100 shrink-0" />
-                    <h3 className="text-sm font-bold text-studio-100">{pt.title}</h3>
-                  </div>
-                  <p className="text-xs text-studio-400 leading-relaxed font-normal">{pt.desc}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
           {/* Core Interactive Contact Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
             
             {/* Left Column: Direct Info & Collaboration Details */}
-            <div className="lg:col-span-5 space-y-8 flex flex-col justify-between">
+            <div className="lg:col-span-5 flex flex-col">
               
               {/* Direct Communication Details */}
-              <div className="p-8 rounded-3xl bg-white border border-studio-850 shadow-sm space-y-6">
+              <div className="p-8 sm:p-10 rounded-3xl bg-white border border-studio-850 shadow-sm flex flex-col h-full">
+                {/* Introduction */}
                 <div>
                   <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest block">
-                    Direct Contact
+                    DIRECT CONTACT
                   </span>
-                  <h3 className="text-xl font-bold text-studio-100 mt-1">Get in Touch Directly</h3>
-                  <p className="text-xs text-studio-400 mt-1">
-                    Reach out for strategic advisory, formal RFPs, or collaborative project scoping.
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-studio-100 mt-2.5 tracking-tight">
+                    Get in Touch Directly
+                  </h3>
+                  <p className="text-xs sm:text-sm text-studio-400 mt-3 leading-relaxed max-w-md font-normal">
+                    Have a project in mind? Let's discuss how Mayaa Solutions can help you build, launch or scale your business.
                   </p>
                 </div>
                 
-                <div className="space-y-4 text-sm text-studio-300">
-                  <div className="flex items-start gap-4 p-4 rounded-2xl bg-studio-900 border border-studio-850">
+                {/* Social Connection */}
+                <div className="mt-7">
+                  <span className="text-[10px] font-mono font-bold text-studio-400 uppercase tracking-widest block mb-3">
+                    CONNECT WITH US
+                  </span>
+                  <div className="flex items-center gap-3.5">
+                    {OFFICIAL_SOCIAL_LINKS.map((social) => {
+                      const IconComponent = social.icon;
+                      return (
+                        <a
+                          key={social.name}
+                          href={social.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Mayaa Solutions on ${social.name}`}
+                          title={`Mayaa Solutions on ${social.name}`}
+                          className={`w-11 h-11 rounded-xl bg-studio-900 border border-studio-850 flex items-center justify-center text-studio-300 hover:bg-white hover:shadow-xs transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-studio-100 ${social.hoverColorClass}`}
+                        >
+                          <IconComponent className="w-5 h-5 shrink-0" />
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Contact Information Cards */}
+                <div className="mt-7 space-y-4 text-sm text-studio-300">
+                  <div className="flex items-start gap-4 p-5 rounded-2xl bg-studio-900 border border-studio-850">
                     <div className="p-2.5 rounded-xl bg-white text-studio-100 border border-studio-850 shrink-0 shadow-sm">
                       <Mail className="w-4 h-4" />
                     </div>
                     <div>
-                      <span className="text-[10px] font-bold text-studio-400 uppercase tracking-widest block">Official Email</span>
+                      <span className="text-[10px] font-bold text-studio-400 uppercase tracking-widest block">
+                        OFFICIAL EMAIL
+                      </span>
                       <a 
                         href="mailto:contact@mayaasolutions.in" 
-                        className="text-studio-100 hover:text-studio-300 font-bold text-sm transition-colors"
+                        className="text-studio-100 hover:text-studio-300 font-bold text-sm sm:text-base transition-colors"
                       >
                         contact@mayaasolutions.in
                       </a>
-                      <span className="text-[11px] text-studio-400 block mt-0.5">Monitored during business hours</span>
+                      <span className="text-xs text-studio-400 block mt-1">
+                        Monitored during business hours
+                      </span>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 p-4 rounded-2xl bg-studio-900 border border-studio-850">
+                  <div className="flex items-start gap-4 p-5 rounded-2xl bg-studio-900 border border-studio-850">
                     <div className="p-2.5 rounded-xl bg-white text-studio-100 border border-studio-850 shrink-0 shadow-sm">
                       <MapPin className="w-4 h-4" />
                     </div>
                     <div>
-                      <span className="text-[10px] font-bold text-studio-400 uppercase tracking-widest block">Headquarters</span>
-                      <span className="text-studio-100 font-bold text-sm block">Bangalore, Karnataka, India</span>
-                      <span className="text-[11px] text-studio-400 block mt-0.5">Global engineering & strategy center</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-2 border-t border-studio-850 space-y-2 text-xs text-studio-400">
-                  <div className="flex items-center gap-2 text-studio-300 font-medium">
-                    <Globe2 className="w-3.5 h-3.5 text-studio-100" />
-                    <span>Serving clients across India & 20+ global jurisdictions</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-studio-300 font-medium">
-                    <ShieldCheck className="w-3.5 h-3.5 text-studio-100" />
-                    <span>Milestone invoicing in USD, EUR, GBP, AED, SGD, AUD, INR</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* What Happens Next Card */}
-              <div className="p-8 rounded-3xl bg-white border border-studio-850 shadow-sm space-y-5 flex-1 flex flex-col justify-center">
-                <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest block">
-                  Process Transparency
-                </span>
-                <h4 className="text-base font-bold text-studio-100">What Happens After You Enquire?</h4>
-                <div className="space-y-4 text-xs sm:text-sm text-studio-300 font-normal">
-                  <div className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-studio-900 text-studio-100 font-mono font-bold flex items-center justify-center text-xs shrink-0 border border-studio-850">
-                      1
-                    </span>
-                    <div>
-                      <strong className="text-studio-100 font-semibold block">Discovery Review</strong>
-                      <span className="text-studio-400 text-xs">We analyze your business context, current website, and objectives within 24 hours.</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-studio-900 text-studio-100 font-mono font-bold flex items-center justify-center text-xs shrink-0 border border-studio-850">
-                      2
-                    </span>
-                    <div>
-                      <strong className="text-studio-100 font-semibold block">Strategic Consultation</strong>
-                      <span className="text-studio-400 text-xs">We coordinate a 30-minute structured video call to align on requirements and scope.</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-studio-900 text-studio-100 font-mono font-bold flex items-center justify-center text-xs shrink-0 border border-studio-850">
-                      3
-                    </span>
-                    <div>
-                      <strong className="text-studio-100 font-semibold block">Fixed-Scope Proposal</strong>
-                      <span className="text-studio-400 text-xs">You receive a clear roadmap with milestone deliverables, timeline, and fixed pricing.</span>
+                      <span className="text-[10px] font-bold text-studio-400 uppercase tracking-widest block">
+                        HEADQUARTERS
+                      </span>
+                      <span className="text-studio-100 font-bold text-sm sm:text-base block">
+                        India
+                      </span>
+                      <span className="text-xs text-studio-400 block mt-1">
+                        Global engineering & strategy center
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -426,8 +404,8 @@ export const ContactPage: React.FC = () => {
             </div>
 
             {/* Right Column: Clean, Structured Project Enquiry Form */}
-            <div className="lg:col-span-7 h-full">
-              <div className="p-8 sm:p-12 rounded-3xl bg-white border border-studio-850 shadow-sm space-y-6 h-full flex flex-col justify-between">
+            <div className="lg:col-span-7 flex flex-col">
+              <div className="p-8 sm:p-12 rounded-3xl bg-white border border-studio-850 shadow-sm space-y-6 flex flex-col justify-between h-full">
                 <div>
                   <div className="flex items-center justify-between">
                     <h3 className="text-2xl sm:text-3xl font-extrabold text-studio-100">Start Your Project</h3>
@@ -461,7 +439,7 @@ export const ContactPage: React.FC = () => {
                     </div>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-5 flex-1 flex flex-col justify-between">
+                  <form onSubmit={handleSubmit} className="space-y-5">
                     {errorMessage && (
                       <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-600 text-xs sm:text-sm flex items-start gap-2.5">
                         <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
@@ -483,7 +461,7 @@ export const ContactPage: React.FC = () => {
                             required
                             value={formData.name}
                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                            placeholder="e.g. Sarah Jenkins"
+                            placeholder="Full name"
                             className="w-full px-4 py-3 bg-studio-900 border border-studio-850 rounded-xl text-studio-100 text-sm focus:border-studio-100 focus:bg-white outline-none transition-all placeholder:text-studio-400"
                           />
                         </div>
@@ -498,7 +476,7 @@ export const ContactPage: React.FC = () => {
                             required
                             value={formData.email}
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                            placeholder="e.g. sarah@company.com"
+                            placeholder="Work email address"
                             className="w-full px-4 py-3 bg-studio-900 border border-studio-850 rounded-xl text-studio-100 text-sm focus:border-studio-100 focus:bg-white outline-none transition-all placeholder:text-studio-400"
                           />
                         </div>
@@ -515,7 +493,7 @@ export const ContactPage: React.FC = () => {
                             type="text"
                             value={formData.company}
                             onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                            placeholder="e.g. Acme Enterprises"
+                            placeholder="Company name (optional)"
                             className="w-full px-4 py-3 bg-studio-900 border border-studio-850 rounded-xl text-studio-100 text-sm focus:border-studio-100 focus:bg-white outline-none transition-all placeholder:text-studio-400"
                           />
                         </div>
@@ -529,7 +507,7 @@ export const ContactPage: React.FC = () => {
                             type="tel"
                             value={formData.phone}
                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                            placeholder="e.g. +1 555-0199 or +91 98765 43210"
+                            placeholder="Phone number (optional)"
                             className="w-full px-4 py-3 bg-studio-900 border border-studio-850 rounded-xl text-studio-100 text-sm focus:border-studio-100 focus:bg-white outline-none transition-all placeholder:text-studio-400"
                           />
                         </div>
@@ -602,7 +580,7 @@ export const ContactPage: React.FC = () => {
                           required
                           value={formData.message}
                           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                          placeholder="Tell us about your business, the current challenge you are solving, target timeline, or specific requirements..."
+                          placeholder="Briefly describe your project, goals and timeline..."
                           className="w-full min-h-[120px] px-4 py-3 bg-studio-900 border border-studio-850 rounded-xl text-studio-100 text-sm focus:border-studio-100 focus:bg-white outline-none resize-none transition-all placeholder:text-studio-400"
                         />
                       </div>
@@ -627,12 +605,12 @@ export const ContactPage: React.FC = () => {
           </div>
 
           {/* Prospective Client FAQ Accordion */}
-          <section className="pt-8 space-y-6">
-            <div className="max-w-2xl text-left space-y-2">
-              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest">
+          <section className="pt-2 sm:pt-4 max-w-4xl mx-auto w-full">
+            <div className="text-center space-y-2 mb-6 sm:mb-8">
+              <span className="text-xs font-mono font-bold text-studio-400 uppercase tracking-widest block">
                 Common Inquiries
               </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-studio-100">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-studio-100 tracking-tight">
                 Frequently Asked Questions Before Reaching Out.
               </h2>
             </div>
@@ -643,13 +621,14 @@ export const ContactPage: React.FC = () => {
                 return (
                   <div
                     key={idx}
-                    className="rounded-2xl bg-white border border-studio-850 overflow-hidden shadow-sm transition-all"
+                    className="rounded-2xl bg-white border border-studio-850 overflow-hidden shadow-xs transition-all"
                   >
                     <button
+                      type="button"
                       onClick={() => setOpenFaqIndex(isOpen ? null : idx)}
-                      className="w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-base text-studio-100 hover:text-studio-300 transition-colors"
+                      className="w-full px-5 py-4 sm:px-6 sm:py-4.5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-studio-100 hover:text-studio-300 transition-colors"
                     >
-                      <span>{item.q}</span>
+                      <span className="leading-snug">{item.q}</span>
                       <ChevronDown
                         className={`w-4 h-4 text-studio-400 shrink-0 transition-transform duration-200 ${
                           isOpen ? 'rotate-180 text-studio-100' : ''
@@ -657,7 +636,7 @@ export const ContactPage: React.FC = () => {
                       />
                     </button>
                     {isOpen && (
-                      <div className="px-6 pb-6 text-sm text-studio-300 font-normal leading-relaxed border-t border-studio-850 pt-4">
+                      <div className="px-5 pb-5 sm:px-6 sm:pb-5 text-xs sm:text-sm text-studio-300 font-normal leading-relaxed border-t border-studio-850 pt-3 sm:pt-4">
                         {item.a}
                       </div>
                     )}

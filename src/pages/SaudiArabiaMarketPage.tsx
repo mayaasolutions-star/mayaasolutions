@@ -50,7 +50,7 @@ const SAUDI_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements, fees, and invoicing structured for Saudi clients?',
     answer:
-      'We quote and invoice transparently in Saudi Riyals (SAR) or US Dollars (USD) on fixed-scope, milestone-governed agreements. Every phase—from initial operational mapping and wireframing to code deployment and testing—has explicit acceptance criteria. Crucially, our custom business management systems carry zero recurring per-user software licensing taxes, ensuring predictable capital allocation as your headcount expands.',
+      'We quote and invoice transparently in Saudi Riyals (SAR) or US Dollars (USD) on fixed-scope, milestone-governed agreements. Every phase, from initial operational mapping and wireframing to code deployment and testing, has explicit acceptance criteria. Crucially, our custom business management systems carry zero recurring per-user software licensing taxes, ensuring predictable capital allocation as your headcount expands.',
   },
 ];
 

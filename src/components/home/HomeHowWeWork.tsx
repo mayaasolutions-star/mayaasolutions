@@ -21,7 +21,7 @@ const STEPS = [
     step: '03',
     title: 'Engineering & Iterative Delivery',
     description:
-      'We build in structured milestones with clear visibility. You interact directly with the strategists and engineers executing your work—reviewing staging environments, testing operational modules, and refining details in real time.',
+      'We build in structured milestones with clear visibility. You interact directly with the strategists and engineers executing your work: reviewing staging environments, testing operational modules, and refining details in real time.',
     deliverable: 'Production codebase, staging environments & live testing',
   },
   {
@@ -53,7 +53,7 @@ export const HomeHowWeWork: React.FC = () => {
     <section className="relative w-full py-24 md:py-32 bg-black text-white border-b border-neutral-900">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Header */}
-        <div className="max-w-3xl mb-16 md:mb-20">
+        <div className="max-w-3xl mb-16 md:mb-20 text-center mx-auto">
           <span className="text-xs font-mono uppercase tracking-[0.25em] text-neutral-400 block mb-3">
             Engagement Methodology
           </span>

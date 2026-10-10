@@ -48,7 +48,7 @@ const SWISS_FAQS: FAQItem[] = [
   {
     question: 'How are commercial agreements and invoicing structured?',
     answer:
-      'We quote and invoice directly in Swiss Francs (CHF) or Euros (EUR) with transparent, milestone-based deliverables. Every phase—from discovery and wireframing to code deployment—has clear acceptance criteria and zero recurring per-user licensing fees.',
+      'We quote and invoice directly in Swiss Francs (CHF) or Euros (EUR) with transparent, milestone-based deliverables. Every phase, from discovery and wireframing to code deployment, has clear acceptance criteria and zero recurring per-user licensing fees.',
   },
 ];
 
@@ -111,7 +111,7 @@ const FRICTION_OPTIONS = [
     id: 2,
     question: 'Leads and follow-ups are difficult to coordinate.',
     diagnosis: 'Commercial Intake & Pipeline Coordination Workflow',
-    advice: 'A personalized commercial intake system brings high-value inquiry details, technical scoping, assigned ownership, follow-up milestones, and sales progress into one dependable view—ensuring no prospective mandate is neglected.',
+    advice: 'A personalized commercial intake system brings high-value inquiry details, technical scoping, assigned ownership, follow-up milestones, and sales progress into one dependable view, ensuring no prospective mandate is neglected.',
     capability: 'PERSONALISED BUSINESS MANAGEMENT SYSTEMS',
     link: '/business-systems',
   },
@@ -160,7 +160,7 @@ export const SwitzerlandMarketPage: React.FC = () => {
       />
 
       {/* =========================================================================
-          01. EDITORIAL HERO — THE STANDARD IS IN THE DETAILS
+          01. EDITORIAL HERO: THE STANDARD IS IN THE DETAILS
       ========================================================================= */}
       <section className="relative pt-36 pb-24 md:pt-44 md:pb-32 border-b border-[#1E2532] overflow-hidden">
         {/* Subtle grid pattern */}
