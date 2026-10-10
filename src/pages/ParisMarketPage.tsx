@@ -230,24 +230,24 @@ export const ParisMarketPage: React.FC = () => {
         {/* ==================================================
             02. THE CORE PARIS INSIGHT
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-20 sm:py-28 lg:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-20 sm:py-28 lg:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-12 sm:space-y-16">
             
             <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                 THE CORE INSIGHT
               </span>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                 A BEAUTIFUL BUSINESS STILL NEEDS <br />
-                <span className="text-[#8E8E8A]">A GOOD SYSTEM BEHIND IT.</span>
+                <span className="text-[#555555]">A GOOD SYSTEM BEHIND IT.</span>
               </h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
               
               {/* Left: The Natural Progression */}
-              <div className="lg:col-span-7 p-8 sm:p-10 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-5">
-                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#8E8E8A] block">
+              <div className="lg:col-span-7 p-8 sm:p-10 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-5">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#666666] block">
                   How high-standard businesses often experience the daily workflow:
                 </span>
 
@@ -263,42 +263,42 @@ export const ParisMarketPage: React.FC = () => {
                     'Management needs operational visibility.',
                   ].map((step, idx) => (
                     <div key={idx} className="flex items-start gap-3">
-                      <span className="w-5 h-5 rounded-full bg-neutral-900 border border-neutral-800 text-[10px] font-mono font-bold text-[#8E8E8A] flex items-center justify-center shrink-0 mt-0.5">
+                      <span className="w-5 h-5 rounded-full bg-[#E5E5E2] border border-[#CCCCCC] text-[10px] font-mono font-bold text-[#171717] flex items-center justify-center shrink-0 mt-0.5">
                         {idx + 1}
                       </span>
-                      <p className="text-sm sm:text-base text-neutral-300 font-normal leading-relaxed">
+                      <p className="text-sm sm:text-base text-[#444444] font-normal leading-relaxed">
                         {step}
                       </p>
                     </div>
                   ))}
                 </div>
 
-                <div className="pt-4 border-t border-neutral-900">
-                  <p className="text-xs font-mono text-[#8E8E8A] leading-relaxed">
+                <div className="pt-4 border-t border-[#E5E5E2]">
+                  <p className="text-xs font-mono text-[#666666] leading-relaxed">
                     The brand may look polished from the outside while the business behind it remains fragmented.
                   </p>
                 </div>
               </div>
 
               {/* Right: The Anchor Principle */}
-              <div className="lg:col-span-5 p-8 sm:p-10 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-6 flex flex-col justify-between h-full">
+              <div className="lg:col-span-5 p-8 sm:p-10 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-6 flex flex-col justify-between h-full">
                 <div className="space-y-4">
-                  <span className="text-xs font-mono font-bold uppercase tracking-widest text-white block">
+                  <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#171717] block">
                     THE ANCHOR PRINCIPLE
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white leading-snug">
+                  <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-[#171717] leading-snug">
                     YOUR DIGITAL PRESENCE CREATES THE IMPRESSION. <br />
-                    <span className="text-[#8E8E8A]">YOUR SYSTEMS CREATE THE EXPERIENCE.</span>
+                    <span className="text-[#555555]">YOUR SYSTEMS CREATE THE EXPERIENCE.</span>
                   </h3>
-                  <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-normal pt-2">
+                  <p className="text-sm sm:text-base text-[#555555] leading-relaxed font-normal pt-2">
                     Good design gets attention. Good business systems make the business work. When both are built in harmony, clients experience effortless authority from the first encounter to project completion.
                   </p>
                 </div>
 
-                <div className="pt-6 border-t border-neutral-900">
+                <div className="pt-6 border-t border-[#E5E5E2]">
                   <Link
                     to="/contact?market=paris"
-                    className="inline-flex items-center gap-2 text-xs font-mono font-bold text-white hover:text-neutral-400 uppercase tracking-widest transition-colors"
+                    className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#171717] hover:text-[#555555] uppercase tracking-widest transition-colors"
                   >
                     <span>Discuss Your Business Architecture</span>
                     <ArrowRight className="w-4 h-4" />
@@ -390,18 +390,18 @@ export const ParisMarketPage: React.FC = () => {
         {/* ==================================================
             04. PERSONALISED BUSINESS MANAGEMENT SYSTEM
         ================================================== */}
-        <section id="systems" className="bg-[#0B0B0B] border-y border-neutral-800 py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section id="systems" className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-14">
             
             <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                 OPERATIONAL ARCHITECTURE
               </span>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                 SOFTWARE SHOULD <br />
-                <span className="text-[#8E8E8A]">FIT THE BUSINESS.</span>
+                <span className="text-[#555555]">FIT THE BUSINESS.</span>
               </h2>
-              <p className="text-base sm:text-lg text-neutral-300 font-normal leading-relaxed pt-2">
+              <p className="text-base sm:text-lg text-[#555555] font-normal leading-relaxed pt-2">
                 We understand how your business works first, then build the system around it.
               </p>
             </div>
@@ -418,16 +418,16 @@ export const ParisMarketPage: React.FC = () => {
               ].map((item, idx) => (
                 <div
                   key={item.stage}
-                  className="p-6 rounded-2xl bg-neutral-950 border border-neutral-800 flex flex-col justify-between space-y-4"
+                  className="p-6 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2] flex flex-col justify-between space-y-4"
                 >
-                  <span className="text-[10px] font-mono font-bold text-[#8E8E8A]">
+                  <span className="text-[10px] font-mono font-bold text-[#666666]">
                     0{idx + 1}
                   </span>
                   <div>
-                    <h4 className="text-base font-black text-white uppercase tracking-tight">
+                    <h4 className="text-base font-black text-[#171717] uppercase tracking-tight">
                       {item.stage}
                     </h4>
-                    <p className="text-xs text-neutral-400 mt-1">
+                    <p className="text-xs text-[#555555] mt-1">
                       {item.desc}
                     </p>
                   </div>
@@ -435,19 +435,19 @@ export const ParisMarketPage: React.FC = () => {
               ))}
             </div>
 
-            <div className="p-6 sm:p-8 rounded-2xl bg-neutral-950 border border-neutral-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="space-y-1">
-                <span className="text-xs font-mono font-bold text-white uppercase tracking-widest block">
+                <span className="text-xs font-mono font-bold text-[#171717] uppercase tracking-widest block">
                   THE SYSTEM BENEFIT
                 </span>
-                <p className="text-sm text-neutral-300">
+                <p className="text-sm text-[#555555]">
                   Less searching. Less repetition. More visibility.
                 </p>
               </div>
 
               <Link
                 to="/business-systems"
-                className="text-xs font-mono font-bold text-white hover:text-neutral-400 uppercase tracking-widest inline-flex items-center gap-2 transition-colors shrink-0"
+                className="text-xs font-mono font-bold text-[#171717] hover:text-[#555555] uppercase tracking-widest inline-flex items-center gap-2 transition-colors shrink-0"
               >
                 <span>Explore Systems Capability</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -520,23 +520,23 @@ export const ParisMarketPage: React.FC = () => {
         {/* ==================================================
             06. BRAND + DIGITAL EXPERIENCE (COMBINED)
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
               
               <div className="lg:col-span-6 space-y-6">
-                <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+                <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                   PRESENTATION
                 </span>
-                <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+                <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                   YOUR FIRST IMPRESSION HAPPENS <br />
-                  <span className="text-[#8E8E8A]">BEFORE THE FIRST CONVERSATION.</span>
+                  <span className="text-[#666666]">BEFORE THE FIRST CONVERSATION.</span>
                 </h2>
-                <div className="space-y-4 text-base sm:text-lg text-neutral-300 font-normal leading-relaxed">
+                <div className="space-y-4 text-base sm:text-lg text-[#555555] font-normal leading-relaxed">
                   <p>
                     Your website, identity, presentation and digital touchpoints should feel like the same business.
                   </p>
-                  <p className="text-white font-medium text-xl">
+                  <p className="text-[#171717] font-medium text-xl">
                     “Not louder. Clearer.”
                   </p>
                 </div>
@@ -551,10 +551,10 @@ export const ParisMarketPage: React.FC = () => {
                 ].map((item) => (
                   <div
                     key={item.title}
-                    className="p-6 rounded-2xl bg-neutral-950 border border-neutral-800 space-y-2"
+                    className="p-6 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-2"
                   >
-                    <h4 className="text-sm font-black text-white uppercase tracking-wider">{item.title}</h4>
-                    <p className="text-xs text-neutral-400 leading-relaxed">{item.desc}</p>
+                    <h4 className="text-sm font-black text-[#171717] uppercase tracking-wider">{item.title}</h4>
+                    <p className="text-xs text-[#555555] leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -593,59 +593,59 @@ export const ParisMarketPage: React.FC = () => {
         {/* ==================================================
             08. WHY MAYAA: UNDERSTAND FIRST. BUILD SECOND.
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-14">
             
             <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                 PHILOSOPHY
               </span>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                 UNDERSTAND FIRST. <br />
-                <span className="text-[#8E8E8A]">BUILD SECOND.</span>
+                <span className="text-[#666666]">BUILD SECOND.</span>
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-              <div className="p-8 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-4">
-                <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest">
+              <div className="p-8 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-4">
+                <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest">
                   01 · UNDERSTAND
                 </span>
-                <h3 className="text-xl font-black text-white uppercase tracking-tight">
+                <h3 className="text-xl font-black text-[#171717] uppercase tracking-tight">
                   YOUR REALITY
                 </h3>
-                <p className="text-sm text-neutral-400 leading-relaxed">
+                <p className="text-sm text-[#555555] leading-relaxed">
                   We start with how your business actually works.
                 </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-4">
-                <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest">
+              <div className="p-8 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-4">
+                <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest">
                   02 · DESIGN
                 </span>
-                <h3 className="text-xl font-black text-white uppercase tracking-tight">
+                <h3 className="text-xl font-black text-[#171717] uppercase tracking-tight">
                   SIMPLICITY FIRST
                 </h3>
-                <p className="text-sm text-neutral-400 leading-relaxed">
+                <p className="text-sm text-[#555555] leading-relaxed">
                   We simplify the experience before adding technology.
                 </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-4">
-                <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest">
+              <div className="p-8 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-4">
+                <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest">
                   03 · BUILD
                 </span>
-                <h3 className="text-xl font-black text-white uppercase tracking-tight">
+                <h3 className="text-xl font-black text-[#171717] uppercase tracking-tight">
                   PURPOSEFUL DELIVERY
                 </h3>
-                <p className="text-sm text-neutral-400 leading-relaxed">
+                <p className="text-sm text-[#555555] leading-relaxed">
                   We create what the business genuinely needs.
                 </p>
               </div>
             </div>
 
             <div className="pt-2">
-              <p className="text-xs font-mono text-[#8E8E8A] tracking-wider uppercase">
+              <p className="text-xs font-mono text-[#666666] tracking-wider uppercase">
                 No unnecessary features. No forced templates. No technology for the sake of technology.
               </p>
             </div>
@@ -714,15 +714,15 @@ export const ParisMarketPage: React.FC = () => {
         {/* ==================================================
             FREQUENTLY ASKED QUESTIONS (FAQ)
         ================================================== */}
-        <section className="py-24 sm:py-32 border-t border-neutral-900 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-4xl mx-auto space-y-12">
             <div>
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block mb-3">
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block mb-3">
                 PARIS DECISION-MAKER FAQS
               </span>
-              <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase leading-[1.02]">
+              <h2 className="text-3xl sm:text-5xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                 COMMON QUESTIONS FROM <br />
-                <span className="text-[#8E8E8A]">PARISIAN BUSINESS LEADERS.</span>
+                <span className="text-[#666666]">PARISIAN BUSINESS LEADERS.</span>
               </h2>
             </div>
 
@@ -730,14 +730,14 @@ export const ParisMarketPage: React.FC = () => {
               {PARIS_FAQS.map((faq, idx) => (
                 <div
                   key={idx}
-                  className="border border-neutral-800 bg-neutral-950 rounded-2xl overflow-hidden transition-colors hover:border-neutral-700"
+                  className="border border-[#E5E5E2] bg-[#FAFAF9] rounded-2xl overflow-hidden transition-colors hover:border-[#CCCCCC]"
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
-                    className="w-full p-6 text-left flex items-center justify-between gap-4 text-white hover:text-neutral-300 transition-colors"
+                    className="w-full p-6 text-left flex items-center justify-between gap-4 text-[#171717] hover:text-neutral-900 transition-colors"
                   >
                     <span className="text-base sm:text-lg font-medium">{faq.question}</span>
-                    <span className="text-xs font-mono text-neutral-500 flex-shrink-0">
+                    <span className="text-xs font-mono text-[#666666] flex-shrink-0">
                       {openFaq === idx ? '-' : '+'}
                     </span>
                   </button>
@@ -748,7 +748,7 @@ export const ParisMarketPage: React.FC = () => {
                         animate={{ height: 'auto', opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.25 }}
-                        className="px-6 pb-6 text-sm text-neutral-400 font-normal leading-relaxed border-t border-neutral-900 pt-4"
+                        className="px-6 pb-6 text-sm text-[#555555] font-normal leading-relaxed border-t border-[#E5E5E2] pt-4"
                       >
                         {faq.answer}
                       </motion.div>

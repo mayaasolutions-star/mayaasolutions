@@ -20,7 +20,7 @@ export const ORGANIZATION_SCHEMA = {
     caption: 'Mayaa Solutions',
   },
   image: `${BASE_URL}/images/og-image.jpg`,
-  email: 'contact@mayaasolutions.com',
+  email: 'contact@mayaasolutions.in',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Bangalore',
@@ -64,7 +64,7 @@ export const PROFESSIONAL_SERVICE_SCHEMA = {
     addressRegion: 'Karnataka',
     addressCountry: 'IN',
   },
-  email: 'contact@mayaasolutions.com',
+  email: 'contact@mayaasolutions.in',
   priceRange: '$$ - $$$$',
   areaServed: [
     'India',

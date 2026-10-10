@@ -1,5 +1,34 @@
 # Mayaa Solutions - Technical SEO robots.txt
+# Production Domain: https://mayaasolutions.in/
+
 User-agent: *
+Allow: /
+Disallow: /payment-success
+
+# Search & AI Crawlers Policy
+# Authorized discovery crawlers (Googlebot, Bingbot, Applebot, DuckDuckBot, Yandex, Baiduspider) are fully allowed
+User-agent: Googlebot
+Allow: /
+Disallow: /payment-success
+
+User-agent: Bingbot
+Allow: /
+Disallow: /payment-success
+
+User-agent: Applebot
+Allow: /
+Disallow: /payment-success
+
+# AI Answer Engines & Discovery Crawlers (Search retrieval)
+User-agent: GPTBot
+Allow: /
+Disallow: /payment-success
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /payment-success
+
+User-agent: PerplexityBot
 Allow: /
 Disallow: /payment-success
 

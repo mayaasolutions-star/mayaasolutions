@@ -18,11 +18,11 @@ export const ProductFooter: React.FC = () => {
 
           <div className="flex flex-wrap items-center gap-6 text-xs font-medium">
             <a
-              href="mailto:contact@mayaasolutions.com"
+              href="mailto:contact@mayaasolutions.in"
               className="inline-flex items-center gap-2 hover:text-studio-100 transition-colors"
             >
               <Mail className="w-3.5 h-3.5 text-studio-100" />
-              contact@mayaasolutions.com
+              contact@mayaasolutions.in
             </a>
             <Link
               to="/terms-conditions"

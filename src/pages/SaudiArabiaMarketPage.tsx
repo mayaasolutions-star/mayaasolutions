@@ -336,18 +336,18 @@ export const SaudiArabiaMarketPage: React.FC = () => {
         {/* ==================================================
             02. CORE SAUDI BUSINESS REALITY: SCALE WITHOUT CHAOS
         ================================================== */}
-        <section className="bg-[#0A100D] border-b border-white/[0.08] py-20 sm:py-28 lg:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-b border-[#E5E5E2] py-20 sm:py-28 lg:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-12 sm:space-y-16">
             
             <div className="max-w-3xl space-y-4">
-              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#10B981]">
+              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#059669]">
                 Commercial Expansion Reality
               </div>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
                 Growth changes the way <br />
-                <span className="text-[#9CA3AF] italic">a business needs to work.</span>
+                <span className="text-[#555555] italic">a business needs to work.</span>
               </h2>
-              <p className="text-base sm:text-lg text-[#9CA3AF] font-light leading-relaxed">
+              <p className="text-base sm:text-lg text-[#555555] font-light leading-relaxed">
                 In a commercial market expanding as rapidly as Saudi Arabia, success brings more clients, larger contracts, bigger teams, and multiple concurrent sites. Growth should create capacity, not administrative weight.
               </p>
             </div>
@@ -355,8 +355,8 @@ export const SaudiArabiaMarketPage: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
               
               {/* Left: The Workflow Chain */}
-              <div className="lg:col-span-7 p-8 sm:p-10 border border-white/10 bg-white/[0.01] rounded-sm space-y-5">
-                <span className="text-xs font-mono uppercase tracking-wider text-[#9CA3AF] block">
+              <div className="lg:col-span-7 p-8 sm:p-10 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm space-y-5">
+                <span className="text-xs font-mono uppercase tracking-wider text-[#666666] block">
                   The rhythm of rapid expansion across Saudi commercial sectors:
                 </span>
 
@@ -371,11 +371,11 @@ export const SaudiArabiaMarketPage: React.FC = () => {
                     'Executive leadership asks for a progress and margin summary across six active ventures.',
                     'The business is expanding quickly. But information is scattered everywhere.',
                   ].map((step, idx) => (
-                    <div key={idx} className="flex items-start gap-3 p-3 rounded bg-white/[0.01] border border-white/[0.04]">
-                      <span className="w-5 h-5 rounded-full bg-white/[0.05] border border-white/10 text-[10px] font-mono font-medium text-[#34D399] flex items-center justify-center shrink-0 mt-0.5">
+                    <div key={idx} className="flex items-start gap-3 p-3 rounded bg-white border border-[#E5E5E2]">
+                      <span className="w-5 h-5 rounded-full bg-[#E5E5E2] border border-[#CCCCCC] text-[10px] font-mono font-medium text-[#059669] flex items-center justify-center shrink-0 mt-0.5">
                         0{idx + 1}
                       </span>
-                      <p className="text-xs sm:text-sm text-[#D1D5DB] font-light leading-relaxed">
+                      <p className="text-xs sm:text-sm text-[#444444] font-light leading-relaxed">
                         {step}
                       </p>
                     </div>
@@ -384,26 +384,26 @@ export const SaudiArabiaMarketPage: React.FC = () => {
               </div>
 
               {/* Right: The Anchor Diagnosis */}
-              <div className="lg:col-span-5 p-8 sm:p-10 border border-white/10 bg-white/[0.02] rounded-sm space-y-6 flex flex-col justify-between">
+              <div className="lg:col-span-5 p-8 sm:p-10 border border-[#E5E5E2] bg-[#F7F7F5] rounded-sm space-y-6 flex flex-col justify-between">
                 <div className="space-y-4">
-                  <span className="text-xs font-mono uppercase tracking-widest text-[#10B981] block">
+                  <span className="text-xs font-mono uppercase tracking-widest text-[#059669] block">
                     The Essential Diagnosis
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-light text-white leading-snug">
+                  <h3 className="text-2xl sm:text-3xl font-light text-[#171717] leading-snug">
                     Growth should create capacity. <br />
-                    <span className="text-[#9CA3AF] italic">Not more confusion.</span>
+                    <span className="text-[#555555] italic">Not more confusion.</span>
                   </h3>
-                  <p className="text-sm sm:text-base text-[#9CA3AF] leading-relaxed font-light pt-2">
+                  <p className="text-sm sm:text-base text-[#555555] leading-relaxed font-light pt-2">
                     When contract sizes quadruple, informal handoffs break down. Management shouldn't have to call three people to verify if a milestone was signed off or an invoice dispatched.
                   </p>
-                  <p className="text-sm sm:text-base text-[#9CA3AF] leading-relaxed font-light">
+                  <p className="text-sm sm:text-base text-[#555555] leading-relaxed font-light">
                     We build the operational backbone that connects client acquisition, delivery milestones, and management oversight into one reliable architecture.
                   </p>
                 </div>
 
-                <div className="pt-6 border-t border-white/10">
-                  <div className="text-xs font-mono text-[#34D399] mb-1">THE SCALABLE FOUNDATION:</div>
-                  <p className="text-xs font-mono text-[#9CA3AF] leading-relaxed">
+                <div className="pt-6 border-t border-[#E5E5E2]">
+                  <div className="text-xs font-mono text-[#059669] mb-1">THE SCALABLE FOUNDATION:</div>
+                  <p className="text-xs font-mono text-[#666666] leading-relaxed">
                     Structured lead routing. Explicit milestone gates. Live revenue oversight. Complete data ownership.
                   </p>
                 </div>
@@ -493,18 +493,18 @@ export const SaudiArabiaMarketPage: React.FC = () => {
         {/* ==================================================
             04. PERSONALISED BUSINESS MANAGEMENT SYSTEM
         ================================================== */}
-        <section id="transformation-systems" className="bg-[#0A100D] border-b border-white/[0.08] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section id="transformation-systems" className="bg-white text-[#171717] border-b border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-14">
             
             <div className="max-w-3xl space-y-4">
-              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#10B981]">
+              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#059669]">
                 Operational Engine
               </div>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
                 Software built <br />
-                <span className="text-[#9CA3AF] italic">around your business logic.</span>
+                <span className="text-[#555555] italic">around your business logic.</span>
               </h2>
-              <div className="space-y-2 text-base sm:text-lg text-[#9CA3AF] font-light leading-relaxed pt-2">
+              <div className="space-y-2 text-base sm:text-lg text-[#555555] font-light leading-relaxed pt-2">
                 <p>Every business has its own way of selling, delivering, managing, and communicating.</p>
                 <p>We understand that workflow first. Then we build the system around it.</p>
               </div>
@@ -515,47 +515,47 @@ export const SaudiArabiaMarketPage: React.FC = () => {
               {systemFlow.map((item) => (
                 <div
                   key={item.step}
-                  className="p-8 border border-white/10 bg-white/[0.01] hover:border-white/30 transition-all flex flex-col justify-between space-y-6 group"
+                  className="p-8 border border-[#E5E5E2] bg-[#FAFAF9] hover:border-[#CCCCCC] transition-all flex flex-col justify-between space-y-6 group"
                 >
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-mono text-[#10B981]">STAGE {item.step}</span>
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40 group-hover:bg-[#10B981] transition-opacity" />
+                      <span className="text-xs font-mono text-[#059669]">STAGE {item.step}</span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-neutral-300 group-hover:bg-[#059669] transition-opacity" />
                     </div>
 
-                    <h3 className="text-2xl font-light text-white tracking-wide">
+                    <h3 className="text-2xl font-light text-[#171717] tracking-wide">
                       {item.stage}
                     </h3>
 
-                    <div className="p-2.5 bg-white/[0.02] border border-white/[0.06] text-[11px] font-mono text-[#34D399]">
+                    <div className="p-2.5 bg-white border border-[#E5E5E2] text-[11px] font-mono text-[#059669]">
                       {item.flow}
                     </div>
 
-                    <p className="text-sm text-[#9CA3AF] font-light leading-relaxed pt-1">
+                    <p className="text-sm text-[#555555] font-light leading-relaxed pt-1">
                       {item.desc}
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-[#9CA3AF]">
+                  <div className="pt-4 border-t border-[#E5E5E2] flex items-center justify-between text-xs font-mono text-[#666666]">
                     <span>Unified Workflow</span>
-                    <span className="text-white group-hover:translate-x-1 transition-transform">→</span>
+                    <span className="text-[#171717] group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 p-8 border border-white/10 bg-white/[0.02] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div className="mt-8 p-8 border border-[#E5E5E2] bg-[#F7F7F5] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div className="space-y-1 max-w-2xl">
-                <span className="text-xs font-mono uppercase tracking-wider text-[#10B981] block">
+                <span className="text-xs font-mono uppercase tracking-wider text-[#059669] block">
                   Adaptive System Engineering
                 </span>
-                <p className="text-sm sm:text-base text-white font-light">
+                <p className="text-sm sm:text-base text-[#171717] font-light">
                   “Your business should not have to adapt to rigid software templates. The software should adapt to your business.”
                 </p>
               </div>
               <Link
                 to="/business-systems"
-                className="min-h-[48px] inline-flex items-center justify-center gap-2 px-7 py-3 bg-white text-black font-medium text-xs uppercase tracking-wider hover:bg-[#E5E7EB] transition-colors shrink-0"
+                className="min-h-[48px] inline-flex items-center justify-center gap-2 px-7 py-3 bg-[#111111] text-white font-medium text-xs uppercase tracking-wider hover:bg-neutral-800 transition-colors shrink-0"
               >
                 <span>Explore Business Systems</span>
               </Link>
@@ -644,48 +644,48 @@ export const SaudiArabiaMarketPage: React.FC = () => {
         {/* ==================================================
             06. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL
         ================================================== */}
-        <section className="bg-[#0A100D] border-b border-white/[0.08] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-b border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-5xl mx-auto space-y-12">
-            <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#10B981]">
+            <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#059669]">
               Delivery Architecture
             </div>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
               Bangalore engineering depth. <br />
-              <span className="text-[#9CA3AF] italic">Saudi operational expansion.</span>
+              <span className="text-[#555555] italic">Saudi operational expansion.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed">
               We deliver for Saudi Arabian enterprises directly from our technology studio in Bangalore, India. We do not claim local offices in Riyadh or Jeddah where we do not have them. Instead, we invest in principal-level engineering, full daily timezone alignment, and complete client data sovereignty.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="p-6 border border-white/10 bg-white/[0.01]">
-                <Clock className="w-5 h-5 text-[#10B981] mb-4" />
-                <h3 className="text-sm font-medium text-white mb-2">AST Timezone Overlap</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <Clock className="w-5 h-5 text-[#059669] mb-4" />
+                <h3 className="text-sm font-medium text-[#171717] mb-2">AST Timezone Overlap</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Only 2.5 hours difference between Saudi Arabia (UTC+3) and Bangalore (UTC+5:30). Extensive daily working-hour overlap for sprint reviews and live collaboration.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.01]">
-                <Cpu className="w-5 h-5 text-[#10B981] mb-4" />
-                <h3 className="text-sm font-medium text-white mb-2">Direct Senior Access</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <Cpu className="w-5 h-5 text-[#059669] mb-4" />
+                <h3 className="text-sm font-medium text-[#171717] mb-2">Direct Senior Access</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Collaborate directly with senior system architects and software engineers. No junior account executives or layers of miscommunicated telephone handoffs.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.01]">
-                <Lock className="w-5 h-5 text-[#10B981] mb-4" />
-                <h3 className="text-sm font-medium text-white mb-2">Data Sovereignty</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <Lock className="w-5 h-5 text-[#059669] mb-4" />
+                <h3 className="text-sm font-medium text-[#171717] mb-2">Data Sovereignty</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   All systems deployed on client-owned cloud accounts (AWS Middle East / Azure) with 100% intellectual property ownership and strict NDAs.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.01]">
-                <CreditCard className="w-5 h-5 text-[#10B981] mb-4" />
-                <h3 className="text-sm font-medium text-white mb-2">SAR Milestone Billing</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <CreditCard className="w-5 h-5 text-[#059669] mb-4" />
+                <h3 className="text-sm font-medium text-[#171717] mb-2">SAR Milestone Billing</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Transparent milestone-based contracts quoted and invoiced in Saudi Riyals (SAR) or USD with explicit acceptance gates and zero recurring per-user licensing fees.
                 </p>
               </div>
@@ -752,25 +752,25 @@ export const SaudiArabiaMarketPage: React.FC = () => {
         {/* ==================================================
             08. FINAL CTA: BUSINESS CONSULTATION
         ================================================== */}
-        <section className="py-28 sm:py-36 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto text-center">
+        <section className="bg-white text-[#171717] py-28 sm:py-36 px-6 md:px-12 lg:px-16 border-t border-[#E5E5E2] text-center">
           <div className="max-w-4xl mx-auto space-y-8">
-            <div className="inline-block px-3.5 py-1.5 bg-[#061A12] border border-[#059669]/40 text-xs font-mono text-[#34D399] uppercase tracking-widest">
+            <div className="inline-block px-3.5 py-1.5 bg-[#E6F4EA] border border-[#059669]/30 text-xs font-mono text-[#059669] uppercase tracking-widest">
               Saudi Arabia Consultation
             </div>
 
-            <h2 className="text-4xl sm:text-6xl md:text-7xl font-light text-white tracking-tight leading-[1.05]">
+            <h2 className="text-4xl sm:text-6xl md:text-7xl font-light text-[#171717] tracking-tight leading-[1.05]">
               Build what your business <br />
-              <span className="font-normal italic text-[#9CA3AF]">needs next.</span>
+              <span className="font-normal italic text-[#555555]">needs next.</span>
             </h2>
 
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-xl mx-auto leading-relaxed">
               Tell us where your business is expanding, where work is becoming difficult to coordinate, or where your digital touchpoints need to improve. We start by understanding the business.
             </p>
 
             <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="w-full sm:w-auto min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 px-9 sm:px-10 py-4 bg-white text-black font-medium text-xs sm:text-sm uppercase tracking-wider hover:bg-[#E5E7EB] transition-all duration-300 shadow-2xl group"
+                className="w-full sm:w-auto min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 px-9 sm:px-10 py-4 bg-[#111111] text-white font-medium text-xs sm:text-sm uppercase tracking-wider hover:bg-neutral-800 transition-all duration-300 shadow-xl group"
               >
                 <span>Start a Conversation</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -778,13 +778,13 @@ export const SaudiArabiaMarketPage: React.FC = () => {
 
               <Link
                 to="/global-markets"
-                className="w-full sm:w-auto min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 px-9 sm:px-10 py-4 bg-transparent text-white border border-white/20 hover:border-white/50 font-medium text-xs sm:text-sm uppercase tracking-wider transition-all"
+                className="w-full sm:w-auto min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 px-9 sm:px-10 py-4 bg-transparent text-[#171717] border border-[#CCCCCC] hover:border-[#111111] font-medium text-xs sm:text-sm uppercase tracking-wider transition-all"
               >
                 <span>Explore Global Markets</span>
               </Link>
             </div>
 
-            <div className="pt-8 text-xs font-mono text-white/40 tracking-wider">
+            <div className="pt-8 text-xs font-mono text-[#666666] tracking-wider">
               Serving enterprises across Riyadh, Jeddah, Khobar, Dammam, and throughout Saudi Arabia.
             </div>
           </div>

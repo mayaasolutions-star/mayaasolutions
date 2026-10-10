@@ -250,50 +250,50 @@ export const PolandMarketPage: React.FC = () => {
         </section>
 
         {/* 2. THE POLISH BUSINESS REALITY */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Natural Stages of Scale
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-8">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-8">
               The business has grown. <br />
-              <span className="text-[#9CA3AF]">The system around it should too.</span>
+              <span className="text-[#666666]">The system around it should too.</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start mt-12">
-              <div className="md:col-span-7 space-y-6 text-[#9CA3AF] text-base sm:text-lg font-light leading-relaxed">
+              <div className="md:col-span-7 space-y-6 text-[#555555] text-base sm:text-lg font-light leading-relaxed">
                 <p>
                   A business often begins with a founder, a dedicated core team, direct client relationships, spreadsheets, email threads, messaging groups, and a few disconnected tools. That can work well for years.
                 </p>
                 <p>
                   Then growth changes the operating reality. There are more enquiries, customers, active projects, employees, suppliers, follow-ups, decisions, and information moving between departments.
                 </p>
-                <div className="p-6 border-l-2 border-white/40 bg-white/[0.02] text-white font-normal text-lg sm:text-xl">
+                <div className="p-6 border-l-2 border-[#171717] bg-[#FAFAF9] text-[#171717] font-normal text-lg sm:text-xl">
                   “The problem is not that the business lacks software. <br className="hidden sm:inline" />
-                  <span className="text-[#9CA3AF]">The problem is that the business can become dependent on too many disconnected ways of working.”</span>
+                  <span className="text-[#666666]">The problem is that the business can become dependent on too many disconnected ways of working.”</span>
                 </div>
               </div>
 
-              <div className="md:col-span-5 bg-white/[0.02] border border-white/10 p-8 rounded-sm space-y-6">
-                <div className="text-xs uppercase tracking-[0.2em] text-white/70 font-mono flex items-center gap-2">
-                  <Workflow className="w-4 h-4 text-white/80" />
+              <div className="md:col-span-5 bg-[#FAFAF9] border border-[#E5E5E2] p-8 rounded-sm space-y-6">
+                <div className="text-xs uppercase tracking-[0.2em] text-[#171717] font-mono font-medium flex items-center gap-2">
+                  <Workflow className="w-4 h-4 text-[#171717]" />
                   Where Fragmented Operations Hurt
                 </div>
-                <ul className="space-y-4 text-sm text-[#9CA3AF] font-light">
+                <ul className="space-y-4 text-sm text-[#555555] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">01</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5 font-bold">01</span>
                     <span>Valuable opportunities lost in private chat threads or scattered email chains.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">02</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5 font-bold">02</span>
                     <span>Technical quotes taking too long to assemble because data lives in separate files.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">03</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5 font-bold">03</span>
                     <span>Handoff gaps between commercial agreements and actual engineering or site execution.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">04</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5 font-bold">04</span>
                     <span>Management lacking a unified real-time dashboard over all active commitments.</span>
                   </li>
                 </ul>
@@ -351,81 +351,81 @@ export const PolandMarketPage: React.FC = () => {
         </section>
 
         {/* 4. BRAND DESIGN */}
-        <section id="what-we-build" className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        <section id="what-we-build" className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Perceived Business Maturity
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-8">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-8">
               Your work may be better <br />
-              <span className="text-[#9CA3AF]">than your image suggests.</span>
+              <span className="text-[#666666]">than your image suggests.</span>
             </h2>
 
-            <p className="text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               A technically strong manufacturer, an experienced engineering practice, a high-specification contractor, or a serious B2B supplier can easily lose high-value contracts if their visual communication looks smaller, outdated, or less organised than the business itself.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="p-8 sm:p-10 border border-white/10 bg-white/[0.02] flex flex-col justify-between">
+              <div className="p-8 sm:p-10 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between">
                 <div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-[#9CA3AF] font-mono mb-4 flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-white" />
+                  <div className="text-xs uppercase tracking-[0.2em] text-[#666666] font-mono mb-4 flex items-center gap-2 font-bold">
+                    <Sparkles className="w-4 h-4 text-[#171717]" />
                     Brand Identity & Systems
                   </div>
-                  <h3 className="text-2xl font-light text-white mb-4">
+                  <h3 className="text-2xl font-light text-[#171717] mb-4">
                     Make the quality of the business visible.
                   </h3>
-                  <p className="text-[#9CA3AF] text-sm sm:text-base font-light leading-relaxed mb-6">
+                  <p className="text-[#555555] text-sm sm:text-base font-light leading-relaxed mb-6">
                     A cohesive visual system that commands immediate respect. Disciplined typography, structured logo systems, and professional presentation standards that match the caliber of your production floor.
                   </p>
-                  <div className="space-y-2 pt-4 border-t border-white/[0.06] text-xs text-white/80 font-mono">
+                  <div className="space-y-2 pt-4 border-t border-[#E5E5E2] text-xs text-[#171717] font-mono">
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Corporate Brand Identity & Visual Language</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Business Presentation Systems & Commercial Pitch Decks</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Technical Collateral & Documentation Standards</span>
                     </div>
                   </div>
                 </div>
-                <div className="mt-8 pt-6 border-t border-white/10 text-sm text-white/90 font-medium">
+                <div className="mt-8 pt-6 border-t border-[#E5E5E2] text-sm text-[#171717] font-medium">
                   “Credibility is established before the contract is discussed.”
                 </div>
               </div>
 
-              <div className="p-8 sm:p-10 border border-white/10 bg-white/[0.02] flex flex-col justify-between">
+              <div className="p-8 sm:p-10 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between">
                 <div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-[#9CA3AF] font-mono mb-4 flex items-center gap-2">
-                    <Layers className="w-4 h-4 text-white" />
+                  <div className="text-xs uppercase tracking-[0.2em] text-[#666666] font-mono mb-4 flex items-center gap-2 font-bold">
+                    <Layers className="w-4 h-4 text-[#171717]" />
                     Website & Sales Enablement
                   </div>
-                  <h3 className="text-2xl font-light text-white mb-4">
+                  <h3 className="text-2xl font-light text-[#171717] mb-4">
                     Your website is part of the sales process.
                   </h3>
-                  <p className="text-[#9CA3AF] text-sm sm:text-base font-light leading-relaxed mb-6">
+                  <p className="text-[#555555] text-sm sm:text-base font-light leading-relaxed mb-6">
                     Not simply a static company brochure. For businesses competing in B2B and export markets, the website should explain your capabilities, answer tough procurement questions, and build trust before your sales team ever hops on a call.
                   </p>
-                  <div className="space-y-2 pt-4 border-t border-white/[0.06] text-xs text-white/80 font-mono">
+                  <div className="space-y-2 pt-4 border-t border-[#E5E5E2] text-xs text-[#171717] font-mono">
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Sub-second responsive engineering for international visitors</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Technical portfolio showcases and case studies</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Structured, low-friction B2B consultation pathways</span>
                     </div>
                   </div>
                 </div>
-                <div className="mt-8 pt-6 border-t border-white/10 text-sm text-white/90 font-medium">
+                <div className="mt-8 pt-6 border-t border-[#E5E5E2] text-sm text-[#171717] font-medium">
                   “Your website should explain the business before your sales team has to.”
                 </div>
               </div>
@@ -485,16 +485,16 @@ export const PolandMarketPage: React.FC = () => {
         </section>
 
         {/* 6. POLAND INDUSTRY SECTION */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Sector Specialisation
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Built around the way <br />
-              <span className="text-[#9CA3AF]">your industry works.</span>
+              <span className="text-[#666666]">your industry works.</span>
             </h2>
-            <p className="text-[#9CA3AF] text-base sm:text-lg font-light max-w-2xl leading-relaxed mb-16">
+            <p className="text-[#555555] text-base sm:text-lg font-light max-w-2xl leading-relaxed mb-16">
               From industrial manufacturing hubs in Katowice, Poznań and Wrocław to tech and corporate practices in Warsaw, Kraków, Łódź and Gdańsk.
             </p>
 
@@ -502,24 +502,24 @@ export const PolandMarketPage: React.FC = () => {
               {polandIndustries.map((ind, i) => (
                 <div 
                   key={ind.id}
-                  className={`p-8 border border-white/10 bg-white/[0.02] flex flex-col justify-between rounded-sm ${
+                  className={`p-8 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between rounded-sm ${
                     i === 6 ? 'md:col-span-2 lg:col-span-1' : ''
                   }`}
                 >
                   <div>
-                    <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#9CA3AF] mb-3">
+                    <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#666666] mb-3 font-bold">
                       {ind.tagline}
                     </div>
-                    <h3 className="text-xl font-light text-white mb-4">
+                    <h3 className="text-xl font-light text-[#171717] mb-4">
                       {ind.title}
                     </h3>
-                    <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                    <p className="text-sm text-[#555555] font-light leading-relaxed">
                       {ind.quote}
                     </p>
                   </div>
-                  <div className="mt-8 pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                    <span className="text-xs font-mono text-white/50">Tailored Structure</span>
-                    <Link to="/contact" className="text-xs text-white/80 hover:text-white flex items-center gap-1">
+                  <div className="mt-8 pt-4 border-t border-[#E5E5E2] flex items-center justify-between">
+                    <span className="text-xs font-mono text-[#666666]">Tailored Structure</span>
+                    <Link to="/contact" className="text-xs text-[#171717] hover:text-black font-medium flex items-center gap-1">
                       Discuss Requirements <ChevronRight className="w-3 h-3" />
                     </Link>
                   </div>
@@ -559,58 +559,58 @@ export const PolandMarketPage: React.FC = () => {
         </section>
 
         {/* 8. AI + PRACTICAL AUTOMATION */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Pragmatic Technology
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Automate what should not <br />
-              <span className="text-[#9CA3AF]">need a person.</span>
+              <span className="text-[#666666]">need a person.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               Polish decision-makers do not need AI hype. Technology should remove friction, not add another layer of maintenance. We automate routine work so your team can focus on production, engineering, and client relationships.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-white/50 mb-4 flex items-center gap-2">
-                  <Workflow className="w-4 h-4 text-white" />
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#666666] mb-4 flex items-center gap-2 font-bold">
+                  <Workflow className="w-4 h-4 text-[#171717]" />
                   ROUTINE WORKFLOWS
                 </div>
-                <h3 className="text-lg font-normal text-white mb-3">Lead Routing & Data Entry</h3>
-                <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                <h3 className="text-lg font-normal text-[#171717] mb-3">Lead Routing & Data Entry</h3>
+                <p className="text-sm text-[#555555] font-light leading-relaxed">
                   Eliminating manual copy-pasting of inquiries between email, web forms and spreadsheets. Automatically routing leads to the right director.
                 </p>
               </div>
 
-              <div className="p-8 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-white/50 mb-4 flex items-center gap-2">
-                  <Cpu className="w-4 h-4 text-white" />
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#666666] mb-4 flex items-center gap-2 font-bold">
+                  <Cpu className="w-4 h-4 text-[#171717]" />
                   COMMUNICATION REMINDERS
                 </div>
-                <h3 className="text-lg font-normal text-white mb-3">Automated Reminders</h3>
-                <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                <h3 className="text-lg font-normal text-[#171717] mb-3">Automated Reminders</h3>
+                <p className="text-sm text-[#555555] font-light leading-relaxed">
                   Structured notification cadences for proposal follow-ups, milestone reviews, and overdue deliverables so nothing gets forgotten.
                 </p>
               </div>
 
-              <div className="p-8 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-white/50 mb-4 flex items-center gap-2">
-                  <Database className="w-4 h-4 text-white" />
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#666666] mb-4 flex items-center gap-2 font-bold">
+                  <Database className="w-4 h-4 text-[#171717]" />
                   GOVERNANCE & SECURITY
                 </div>
-                <h3 className="text-lg font-normal text-white mb-3">Role-Based Access</h3>
-                <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                <h3 className="text-lg font-normal text-[#171717] mb-3">Role-Based Access</h3>
+                <p className="text-sm text-[#555555] font-light leading-relaxed">
                   Tiered departmental permissions and secure authentication so sensitive costing calculations and proprietary client drawings stay protected.
                 </p>
               </div>
             </div>
 
-            <div className="mt-12 p-6 border border-white/10 bg-white/[0.02] text-center max-w-xl mx-auto">
-              <p className="text-sm sm:text-base text-white/90 font-light">
+            <div className="mt-12 p-6 border border-[#E5E5E2] bg-[#FAFAF9] text-center max-w-xl mx-auto">
+              <p className="text-sm sm:text-base text-[#171717] font-light">
                 “Technology should remove friction. <br className="hidden sm:inline" />
-                <span className="text-[#9CA3AF]">Not add another layer of it.”</span>
+                <span className="text-[#666666]">Not add another layer of it.”</span>
               </p>
             </div>
           </div>
@@ -665,40 +665,40 @@ export const PolandMarketPage: React.FC = () => {
         </section>
 
         {/* BANGALORE DELIVERY MODEL FOR POLISH ENTERPRISES */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#E11D48] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#E11D48] mb-4 font-mono font-bold">
               Engineering Delivery
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Engineering anchored in Bangalore. <br />
-              <span className="text-[#9CA3AF]">Zero bloated agency markups.</span>
+              <span className="text-[#666666]">Zero bloated agency markups.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               Mayaa delivers brand identity, digital platforms, and custom business systems directly from Bangalore, India. We offer direct engineer access, high velocity, and full European data compliance.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-[#E11D48] uppercase tracking-wider mb-2">01 · TIMEZONE OVERLAP</div>
-                <h3 className="text-lg font-normal text-white mb-2">CET / CEST Collaboration</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-lg shadow-sm">
+                <div className="text-xs font-mono text-[#E11D48] uppercase tracking-wider mb-2 font-bold">01 · TIMEZONE OVERLAP</div>
+                <h3 className="text-lg font-medium text-[#171717] mb-2">CET / CEST Collaboration</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   With a 3.5 to 4.5-hour difference, our afternoon hours seamlessly cover Polish business mornings for live design critiques, demos, and reviews.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-[#E11D48] uppercase tracking-wider mb-2">02 · DATA SOVEREIGNTY</div>
-                <h3 className="text-lg font-normal text-white mb-2">European Cloud Deployments</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-lg shadow-sm">
+                <div className="text-xs font-mono text-[#E11D48] uppercase tracking-wider mb-2 font-bold">02 · DATA SOVEREIGNTY</div>
+                <h3 className="text-lg font-medium text-[#171717] mb-2">European Cloud Deployments</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Workflows and databases deploy directly to client-owned European cloud infrastructure (AWS Frankfurt, Azure Poland Central in Warsaw, Hetzner), strictly adhering to GDPR (RODO) and UODO rules.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-[#E11D48] uppercase tracking-wider mb-2">03 · COMMERCIAL TERMS</div>
-                <h3 className="text-lg font-normal text-white mb-2">PLN / EUR Milestone Contracts</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-lg shadow-sm">
+                <div className="text-xs font-mono text-[#E11D48] uppercase tracking-wider mb-2 font-bold">03 · COMMERCIAL TERMS</div>
+                <h3 className="text-lg font-medium text-[#171717] mb-2">PLN / EUR Milestone Contracts</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Fixed-scope milestone contracts invoiced in PLN or EUR with complete code and intellectual property transfer upon sign-off. Zero recurring software seat fees.
                 </p>
               </div>
@@ -707,9 +707,9 @@ export const PolandMarketPage: React.FC = () => {
         </section>
 
         {/* FREQUENTLY ASKED QUESTIONS */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
           <div className="max-w-4xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#E11D48] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#E11D48] mb-4 font-mono font-bold">
               Polish Buyer FAQs
             </div>
             <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-12">
@@ -752,27 +752,27 @@ export const PolandMarketPage: React.FC = () => {
         </section>
 
         {/* 10. FINAL CTA */}
-        <section className="py-28 md:py-36 px-6 md:px-12 relative overflow-hidden bg-[#0C1017]">
+        <section className="py-28 md:py-36 px-6 md:px-12 relative overflow-hidden bg-white text-[#171717]">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-6xl font-light tracking-tight text-white mb-6">
+            <h2 className="text-4xl sm:text-6xl font-light tracking-tight text-[#171717] mb-6">
               Your business has already <br className="hidden sm:inline" />
               <span className="font-normal italic">built something real.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-xl mx-auto mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-xl mx-auto mb-10 leading-relaxed">
               Whether you are strengthening your brand, rebuilding your digital experience or creating a business system around the way your company actually works, Mayaa starts with understanding the business.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="w-full sm:w-auto px-10 py-4 bg-white text-black font-medium text-xs uppercase tracking-[0.2em] hover:bg-[#E5E7EB] transition-all duration-300 flex items-center justify-center gap-3 group"
+                className="w-full sm:w-auto px-10 py-4 bg-[#111111] text-white font-medium text-xs uppercase tracking-[0.2em] hover:bg-neutral-800 transition-all duration-300 flex items-center justify-center gap-3 group"
               >
                 <span>Start a Conversation</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link
                 to="/contact"
-                className="w-full sm:w-auto px-10 py-4 border border-white/20 text-white font-medium text-xs uppercase tracking-[0.2em] hover:bg-white/[0.05] hover:border-white/40 transition-all duration-300"
+                className="w-full sm:w-auto px-10 py-4 border border-[#CCCCCC] text-[#171717] font-medium text-xs uppercase tracking-[0.2em] hover:bg-[#F0F0EE] transition-all duration-300"
               >
                 Discuss Your Business
               </Link>

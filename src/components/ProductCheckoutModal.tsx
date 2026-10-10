@@ -316,6 +316,26 @@ export const ProductCheckoutModal: React.FC<ProductCheckoutModalProps> = ({ prod
                   <div className="text-studio-400">WhatsApp: <strong className="text-studio-100">{formData.whatsapp}</strong></div>
                   {formData.business && <div className="text-studio-400">Business: <strong className="text-studio-100">{formData.business}</strong></div>}
                 </div>
+
+                {/* Terms & Conditions Explicit Notice */}
+                <div className="p-4 rounded-xl bg-studio-900/60 border border-studio-850 text-[11px] text-studio-400 space-y-2 leading-relaxed">
+                  <p>
+                    By proceeding to payment, you confirm that you have reviewed and agree to Mayaa Solutions'{' '}
+                    <a
+                      href="/terms-conditions"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-studio-100 font-bold underline hover:text-studio-300"
+                    >
+                      Terms & Conditions
+                    </a>.
+                  </p>
+                  <p className="text-[10px] text-studio-400">
+                    {isService
+                      ? 'Service sprint kick-off initiates upon payment receipt. 100% of the starter fee is eligible for credit towards an expanded custom project.'
+                      : 'Digital products are fulfilled immediately upon payment settlement. Under statutory consumer rules for digital downloads, by starting the immediate download you acknowledge the commencement of digital performance.'}
+                  </p>
+                </div>
               </div>
             )}
           </div>

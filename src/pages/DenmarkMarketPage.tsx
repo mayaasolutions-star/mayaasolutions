@@ -273,7 +273,7 @@ export const DenmarkMarketPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#0A0E13] text-[#F5F4F0] selection:bg-[#3D7362] selection:text-white font-sans antialiased">
       <SEO
-        title="Good Work. Less Unnecessary Complexity. | Mayaa Solutions Denmark"
+        title="Denmark | Strategic Brand, Digital Experiences & Business Systems | Mayaa Solutions"
         description="Thoughtful brand design, digital experiences, and personalised business management systems for Danish businesses. Engineered for clarity, employee autonomy, and operational flow across Copenhagen, Aarhus, Odense, and Aalborg."
         keywords="Mayaa Solutions Denmark, business management systems Denmark, custom business software Denmark, custom CRM Denmark, business automation Denmark, website design Denmark, brand design Denmark, branding agency Denmark, digital experience Denmark, Skræddersyet software, CRM-system, Automatisering af arbejdsprocesser, Copenhagen business software, Aarhus digital agency"
         canonicalUrl="https://mayaasolutions.in/global-markets/denmark"
@@ -417,39 +417,39 @@ export const DenmarkMarketPage: React.FC = () => {
           "NOT EVERYTHING THAT CAN BE ADDED SHOULD BE ADDED."
           Interactive visual composition showing tool/process bloat vs simplification.
       ========================================================================= */}
-      <section className="py-24 md:py-32 border-b border-[#1E252E] relative bg-[#0C1016]">
+      <section className="py-24 md:py-32 border-b border-[#E5E5E2] relative bg-white text-[#171717]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Section Marker */}
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-[#52947F]">01 / COMPLEXITY AUDIT</span>
-            <div className="h-[1px] w-12 bg-[#232C37]" />
+            <span className="text-xs font-mono text-[#3D7362] font-semibold">01 / COMPLEXITY AUDIT</span>
+            <div className="h-[1px] w-12 bg-[#E5E5E2]" />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Left Narrative */}
             <div className="lg:col-span-5 space-y-6">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#FAF9F5] leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] leading-tight">
                 NOT EVERYTHING THAT CAN BE ADDED <br />
-                <span className="text-[#A3C9B8]">SHOULD BE ADDED.</span>
+                <span className="text-[#3D7362]">SHOULD BE ADDED.</span>
               </h2>
 
-              <p className="text-base sm:text-lg text-[#B4BAC3] leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-[#555555] leading-relaxed font-light">
                 As a business grows, new tools, dashboards, and review cycles can solve individual problems while making the overall experience harder to manage.
               </p>
 
-              <p className="text-sm text-[#8E95A0] leading-relaxed">
+              <p className="text-sm text-[#666666] leading-relaxed">
                 The answer is rarely another platform to log into. More often, it is a thoughtful way of organizing work, establishing transparent ownership, and eliminating duplicate friction.
               </p>
 
               {/* View Toggle */}
               <div className="pt-2">
-                <div className="inline-flex p-1 bg-[#141B22] border border-[#232C37] rounded-md">
+                <div className="inline-flex p-1 bg-[#F4F4F2] border border-[#E5E5E2] rounded-md">
                   <button
                     onClick={() => setComplexityMode('bloated')}
                     className={`px-4 py-2 text-xs font-mono rounded transition-all duration-200 ${
                       complexityMode === 'bloated'
-                        ? 'bg-[#2A1D1D] text-[#E58B88] border border-[#4D2625]'
-                        : 'text-[#8E95A0] hover:text-[#FAF9F5]'
+                        ? 'bg-[#FEE2E2] text-[#991B1B] border border-[#FCA5A5]'
+                        : 'text-[#666666] hover:text-[#171717]'
                     }`}
                   >
                     ACCUMULATED NOISE
@@ -458,8 +458,8 @@ export const DenmarkMarketPage: React.FC = () => {
                     onClick={() => setComplexityMode('streamlined')}
                     className={`px-4 py-2 text-xs font-mono rounded transition-all duration-200 ${
                       complexityMode === 'streamlined'
-                        ? 'bg-[#162720] text-[#71C7A5] border border-[#27483C]'
-                        : 'text-[#8E95A0] hover:text-[#FAF9F5]'
+                        ? 'bg-[#D1FAE5] text-[#065F46] border border-[#A7F3D0]'
+                        : 'text-[#666666] hover:text-[#171717]'
                     }`}
                   >
                     STREAMLINED COHERENCE
@@ -470,10 +470,10 @@ export const DenmarkMarketPage: React.FC = () => {
 
             {/* Right Visual Composition */}
             <div className="lg:col-span-7">
-              <div className="p-8 sm:p-10 bg-[#0E141B] border border-[#202934] rounded-xl relative overflow-hidden">
-                <div className="text-xs font-mono text-[#767E8A] uppercase tracking-wider mb-6 flex justify-between items-center">
+              <div className="p-8 sm:p-10 bg-[#FAFAF9] border border-[#E5E5E2] rounded-xl relative overflow-hidden">
+                <div className="text-xs font-mono text-[#666666] uppercase tracking-wider mb-6 flex justify-between items-center">
                   <span>OPERATIONAL STATE SIMULATION</span>
-                  <span className={complexityMode === 'bloated' ? 'text-[#E58B88]' : 'text-[#71C7A5]'}>
+                  <span className={complexityMode === 'bloated' ? 'text-[#DC2626] font-semibold' : 'text-[#059669] font-semibold'}>
                     {complexityMode === 'bloated' ? 'STATUS: HIGH RESISTANCE' : 'STATUS: CLEAR & COHERENT'}
                   </span>
                 </div>
@@ -500,15 +500,15 @@ export const DenmarkMarketPage: React.FC = () => {
                         ].map((point, idx) => (
                           <div
                             key={idx}
-                            className="p-3.5 bg-[#171E27] border border-[#2F3946] rounded text-xs text-[#D8D6CD] flex items-start gap-2.5"
+                            className="p-3.5 bg-white border border-[#E5E5E2] rounded text-xs text-[#222222] flex items-start gap-2.5 shadow-sm"
                           >
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#E58B88] mt-1.5 flex-shrink-0" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#EF4444] mt-1.5 flex-shrink-0" />
                             <span>{point}</span>
                           </div>
                         ))}
                       </div>
 
-                      <div className="p-4 bg-[#1A181C] border border-[#3E2428] rounded text-xs text-[#E58B88] text-center font-mono">
+                      <div className="p-4 bg-[#FEF2F2] border border-[#FCA5A5] rounded text-xs text-[#991B1B] text-center font-mono">
                         RESULT: Fragmented team attention · High administrative overhead · Slower decision making
                       </div>
                     </motion.div>
@@ -517,30 +517,30 @@ export const DenmarkMarketPage: React.FC = () => {
                       key="streamlined"
                       initial={{ opacity: 0, scale: 0.98 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.98 }}
+                      exit={{ opacity: 0, scale: 1 }}
                       transition={{ duration: 0.25 }}
                       className="space-y-4"
                     >
                       {/* Unified cohesive flow */}
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                        <div className="p-4 bg-[#122019] border border-[#27483C] rounded space-y-2">
-                          <span className="text-[10px] font-mono text-[#71C7A5] uppercase">TOUCHPOINT 01</span>
-                          <h4 className="text-sm font-medium text-[#FAF9F5]">Clear Brand Position</h4>
-                          <p className="text-xs text-[#A3C9B8]">Clients understand your true offering instantly.</p>
+                        <div className="p-4 bg-white border border-[#E5E5E2] rounded space-y-2 shadow-sm">
+                          <span className="text-[10px] font-mono text-[#059669] uppercase font-semibold">TOUCHPOINT 01</span>
+                          <h4 className="text-sm font-medium text-[#171717]">Clear Brand Position</h4>
+                          <p className="text-xs text-[#555555]">Clients understand your true offering instantly.</p>
                         </div>
-                        <div className="p-4 bg-[#122019] border border-[#27483C] rounded space-y-2">
-                          <span className="text-[10px] font-mono text-[#71C7A5] uppercase">TOUCHPOINT 02</span>
-                          <h4 className="text-sm font-medium text-[#FAF9F5]">Frictionless Website</h4>
-                          <p className="text-xs text-[#A3C9B8]">Prospects navigate, trust, and enquire with zero drag.</p>
+                        <div className="p-4 bg-white border border-[#E5E5E2] rounded space-y-2 shadow-sm">
+                          <span className="text-[10px] font-mono text-[#059669] uppercase font-semibold">TOUCHPOINT 02</span>
+                          <h4 className="text-sm font-medium text-[#171717]">Frictionless Website</h4>
+                          <p className="text-xs text-[#555555]">Prospects navigate, trust, and enquire with zero drag.</p>
                         </div>
-                        <div className="p-4 bg-[#122019] border border-[#27483C] rounded space-y-2">
-                          <span className="text-[10px] font-mono text-[#71C7A5] uppercase">TOUCHPOINT 03</span>
-                          <h4 className="text-sm font-medium text-[#FAF9F5]">Connected System</h4>
-                          <p className="text-xs text-[#A3C9B8]">Autonomous teams execute with real-time clarity.</p>
+                        <div className="p-4 bg-white border border-[#E5E5E2] rounded space-y-2 shadow-sm">
+                          <span className="text-[10px] font-mono text-[#059669] uppercase font-semibold">TOUCHPOINT 03</span>
+                          <h4 className="text-sm font-medium text-[#171717]">Connected System</h4>
+                          <p className="text-xs text-[#555555]">Autonomous teams execute with real-time clarity.</p>
                         </div>
                       </div>
 
-                      <div className="p-4 bg-[#11231C] border border-[#214737] rounded text-xs text-[#71C7A5] text-center font-mono">
+                      <div className="p-4 bg-[#ECFDF5] border border-[#A7F3D0] rounded text-xs text-[#065F46] text-center font-mono">
                         RESULT: High focus · Less unbilled administration · Reliable operational flow
                       </div>
                     </motion.div>
@@ -667,29 +667,29 @@ export const DenmarkMarketPage: React.FC = () => {
           "CLARITY IS PART OF QUALITY."
           Demonstrates the difference between confusing business presentation vs clarity.
       ========================================================================= */}
-      <section className="py-24 md:py-32 border-b border-[#1E252E] bg-[#0C1016]">
+      <section className="py-24 md:py-32 border-b border-[#E5E5E2] bg-white text-[#171717]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Section Marker */}
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-[#52947F]">03 / CAPABILITY: BRAND DESIGN</span>
-            <div className="h-[1px] w-12 bg-[#232C37]" />
+            <span className="text-xs font-mono text-[#3D7362] font-semibold">03 / CAPABILITY: BRAND DESIGN</span>
+            <div className="h-[1px] w-12 bg-[#E5E5E2]" />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             {/* Left Narrative */}
             <div className="lg:col-span-5 space-y-6">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#FAF9F5] leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] leading-tight">
                 CLARITY IS PART <br />
-                <span className="text-[#A3C9B8]">OF QUALITY.</span>
+                <span className="text-[#3D7362]">OF QUALITY.</span>
               </h2>
 
-              <p className="text-base sm:text-lg text-[#B4BAC3] leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-[#555555] leading-relaxed font-light">
                 A business can deliver exceptional work and still make it difficult for customers to understand its value.
               </p>
 
-              <div className="space-y-3 text-sm text-[#8E95A0]">
+              <div className="space-y-3 text-sm text-[#666666]">
                 <p>A well-considered brand communicates four fundamental truths:</p>
-                <ul className="space-y-2 border-l border-[#242F3C] pl-4 text-xs font-mono text-[#D4CEBF]">
+                <ul className="space-y-2 border-l border-[#E5E5E2] pl-4 text-xs font-mono text-[#444444]">
                   <li>01. WHAT THE BUSINESS DOES.</li>
                   <li>02. WHO IT SERVES.</li>
                   <li>03. WHAT MAKES IT VALUABLE.</li>
@@ -698,56 +698,56 @@ export const DenmarkMarketPage: React.FC = () => {
               </div>
 
               <div className="pt-2">
-                <span className="text-xs font-mono text-[#717B88] uppercase tracking-wider block mb-3">WHAT WE DEVELOP:</span>
+                <span className="text-xs font-mono text-[#666666] uppercase tracking-wider block mb-3 font-semibold">WHAT WE DEVELOP:</span>
                 <div className="flex flex-wrap gap-2">
                   {['Brand Identity', 'Visual Systems', 'Brand Guidelines', 'Presentations', 'Sales Materials', 'Digital Brand Assets'].map((asset, aIdx) => (
-                    <span key={aIdx} className="px-3 py-1.5 bg-[#141B22] border border-[#232D39] text-xs text-[#B8C0CC] rounded">
+                    <span key={aIdx} className="px-3 py-1.5 bg-[#FAFAF9] border border-[#E5E5E2] text-xs text-[#333333] rounded">
                       {asset}
                     </span>
                   ))}
                 </div>
               </div>
 
-              <div className="p-4 bg-[#101820] border-l-2 border-[#52947F] text-xs text-[#A3C9B8] font-mono leading-relaxed">
+              <div className="p-4 bg-[#F4FBF7] border-l-2 border-[#3D7362] text-xs text-[#28594B] font-mono leading-relaxed">
                 KEY PRINCIPLE: Good design makes the value easier to see.
               </div>
             </div>
 
             {/* Right: Visual Demonstration (Confusing vs Clear) */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="text-xs font-mono text-[#767E8A] uppercase tracking-wider">
+              <div className="text-xs font-mono text-[#666666] uppercase tracking-wider font-semibold">
                 CONTRAST: COMMUNICATING VALUE TO INTERNATIONAL & DOMESTIC BUYERS
               </div>
 
               <div className="space-y-4">
                 {/* Ambiguous Presentation */}
-                <div className="p-6 bg-[#13171D] border border-[#252E3A] rounded-lg opacity-60">
-                  <div className="flex items-center justify-between pb-3 border-b border-[#1E252E] mb-3">
-                    <span className="text-xs font-mono text-[#E58B88] flex items-center gap-1.5">
+                <div className="p-6 bg-[#FAFAF9] border border-[#E5E5E2] rounded-lg opacity-75">
+                  <div className="flex items-center justify-between pb-3 border-b border-[#E5E5E2] mb-3">
+                    <span className="text-xs font-mono text-[#DC2626] flex items-center gap-1.5 font-semibold">
                       <XCircle className="w-3.5 h-3.5" /> CONFUSING & VAGUE PRESENTATION
                     </span>
-                    <span className="text-[11px] font-mono text-[#717B88]">HIGH FRICTION</span>
+                    <span className="text-[11px] font-mono text-[#888888]">HIGH FRICTION</span>
                   </div>
-                  <h4 className="text-sm font-medium text-[#FAF9F5] line-through decoration-[#E58B88]">
+                  <h4 className="text-sm font-medium text-[#666666] line-through decoration-[#DC2626]">
                     "We are holistic synergy pioneers revolutionizing end-to-end future ecosystems."
                   </h4>
-                  <p className="text-xs text-[#7E8896] mt-2">
+                  <p className="text-xs text-[#777777] mt-2">
                     Result: Prospective clients cannot understand what you actually provide, compare you on low price, or leave confused.
                   </p>
                 </div>
 
                 {/* Clear Coherent Presentation */}
-                <div className="p-7 bg-[#101A18] border border-[#2A483E] rounded-lg shadow-lg relative">
-                  <div className="flex items-center justify-between pb-3 border-b border-[#1E372E] mb-3">
-                    <span className="text-xs font-mono text-[#71C7A5] flex items-center gap-1.5">
+                <div className="p-7 bg-[#F4FBF7] border border-[#A7F3D0] rounded-lg shadow-sm relative">
+                  <div className="flex items-center justify-between pb-3 border-b border-[#D1FAE5] mb-3">
+                    <span className="text-xs font-mono text-[#059669] flex items-center gap-1.5 font-semibold">
                       <CheckCircle2 className="w-3.5 h-3.5" /> CONSIDERED & PRECISE PRESENTATION
                     </span>
-                    <span className="text-[11px] font-mono text-[#52947F]">EFFORTLESS CLARITY</span>
+                    <span className="text-[11px] font-mono text-[#3D7362]">EFFORTLESS CLARITY</span>
                   </div>
-                  <h4 className="text-base font-light text-[#FAF9F5]">
+                  <h4 className="text-base font-medium text-[#171717]">
                     "We engineer precision clean-room automation for specialized European medical device manufacturers."
                   </h4>
-                  <p className="text-xs text-[#A3C9B8] mt-2">
+                  <p className="text-xs text-[#28594B] mt-2">
                     Result: The client immediately recognizes relevance, understands the scope, and engages with respect.
                   </p>
                 </div>
@@ -858,19 +858,19 @@ export const DenmarkMarketPage: React.FC = () => {
           "MAKE IT EASIER TO DO THE WORK."
           Realistic business situation: ENQUIRY → SALES → CUSTOMER → PROJECT → TEAM → MANAGEMENT
       ========================================================================= */}
-      <section className="py-24 md:py-32 border-b border-[#1E252E] bg-[#0C1016]">
+      <section className="py-24 md:py-32 border-b border-[#E5E5E2] bg-white text-[#171717]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Section Marker */}
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-[#52947F]">05 / CAPABILITY: BUSINESS SYSTEMS</span>
-            <div className="h-[1px] w-12 bg-[#232C37]" />
+            <span className="text-xs font-mono text-[#3D7362] font-semibold">05 / CAPABILITY: BUSINESS SYSTEMS</span>
+            <div className="h-[1px] w-12 bg-[#E5E5E2]" />
           </div>
 
           <div className="max-w-3xl mb-12 space-y-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#FAF9F5] leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] leading-tight">
               MAKE IT EASIER TO DO THE WORK.
             </h2>
-            <p className="text-base sm:text-lg text-[#B4BAC3] font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light leading-relaxed">
               We design personalised business management systems around how your company actually functions. The system should support the work, not become more work.
             </p>
           </div>
@@ -883,35 +883,35 @@ export const DenmarkMarketPage: React.FC = () => {
                 onClick={() => setActiveWorkflowStep(nIdx)}
                 className={`p-4 text-left rounded border transition-all duration-200 ${
                   activeWorkflowStep === nIdx
-                    ? 'bg-[#15202A] border-[#52947F] text-[#FAF9F5]'
-                    : 'bg-[#0E1318] border-[#1F2732] text-[#868E9B] hover:text-[#C5CAD2]'
+                    ? 'bg-[#EBF7F2] border-[#3D7362] text-[#171717] font-medium shadow-sm'
+                    : 'bg-[#FAFAF9] border-[#E5E5E2] text-[#666666] hover:text-[#171717]'
                 }`}
               >
-                <div className="text-[10px] font-mono text-[#52947F] mb-1">0{nIdx + 1}</div>
+                <div className="text-[10px] font-mono text-[#3D7362] font-semibold mb-1">0{nIdx + 1}</div>
                 <div className="text-xs font-mono uppercase tracking-wider font-semibold">{node.stage}</div>
-                <div className="text-[11px] text-[#717B88] mt-1 truncate">{node.role}</div>
+                <div className="text-[11px] text-[#777777] mt-1 truncate">{node.role}</div>
               </button>
             ))}
           </div>
 
           {/* Active Node Detail Card */}
-          <div className="p-8 bg-[#10161E] border border-[#232D39] rounded-xl shadow-lg">
+          <div className="p-8 bg-[#FAFAF9] border border-[#E5E5E2] rounded-xl shadow-sm">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
               <div className="md:col-span-8 space-y-3">
-                <div className="text-xs font-mono text-[#52947F] uppercase tracking-wider">
+                <div className="text-xs font-mono text-[#3D7362] font-semibold uppercase tracking-wider">
                   STAGE 0{activeWorkflowStep + 1}: {workflowNodes[activeWorkflowStep].stage} · {workflowNodes[activeWorkflowStep].role}
                 </div>
-                <p className="text-base text-[#D4CEBF] leading-relaxed">
+                <p className="text-base text-[#333333] leading-relaxed">
                   {workflowNodes[activeWorkflowStep].description}
                 </p>
-                <div className="text-xs font-mono text-[#7E8896]">
-                  PRIMARY BENEFIT: <span className="text-[#A3C9B8]">{workflowNodes[activeWorkflowStep].metric}</span>
+                <div className="text-xs font-mono text-[#666666]">
+                  PRIMARY BENEFIT: <span className="text-[#3D7362] font-medium">{workflowNodes[activeWorkflowStep].metric}</span>
                 </div>
               </div>
 
-              <div className="md:col-span-4 bg-[#0A0E13] p-5 rounded-lg border border-[#1C2632] space-y-2">
-                <span className="text-[11px] font-mono text-[#717B88] uppercase block">TAILORED INTEGRATION</span>
-                <p className="text-xs text-[#8E95A0] leading-relaxed">
+              <div className="md:col-span-4 bg-white p-5 rounded-lg border border-[#E5E5E2] space-y-2 shadow-sm">
+                <span className="text-[11px] font-mono text-[#777777] uppercase block font-semibold">TAILORED INTEGRATION</span>
+                <p className="text-xs text-[#555555] leading-relaxed">
                   No rigid off-the-shelf constraints. Built to connect with your existing tools (e-conomic, Dinero, Microsoft 365, Jira).
                 </p>
               </div>
@@ -919,11 +919,11 @@ export const DenmarkMarketPage: React.FC = () => {
           </div>
 
           {/* Summary Checklist */}
-          <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-mono text-[#8E95A0]">
-            <div className="p-3 bg-[#0E1318] border border-[#1C242F] rounded">✓ Leads & follow-ups</div>
-            <div className="p-3 bg-[#0E1318] border border-[#1C242F] rounded">✓ Task & project ownership</div>
-            <div className="p-3 bg-[#0E1318] border border-[#1C242F] rounded">✓ Document & contract links</div>
-            <div className="p-3 bg-[#0E1318] border border-[#1C242F] rounded">✓ Real-time status visibility</div>
+          <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-mono text-[#555555]">
+            <div className="p-3 bg-[#FAFAF9] border border-[#E5E5E2] rounded">✓ Leads & follow-ups</div>
+            <div className="p-3 bg-[#FAFAF9] border border-[#E5E5E2] rounded">✓ Task & project ownership</div>
+            <div className="p-3 bg-[#FAFAF9] border border-[#E5E5E2] rounded">✓ Document & contract links</div>
+            <div className="p-3 bg-[#FAFAF9] border border-[#E5E5E2] rounded">✓ Real-time status visibility</div>
           </div>
         </div>
       </section>
@@ -1025,31 +1025,31 @@ export const DenmarkMarketPage: React.FC = () => {
           "TECHNOLOGY SHOULD EARN ITS PLACE."
           Pragmatic automation without hype.
       ========================================================================= */}
-      <section className="py-20 md:py-28 border-b border-[#1E252E] bg-[#0C1016]">
+      <section className="py-20 md:py-28 border-b border-[#E5E5E2] bg-white text-[#171717]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="p-8 sm:p-12 bg-[#0F141B] border border-[#202934] rounded-2xl relative overflow-hidden">
+          <div className="p-8 sm:p-12 bg-[#FAFAF9] border border-[#E5E5E2] rounded-2xl relative overflow-hidden shadow-sm">
             <div className="max-w-2xl space-y-5">
               <div className="flex items-center gap-3">
-                <span className="text-xs font-mono text-[#52947F]">07 / PRAGMATIC TECHNOLOGY</span>
-                <div className="h-[1px] w-12 bg-[#232C37]" />
+                <span className="text-xs font-mono text-[#3D7362] font-semibold">07 / PRAGMATIC TECHNOLOGY</span>
+                <div className="h-[1px] w-12 bg-[#E5E5E2]" />
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-light text-[#FAF9F5] leading-tight">
+              <h2 className="text-3xl sm:text-4xl font-light text-[#171717] leading-tight">
                 TECHNOLOGY SHOULD EARN ITS PLACE.
               </h2>
 
-              <p className="text-base text-[#B4BAC3] leading-relaxed font-light">
+              <p className="text-base text-[#555555] leading-relaxed font-light">
                 Denmark has substantial digital and AI adoption. The strategic opportunity is to deploy practical automation where it genuinely saves time, preserving human judgment and oversight.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-mono text-[#D4CEBF]">
-                <div className="p-3 bg-[#141B22] border border-[#232C37] rounded">→ Repetitive data routing</div>
-                <div className="p-3 bg-[#141B22] border border-[#232C37] rounded">→ Information classification</div>
-                <div className="p-3 bg-[#141B22] border border-[#232C37] rounded">→ Follow-up reminders</div>
-                <div className="p-3 bg-[#141B22] border border-[#232C37] rounded">→ Document handoffs</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-mono text-[#333333]">
+                <div className="p-3 bg-white border border-[#E5E5E2] rounded shadow-sm">→ Repetitive data routing</div>
+                <div className="p-3 bg-white border border-[#E5E5E2] rounded shadow-sm">→ Information classification</div>
+                <div className="p-3 bg-white border border-[#E5E5E2] rounded shadow-sm">→ Follow-up reminders</div>
+                <div className="p-3 bg-white border border-[#E5E5E2] rounded shadow-sm">→ Document handoffs</div>
               </div>
 
-              <p className="text-xs text-[#7E8896] italic font-mono pt-2">
+              <p className="text-xs text-[#777777] italic font-mono pt-2">
                 "If a process does not need AI, do not add AI."
               </p>
             </div>
@@ -1083,20 +1083,20 @@ export const DenmarkMarketPage: React.FC = () => {
           SECTION 13: INDUSTRIES: EDITORIAL RELEVANCE WITHOUT A DIRECTORY
           8 relevant Danish sectors with one short, specific line each.
       ========================================================================= */}
-      <section className="py-24 md:py-32 border-b border-[#1E252E] bg-[#0C1016]">
+      <section className="py-24 md:py-32 border-b border-[#E5E5E2] bg-white text-[#171717]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Header */}
           <div className="max-w-2xl mb-14 space-y-4">
             <div className="flex items-center gap-3">
-              <span className="text-xs font-mono text-[#52947F]">08 / INDUSTRY RELEVANCE</span>
-              <div className="h-[1px] w-12 bg-[#232C37]" />
+              <span className="text-xs font-mono text-[#3D7362] font-semibold">08 / INDUSTRY RELEVANCE</span>
+              <div className="h-[1px] w-12 bg-[#E5E5E2]" />
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#FAF9F5] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] tracking-tight">
               DESIGNED AROUND HOW BUSINESSES OPERATE.
             </h2>
 
-            <p className="text-base text-[#9FA6B2] font-light">
+            <p className="text-base text-[#555555] font-light">
               Tailored capabilities for established and growing organizations across key Danish sectors.
             </p>
           </div>
@@ -1106,14 +1106,14 @@ export const DenmarkMarketPage: React.FC = () => {
             {danishIndustries.map((ind, iIdx) => (
               <div
                 key={iIdx}
-                className="p-6 bg-[#10151C] border border-[#202934] rounded-lg hover:border-[#384859] transition-colors duration-200 space-y-2.5"
+                className="p-6 bg-[#FAFAF9] border border-[#E5E5E2] rounded-lg hover:border-[#3D7362] transition-colors duration-200 space-y-2.5 shadow-sm"
               >
                 <div className="flex items-center justify-between text-xs font-mono">
-                  <span className="text-[#52947F] uppercase tracking-wider">{ind.sector}</span>
-                  <span className="text-[#717B88]">0{iIdx + 1}</span>
+                  <span className="text-[#3D7362] font-semibold uppercase tracking-wider">{ind.sector}</span>
+                  <span className="text-[#777777]">0{iIdx + 1}</span>
                 </div>
-                <div className="text-xs font-mono text-[#8E95A0]">{ind.anchor}</div>
-                <p className="text-sm text-[#D4CEBF] leading-relaxed pt-1">
+                <div className="text-xs font-mono text-[#666666]">{ind.anchor}</div>
+                <p className="text-sm text-[#333333] leading-relaxed pt-1">
                   {ind.focus}
                 </p>
               </div>
@@ -1178,20 +1178,20 @@ export const DenmarkMarketPage: React.FC = () => {
           UNDERSTAND → CLARIFY → DESIGN → BUILD → REFINE
           One concise line per stage.
       ========================================================================= */}
-      <section className="py-24 md:py-32 border-b border-[#1E252E] bg-[#0C1016]">
+      <section className="py-24 md:py-32 border-b border-[#E5E5E2] bg-white text-[#171717]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Header */}
           <div className="max-w-2xl mb-14 space-y-4">
             <div className="flex items-center gap-3">
-              <span className="text-xs font-mono text-[#52947F]">10 / WORKING METHOD</span>
-              <div className="h-[1px] w-12 bg-[#232C37]" />
+              <span className="text-xs font-mono text-[#3D7362] font-semibold">10 / WORKING METHOD</span>
+              <div className="h-[1px] w-12 bg-[#E5E5E2]" />
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#FAF9F5] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] tracking-tight">
               UNDERSTAND THE PROBLEM BEFORE CHOOSING THE SOLUTION.
             </h2>
 
-            <p className="text-base text-[#9FA6B2] font-light">
+            <p className="text-base text-[#555555] font-light">
               We focus on decision quality and practical business results, not the number of software features.
             </p>
           </div>
@@ -1227,13 +1227,13 @@ export const DenmarkMarketPage: React.FC = () => {
             ].map((step, sIdx) => (
               <div
                 key={sIdx}
-                className="p-6 bg-[#10151C] border border-[#202934] rounded-lg space-y-3 relative group hover:border-[#3A4B5C] transition-colors"
+                className="p-6 bg-[#FAFAF9] border border-[#E5E5E2] rounded-lg space-y-3 relative group hover:border-[#3D7362] transition-colors shadow-sm"
               >
-                <div className="text-xs font-mono text-[#52947F]">{step.num}</div>
-                <h3 className="text-sm font-mono font-semibold tracking-wider text-[#FAF9F5]">
+                <div className="text-xs font-mono text-[#3D7362] font-semibold">{step.num}</div>
+                <h3 className="text-sm font-mono font-semibold tracking-wider text-[#171717]">
                   {step.title}
                 </h3>
-                <p className="text-xs text-[#9FA6B2] leading-relaxed">
+                <p className="text-xs text-[#555555] leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -1291,15 +1291,15 @@ export const DenmarkMarketPage: React.FC = () => {
       {/* =========================================================================
           FREQUENTLY ASKED QUESTIONS (FAQ)
       ========================================================================= */}
-      <section className="py-24 md:py-32 bg-[#0A0E13] border-t border-[#1E252E] px-6 sm:px-8 lg:px-12">
+      <section className="py-24 md:py-32 bg-white border-t border-[#E5E5E2] px-6 sm:px-8 lg:px-12 text-[#171717]">
         <div className="max-w-4xl mx-auto space-y-12">
           <div>
-            <div className="inline-block px-3 py-1 bg-[#141B22] border border-[#232D39] text-[#52947F] text-xs font-mono tracking-widest uppercase rounded mb-4">
+            <div className="inline-block px-3 py-1 bg-[#FAFAF9] border border-[#E5E5E2] text-[#3D7362] text-xs font-mono tracking-widest uppercase rounded mb-4 font-semibold">
               DANISH DECISION-MAKER FAQS
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light text-[#FAF9F5] tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl font-light text-[#171717] tracking-tight mb-4">
               Common questions from <br />
-              <span className="text-[#8E95A0]">Danish executive teams.</span>
+              <span className="text-[#666666]">Danish executive teams.</span>
             </h2>
           </div>
 
@@ -1307,14 +1307,14 @@ export const DenmarkMarketPage: React.FC = () => {
             {DENMARK_FAQS.map((faq, idx) => (
               <div
                 key={idx}
-                className="border border-[#1E2632] bg-[#0E1318] rounded-lg overflow-hidden transition-colors hover:border-[#3A4B5C]"
+                className="border border-[#E5E5E2] bg-[#FAFAF9] rounded-lg overflow-hidden transition-colors hover:border-[#3D7362] shadow-sm"
               >
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-6 text-left flex items-center justify-between gap-4 text-[#FAF9F5] hover:text-[#52947F] transition-colors"
+                  className="w-full p-6 text-left flex items-center justify-between gap-4 text-[#171717] hover:text-[#3D7362] transition-colors"
                 >
-                  <span className="text-base font-light">{faq.question}</span>
-                  <span className="text-xs font-mono text-[#767E8A] flex-shrink-0">
+                  <span className="text-base font-medium">{faq.question}</span>
+                  <span className="text-xs font-mono text-[#666666] flex-shrink-0">
                     {openFaq === idx ? '-' : '+'}
                   </span>
                 </button>
@@ -1325,7 +1325,7 @@ export const DenmarkMarketPage: React.FC = () => {
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.25 }}
-                      className="px-6 pb-6 text-sm text-[#9FA6B2] font-light leading-relaxed border-t border-[#1E2632] pt-4"
+                      className="px-6 pb-6 text-sm text-[#555555] font-light leading-relaxed border-t border-[#E5E5E2] pt-4"
                     >
                       {faq.answer}
                     </motion.div>

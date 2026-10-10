@@ -217,50 +217,50 @@ export const UkMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 02. CORE UK BUSINESS REALITY: WHEN THE BUSINESS GETS BUSIER */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        {/* 02. CORE UK BUSINESS REALITY: WHEN THE BUSINESS GETS BUSIER (WHITE) */}
+        <section className="w-full bg-white text-[#171717] py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-medium">
               Operational Reality
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-8">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-8">
               When the business gets busier, <br />
-              <span className="text-[#9CA3AF] italic">what holds it back?</span>
+              <span className="text-[#555555] italic">what holds it back?</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start mt-12">
-              <div className="md:col-span-7 space-y-6 text-[#9CA3AF] text-base sm:text-lg font-light leading-relaxed">
+              <div className="md:col-span-7 space-y-6 text-[#555555] text-base sm:text-lg font-light leading-relaxed">
                 <p>
                   As an established UK firm expands, the initial systems that carried the business often become the very things slowing it down.
                 </p>
                 <p>
                   Enquiries arrive through multiple channels. Commercial proposals take too long to assemble. Project handoffs rely on verbal agreements. Key client notes are scattered across individual email threads and disparate spreadsheets.
                 </p>
-                <div className="p-6 border-l-2 border-white/40 bg-white/[0.02] text-white font-normal text-lg sm:text-xl">
+                <div className="p-6 border-l-2 border-[#171717] bg-[#FAFAF9] text-[#171717] font-normal text-lg sm:text-xl">
                   “The issue is rarely a lack of expertise. <br className="hidden sm:inline" />
-                  <span className="text-[#9CA3AF]">It is the friction of disconnected operations.”</span>
+                  <span className="text-[#666666]">It is the friction of disconnected operations.”</span>
                 </div>
               </div>
 
-              <div className="md:col-span-5 bg-white/[0.02] border border-white/10 p-8 rounded-sm space-y-4">
-                <div className="text-xs uppercase tracking-[0.2em] text-white/80 font-mono mb-2">
+              <div className="md:col-span-5 bg-[#FAFAF9] border border-[#E5E5E2] p-8 rounded-sm space-y-4">
+                <div className="text-xs uppercase tracking-[0.2em] text-[#171717] font-mono mb-2 font-medium">
                   Common UK Operational Bottlenecks:
                 </div>
-                <ul className="space-y-3 text-xs text-[#9CA3AF] font-light">
+                <ul className="space-y-3 text-xs text-[#555555] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono">-</span>
+                    <span className="text-[#15803D] font-mono">-</span>
                     <span>High-value commercial leads sitting unassigned across personal inboxes.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono">-</span>
+                    <span className="text-[#15803D] font-mono">-</span>
                     <span>Costing formulas and margin calculations buried in personal spreadsheets.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono">-</span>
+                    <span className="text-[#15803D] font-mono">-</span>
                     <span>Subcontractor dependencies and site milestones tracked verbally.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono">-</span>
+                    <span className="text-[#15803D] font-mono">-</span>
                     <span>Directors having to chase project managers for weekly margin reports.</span>
                   </li>
                 </ul>
@@ -326,36 +326,36 @@ export const UkMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 04. UK INDUSTRY SECTORS */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        {/* 04. UK INDUSTRY SECTORS (WHITE) */}
+        <section className="w-full bg-white text-[#171717] py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-medium">
               Sector Specialisation
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Tailored across <br />
-              <span className="text-[#9CA3AF] italic">key UK commercial sectors.</span>
+              <span className="text-[#555555] italic">key UK commercial sectors.</span>
             </h2>
-            <p className="text-[#9CA3AF] text-base sm:text-lg font-light max-w-2xl leading-relaxed mb-16">
+            <p className="text-[#555555] text-base sm:text-lg font-light max-w-2xl leading-relaxed mb-16">
               From creative consultancies in London and Manchester to engineering and trade operations across Birmingham, Leeds, and Edinburgh.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {ukIndustries.map((ind) => (
-                <div key={ind.id} className="p-6 border border-white/10 bg-white/[0.02] flex flex-col justify-between hover:border-white/20 transition-colors">
+                <div key={ind.id} className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm flex flex-col justify-between hover:border-neutral-400 transition-colors">
                   <div>
-                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#9CA3AF] mb-2">
+                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#666666] mb-2 font-medium">
                       {ind.tagline}
                     </div>
-                    <h3 className="text-base font-medium text-white mb-3">
+                    <h3 className="text-base font-medium text-[#171717] mb-3">
                       {ind.title}
                     </h3>
-                    <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+                    <p className="text-xs text-[#555555] font-light leading-relaxed">
                       {ind.desc}
                     </p>
                   </div>
-                  <div className="mt-6 pt-3 border-t border-white/[0.06]">
-                    <Link to="/contact" className="text-xs text-white/80 hover:text-white flex items-center gap-1 group">
+                  <div className="mt-6 pt-3 border-t border-[#E5E5E2]">
+                    <Link to="/contact" className="text-xs text-[#171717] hover:text-black flex items-center gap-1 group font-medium">
                       <span>Discuss Requirements</span>
                       <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                     </Link>
@@ -416,17 +416,17 @@ export const UkMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 06. FREQUENTLY ASKED QUESTIONS */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        {/* 06. FREQUENTLY ASKED QUESTIONS (WHITE) */}
+        <section className="w-full bg-white text-[#171717] py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2]">
           <div className="max-w-4xl mx-auto space-y-12">
             <div>
-              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#9CA3AF] mb-4">
+              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#666666] mb-4 font-medium">
                 Clarity & Due Diligence
               </div>
-              <h2 className="text-3xl sm:text-5xl font-light text-white leading-tight mb-4">
+              <h2 className="text-3xl sm:text-5xl font-light text-[#171717] leading-tight mb-4">
                 Questions British directors ask.
               </h2>
-              <p className="text-base text-[#9CA3AF] font-light">
+              <p className="text-base text-[#555555] font-light">
                 Straightforward facts regarding remote delivery, UK GDPR compliance, software integrations, and commercial terms.
               </p>
             </div>
@@ -435,18 +435,18 @@ export const UkMarketPage: React.FC = () => {
               {UK_FAQS.map((faq, idx) => (
                 <div
                   key={idx}
-                  className="border border-white/10 bg-white/[0.01] overflow-hidden"
+                  className="border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm overflow-hidden"
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
-                    className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-white/[0.02] transition-colors"
+                    className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-[#F0F0EE] transition-colors"
                   >
-                    <span className="text-base sm:text-lg font-light text-white">
+                    <span className="text-base sm:text-lg font-light text-[#171717]">
                       {faq.question}
                     </span>
                     <ChevronDown
-                      className={`w-5 h-5 text-[#9CA3AF] transition-transform duration-300 shrink-0 ${
-                        openFaq === idx ? 'rotate-180 text-white' : ''
+                      className={`w-5 h-5 text-[#666666] transition-transform duration-300 shrink-0 ${
+                        openFaq === idx ? 'rotate-180 text-[#171717]' : ''
                       }`}
                     />
                   </button>
@@ -458,7 +458,7 @@ export const UkMarketPage: React.FC = () => {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <div className="px-6 pb-6 pt-2 text-sm sm:text-base text-[#9CA3AF] font-light leading-relaxed border-t border-white/[0.06]">
+                        <div className="px-6 pb-6 pt-2 text-sm sm:text-base text-[#555555] font-light leading-relaxed border-t border-[#E5E5E2]">
                           {faq.answer}
                         </div>
                       </motion.div>

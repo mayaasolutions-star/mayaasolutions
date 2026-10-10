@@ -326,20 +326,20 @@ export const DubaiMarketPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            02. DUBAI-SPECIFIC REALITY: THE WHATSAPP DISCONNECT
+            02. DUBAI-SPECIFIC REALITY: THE WHATSAPP DISCONNECT (WHITE)
         ================================================== */}
-        <section className="bg-[#0B0E14] border-b border-white/[0.08] py-20 sm:py-28 lg:py-32 px-6 md:px-12 lg:px-16">
+        <section className="w-full bg-white text-[#171717] border-b border-[#E5E5E2] py-20 sm:py-28 lg:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-14 sm:space-y-16">
             
             <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#F59E0B] block">
+              <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#B45309] font-medium block">
                 Dubai Commercial Reality
               </span>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
                 WhatsApp is convenient. <br />
-                <span className="text-[#9CA3AF] italic">It is not a business management system.</span>
+                <span className="text-[#555555] italic">It is not a business management system.</span>
               </h2>
-              <p className="text-base sm:text-lg text-[#9CA3AF] font-light leading-relaxed">
+              <p className="text-base sm:text-lg text-[#555555] font-light leading-relaxed">
                 In Dubai’s high-speed market, commercial conversations happen in seconds. But when deals scale, informal messaging without structured systems turns velocity into chaos.
               </p>
             </div>
@@ -348,12 +348,12 @@ export const DubaiMarketPage: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
               
               {/* Left: The Realistic Chain of Events */}
-              <div className="lg:col-span-7 p-8 sm:p-10 border border-white/10 bg-white/[0.01] rounded-sm space-y-6">
-                <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                  <span className="text-xs font-mono uppercase tracking-wider text-[#9CA3AF]">
+              <div className="lg:col-span-7 p-8 sm:p-10 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm space-y-6">
+                <div className="flex items-center justify-between border-b border-[#E5E5E2] pb-4">
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#666666] font-medium">
                     How information fragments across daily operations:
                   </span>
-                  <span className="text-[10px] font-mono text-[#F59E0B]">REALITY AUDIT</span>
+                  <span className="text-[10px] font-mono text-[#B45309] font-semibold">REALITY AUDIT</span>
                 </div>
 
                 <div className="space-y-3.5">
@@ -367,11 +367,11 @@ export const DubaiMarketPage: React.FC = () => {
                     'The business owner asks the team for a status summary across eight active client accounts.',
                     'Vital information is scattered across personal phones, spreadsheets, inboxes, and memory.',
                   ].map((line, idx) => (
-                    <div key={idx} className="flex items-start gap-3.5 p-3 rounded bg-white/[0.01] border border-white/[0.04]">
-                      <span className="w-5 h-5 rounded-full bg-white/[0.05] border border-white/10 text-[10px] font-mono font-medium text-[#FCD34D] flex items-center justify-center shrink-0 mt-0.5">
+                    <div key={idx} className="flex items-start gap-3.5 p-3 rounded bg-white border border-[#E5E5E2]">
+                      <span className="w-5 h-5 rounded-full bg-[#F0F0EE] border border-[#E5E5E2] text-[10px] font-mono font-medium text-[#B45309] flex items-center justify-center shrink-0 mt-0.5">
                         0{idx + 1}
                       </span>
-                      <p className="text-xs sm:text-sm text-[#D1D5DB] font-light leading-relaxed">
+                      <p className="text-xs sm:text-sm text-[#333333] font-normal leading-relaxed">
                         {line}
                       </p>
                     </div>
@@ -381,44 +381,44 @@ export const DubaiMarketPage: React.FC = () => {
 
               {/* Right: The Solution Architecture */}
               <div className="lg:col-span-5 space-y-6 flex flex-col justify-between">
-                <div className="p-8 sm:p-10 border border-white/10 bg-white/[0.02] rounded-sm space-y-6">
+                <div className="p-8 sm:p-10 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm space-y-6">
                   <div className="space-y-3">
-                    <span className="text-xs font-mono uppercase tracking-widest text-[#F59E0B] block">
+                    <span className="text-xs font-mono uppercase tracking-widest text-[#B45309] font-medium block">
                       The Operational Turning Point
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-light text-white leading-snug">
+                    <h3 className="text-2xl sm:text-3xl font-light text-[#171717] leading-snug">
                       Growth creates complexity. <br />
-                      <span className="text-[#9CA3AF] italic">Your system should create control.</span>
+                      <span className="text-[#555555] italic">Your system should create control.</span>
                     </h3>
                   </div>
 
-                  <p className="text-sm sm:text-base text-[#9CA3AF] leading-relaxed font-light">
+                  <p className="text-sm sm:text-base text-[#555555] leading-relaxed font-light">
                     Scaling in Dubai should mean larger contracts and higher margins, not having leadership chase five people to find the status of one invoice or delivery milestone.
                   </p>
-                  <p className="text-sm sm:text-base text-[#9CA3AF] leading-relaxed font-light">
+                  <p className="text-sm sm:text-base text-[#555555] leading-relaxed font-light">
                     Mayaa builds the bespoke operational layer: capturing incoming interest, coordinating team responsibilities, and giving owners continuous visibility.
                   </p>
 
-                  <div className="pt-6 border-t border-white/10">
-                    <div className="text-xs font-mono text-[#FCD34D] mb-1">THE MAYAA STANDARD:</div>
-                    <p className="text-xs font-mono text-[#9CA3AF] leading-relaxed">
+                  <div className="pt-6 border-t border-[#E5E5E2]">
+                    <div className="text-xs font-mono text-[#B45309] font-semibold mb-1">THE MAYAA STANDARD:</div>
+                    <p className="text-xs font-mono text-[#666666] leading-relaxed">
                       Zero lost leads. Explicit task ownership. Real-time project margins. Complete client record sovereignty.
                     </p>
                   </div>
                 </div>
 
-                <div className="p-6 border border-white/10 bg-white/[0.03] flex items-center justify-between gap-4">
+                <div className="p-6 border border-[#E5E5E2] bg-[#F0F0EE] rounded-sm flex items-center justify-between gap-4">
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#9CA3AF] block">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#666666] block font-medium">
                       CONFIDENTIAL REVIEW
                     </span>
-                    <span className="text-sm font-medium text-white block">
+                    <span className="text-sm font-medium text-[#171717] block">
                       Map where your business loses visibility
                     </span>
                   </div>
                   <Link
                     to="/contact"
-                    className="p-3 bg-white text-black hover:bg-[#E5E7EB] transition-colors shrink-0"
+                    className="p-3 bg-[#111111] text-white hover:bg-neutral-800 transition-colors shrink-0 rounded-xs"
                     aria-label="Start consultation"
                   >
                     <ArrowRight className="w-4 h-4" />
@@ -511,18 +511,18 @@ export const DubaiMarketPage: React.FC = () => {
         {/* ==================================================
             04. DUBAI TARGET BUSINESSES & INDUSTRY WORKFLOWS
         ================================================== */}
-        <section className="bg-[#0B0E14] border-b border-white/[0.08] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-b border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-14 sm:space-y-16">
             
             <div className="max-w-3xl space-y-4">
-              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#F59E0B]">
+              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#B45309]">
                 Sector Realities
               </div>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
                 Different businesses. <br />
-                <span className="text-[#9CA3AF] italic">Different operating rhythms.</span>
+                <span className="text-[#555555] italic">Different operating rhythms.</span>
               </h2>
-              <p className="text-base sm:text-lg text-[#9CA3AF] font-light leading-relaxed pt-2">
+              <p className="text-base sm:text-lg text-[#555555] font-light leading-relaxed pt-2">
                 We tailor systems for enterprises where leads represent significant revenue, sales cycles demand disciplined follow-up, and execution requires transparent accountability across distributed teams.
               </p>
             </div>
@@ -532,20 +532,20 @@ export const DubaiMarketPage: React.FC = () => {
               {industryWorkflows.map((ind) => (
                 <div
                   key={ind.id}
-                  className="border border-white/10 bg-white/[0.01] overflow-hidden flex flex-col justify-between hover:border-white/30 transition-all group"
+                  className="border border-[#E5E5E2] bg-[#FAFAF9] overflow-hidden flex flex-col justify-between hover:border-[#CCCCCC] transition-all group"
                 >
                   <div>
                     {/* Industry Context Visual */}
-                    <div className="relative aspect-[16/10] overflow-hidden bg-neutral-900 border-b border-white/10">
+                    <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100 border-b border-[#E5E5E2]">
                       <img
                         src={ind.image}
                         alt={ind.title}
                         className="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0B0E14] via-transparent to-transparent opacity-90" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90" />
                       <div className="absolute bottom-3 left-4 right-4">
-                        <span className="text-[10px] font-mono text-[#FCD34D] uppercase tracking-widest bg-black/70 px-2.5 py-1 rounded">
+                        <span className="text-[10px] font-mono text-[#FCD34D] uppercase tracking-widest bg-black/80 px-2.5 py-1 rounded">
                           {ind.tagline}
                         </span>
                       </div>
@@ -553,22 +553,22 @@ export const DubaiMarketPage: React.FC = () => {
 
                     {/* Content */}
                     <div className="p-7 sm:p-8 space-y-4">
-                      <h3 className="text-lg font-medium text-white tracking-wide">
+                      <h3 className="text-lg font-medium text-[#171717] tracking-wide">
                         {ind.title}
                       </h3>
 
-                      <p className="text-xs sm:text-sm text-[#D1D5DB] font-light leading-relaxed italic border-l-2 border-[#F59E0B] pl-3">
+                      <p className="text-xs sm:text-sm text-[#444444] font-light leading-relaxed italic border-l-2 border-[#D97706] pl-3">
                         “{ind.quote}”
                       </p>
 
                       <div className="space-y-2 pt-2">
-                        <span className="text-[10px] font-mono uppercase tracking-wider text-[#9CA3AF] block">
+                        <span className="text-[10px] font-mono uppercase tracking-wider text-[#666666] block">
                           Tailored Workflows:
                         </span>
                         <ul className="space-y-1.5">
                           {ind.points.map((pt, pIdx) => (
-                            <li key={pIdx} className="text-xs text-[#9CA3AF] font-light flex items-start gap-2">
-                              <span className="w-1 h-1 rounded-full bg-[#F59E0B] mt-1.5 shrink-0" />
+                            <li key={pIdx} className="text-xs text-[#555555] font-light flex items-start gap-2">
+                              <span className="w-1 h-1 rounded-full bg-[#D97706] mt-1.5 shrink-0" />
                               <span>{pt}</span>
                             </li>
                           ))}
@@ -580,7 +580,7 @@ export const DubaiMarketPage: React.FC = () => {
                   <div className="p-7 sm:p-8 pt-0">
                     <Link
                       to="/contact"
-                      className="w-full py-3 px-4 bg-white/[0.03] hover:bg-white text-white hover:text-black text-xs font-mono uppercase tracking-wider flex items-center justify-between border border-white/10 transition-colors"
+                      className="w-full py-3 px-4 bg-white hover:bg-[#111111] text-[#171717] hover:text-white text-xs font-mono uppercase tracking-wider flex items-center justify-between border border-[#E5E5E2] transition-colors"
                     >
                       <span>Discuss Your Workflow</span>
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -648,16 +648,16 @@ export const DubaiMarketPage: React.FC = () => {
         {/* ==================================================
             06. FREQUENTLY ASKED QUESTIONS
         ================================================== */}
-        <section className="bg-[#0B0E14] border-b border-white/[0.08] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-b border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-4xl mx-auto space-y-12">
             <div>
-              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#F59E0B] mb-4">
+              <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#B45309] mb-4">
                 Clarity & Due Diligence
               </div>
-              <h2 className="text-3xl sm:text-5xl font-light text-white leading-tight mb-4">
+              <h2 className="text-3xl sm:text-5xl font-light text-[#171717] leading-tight mb-4">
                 Questions Dubai executives ask.
               </h2>
-              <p className="text-base text-[#9CA3AF] font-light">
+              <p className="text-base text-[#555555] font-light">
                 Straightforward answers regarding delivery model, WhatsApp integrations, data security, and commercial structure.
               </p>
             </div>
@@ -666,18 +666,18 @@ export const DubaiMarketPage: React.FC = () => {
               {DUBAI_FAQS.map((faq, idx) => (
                 <div 
                   key={idx} 
-                  className="border border-white/10 bg-white/[0.01] overflow-hidden"
+                  className="border border-[#E5E5E2] bg-[#FAFAF9] overflow-hidden"
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
-                    className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-white/[0.02] transition-colors"
+                    className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-[#F0F0EE] transition-colors"
                   >
-                    <span className="text-base sm:text-lg font-light text-white">
+                    <span className="text-base sm:text-lg font-light text-[#171717]">
                       {faq.question}
                     </span>
                     <ChevronDown 
-                      className={`w-5 h-5 text-[#9CA3AF] transition-transform duration-300 shrink-0 ${
-                        openFaq === idx ? 'rotate-180 text-white' : ''
+                      className={`w-5 h-5 text-[#666666] transition-transform duration-300 shrink-0 ${
+                        openFaq === idx ? 'rotate-180 text-[#171717]' : ''
                       }`} 
                     />
                   </button>
@@ -689,7 +689,7 @@ export const DubaiMarketPage: React.FC = () => {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <div className="px-6 pb-6 pt-2 text-sm sm:text-base text-[#9CA3AF] font-light leading-relaxed border-t border-white/[0.06]">
+                        <div className="px-6 pb-6 pt-2 text-sm sm:text-base text-[#555555] font-light leading-relaxed border-t border-[#E5E5E2]">
                           {faq.answer}
                         </div>
                       </motion.div>

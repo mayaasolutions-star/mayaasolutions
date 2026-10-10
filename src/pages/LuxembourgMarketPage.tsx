@@ -172,7 +172,7 @@ export const LuxembourgMarketPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#0C0F14] text-[#E8ECF2] selection:bg-[#7E22CE] selection:text-white font-sans overflow-x-hidden antialiased">
       <SEO
-        title="Local Presence. International Perspective. | Mayaa Solutions Luxembourg"
+        title="Luxembourg | Strategic Brand, Digital Experiences & Business Systems | Mayaa Solutions"
         description="Brand building, high-clarity digital experiences, and personalised business management systems for Luxembourg enterprises. Helping companies turn domestic capability into wider commercial influence across Luxembourg City, Kirchberg, Belval, and beyond."
         keywords="Mayaa Solutions Luxembourg, brand design Luxembourg, website design Luxembourg, business management systems Luxembourg, custom business software Luxembourg, B2B website design Luxembourg, digital agency Luxembourg, workflow software Luxembourg, Luxembourg SME software, Kirchberg business systems"
         canonicalUrl="https://mayaasolutions.in/global-markets/luxembourg"
@@ -344,80 +344,80 @@ export const LuxembourgMarketPage: React.FC = () => {
       {/* =========================================================================
           02: DIAGNOSTIC INQUIRIES: COMMERCIAL CLARITY
           ========================================================================= */}
-      <section className="py-24 lg:py-32 border-b border-[#232834] relative bg-[#0F131A]">
+      <section className="py-24 lg:py-32 border-b border-[#E5E5E2] relative bg-white text-[#171717]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           {/* Section Header */}
           <div className="max-w-3xl space-y-4 mb-16">
-            <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#A855F7]">
+            <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#7E22CE]">
               02 // COMMERCIAL CLARITY
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-[#171717] leading-tight">
               Being in the right market is <br />
-              <span className="font-serif italic text-[#CBD5E1]">only the beginning.</span>
+              <span className="font-serif italic text-[#555555]">only the beginning.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#94A3B8] font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light leading-relaxed">
               Your business may have the right expertise, a strong offering, and the capability to serve discerning clients. But commercial momentum depends on how that capability is experienced from the outside, and delivered on the inside.
             </p>
           </div>
 
           {/* 4 Critical Diagnostic Inquiries */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-8 rounded-2xl bg-[#141822] border border-[#2B3242] flex flex-col justify-between hover:border-[#7E22CE]/60 transition-all duration-300">
+            <div className="p-8 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2] flex flex-col justify-between hover:border-[#7E22CE]/60 transition-all duration-300">
               <div className="space-y-4">
-                <div className="w-8 h-8 rounded-lg bg-[#241A38] border border-[#7E22CE]/40 flex items-center justify-center text-[#D8B4FE] text-xs font-mono">
+                <div className="w-8 h-8 rounded-lg bg-[#F3E8FF] border border-[#7E22CE]/40 flex items-center justify-center text-[#7E22CE] text-xs font-mono font-medium">
                   01
                 </div>
-                <h3 className="text-lg font-medium text-white">Relevance</h3>
-                <p className="text-sm text-[#94A3B8] leading-relaxed">
+                <h3 className="text-lg font-medium text-[#171717]">Relevance</h3>
+                <p className="text-sm text-[#555555] leading-relaxed">
                   Can target stakeholders understand what makes your business distinct and necessary within ten seconds of landing?
                 </p>
               </div>
-              <div className="mt-8 pt-4 border-t border-[#232834] text-xs font-mono text-[#64748B]">
+              <div className="mt-8 pt-4 border-t border-[#E5E5E2] text-xs font-mono text-[#666666]">
                 PERCEPTION GAP
               </div>
             </div>
 
-            <div className="p-8 rounded-2xl bg-[#141822] border border-[#2B3242] flex flex-col justify-between hover:border-[#7E22CE]/60 transition-all duration-300">
+            <div className="p-8 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2] flex flex-col justify-between hover:border-[#7E22CE]/60 transition-all duration-300">
               <div className="space-y-4">
-                <div className="w-8 h-8 rounded-lg bg-[#241A38] border border-[#7E22CE]/40 flex items-center justify-center text-[#D8B4FE] text-xs font-mono">
+                <div className="w-8 h-8 rounded-lg bg-[#F3E8FF] border border-[#7E22CE]/40 flex items-center justify-center text-[#7E22CE] text-xs font-mono font-medium">
                   02
                 </div>
-                <h3 className="text-lg font-medium text-white">Digital Clarity</h3>
-                <p className="text-sm text-[#94A3B8] leading-relaxed">
+                <h3 className="text-lg font-medium text-[#171717]">Digital Clarity</h3>
+                <p className="text-sm text-[#555555] leading-relaxed">
                   Does your website articulate your depth of capability, or does it resemble a static brochure that undersells your work?
                 </p>
               </div>
-              <div className="mt-8 pt-4 border-t border-[#232834] text-xs font-mono text-[#64748B]">
+              <div className="mt-8 pt-4 border-t border-[#E5E5E2] text-xs font-mono text-[#666666]">
                 CUSTOMER JOURNEY
               </div>
             </div>
 
-            <div className="p-8 rounded-2xl bg-[#141822] border border-[#2B3242] flex flex-col justify-between hover:border-[#7E22CE]/60 transition-all duration-300">
+            <div className="p-8 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2] flex flex-col justify-between hover:border-[#7E22CE]/60 transition-all duration-300">
               <div className="space-y-4">
-                <div className="w-8 h-8 rounded-lg bg-[#241A38] border border-[#7E22CE]/40 flex items-center justify-center text-[#D8B4FE] text-xs font-mono">
+                <div className="w-8 h-8 rounded-lg bg-[#F3E8FF] border border-[#7E22CE]/40 flex items-center justify-center text-[#7E22CE] text-xs font-mono font-medium">
                   03
                 </div>
-                <h3 className="text-lg font-medium text-white">Brand Stature</h3>
-                <p className="text-sm text-[#94A3B8] leading-relaxed">
+                <h3 className="text-lg font-medium text-[#171717]">Brand Stature</h3>
+                <p className="text-sm text-[#555555] leading-relaxed">
                   Does your visual identity reflect where your company is heading, or is it an outdated reflection of where it started years ago?
                 </p>
               </div>
-              <div className="mt-8 pt-4 border-t border-[#232834] text-xs font-mono text-[#64748B]">
+              <div className="mt-8 pt-4 border-t border-[#E5E5E2] text-xs font-mono text-[#666666]">
                 POSITIONING ACCORD
               </div>
             </div>
 
-            <div className="p-8 rounded-2xl bg-[#141822] border border-[#2B3242] flex flex-col justify-between hover:border-[#7E22CE]/60 transition-all duration-300">
+            <div className="p-8 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2] flex flex-col justify-between hover:border-[#7E22CE]/60 transition-all duration-300">
               <div className="space-y-4">
-                <div className="w-8 h-8 rounded-lg bg-[#241A38] border border-[#7E22CE]/40 flex items-center justify-center text-[#D8B4FE] text-xs font-mono">
+                <div className="w-8 h-8 rounded-lg bg-[#F3E8FF] border border-[#7E22CE]/40 flex items-center justify-center text-[#7E22CE] text-xs font-mono font-medium">
                   04
                 </div>
-                <h3 className="text-lg font-medium text-white">Internal Delivery</h3>
-                <p className="text-sm text-[#94A3B8] leading-relaxed">
+                <h3 className="text-lg font-medium text-[#171717]">Internal Delivery</h3>
+                <p className="text-sm text-[#555555] leading-relaxed">
                   Do your day-to-day internal systems effortlessly support what your brand promises, or are handoffs lost across email and spreadsheets?
                 </p>
               </div>
-              <div className="mt-8 pt-4 border-t border-[#232834] text-xs font-mono text-[#64748B]">
+              <div className="mt-8 pt-4 border-t border-[#E5E5E2] text-xs font-mono text-[#666666]">
                 OPERATIONAL COHERENCE
               </div>
             </div>
@@ -669,18 +669,18 @@ export const LuxembourgMarketPage: React.FC = () => {
       {/* =========================================================================
           04: DESIGNED FOR MULTIPLE AUDIENCES (LUXEMBOURG-SPECIFIC)
           ========================================================================= */}
-      <section className="py-24 lg:py-32 border-b border-[#232834] relative bg-[#0F131A]">
+      <section className="py-24 lg:py-32 border-b border-[#E5E5E2] relative bg-white text-[#171717]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           {/* Header */}
           <div className="max-w-3xl space-y-4 mb-16">
-            <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#A855F7]">
+            <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#7E22CE]">
               04 // AUDIENCE MATRIX
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-[#171717] leading-tight">
               Different audiences. <br />
-              <span className="font-serif italic text-[#CBD5E1]">One coherent business identity.</span>
+              <span className="font-serif italic text-[#555555]">One coherent business identity.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#94A3B8] font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light leading-relaxed">
               Luxembourg’s multilingual and internationally connected commercial reality means that companies frequently communicate with domestic customers, cross-border corporate partners, and specialist technical buyers who have distinctly different needs.
             </p>
           </div>
@@ -691,45 +691,45 @@ export const LuxembourgMarketPage: React.FC = () => {
               onClick={() => setSelectedAudience('local')}
               className={`p-5 rounded-2xl text-left border transition-all ${
                 selectedAudience === 'local'
-                  ? 'bg-[#1C1629] border-[#7E22CE] shadow-lg shadow-[#7E22CE]/15'
-                  : 'bg-[#141822] border-[#2B3242] hover:border-[#3E475C]'
+                  ? 'bg-[#F3E8FF] border-[#7E22CE] shadow-sm'
+                  : 'bg-[#FAFAF9] border-[#E5E5E2] hover:border-[#CCCCCC]'
               }`}
             >
-              <div className="text-xs font-mono uppercase tracking-wider text-[#A855F7] mb-1">
+              <div className="text-xs font-mono uppercase tracking-wider text-[#7E22CE] mb-1">
                 01 // AUDIENCE
               </div>
-              <div className="text-base font-medium text-white mb-1">Local Customers</div>
-              <div className="text-xs text-[#94A3B8]">Within Luxembourg & Greater Region</div>
+              <div className="text-base font-medium text-[#171717] mb-1">Local Customers</div>
+              <div className="text-xs text-[#666666]">Within Luxembourg & Greater Region</div>
             </button>
 
             <button
               onClick={() => setSelectedAudience('international')}
               className={`p-5 rounded-2xl text-left border transition-all ${
                 selectedAudience === 'international'
-                  ? 'bg-[#1C1629] border-[#7E22CE] shadow-lg shadow-[#7E22CE]/15'
-                  : 'bg-[#141822] border-[#2B3242] hover:border-[#3E475C]'
+                  ? 'bg-[#F3E8FF] border-[#7E22CE] shadow-sm'
+                  : 'bg-[#FAFAF9] border-[#E5E5E2] hover:border-[#CCCCCC]'
               }`}
             >
-              <div className="text-xs font-mono uppercase tracking-wider text-[#A855F7] mb-1">
+              <div className="text-xs font-mono uppercase tracking-wider text-[#7E22CE] mb-1">
                 02 // AUDIENCE
               </div>
-              <div className="text-base font-medium text-white mb-1">International Clients</div>
-              <div className="text-xs text-[#94A3B8]">European & Global Counterparties</div>
+              <div className="text-base font-medium text-[#171717] mb-1">International Clients</div>
+              <div className="text-xs text-[#666666]">European & Global Counterparties</div>
             </button>
 
             <button
               onClick={() => setSelectedAudience('specialist')}
               className={`p-5 rounded-2xl text-left border transition-all ${
                 selectedAudience === 'specialist'
-                  ? 'bg-[#1C1629] border-[#7E22CE] shadow-lg shadow-[#7E22CE]/15'
-                  : 'bg-[#141822] border-[#2B3242] hover:border-[#3E475C]'
+                  ? 'bg-[#F3E8FF] border-[#7E22CE] shadow-sm'
+                  : 'bg-[#FAFAF9] border-[#E5E5E2] hover:border-[#CCCCCC]'
               }`}
             >
-              <div className="text-xs font-mono uppercase tracking-wider text-[#A855F7] mb-1">
+              <div className="text-xs font-mono uppercase tracking-wider text-[#7E22CE] mb-1">
                 03 // AUDIENCE
               </div>
-              <div className="text-base font-medium text-white mb-1">Specialist Practices</div>
-              <div className="text-xs text-[#94A3B8]">Technical, Corporate & Institutional Buyers</div>
+              <div className="text-base font-medium text-[#171717] mb-1">Specialist Practices</div>
+              <div className="text-xs text-[#666666]">Technical, Corporate & Institutional Buyers</div>
             </button>
           </div>
 
@@ -741,61 +741,61 @@ export const LuxembourgMarketPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -15 }}
               transition={{ duration: 0.3 }}
-              className="p-8 lg:p-12 rounded-3xl bg-[#141822] border border-[#2B3242] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
+              className="p-8 lg:p-12 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
             >
               <div className="lg:col-span-8 space-y-6">
-                <div className="inline-block px-3 py-1 rounded-full bg-[#241A38] text-[#D8B4FE] font-mono text-xs">
+                <div className="inline-block px-3 py-1 rounded-full bg-[#F3E8FF] text-[#7E22CE] font-mono text-xs font-medium">
                   {audienceProfiles[selectedAudience].tag}
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-medium text-white">
+                <h3 className="text-2xl sm:text-3xl font-medium text-[#171717]">
                   {audienceProfiles[selectedAudience].title}
                 </h3>
-                <p className="text-base text-[#CBD5E1] leading-relaxed">
+                <p className="text-base text-[#444444] leading-relaxed">
                   {audienceProfiles[selectedAudience].context}
                 </p>
 
                 <div className="space-y-4 pt-2">
-                  <div className="p-4 rounded-xl bg-[#0C0F14] border border-[#232834]">
-                    <span className="text-xs font-mono text-[#F87171] uppercase tracking-wider block mb-1">
+                  <div className="p-4 rounded-xl bg-white border border-[#E5E5E2]">
+                    <span className="text-xs font-mono text-[#DC2626] uppercase tracking-wider block mb-1">
                       The Common Hurdle:
                     </span>
-                    <p className="text-sm text-[#94A3B8]">
+                    <p className="text-sm text-[#555555]">
                       {audienceProfiles[selectedAudience].challenge}
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-[#0C0F14] border border-[#232834]">
-                    <span className="text-xs font-mono text-[#34D399] uppercase tracking-wider block mb-1">
+                  <div className="p-4 rounded-xl bg-white border border-[#E5E5E2]">
+                    <span className="text-xs font-mono text-[#059669] uppercase tracking-wider block mb-1">
                       Mayaa’s Approach:
                     </span>
-                    <p className="text-sm text-[#94A3B8]">
+                    <p className="text-sm text-[#555555]">
                       {audienceProfiles[selectedAudience].solution}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="lg:col-span-4 p-6 rounded-2xl bg-[#0C0F14] border border-[#232834] space-y-6">
-                <div className="text-xs font-mono uppercase tracking-widest text-[#64748B] pb-3 border-b border-[#232834]">
+              <div className="lg:col-span-4 p-6 rounded-2xl bg-white border border-[#E5E5E2] space-y-6">
+                <div className="text-xs font-mono uppercase tracking-widest text-[#666666] pb-3 border-b border-[#E5E5E2]">
                   COMMUNICATION STRATEGY
                 </div>
 
                 <div>
-                  <div className="text-xs text-[#94A3B8] mb-1">Linguistic Approach:</div>
-                  <div className="text-sm text-white font-medium">
+                  <div className="text-xs text-[#666666] mb-1">Linguistic Approach:</div>
+                  <div className="text-sm text-[#171717] font-medium">
                     {audienceProfiles[selectedAudience].languages}
                   </div>
                 </div>
 
                 <div>
-                  <div className="text-xs text-[#94A3B8] mb-1">Key Value Driver:</div>
-                  <div className="text-sm text-[#C084FC] font-medium">
+                  <div className="text-xs text-[#666666] mb-1">Key Value Driver:</div>
+                  <div className="text-sm text-[#7E22CE] font-medium">
                     {audienceProfiles[selectedAudience].keyAspect}
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-[#232834]">
-                  <p className="text-xs text-[#64748B] italic leading-relaxed">
+                <div className="pt-4 border-t border-[#E5E5E2]">
+                  <p className="text-xs text-[#666666] italic leading-relaxed">
                     We tailor communication architecture so your business conveys unified identity without resorting to redundant translations or generic copy.
                   </p>
                 </div>
@@ -881,48 +881,48 @@ export const LuxembourgMarketPage: React.FC = () => {
       {/* =========================================================================
           06: BANGALORE ENGINEERING ENGINE & DELIVERY ARCHITECTURE
           ========================================================================= */}
-      <section className="py-24 lg:py-32 border-b border-[#232834] relative bg-[#0F131A]">
+      <section className="py-24 lg:py-32 border-b border-[#E5E5E2] relative bg-white text-[#171717]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#A855F7] mb-4">
+          <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#7E22CE] mb-4">
             06 // DELIVERY ARCHITECTURE
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white leading-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-[#171717] leading-tight mb-6">
             Bangalore engineering depth. <br />
-            <span className="font-serif italic text-[#CBD5E1]">Luxembourg European standards.</span>
+            <span className="font-serif italic text-[#555555]">Luxembourg European standards.</span>
           </h2>
-          <p className="text-base sm:text-lg text-[#94A3B8] font-light max-w-3xl leading-relaxed mb-16">
+          <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
             We deliver for Luxembourg organisations directly from our technology studio in Bangalore, India. We do not pretend to hold expensive local offices on Boulevard Royal. Instead, we invest in principal-level engineering, scheduled timezone alignment, and complete data sovereignty.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-2xl bg-[#141822] border border-[#2B3242]">
-              <Clock className="w-5 h-5 text-[#A855F7] mb-4" />
-              <h3 className="text-base font-medium text-white mb-2">CET / CEST Alignment</h3>
-              <p className="text-xs text-[#94A3B8] leading-relaxed font-light">
+            <div className="p-6 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2]">
+              <Clock className="w-5 h-5 text-[#7E22CE] mb-4" />
+              <h3 className="text-base font-medium text-[#171717] mb-2">CET / CEST Alignment</h3>
+              <p className="text-xs text-[#555555] leading-relaxed font-light">
                 Scheduled daily overlap with Luxembourg business hours for live sprint reviews, architectural clarifications, and design sign-offs.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#141822] border border-[#2B3242]">
-              <Cpu className="w-5 h-5 text-[#A855F7] mb-4" />
-              <h3 className="text-base font-medium text-white mb-2">Direct Senior Access</h3>
-              <p className="text-xs text-[#94A3B8] leading-relaxed font-light">
+            <div className="p-6 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2]">
+              <Cpu className="w-5 h-5 text-[#7E22CE] mb-4" />
+              <h3 className="text-base font-medium text-[#171717] mb-2">Direct Senior Access</h3>
+              <p className="text-xs text-[#555555] leading-relaxed font-light">
                 Direct communication with software engineers and brand directors. No junior account executives or confusing telephone games.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#141822] border border-[#2B3242]">
-              <Lock className="w-5 h-5 text-[#A855F7] mb-4" />
-              <h3 className="text-base font-medium text-white mb-2">European Data Sovereignty</h3>
-              <p className="text-xs text-[#94A3B8] leading-relaxed font-light">
+            <div className="p-6 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2]">
+              <Lock className="w-5 h-5 text-[#7E22CE] mb-4" />
+              <h3 className="text-base font-medium text-[#171717] mb-2">European Data Sovereignty</h3>
+              <p className="text-xs text-[#555555] leading-relaxed font-light">
                 All software deployed on client-owned European cloud infrastructure (Frankfurt / Western Europe) with 100% intellectual property ownership and strict NDAs.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#141822] border border-[#2B3242]">
-              <CreditCard className="w-5 h-5 text-[#A855F7] mb-4" />
-              <h3 className="text-base font-medium text-white mb-2">EUR Milestone Billing</h3>
-              <p className="text-xs text-[#94A3B8] leading-relaxed font-light">
+            <div className="p-6 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2]">
+              <CreditCard className="w-5 h-5 text-[#7E22CE] mb-4" />
+              <h3 className="text-base font-medium text-[#171717] mb-2">EUR Milestone Billing</h3>
+              <p className="text-xs text-[#555555] leading-relaxed font-light">
                 Fixed-scope proposals quoted and invoiced directly in Euros (EUR) tied to verified deliverable milestones with zero recurring license fees.
               </p>
             </div>
@@ -987,28 +987,25 @@ export const LuxembourgMarketPage: React.FC = () => {
       {/* =========================================================================
           08: FINAL CONVERSION SECTION
           ========================================================================= */}
-      <section className="py-24 lg:py-36 relative overflow-hidden bg-[#0C0F14]">
-        {/* Plum Ambient Light */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-[#7E22CE]/15 to-transparent blur-3xl pointer-events-none rounded-full" />
-
+      <section className="py-24 lg:py-36 relative overflow-hidden bg-white text-[#171717] border-t border-[#E5E5E2]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center space-y-8 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1C1629] border border-[#7E22CE]/40 text-[#D8B4FE] text-xs font-mono">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3E8FF] border border-[#7E22CE]/40 text-[#7E22CE] text-xs font-mono font-medium">
             <span>GET IN TOUCH</span>
           </div>
 
-          <h2 className="text-4xl sm:text-6xl font-light text-white leading-tight">
+          <h2 className="text-4xl sm:text-6xl font-light text-[#171717] leading-tight">
             Make your next business <br />
-            <span className="font-serif italic font-normal text-[#E2E8F0]">improvement count.</span>
+            <span className="font-serif italic font-normal text-[#555555]">improvement count.</span>
           </h2>
 
-          <p className="text-lg sm:text-xl text-[#94A3B8] font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-[#555555] font-light leading-relaxed max-w-2xl mx-auto">
             Whether you want to sharpen your brand, articulate your true capability through a refined digital platform, or coordinate daily operations with a custom business management system, the first step is a direct, confidential discussion.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-[#7E22CE] to-[#9333EA] hover:from-[#9333EA] hover:to-[#A855F7] text-white font-medium text-sm tracking-wide shadow-lg shadow-[#7E22CE]/25 transition-all duration-300 group"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#111111] hover:bg-neutral-800 text-white font-medium text-sm tracking-wide shadow-md transition-all duration-300 group"
             >
               <span>Start a Conversation</span>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -1016,14 +1013,14 @@ export const LuxembourgMarketPage: React.FC = () => {
 
             <Link
               to="/global-markets"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-[#161B22] hover:bg-[#1E232E] border border-[#2B3242] text-[#CBD5E1] font-medium text-sm transition-all duration-300"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-[#F0F0EE] hover:bg-[#E5E5E2] border border-[#CCCCCC] text-[#171717] font-medium text-sm transition-all duration-300"
             >
               <span>Explore Global Markets</span>
-              <ArrowUpRight className="w-4 h-4 text-[#94A3B8]" />
+              <ArrowUpRight className="w-4 h-4 text-[#666666]" />
             </Link>
           </div>
 
-          <div className="pt-10 flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-[#64748B]">
+          <div className="pt-10 flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-[#666666]">
             <span>NO FORCED SUBSCRIPTIONS · FIXED SCOPE · DIRECT ACCESS TO PRINCIPALS</span>
           </div>
         </div>

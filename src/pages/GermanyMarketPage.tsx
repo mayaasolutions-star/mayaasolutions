@@ -256,22 +256,22 @@ export const GermanyMarketPage: React.FC = () => {
         </section>
 
         {/* 02. FULL-WIDTH VISUAL: A BUSINESS ASSEMBLY */}
-        <section id="business-assembly" className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section id="business-assembly" className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-6xl mx-auto">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-3 font-mono">
+              <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-3 font-mono font-bold">
                 System Decomposition
               </div>
-              <h2 className="text-3xl sm:text-4xl font-light text-white mb-4">
+              <h2 className="text-3xl sm:text-4xl font-light text-[#171717] mb-4">
                 The business already has the parts.
               </h2>
-              <p className="text-base text-[#9CA3AF] font-light">
+              <p className="text-base text-[#555555] font-light">
                 The question is how well they work together.
               </p>
             </div>
 
             {/* Blueprint Grid of Connected Components */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-8 border border-white/10 bg-white/[0.01] rounded-sm relative">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-8 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm relative">
               {[
                 { code: '01', title: 'KNOW-HOW', role: 'Proprietary Engineering Expertise' },
                 { code: '02', title: 'CUSTOMERS', role: 'Commercial Inquiries & RFQs' },
@@ -282,20 +282,20 @@ export const GermanyMarketPage: React.FC = () => {
                 { code: '07', title: 'DATA', role: 'Single Source of Truth' },
                 { code: '08', title: 'DECISIONS', role: 'Executive Leadership Visibility' },
               ].map((comp, idx) => (
-                <div key={idx} className="p-5 border border-white/[0.08] bg-white/[0.02] flex flex-col justify-between group hover:border-white/30 transition-all duration-300">
+                <div key={idx} className="p-5 border border-[#E5E5E2] bg-white flex flex-col justify-between group hover:border-[#CCCCCC] transition-all duration-300">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-[10px] font-mono text-white/40">{comp.code}</span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-white/30 group-hover:bg-[#EAB308] transition-colors" />
+                    <span className="text-[10px] font-mono text-[#666666]">{comp.code}</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#CCCCCC] group-hover:bg-[#EAB308] transition-colors" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-medium text-white mb-1 tracking-wide">{comp.title}</h3>
-                    <p className="text-[11px] text-[#9CA3AF] font-light">{comp.role}</p>
+                    <h3 className="text-sm font-medium text-[#171717] mb-1 tracking-wide">{comp.title}</h3>
+                    <p className="text-[11px] text-[#555555] font-light">{comp.role}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 text-center text-xs font-mono text-[#9CA3AF]">
+            <div className="mt-8 text-center text-xs font-mono text-[#666666]">
               “When individual components are connected into one clear operational logic, complexity turns into capacity.”
             </div>
           </div>
@@ -353,83 +353,83 @@ export const GermanyMarketPage: React.FC = () => {
         </section>
 
         {/* 04. BEFORE / AFTER WORKFLOW: WHEN KNOWLEDGE LIVES IN TOO MANY PLACES */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Operational Transformation
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-4">
               When knowledge lives in too many places.
             </h2>
-            <p className="text-xl text-white font-light mb-16">
+            <p className="text-xl text-[#171717] font-light mb-16">
               Less searching. More knowing.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* BEFORE */}
-              <div className="p-8 border border-white/10 bg-white/[0.01]">
-                <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#EF4444] mb-6 flex items-center justify-between">
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#DC2626] mb-6 flex items-center justify-between font-bold">
                   <span>BEFORE · SCATTERED ARCHITECTURE</span>
                   <span>FRAGMENTED</span>
                 </div>
-                <div className="space-y-3 text-xs font-mono text-[#9CA3AF]">
-                  <div className="p-3 border border-white/[0.06] bg-white/[0.01] flex justify-between">
+                <div className="space-y-3 text-xs font-mono text-[#555555]">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between">
                     <span>LEAD</span>
-                    <span className="text-white/60">→ Email Inbox</span>
+                    <span className="text-[#171717]">→ Email Inbox</span>
                   </div>
-                  <div className="p-3 border border-white/[0.06] bg-white/[0.01] flex justify-between">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between">
                     <span>CUSTOMER</span>
-                    <span className="text-white/60">→ Local Spreadsheet</span>
+                    <span className="text-[#171717]">→ Local Spreadsheet</span>
                   </div>
-                  <div className="p-3 border border-white/[0.06] bg-white/[0.01] flex justify-between">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between">
                     <span>PROJECT</span>
-                    <span className="text-white/60">→ Isolated Task Tool</span>
+                    <span className="text-[#171717]">→ Isolated Task Tool</span>
                   </div>
-                  <div className="p-3 border border-white/[0.06] bg-white/[0.01] flex justify-between">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between">
                     <span>TEAM</span>
-                    <span className="text-white/60">→ Ad-hoc Chat Messages</span>
+                    <span className="text-[#171717]">→ Ad-hoc Chat Messages</span>
                   </div>
-                  <div className="p-3 border border-white/[0.06] bg-white/[0.01] flex justify-between">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between">
                     <span>REPORT</span>
-                    <span className="text-white/60">→ Manually Compiled File</span>
+                    <span className="text-[#171717]">→ Manually Compiled File</span>
                   </div>
-                  <div className="p-3 border border-white/[0.06] bg-white/[0.01] flex justify-between">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between">
                     <span>MANAGEMENT</span>
-                    <span className="text-[#EF4444]">→ Ask Someone</span>
+                    <span className="text-[#DC2626] font-bold">→ Ask Someone</span>
                   </div>
                 </div>
               </div>
 
               {/* AFTER */}
-              <div className="p-8 border border-white/20 bg-white/[0.03]">
-                <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#10B981] mb-6 flex items-center justify-between">
+              <div className="p-8 border border-[#CCCCCC] bg-[#FAFAF9]">
+                <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#16A34A] mb-6 flex items-center justify-between font-bold">
                   <span>AFTER · CONNECTED MAYAA SYSTEM</span>
                   <span>UNIFIED</span>
                 </div>
-                <div className="space-y-3 text-xs font-mono text-white/90">
-                  <div className="p-3 border border-white/10 bg-white/[0.02] flex justify-between items-center">
+                <div className="space-y-3 text-xs font-mono text-[#171717]">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between items-center">
                     <span>LEAD</span>
-                    <span className="text-[#10B981]">↓ Centralized Qualified Intake</span>
+                    <span className="text-[#16A34A] font-medium">↓ Centralized Qualified Intake</span>
                   </div>
-                  <div className="p-3 border border-white/10 bg-white/[0.02] flex justify-between items-center">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between items-center">
                     <span>SALES</span>
-                    <span className="text-[#10B981]">↓ Transparent Proposal & Scope</span>
+                    <span className="text-[#16A34A] font-medium">↓ Transparent Proposal & Scope</span>
                   </div>
-                  <div className="p-3 border border-white/10 bg-white/[0.02] flex justify-between items-center">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between items-center">
                     <span>CUSTOMER</span>
-                    <span className="text-[#10B981]">↓ Permanent Single Record</span>
+                    <span className="text-[#16A34A] font-medium">↓ Permanent Single Record</span>
                   </div>
-                  <div className="p-3 border border-white/10 bg-white/[0.02] flex justify-between items-center">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between items-center">
                     <span>PROJECT</span>
-                    <span className="text-[#10B981]">↓ Live Milestone & Task Registry</span>
+                    <span className="text-[#16A34A] font-medium">↓ Live Milestone & Task Registry</span>
                   </div>
-                  <div className="p-3 border border-white/10 bg-white/[0.02] flex justify-between items-center">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between items-center">
                     <span>TEAM</span>
-                    <span className="text-[#10B981]">↓ Explicit Ownership & Sign-offs</span>
+                    <span className="text-[#16A34A] font-medium">↓ Explicit Ownership & Sign-offs</span>
                   </div>
-                  <div className="p-3 border border-white/10 bg-white/[0.02] flex justify-between items-center">
+                  <div className="p-3 border border-[#E5E5E2] bg-white flex justify-between items-center">
                     <span>MANAGEMENT</span>
-                    <span className="text-[#10B981]">✓ Real-Time Operational Clarity</span>
+                    <span className="text-[#16A34A] font-medium">✓ Real-Time Operational Clarity</span>
                   </div>
                 </div>
               </div>
@@ -475,17 +475,17 @@ export const GermanyMarketPage: React.FC = () => {
         </section>
 
         {/* 06. WEBSITE SECTION: BEFORE A CUSTOMER CALLS */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Digital Experience
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-8">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-8">
               Before a customer calls, <br />
-              <span className="text-[#9CA3AF]">they have already formed an opinion.</span>
+              <span className="text-[#666666]">they have already formed an opinion.</span>
             </h2>
 
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-12">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-12">
               For technical B2B, architecture, and manufacturing enterprises, your website must articulate exact capability, prove credibility, and establish trust with procurement teams and leadership.
             </p>
 
@@ -497,16 +497,16 @@ export const GermanyMarketPage: React.FC = () => {
                 { stage: 'TRUST', desc: 'Substance Verified' },
                 { stage: 'ENQUIRY', desc: 'Direct Action' },
               ].map((flow, idx) => (
-                <div key={idx} className="p-5 border border-white/10 bg-white/[0.02]">
-                  <div className="text-[10px] font-mono text-white/40 mb-1">0{idx + 1}</div>
-                  <div className="text-xs font-mono text-white mb-1">{flow.stage}</div>
-                  <div className="text-[11px] text-[#9CA3AF] font-light">{flow.desc}</div>
+                <div key={idx} className="p-5 border border-[#E5E5E2] bg-[#FAFAF9]">
+                  <div className="text-[10px] font-mono text-[#666666] mb-1">0{idx + 1}</div>
+                  <div className="text-xs font-mono text-[#171717] mb-1 font-bold">{flow.stage}</div>
+                  <div className="text-[11px] text-[#555555] font-light">{flow.desc}</div>
                 </div>
               ))}
             </div>
 
-            <div className="p-6 border border-white/10 bg-white/[0.02] text-center max-w-2xl mx-auto">
-              <p className="text-sm sm:text-base text-white/90 font-light">
+            <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] text-center max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base text-[#171717] font-light">
                 “The website should explain the business with the same precision as the business itself.”
               </p>
             </div>
@@ -580,16 +580,16 @@ export const GermanyMarketPage: React.FC = () => {
         </section>
 
         {/* 08. NOT ANOTHER SOFTWARE SUBSCRIPTION */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Pragmatic Integration
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               You may not need another tool. <br />
-              <span className="text-[#9CA3AF]">You may need your tools to work better together.</span>
+              <span className="text-[#666666]">You may need your tools to work better together.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               German enterprises already have established software. We do not arrive with a mandate to replace everything. We audit the friction and determine what genuinely makes business sense.
             </p>
 
@@ -600,14 +600,14 @@ export const GermanyMarketPage: React.FC = () => {
                 { action: 'REBUILD', desc: 'Replace fragile spreadsheets where necessary' },
                 { action: 'LEAVE ALONE', desc: 'Keep proven tools that already work well' },
               ].map((item, idx) => (
-                <div key={idx} className="p-6 border border-white/10 bg-white/[0.02]">
-                  <div className="text-xs font-mono text-[#EAB308] mb-2">{item.action}</div>
-                  <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">{item.desc}</p>
+                <div key={idx} className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
+                  <div className="text-xs font-mono text-[#171717] font-bold mb-2">{item.action}</div>
+                  <p className="text-xs text-[#555555] font-light leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 text-center text-xs font-mono text-white/60">
+            <div className="mt-8 text-center text-xs font-mono text-[#666666]">
               “Sometimes the correct answer is not to build anything new, but to connect what is already working.”
             </div>
           </div>
@@ -650,35 +650,35 @@ export const GermanyMarketPage: React.FC = () => {
         </section>
 
         {/* 10. INDUSTRY ECOSYSTEMS */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Branchen & Ökosysteme
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Built for complex <br />
-              <span className="text-[#9CA3AF]">German business sectors.</span>
+              <span className="text-[#666666]">German business sectors.</span>
             </h2>
-            <p className="text-[#9CA3AF] text-base sm:text-lg font-light max-w-2xl leading-relaxed mb-16">
+            <p className="text-[#555555] text-base sm:text-lg font-light max-w-2xl leading-relaxed mb-16">
               Tailored across Germany's core industrial, engineering, and corporate ecosystems.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {germanyIndustries.map((ind) => (
-                <div key={ind.id} className="p-6 border border-white/10 bg-white/[0.02] flex flex-col justify-between hover:border-white/20 transition-colors">
+                <div key={ind.id} className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between hover:border-[#CCCCCC] transition-colors">
                   <div>
-                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#EAB308] mb-2">
+                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#666666] mb-2 font-bold">
                       {ind.tagline}
                     </div>
-                    <h3 className="text-base font-medium text-white mb-3">
+                    <h3 className="text-base font-medium text-[#171717] mb-3">
                       {ind.title}
                     </h3>
-                    <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+                    <p className="text-xs text-[#555555] font-light leading-relaxed">
                       {ind.desc}
                     </p>
                   </div>
-                  <div className="mt-6 pt-3 border-t border-white/[0.06]">
-                    <Link to="/contact" className="text-xs text-white/80 hover:text-white flex items-center gap-1 group">
+                  <div className="mt-6 pt-3 border-t border-[#E5E5E2]">
+                    <Link to="/contact" className="text-xs text-[#171717] hover:text-black font-medium flex items-center gap-1 group">
                       <span>Discuss Requirements</span>
                       <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                     </Link>
@@ -740,15 +740,15 @@ export const GermanyMarketPage: React.FC = () => {
         </section>
 
         {/* 12. FREQUENTLY ASKED QUESTIONS */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-4xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Clarity & Due Diligence
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-4">
               Questions German executives ask.
             </h2>
-            <p className="text-base text-[#9CA3AF] font-light mb-12">
+            <p className="text-base text-[#555555] font-light mb-12">
               Straightforward answers regarding delivery, security, integration, and commercial structure.
             </p>
 
@@ -756,18 +756,18 @@ export const GermanyMarketPage: React.FC = () => {
               {GERMANY_FAQS.map((faq, idx) => (
                 <div 
                   key={idx} 
-                  className="border border-white/10 bg-white/[0.01] rounded-sm overflow-hidden"
+                  className="border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm overflow-hidden"
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
-                    className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-white/[0.02] transition-colors"
+                    className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-[#F0F0EE] transition-colors"
                   >
-                    <span className="text-base sm:text-lg font-normal text-white">
+                    <span className="text-base sm:text-lg font-normal text-[#171717]">
                       {faq.question}
                     </span>
                     <ChevronDown 
-                      className={`w-5 h-5 text-[#9CA3AF] transition-transform duration-300 shrink-0 ${
-                        openFaq === idx ? 'rotate-180 text-white' : ''
+                      className={`w-5 h-5 text-[#666666] transition-transform duration-300 shrink-0 ${
+                        openFaq === idx ? 'rotate-180 text-[#171717]' : ''
                       }`} 
                     />
                   </button>
@@ -779,7 +779,7 @@ export const GermanyMarketPage: React.FC = () => {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <div className="px-6 pb-6 pt-2 text-sm sm:text-base text-[#9CA3AF] font-light leading-relaxed border-t border-white/[0.06]">
+                        <div className="px-6 pb-6 pt-2 text-sm sm:text-base text-[#555555] font-light leading-relaxed border-t border-[#E5E5E2]">
                           {faq.answer}
                         </div>
                       </motion.div>

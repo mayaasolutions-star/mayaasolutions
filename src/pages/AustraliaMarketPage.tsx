@@ -334,16 +334,16 @@ export const AustraliaMarketPage: React.FC = () => {
         {/* ==================================================
             02. AUSTRALIAN BUSINESS PROBLEM
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-20 sm:py-28 lg:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-20 sm:py-28 lg:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-14 sm:space-y-16">
             
             <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                 THE OPERATIONAL REALITY
               </span>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                 YOUR BUSINESS SHOULDN'T RUN ON <br />
-                <span className="text-[#8E8E8A]">SCATTERED INFORMATION.</span>
+                <span className="text-[#666666]">SCATTERED INFORMATION.</span>
               </h2>
             </div>
 
@@ -351,8 +351,8 @@ export const AustraliaMarketPage: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
               
               {/* Left: The Workflow Chain */}
-              <div className="lg:col-span-7 p-8 sm:p-10 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-6">
-                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#8E8E8A] block">
+              <div className="lg:col-span-7 p-8 sm:p-10 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-6 shadow-sm">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#666666] block">
                   A typical week in a growing Australian business:
                 </span>
 
@@ -367,21 +367,21 @@ export const AustraliaMarketPage: React.FC = () => {
                     'A staff member has the master spreadsheet saved locally.',
                   ].map((line, idx) => (
                     <div key={idx} className="flex items-start gap-3.5">
-                      <span className="w-5 h-5 rounded-full bg-neutral-900 border border-neutral-800 text-[10px] font-mono font-bold text-[#8E8E8A] flex items-center justify-center shrink-0 mt-0.5">
+                      <span className="w-5 h-5 rounded-full bg-white border border-[#E5E5E2] text-[10px] font-mono font-bold text-[#171717] flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
                         {idx + 1}
                       </span>
-                      <p className="text-sm sm:text-base text-neutral-300 font-normal leading-relaxed">
+                      <p className="text-sm sm:text-base text-[#333333] font-normal leading-relaxed">
                         {line}
                       </p>
                     </div>
                   ))}
                 </div>
 
-                <div className="pt-6 border-t border-neutral-900 space-y-2">
-                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-white block">
+                <div className="pt-6 border-t border-[#E5E5E2] space-y-2">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#171717] block">
                     And then the business owner asks:
                   </span>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-neutral-400 italic">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#555555] italic">
                     <p>“What happened with that enquiry?”</p>
                     <p>“Has the quote gone out yet?”</p>
                     <p>“Did the client approve the variation?”</p>
@@ -392,43 +392,43 @@ export const AustraliaMarketPage: React.FC = () => {
 
               {/* Right: The Diagnosis */}
               <div className="lg:col-span-5 space-y-6 flex flex-col justify-between">
-                <div className="p-8 sm:p-10 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-6">
+                <div className="p-8 sm:p-10 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-6 shadow-sm">
                   <div className="space-y-3">
-                    <span className="text-xs font-mono font-bold uppercase tracking-widest text-white block">
+                    <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#171717] block">
                       THE DIAGNOSIS
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white leading-snug">
+                    <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-[#171717] leading-snug">
                       THE BUSINESS ISN'T THE PROBLEM. <br />
-                      <span className="text-[#8E8E8A]">THE GAPS BETWEEN YOUR TOOLS ARE.</span>
+                      <span className="text-[#666666]">THE GAPS BETWEEN YOUR TOOLS ARE.</span>
                     </h3>
                   </div>
 
-                  <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-normal">
+                  <p className="text-sm sm:text-base text-[#444444] leading-relaxed font-normal">
                     Your team is working hard. Your clients value your service. But as your business grew, you accumulated separate tools for email, accounting, files, and messaging.
                   </p>
-                  <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-normal">
+                  <p className="text-sm sm:text-base text-[#444444] leading-relaxed font-normal">
                     Your inbox is not a CRM. Your spreadsheet is not a project management system. Your team shouldn't need three systems and five conversations to find one client update.
                   </p>
 
-                  <div className="pt-4 border-t border-neutral-900">
-                    <p className="text-xs font-mono text-[#8E8E8A] leading-relaxed">
+                  <div className="pt-4 border-t border-[#E5E5E2]">
+                    <p className="text-xs font-mono text-[#666666] leading-relaxed">
                       Good systems make good businesses easier to run. That is why we build personalised business management systems configured around how you actually deliver work.
                     </p>
                   </div>
                 </div>
 
-                <div className="p-6 rounded-2xl bg-white text-black flex items-center justify-between gap-4">
+                <div className="p-6 rounded-2xl bg-[#171717] text-white flex items-center justify-between gap-4 shadow-sm">
                   <div>
-                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#666666] block">
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-neutral-400 block">
                       PRACTICAL CONSULTATION
                     </span>
-                    <span className="text-sm font-black uppercase tracking-tight text-black block">
+                    <span className="text-sm font-black uppercase tracking-tight text-white block">
                       Map where your workflow is losing time
                     </span>
                   </div>
                   <Link
                     to="/contact?market=australia"
-                    className="p-3 bg-black text-white rounded-xl hover:bg-neutral-800 transition-colors shrink-0"
+                    className="p-3 bg-white text-black rounded-xl hover:bg-neutral-200 transition-colors shrink-0"
                     aria-label="Start consultation"
                   >
                     <ArrowRight className="w-4 h-4" />
@@ -522,18 +522,18 @@ export const AustraliaMarketPage: React.FC = () => {
         {/* ==================================================
             04. AUSTRALIAN INDUSTRY USE CASES
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-14 sm:space-y-16">
             
             <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                 INDUSTRY SPECIFICITY
               </span>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                 BUILT AROUND THE WORK <br />
-                <span className="text-[#8E8E8A]">YOU ACTUALLY DO.</span>
+                <span className="text-[#666666]">YOU ACTUALLY DO.</span>
               </h2>
-              <p className="text-base sm:text-lg text-neutral-300 font-normal leading-relaxed pt-2">
+              <p className="text-base sm:text-lg text-[#555555] font-normal leading-relaxed pt-2">
                 Different businesses have fundamentally different operating cycles. We tailor our systems and digital touchpoints around the day-to-day requirements of your sector.
               </p>
             </div>
@@ -543,20 +543,20 @@ export const AustraliaMarketPage: React.FC = () => {
               {industryUseCases.map((useCase) => (
                 <div
                   key={useCase.id}
-                  className="rounded-3xl bg-neutral-950 border border-neutral-800 overflow-hidden flex flex-col justify-between hover:border-neutral-600 transition-all group"
+                  className="rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] overflow-hidden flex flex-col justify-between hover:border-[#171717] transition-all group shadow-sm"
                 >
                   <div>
                     {/* Visual Asset Container */}
-                    <div className="relative aspect-[16/10] overflow-hidden bg-neutral-900 border-b border-neutral-800">
+                    <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100 border-b border-[#E5E5E2]">
                       <img
                         src={useCase.image}
                         alt={useCase.title}
                         className="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                       <div className="absolute bottom-3 left-4 right-4">
-                        <span className="text-[10px] font-mono font-bold text-neutral-300 uppercase tracking-widest bg-black/60 px-2.5 py-1 rounded">
+                        <span className="text-[10px] font-mono font-bold text-white uppercase tracking-widest bg-black/70 px-2.5 py-1 rounded">
                           {useCase.tagline}
                         </span>
                       </div>
@@ -564,22 +564,22 @@ export const AustraliaMarketPage: React.FC = () => {
 
                     {/* Card Content */}
                     <div className="p-7 sm:p-8 space-y-4">
-                      <h3 className="text-xl font-black text-white uppercase tracking-tight">
+                      <h3 className="text-xl font-black text-[#171717] uppercase tracking-tight">
                         {useCase.title}
                       </h3>
 
-                      <p className="text-xs sm:text-sm text-neutral-200 font-medium leading-relaxed italic border-l-2 border-white pl-3">
+                      <p className="text-xs sm:text-sm text-[#444444] font-medium leading-relaxed italic border-l-2 border-[#171717] pl-3">
                         “{useCase.quote}”
                       </p>
 
                       <div className="space-y-2 pt-2">
-                        <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#8E8E8A] block">
+                        <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#666666] block">
                           Core Operating Modules
                         </span>
                         <ul className="space-y-1.5">
                           {useCase.workflows.map((flow, fIdx) => (
-                            <li key={fIdx} className="text-xs text-neutral-400 flex items-start gap-2">
-                              <span className="w-1 h-1 rounded-full bg-white mt-1.5 shrink-0" />
+                            <li key={fIdx} className="text-xs text-[#555555] flex items-start gap-2">
+                              <span className="w-1 h-1 rounded-full bg-[#171717] mt-1.5 shrink-0" />
                               <span>{flow}</span>
                             </li>
                           ))}
@@ -591,7 +591,7 @@ export const AustraliaMarketPage: React.FC = () => {
                   <div className="p-7 sm:p-8 pt-0">
                     <Link
                       to="/contact?market=australia"
-                      className="w-full py-3 px-4 rounded-xl bg-neutral-900 hover:bg-white text-neutral-300 hover:text-black text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-between transition-colors"
+                      className="w-full py-3 px-4 rounded-xl bg-white hover:bg-[#111111] text-[#171717] hover:text-white border border-[#E5E5E2] hover:border-[#111111] text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-between transition-colors shadow-xs"
                     >
                       <span>Discuss Your Workflow</span>
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -682,26 +682,26 @@ export const AustraliaMarketPage: React.FC = () => {
         {/* ==================================================
             06. BRANDING: CREDIBILITY & CONSISTENCY
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
               
               <div className="lg:col-span-6 space-y-6">
-                <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+                <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                   BRAND DESIGN
                 </span>
-                <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+                <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                   LOOK AS PROFESSIONAL AS <br />
-                  <span className="text-[#8E8E8A]">THE BUSINESS YOU HAVE BUILT.</span>
+                  <span className="text-[#666666]">THE BUSINESS YOU HAVE BUILT.</span>
                 </h2>
-                <p className="text-base sm:text-lg text-neutral-300 font-normal leading-relaxed">
+                <p className="text-base sm:text-lg text-[#555555] font-normal leading-relaxed">
                   Branding is not simply about designing a logo. It is about creating the trust, clarity and visual consistency that allows your business to command respect when bidding on high-value contracts.
                 </p>
-                <div className="p-6 rounded-2xl bg-neutral-950 border border-neutral-800 space-y-2">
-                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-white block">
+                <div className="p-6 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-2 shadow-sm">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#171717] block">
                     THE OBJECTIVE
                   </span>
-                  <p className="text-sm text-neutral-300 font-medium leading-relaxed">
+                  <p className="text-sm text-[#333333] font-medium leading-relaxed">
                     “Make your website, proposals, presentations, tender documents and customer touchpoints feel like the same confident, established business.”
                   </p>
                 </div>
@@ -728,13 +728,13 @@ export const AustraliaMarketPage: React.FC = () => {
                 ].map((item, idx) => (
                   <div
                     key={idx}
-                    className="p-6 rounded-2xl bg-neutral-950 border border-neutral-800 flex items-start justify-between gap-4"
+                    className="p-6 rounded-2xl bg-[#FAFAF9] border border-[#E5E5E2] flex items-start justify-between gap-4 shadow-sm"
                   >
                     <div className="space-y-1">
-                      <h4 className="text-sm font-black text-white uppercase tracking-wider">{item.title}</h4>
-                      <p className="text-xs text-neutral-400 leading-relaxed">{item.desc}</p>
+                      <h4 className="text-sm font-black text-[#171717] uppercase tracking-wider">{item.title}</h4>
+                      <p className="text-xs text-[#555555] leading-relaxed">{item.desc}</p>
                     </div>
-                    <span className="text-xs font-mono text-[#8E8E8A] font-bold shrink-0">0{idx + 1}</span>
+                    <span className="text-xs font-mono text-[#666666] font-bold shrink-0">0{idx + 1}</span>
                   </div>
                 ))}
               </div>
@@ -795,18 +795,18 @@ export const AustraliaMarketPage: React.FC = () => {
         {/* ==================================================
             08. PRACTICALITY & ROI SECTION
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-14 sm:space-y-16">
             
             <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                 BUSINESS IMPACT
               </span>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                 TECHNOLOGY SHOULD <br />
-                <span className="text-[#8E8E8A]">EARN ITS PLACE.</span>
+                <span className="text-[#666666]">EARN ITS PLACE.</span>
               </h2>
-              <p className="text-base sm:text-lg text-neutral-300 font-normal leading-relaxed pt-2">
+              <p className="text-base sm:text-lg text-[#555555] font-normal leading-relaxed pt-2">
                 We avoid exaggerated claims and artificial buzzwords. A well-designed business management system delivers measurable, day-to-day operational value:
               </p>
             </div>
@@ -816,20 +816,20 @@ export const AustraliaMarketPage: React.FC = () => {
               {practicalOutcomes.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-7 rounded-3xl bg-neutral-950 border border-neutral-800 flex flex-col justify-between space-y-4"
+                  className="p-7 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] flex flex-col justify-between space-y-4 shadow-sm"
                 >
                   <div className="space-y-2">
-                    <span className="text-[10px] font-mono font-bold text-[#8E8E8A] uppercase tracking-wider block">
+                    <span className="text-[10px] font-mono font-bold text-[#666666] uppercase tracking-wider block">
                       OUTCOME 0{idx + 1}
                     </span>
-                    <h4 className="text-base font-black text-white uppercase tracking-tight">
+                    <h4 className="text-base font-black text-[#171717] uppercase tracking-tight">
                       {item.title}
                     </h4>
-                    <p className="text-xs text-neutral-400 leading-relaxed">
+                    <p className="text-xs text-[#555555] leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
-                  <div className="w-5 h-0.5 bg-neutral-700" />
+                  <div className="w-5 h-0.5 bg-[#171717]" />
                 </div>
               ))}
             </div>
@@ -897,42 +897,42 @@ export const AustraliaMarketPage: React.FC = () => {
         {/* ==================================================
             10. AUSTRALIAN BUSINESS REALITY (EDITORIAL)
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-12">
             <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+              <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                 EDITORIAL PERSPECTIVE
               </span>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                 RUNNING A BUSINESS IS <br />
-                <span className="text-[#8E8E8A]">ALREADY COMPLICATED ENOUGH.</span>
+                <span className="text-[#666666]">ALREADY COMPLICATED ENOUGH.</span>
               </h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-              <div className="lg:col-span-7 space-y-6 text-base sm:text-lg text-neutral-300 font-normal leading-relaxed">
+              <div className="lg:col-span-7 space-y-6 text-base sm:text-lg text-[#555555] font-normal leading-relaxed">
                 <p>
                   Every day involves balancing customers, staff, quotes, invoices, projects, suppliers, schedules, emails, compliance, and cash flow.
                 </p>
-                <div className="p-8 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-4">
-                  <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight leading-snug">
+                <div className="p-8 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-4 shadow-sm">
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#171717] uppercase tracking-tight leading-snug">
                     “YOU SHOULDN'T NEED TO BE THE HUMAN CONNECTION BETWEEN EVERY PART OF YOUR BUSINESS.”
                   </h3>
-                  <p className="text-sm text-neutral-400 leading-relaxed">
+                  <p className="text-sm text-[#555555] leading-relaxed">
                     When the business relies on the owner's memory or constant phone calls to keep projects moving, growth becomes exhausting. The right system reduces that mental load by giving your team clear, reliable visibility.
                   </p>
                 </div>
-                <p className="text-sm sm:text-base text-neutral-400">
+                <p className="text-sm sm:text-base text-[#666666]">
                   From growing service businesses in Sydney and Melbourne to construction, professional and industrial businesses across Brisbane, Perth, Adelaide, Canberra, the Gold Coast and beyond, we build around the way the business actually operates.
                 </p>
               </div>
 
               {/* Major Markets Card */}
-              <div className="lg:col-span-5 p-8 sm:p-10 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-6">
-                <span className="text-xs font-mono font-bold text-white uppercase tracking-wider block">
+              <div className="lg:col-span-5 p-8 sm:p-10 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-6 shadow-sm">
+                <span className="text-xs font-mono font-bold text-[#171717] uppercase tracking-wider block">
                   AUSTRALIA-WIDE COLLABORATION
                 </span>
-                <p className="text-sm text-neutral-300 leading-relaxed">
+                <p className="text-sm text-[#555555] leading-relaxed">
                   We collaborate remotely with Australian business owners and operational leaders across all key business centres:
                 </p>
 
@@ -948,15 +948,15 @@ export const AustraliaMarketPage: React.FC = () => {
                   ].map((city) => (
                     <span
                       key={city}
-                      className="px-3.5 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300"
+                      className="px-3.5 py-1.5 rounded-lg bg-white border border-[#E5E5E2] text-xs font-mono text-[#171717] shadow-xs"
                     >
                       {city}
                     </span>
                   ))}
                 </div>
 
-                <div className="pt-4 border-t border-neutral-900">
-                  <p className="text-xs font-mono text-[#8E8E8A] leading-relaxed">
+                <div className="pt-4 border-t border-[#E5E5E2]">
+                  <p className="text-xs font-mono text-[#666666] leading-relaxed">
                     Clear milestones, direct video briefings, structured scopes and transparent delivery timelines.
                   </p>
                 </div>
@@ -1045,32 +1045,32 @@ export const AustraliaMarketPage: React.FC = () => {
         {/* ==================================================
             12. PROVEN CAPABILITY (REAL DEMONSTRATION)
         ================================================== */}
-        <section className="bg-[#0B0B0B] border-y border-neutral-800 py-20 sm:py-28 px-6 md:px-12 lg:px-16">
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-20 sm:py-28 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
               
               {/* Left Column: Heading, Description & Verification Points */}
               <div className="lg:col-span-5 space-y-6">
                 <div className="space-y-4">
-                  <span className="text-xs font-mono font-bold text-[#8E8E8A] uppercase tracking-widest block">
+                  <span className="text-xs font-mono font-bold text-[#666666] uppercase tracking-widest block">
                     PROVEN SYSTEM CAPABILITY · SEMS
                   </span>
-                  <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase leading-[1.02]">
+                  <h2 className="text-3xl sm:text-5xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                     A REAL SYSTEM. <br />
-                    <span className="text-[#8E8E8A]">ALREADY BUILT.</span>
+                    <span className="text-[#666666]">ALREADY BUILT.</span>
                   </h2>
-                  <p className="text-base sm:text-lg text-neutral-300 font-normal leading-relaxed">
+                  <p className="text-base sm:text-lg text-[#555555] font-normal leading-relaxed">
                     SEMS demonstrates how Mayaa approaches operational software: unified lead tracking, staff assignments, task coordination, and management visibility configured in one practical interface.
                   </p>
                 </div>
 
-                <div className="pt-2 border-t border-neutral-800/80 space-y-2.5 text-xs font-mono text-[#8E8E8A]">
+                <div className="pt-2 border-t border-[#E5E5E2] space-y-2.5 text-xs font-mono text-[#666666]">
                   <p className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#171717] shrink-0" />
                     <span>A tangible demonstration of Mayaa's custom system engineering capability.</span>
                   </p>
                   <p className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#171717] shrink-0" />
                     <span>Available for a live walkthrough during initial consultation discussions.</span>
                   </p>
                 </div>
@@ -1078,8 +1078,8 @@ export const AustraliaMarketPage: React.FC = () => {
 
               {/* Right Column: Controlled-Size Dashboard Visual Container */}
               <div className="lg:col-span-7">
-                <div className="rounded-3xl overflow-hidden bg-neutral-950 border border-neutral-800 p-2.5 sm:p-3.5 shadow-2xl">
-                  <div className="relative rounded-2xl overflow-hidden bg-black aspect-[16/10] border border-neutral-900">
+                <div className="rounded-3xl overflow-hidden bg-[#FAFAF9] border border-[#E5E5E2] p-2.5 sm:p-3.5 shadow-sm">
+                  <div className="relative rounded-2xl overflow-hidden bg-neutral-100 aspect-[16/10] border border-[#E5E5E2]">
                     <img
                       src="/images/service_business_growth.webp"
                       alt="SEMS (Business Management System) production dashboard demonstration"
@@ -1136,54 +1136,57 @@ export const AustraliaMarketPage: React.FC = () => {
         {/* ==================================================
             BANGALORE DELIVERY MODEL FOR AUSTRALIAN ENTERPRISES
         ================================================== */}
-        <section className="py-24 sm:py-32 border-t border-neutral-900 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto">
-          <div className="space-y-12">
+        {/* ==================================================
+            BANGALORE DELIVERY MODEL FOR AUSTRALIAN ENTERPRISES
+        ================================================== */}
+        <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
+          <div className="max-w-[1400px] mx-auto space-y-12">
             <div className="max-w-3xl space-y-4">
-              <span className="text-xs font-mono font-bold text-[#10B981] uppercase tracking-widest block">
+              <span className="text-xs font-mono font-bold text-[#059669] uppercase tracking-widest block">
                 ENGINEERING DELIVERY
               </span>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
                 BANGALORE ENGINEERING. <br />
-                <span className="text-[#8E8E8A]">AUSTRALIAN OPERATIONAL SPEED.</span>
+                <span className="text-[#666666]">AUSTRALIAN OPERATIONAL SPEED.</span>
               </h2>
-              <p className="text-sm sm:text-base text-neutral-300 font-normal leading-relaxed">
+              <p className="text-sm sm:text-base text-[#555555] font-normal leading-relaxed">
                 Mayaa delivers brand systems, high-clarity websites, and custom business management systems directly from Bangalore, India. We offer direct engineer collaboration, rapid turnaround, and full Australian data compliance without agency escalation.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-              <div className="p-8 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-4">
-                <span className="text-xs font-mono font-bold text-[#10B981] uppercase tracking-widest">
+              <div className="p-8 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-4 shadow-sm">
+                <span className="text-xs font-mono font-bold text-[#059669] uppercase tracking-widest">
                   01 · TIMEZONE OVERLAP
                 </span>
-                <h3 className="text-lg font-black text-white uppercase tracking-tight">
+                <h3 className="text-lg font-black text-[#171717] uppercase tracking-tight">
                   AEST / AEDT COLLABORATION
                 </h3>
-                <p className="text-sm text-neutral-400 leading-relaxed">
+                <p className="text-sm text-[#555555] leading-relaxed">
                   Australian business hours run 4.5 to 5.5 hours ahead of Bangalore, meaning our morning overlap covers your afternoons perfectly for live sprint reviews, demos, and instant Slack/Teams support.
                 </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-4">
-                <span className="text-xs font-mono font-bold text-[#10B981] uppercase tracking-widest">
+              <div className="p-8 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-4 shadow-sm">
+                <span className="text-xs font-mono font-bold text-[#059669] uppercase tracking-widest">
                   02 · DATA SOVEREIGNTY
                 </span>
-                <h3 className="text-lg font-black text-white uppercase tracking-tight">
+                <h3 className="text-lg font-black text-[#171717] uppercase tracking-tight">
                   AUSTRALIAN CLOUD TENANCIES
                 </h3>
-                <p className="text-sm text-neutral-400 leading-relaxed">
+                <p className="text-sm text-[#555555] leading-relaxed">
                   Workflows and data deploy directly to client-owned Australian cloud infrastructure (AWS ap-southeast-2 Sydney, Azure Australia East), strictly complying with the Australian Privacy Principles (APPs).
                 </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-neutral-950 border border-neutral-800 space-y-4">
-                <span className="text-xs font-mono font-bold text-[#10B981] uppercase tracking-widest">
+              <div className="p-8 rounded-3xl bg-[#FAFAF9] border border-[#E5E5E2] space-y-4 shadow-sm">
+                <span className="text-xs font-mono font-bold text-[#059669] uppercase tracking-widest">
                   03 · COMMERCIAL TERMS
                 </span>
-                <h3 className="text-lg font-black text-white uppercase tracking-tight">
+                <h3 className="text-lg font-black text-[#171717] uppercase tracking-tight">
                   AUD MILESTONE CONTRACTS
                 </h3>
-                <p className="text-sm text-neutral-400 leading-relaxed">
+                <p className="text-sm text-[#555555] leading-relaxed">
                   Fixed-scope milestone contracts invoiced in AUD with complete source code and creative asset ownership upon sign-off. Zero recurring per-user software licensing fees.
                 </p>
               </div>
@@ -1243,13 +1246,13 @@ export const AustraliaMarketPage: React.FC = () => {
         {/* ==================================================
             14. FINAL CTA: BUSINESS CONSULTATION
         ================================================== */}
-        <section className="py-28 sm:py-36 md:py-44 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto text-center border-t border-neutral-900">
+        <section className="bg-white text-[#171717] py-28 sm:py-36 md:py-44 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto text-center border-t border-[#E5E5E2]">
           <div className="max-w-4xl mx-auto space-y-8">
             <motion.span
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-block px-3 py-1 bg-neutral-900 border border-neutral-800 rounded-md text-xs font-mono font-bold text-neutral-300 uppercase tracking-widest"
+              className="inline-block px-3 py-1 bg-[#FAFAF9] border border-[#E5E5E2] rounded-md text-xs font-mono font-bold text-[#666666] uppercase tracking-widest shadow-xs"
             >
               AUSTRALIA CONSULTATION
             </motion.span>
@@ -1259,10 +1262,10 @@ export const AustraliaMarketPage: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight uppercase leading-[0.98]"
+              className="text-4xl sm:text-6xl md:text-7xl font-black text-[#171717] tracking-tight uppercase leading-[0.98]"
             >
               LET'S LOOK AT HOW YOUR <br />
-              <span className="text-[#8E8E8A]">BUSINESS ACTUALLY WORKS.</span>
+              <span className="text-[#666666]">BUSINESS ACTUALLY WORKS.</span>
             </motion.h2>
 
             <motion.div
@@ -1270,10 +1273,10 @@ export const AustraliaMarketPage: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="space-y-3 text-base sm:text-xl text-neutral-300 font-normal leading-relaxed max-w-2xl mx-auto"
+              className="space-y-3 text-base sm:text-xl text-[#444444] font-normal leading-relaxed max-w-2xl mx-auto"
             >
               <p>Tell us how you currently manage enquiries, clients, projects and your team.</p>
-              <p className="text-neutral-400">
+              <p className="text-[#666666]">
                 We'll help you identify where the friction is and show you what could be improved.
               </p>
             </motion.div>
@@ -1287,7 +1290,7 @@ export const AustraliaMarketPage: React.FC = () => {
             >
               <Link
                 to="/contact?market=australia"
-                className="w-full sm:w-auto min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 px-9 sm:px-10 py-4 bg-white text-black font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl hover:bg-neutral-200 transition-all duration-300 shadow-2xl group"
+                className="w-full sm:w-auto min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 px-9 sm:px-10 py-4 bg-[#111111] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl hover:bg-neutral-800 transition-all duration-300 shadow-md group"
               >
                 <span>START A CONVERSATION</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -1295,7 +1298,7 @@ export const AustraliaMarketPage: React.FC = () => {
 
               <Link
                 to="/contact?market=australia"
-                className="w-full sm:w-auto min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 px-9 sm:px-10 py-4 bg-transparent text-white border border-neutral-700 hover:border-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all"
+                className="w-full sm:w-auto min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 px-9 sm:px-10 py-4 bg-transparent text-[#171717] border border-[#CCCCCC] hover:border-[#171717] font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all"
               >
                 <span>DISCUSS YOUR BUSINESS</span>
               </Link>

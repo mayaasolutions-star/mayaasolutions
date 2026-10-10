@@ -235,50 +235,50 @@ export const IrelandMarketPage: React.FC = () => {
         </section>
 
         {/* 2. CORE IRELAND BUSINESS INSIGHT */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               The Reality of Growth
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-8">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-8">
               Growth adds <br />
-              <span className="text-[#9CA3AF]">more moving parts.</span>
+              <span className="text-[#666666]">more moving parts.</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start mt-12">
-              <div className="md:col-span-7 space-y-6 text-[#9CA3AF] text-base sm:text-lg font-light leading-relaxed">
+              <div className="md:col-span-7 space-y-6 text-[#555555] text-base sm:text-lg font-light leading-relaxed">
                 <p>
                   A customer calls. Another enquiry arrives through the website. Someone replies by email. A quote is sent. The client follows up. A team member has the latest information. A project starts. The owner needs an update.
                 </p>
                 <p>
                   The business is busy and doing well. But the information needed to keep things running is spread across email, spreadsheets, WhatsApp threads, phone calls, documents and individual heads.
                 </p>
-                <div className="p-6 border-l-2 border-white/40 bg-white/[0.02] text-white font-normal text-lg sm:text-xl">
+                <div className="p-6 border-l-2 border-[#171717] bg-[#FAFAF9] text-[#171717] font-normal text-lg sm:text-xl">
                   “Your business may be organised. <br className="hidden sm:inline" />
-                  <span className="text-[#9CA3AF]">Your information may not be.”</span>
+                  <span className="text-[#666666]">Your information may not be.”</span>
                 </div>
               </div>
 
-              <div className="md:col-span-5 bg-white/[0.02] border border-white/10 p-8 rounded-sm space-y-6">
-                <div className="text-xs uppercase tracking-[0.2em] text-white/70 font-mono flex items-center gap-2">
-                  <Workflow className="w-4 h-4 text-white/80" />
+              <div className="md:col-span-5 bg-[#FAFAF9] border border-[#E5E5E2] p-8 rounded-sm space-y-6">
+                <div className="text-xs uppercase tracking-[0.2em] text-[#171717] font-mono font-medium flex items-center gap-2">
+                  <Workflow className="w-4 h-4 text-[#171717]" />
                   Where Everyday Time Gets Lost
                 </div>
-                <ul className="space-y-4 text-sm text-[#9CA3AF] font-light">
+                <ul className="space-y-4 text-sm text-[#555555] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">01</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5 font-bold">01</span>
                     <span>Chasing team members to find out what was agreed on a call or email.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">02</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5 font-bold">02</span>
                     <span>Double-checking spreadsheets to see if an estimate was sent or accepted.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">03</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5 font-bold">03</span>
                     <span>Every key operational question having to run through the owner or manager.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">04</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5 font-bold">04</span>
                     <span>Important customer details and project notes lost when handoffs happen.</span>
                   </li>
                 </ul>
@@ -336,81 +336,81 @@ export const IrelandMarketPage: React.FC = () => {
         </section>
 
         {/* 4. BRAND + DIGITAL EXPERIENCE */}
-        <section id="what-we-build" className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        <section id="what-we-build" className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Reputation & Perception
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-8">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-8">
               Your reputation starts <br />
-              <span className="text-[#9CA3AF]">before the first conversation.</span>
+              <span className="text-[#666666]">before the first conversation.</span>
             </h2>
 
-            <p className="text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               When prospective clients hear about you, they look you up. Your visual identity, website, presentation and digital touchpoints should tell the same story and show the caliber of work you actually deliver.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="p-8 sm:p-10 border border-white/10 bg-white/[0.02] flex flex-col justify-between">
+              <div className="p-8 sm:p-10 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between">
                 <div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-[#9CA3AF] font-mono mb-4 flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-white" />
+                  <div className="text-xs uppercase tracking-[0.2em] text-[#666666] font-mono mb-4 flex items-center gap-2 font-bold">
+                    <Sparkles className="w-4 h-4 text-[#171717]" />
                     Identity & Presentation
                   </div>
-                  <h3 className="text-2xl font-light text-white mb-4">
+                  <h3 className="text-2xl font-light text-[#171717] mb-4">
                     Brand identity that builds trust.
                   </h3>
-                  <p className="text-[#9CA3AF] text-sm sm:text-base font-light leading-relaxed mb-6">
+                  <p className="text-[#555555] text-sm sm:text-base font-light leading-relaxed mb-6">
                     A clean, confident identity that communicates credibility without fluff. From your visual language to your sales decks and project documentation.
                   </p>
-                  <div className="space-y-2 pt-4 border-t border-white/[0.06] text-xs text-white/80 font-mono">
+                  <div className="space-y-2 pt-4 border-t border-[#E5E5E2] text-xs text-[#171717] font-mono">
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Cohesive visual branding & corporate identity</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Professional tender, pitch and proposal design</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Clear, human messaging that speaks directly to clients</span>
                     </div>
                   </div>
                 </div>
-                <div className="mt-8 pt-6 border-t border-white/10 text-sm text-white/90 font-medium">
+                <div className="mt-8 pt-6 border-t border-[#E5E5E2] text-sm text-[#171717] font-medium">
                   “Good business is easy to trust.”
                 </div>
               </div>
 
-              <div className="p-8 sm:p-10 border border-white/10 bg-white/[0.02] flex flex-col justify-between">
+              <div className="p-8 sm:p-10 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between">
                 <div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-[#9CA3AF] font-mono mb-4 flex items-center gap-2">
-                    <Layers className="w-4 h-4 text-white" />
+                  <div className="text-xs uppercase tracking-[0.2em] text-[#666666] font-mono mb-4 flex items-center gap-2 font-bold">
+                    <Layers className="w-4 h-4 text-[#171717]" />
                     Website & Customer Journey
                   </div>
-                  <h3 className="text-2xl font-light text-white mb-4">
+                  <h3 className="text-2xl font-light text-[#171717] mb-4">
                     Websites built to win the right work.
                   </h3>
-                  <p className="text-[#9CA3AF] text-sm sm:text-base font-light leading-relaxed mb-6">
+                  <p className="text-[#555555] text-sm sm:text-base font-light leading-relaxed mb-6">
                     A good website doesn't just look professional. It makes it easy for the right customer to understand your capabilities, see your work, and get in touch.
                   </p>
-                  <div className="space-y-2 pt-4 border-t border-white/[0.06] text-xs text-white/80 font-mono">
+                  <div className="space-y-2 pt-4 border-t border-[#E5E5E2] text-xs text-[#171717] font-mono">
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Fast, mobile-first web engineering</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Project and case study showcases that prove your track record</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#171717]" />
                       <span>Frictionless enquiry pathways directly connected to your team</span>
                     </div>
                   </div>
                 </div>
-                <div className="mt-8 pt-6 border-t border-white/10 text-sm text-white/90 font-medium">
+                <div className="mt-8 pt-6 border-t border-[#E5E5E2] text-sm text-[#171717] font-medium">
                   “Makes it easier for the right customer to choose you.”
                 </div>
               </div>
@@ -473,16 +473,16 @@ export const IrelandMarketPage: React.FC = () => {
         </section>
 
         {/* 6. IRELAND INDUSTRY SECTION */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Sector Relevance
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Built for how Irish businesses <br />
-              <span className="text-[#9CA3AF]">actually work.</span>
+              <span className="text-[#666666]">actually work.</span>
             </h2>
-            <p className="text-[#9CA3AF] text-base sm:text-lg font-light max-w-2xl leading-relaxed mb-16">
+            <p className="text-[#555555] text-base sm:text-lg font-light max-w-2xl leading-relaxed mb-16">
               From commercial contractors and consultancies in Dublin and Cork to specialist practices across Galway, Limerick and Waterford.
             </p>
 
@@ -490,24 +490,24 @@ export const IrelandMarketPage: React.FC = () => {
               {irelandIndustries.map((ind, i) => (
                 <div 
                   key={ind.id}
-                  className={`p-8 border border-white/10 bg-white/[0.02] flex flex-col justify-between rounded-sm ${
+                  className={`p-8 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between rounded-sm ${
                     i === 4 ? 'md:col-span-2 lg:col-span-1' : ''
                   }`}
                 >
                   <div>
-                    <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#9CA3AF] mb-3">
+                    <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#666666] mb-3 font-bold">
                       {ind.tagline}
                     </div>
-                    <h3 className="text-xl font-light text-white mb-4">
+                    <h3 className="text-xl font-light text-[#171717] mb-4">
                       {ind.title}
                     </h3>
-                    <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                    <p className="text-sm text-[#555555] font-light leading-relaxed">
                       {ind.quote}
                     </p>
                   </div>
-                  <div className="mt-8 pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                    <span className="text-xs font-mono text-white/50">Custom Workflow</span>
-                    <Link to="/contact" className="text-xs text-white/80 hover:text-white flex items-center gap-1">
+                  <div className="mt-8 pt-4 border-t border-[#E5E5E2] flex items-center justify-between">
+                    <span className="text-xs font-mono text-[#666666]">Custom Workflow</span>
+                    <Link to="/contact" className="text-xs text-[#171717] hover:text-black font-medium flex items-center gap-1">
                       Discuss Requirements <ChevronRight className="w-3 h-3" />
                     </Link>
                   </div>
@@ -573,44 +573,44 @@ export const IrelandMarketPage: React.FC = () => {
         </section>
 
         {/* 8. WHY MAYAA */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Working Approach
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-16">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-16">
               Understand first. <br />
-              <span className="text-[#9CA3AF]">Build second.</span>
+              <span className="text-[#666666]">Build second.</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-white/50 mb-4">01 · DISCOVERY</div>
-                <h3 className="text-lg font-normal text-white mb-3">UNDERSTAND</h3>
-                <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#666666] mb-4 font-bold">01 · DISCOVERY</div>
+                <h3 className="text-lg font-normal text-[#171717] mb-3">UNDERSTAND</h3>
+                <p className="text-sm text-[#555555] font-light leading-relaxed">
                   How the business actually gets work, serves customers, and where time is lost in handoffs and manual tasks.
                 </p>
               </div>
 
-              <div className="p-8 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-white/50 mb-4">02 · SIMPLIFY</div>
-                <h3 className="text-lg font-normal text-white mb-3">SIMPLIFY</h3>
-                <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#666666] mb-4 font-bold">02 · SIMPLIFY</div>
+                <h3 className="text-lg font-normal text-[#171717] mb-3">SIMPLIFY</h3>
+                <p className="text-sm text-[#555555] font-light leading-relaxed">
                   Where unnecessary steps and friction can be removed so the workflow is straightforward before any software is built.
                 </p>
               </div>
 
-              <div className="p-8 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-white/50 mb-4">03 · PURPOSEFUL BUILD</div>
-                <h3 className="text-lg font-normal text-white mb-3">BUILD</h3>
-                <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#666666] mb-4 font-bold">03 · PURPOSEFUL BUILD</div>
+                <h3 className="text-lg font-normal text-[#171717] mb-3">BUILD</h3>
+                <p className="text-sm text-[#555555] font-light leading-relaxed">
                   What technology genuinely needs to do. No unnecessary features, no forced templates, and no technology for the sake of technology.
                 </p>
               </div>
             </div>
 
             {/* Subtle Localisation Reference */}
-            <div className="mt-16 text-center text-xs text-white/50 font-mono tracking-wider">
+            <div className="mt-16 text-center text-xs text-[#666666] font-mono tracking-wider">
               From growing businesses in Dublin and Cork to companies across Galway, Limerick and Waterford.
             </div>
           </div>
@@ -659,28 +659,28 @@ export const IrelandMarketPage: React.FC = () => {
         </section>
 
         {/* FREQUENTLY ASKED QUESTIONS */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-4xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#16A34A] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#16A34A] mb-4 font-mono font-bold">
               Irish Decision-Maker FAQs
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-12">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-12">
               Common questions from <br />
-              <span className="text-[#9CA3AF]">Irish business leaders.</span>
+              <span className="text-[#666666]">Irish business leaders.</span>
             </h2>
 
             <div className="space-y-4">
               {IRELAND_FAQS.map((faq, idx) => (
                 <div
                   key={idx}
-                  className="border border-white/10 bg-white/[0.02] rounded-sm overflow-hidden transition-colors hover:border-white/20"
+                  className="border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm overflow-hidden transition-colors hover:border-[#CCCCCC]"
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
-                    className="w-full p-6 text-left flex items-center justify-between gap-4 text-white hover:text-[#16A34A] transition-colors"
+                    className="w-full p-6 text-left flex items-center justify-between gap-4 text-[#171717] hover:text-[#16A34A] transition-colors"
                   >
                     <span className="text-base sm:text-lg font-light">{faq.question}</span>
-                    <span className="text-xs font-mono text-white/50 flex-shrink-0">
+                    <span className="text-xs font-mono text-[#666666] flex-shrink-0">
                       {openFaq === idx ? '-' : '+'}
                     </span>
                   </button>
@@ -691,7 +691,7 @@ export const IrelandMarketPage: React.FC = () => {
                         animate={{ height: 'auto', opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.25 }}
-                        className="px-6 pb-6 text-sm text-[#9CA3AF] font-light leading-relaxed border-t border-white/[0.06] pt-4"
+                        className="px-6 pb-6 text-sm text-[#555555] font-light leading-relaxed border-t border-[#E5E5E2] pt-4"
                       >
                         {faq.answer}
                       </motion.div>

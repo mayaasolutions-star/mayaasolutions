@@ -236,54 +236,54 @@ export const NorwayMarketPage: React.FC = () => {
         </section>
 
         {/* 2. CORE NORWAY BUSINESS INSIGHT */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0B1017]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono">
               The Reality of Tool Sprawl
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-8">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-8">
               You probably don't need <br />
-              <span className="text-[#9CA3AF]">another tool.</span>
+              <span className="text-[#555555]">another tool.</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start mt-12">
-              <div className="md:col-span-7 space-y-6 text-[#9CA3AF] text-base sm:text-lg font-light leading-relaxed">
+              <div className="md:col-span-7 space-y-6 text-[#555555] text-base sm:text-lg font-light leading-relaxed">
                 <p>
                   Your website presents information. Your CRM stores contacts. Your accounting software logs invoices. Your project tool lists tasks. Your email handles daily client correspondence. Your team maintains spreadsheets to fill the gaps.
                 </p>
                 <p>
                   The tools work. But information still gets repeated, searched for across multiple tabs, and manually transferred between people.
                 </p>
-                <div className="p-6 border-l-2 border-white/40 bg-white/[0.02] text-white font-normal text-lg sm:text-xl">
+                <div className="p-6 border-l-2 border-[#171717] bg-[#FAFAF9] text-[#171717] font-normal text-lg sm:text-xl">
                   “The problem isn't always the software. <br className="hidden sm:inline" />
-                  <span className="text-[#9CA3AF]">Sometimes it's the space between the systems.”</span>
+                  <span className="text-[#555555]">Sometimes it's the space between the systems.”</span>
                 </div>
               </div>
 
-              <div className="md:col-span-5 bg-white/[0.02] border border-white/10 p-8 rounded-sm space-y-6">
-                <div className="text-xs uppercase tracking-[0.2em] text-white/70 font-mono flex items-center gap-2">
-                  <Minimize2 className="w-4 h-4 text-white/80" />
+              <div className="md:col-span-5 bg-[#FAFAF9] border border-[#E5E5E2] p-8 rounded-sm space-y-6">
+                <div className="text-xs uppercase tracking-[0.2em] text-[#171717] font-mono flex items-center gap-2">
+                  <Minimize2 className="w-4 h-4 text-[#171717]" />
                   What Unnecessary Complexity Costs
                 </div>
-                <ul className="space-y-4 text-sm text-[#9CA3AF] font-light">
+                <ul className="space-y-4 text-sm text-[#555555] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">01</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5">01</span>
                     <span>More administrative hours spent re-entering data between disconnected platforms.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">02</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5">02</span>
                     <span>Duplicated client records and mismatched project versions.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">03</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5">03</span>
                     <span>Multiple places to check just to confirm the current status of an order.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-white font-mono text-xs mt-0.5">04</span>
+                    <span className="text-[#171717] font-mono text-xs mt-0.5">04</span>
                     <span>Over-reliance on individual memory when key colleagues take time off.</span>
                   </li>
                 </ul>
-                <div className="pt-4 border-t border-white/[0.08] text-xs font-mono text-white/70">
+                <div className="pt-4 border-t border-[#E5E5E2] text-xs font-mono text-[#666666]">
                   “A good system removes steps, not adds them.”
                 </div>
               </div>
@@ -375,19 +375,19 @@ export const NorwayMarketPage: React.FC = () => {
         </section>
 
         {/* 4. PERSONALISED BUSINESS MANAGEMENT SYSTEM */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0B1017]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono">
               Bespoke Operational Software
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-4">
               PERSONALISED BUSINESS <br />
-              <span className="text-[#9CA3AF]">MANAGEMENT SYSTEM</span>
+              <span className="text-[#555555]">MANAGEMENT SYSTEM</span>
             </h2>
-            <p className="text-xl text-white font-light mb-4">
+            <p className="text-xl text-[#171717] font-light mb-4">
               Built around the way your business actually works.
             </p>
-            <p className="text-[#9CA3AF] text-base sm:text-lg font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-[#555555] text-base sm:text-lg font-light max-w-3xl leading-relaxed mb-16">
               We first understand how enquiries arrive, how work is scoped, how projects move and how your team manages information. Then we build only what is useful.
             </p>
 
@@ -396,22 +396,22 @@ export const NorwayMarketPage: React.FC = () => {
               {systemFlow.map((item, idx) => (
                 <div 
                   key={item.step}
-                  className="p-8 border border-white/10 bg-white/[0.02] rounded-sm hover:border-white/30 transition-all duration-300 relative group flex flex-col justify-between"
+                  className="p-8 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm hover:border-[#CCCCCC] transition-all duration-300 relative group flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-xs font-mono text-white/50">{item.step}</span>
-                      <span className="text-[10px] uppercase font-mono tracking-wider px-2 py-0.5 rounded bg-white/5 text-[#9CA3AF]">
+                      <span className="text-xs font-mono text-[#171717] font-medium">{item.step}</span>
+                      <span className="text-[10px] uppercase font-mono tracking-wider px-2 py-0.5 rounded bg-[#E5E5E2] text-[#666666]">
                         Stage {idx + 1}
                       </span>
                     </div>
-                    <h3 className="text-xl font-light text-white mb-2 tracking-wide">
+                    <h3 className="text-xl font-light text-[#171717] mb-2 tracking-wide">
                       {item.stage}
                     </h3>
-                    <div className="text-xs font-mono text-white/70 mb-4 pb-3 border-b border-white/[0.06]">
+                    <div className="text-xs font-mono text-[#666666] mb-4 pb-3 border-b border-[#E5E5E2]">
                       {item.flow}
                     </div>
-                    <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                    <p className="text-sm text-[#555555] font-light leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -419,10 +419,10 @@ export const NorwayMarketPage: React.FC = () => {
               ))}
             </div>
 
-            <div className="mt-12 p-6 border border-white/10 bg-white/[0.02] text-center max-w-xl mx-auto">
-              <p className="text-base text-white font-light">
+            <div className="mt-12 p-6 border border-[#E5E5E2] bg-[#F7F7F5] text-center max-w-xl mx-auto">
+              <p className="text-base text-[#171717] font-light">
                 “Clear ownership. Less repetition. <br />
-                <span className="text-[#9CA3AF]">Better operational visibility.”</span>
+                <span className="text-[#555555]">Better operational visibility.”</span>
               </p>
             </div>
           </div>
@@ -474,59 +474,59 @@ export const NorwayMarketPage: React.FC = () => {
         </section>
 
         {/* 6. RESPONSIBLE TECHNOLOGY & SUSTAINABLE EFFICIENCY */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0B1017]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono">
               Technology Principles
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Technology should <br />
-              <span className="text-[#9CA3AF]">earn its place.</span>
+              <span className="text-[#555555]">earn its place.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               We do not add features simply because they exist. We build them when they solve a genuine operational bottleneck and make life easier for the team using them.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-white/50 mb-4 flex items-center gap-2">
-                  <Database className="w-4 h-4 text-white" />
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#666666] mb-4 flex items-center gap-2">
+                  <Database className="w-4 h-4 text-[#171717]" />
                   RESPONSIBLE DATA
                 </div>
-                <h3 className="text-lg font-normal text-white mb-3">Clear Access Control</h3>
-                <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                <h3 className="text-lg font-normal text-[#171717] mb-3">Clear Access Control</h3>
+                <p className="text-sm text-[#555555] font-light leading-relaxed">
                   Role-based permissions, secure authentication, and transparent data architectures so sensitive client files are accessed only by the right team members.
                 </p>
               </div>
 
-              <div className="p-8 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-white/50 mb-4 flex items-center gap-2">
-                  <Workflow className="w-4 h-4 text-white" />
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#666666] mb-4 flex items-center gap-2">
+                  <Workflow className="w-4 h-4 text-[#171717]" />
                   PROCESS EFFICIENCY
                 </div>
-                <h3 className="text-lg font-normal text-white mb-3">Build Efficiently. Grow Responsibly.</h3>
-                <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                <h3 className="text-lg font-normal text-[#171717] mb-3">Build Efficiently. Grow Responsibly.</h3>
+                <p className="text-sm text-[#555555] font-light leading-relaxed">
                   Removing duplicated administrative steps, unnecessary file duplication, and manual status tracking saves team hours and reduces operational friction.
                 </p>
               </div>
 
-              <div className="p-8 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-white/50 mb-4 flex items-center gap-2">
-                  <Cpu className="w-4 h-4 text-white" />
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#666666] mb-4 flex items-center gap-2">
+                  <Cpu className="w-4 h-4 text-[#171717]" />
                   PRACTICAL AUTOMATION
                 </div>
-                <h3 className="text-lg font-normal text-white mb-3">AI Should Solve a Problem</h3>
-                <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                <h3 className="text-lg font-normal text-[#171717] mb-3">AI Should Solve a Problem</h3>
+                <p className="text-sm text-[#555555] font-light leading-relaxed">
                   AI is valuable when it summarizes inbound enquiries, speeds up document search, or routes repetitive tasks. Not every problem needs AI; we only deploy it where it saves real time.
                 </p>
               </div>
             </div>
 
             {/* Subtle Operational Note */}
-            <div className="mt-12 p-6 border border-white/10 bg-white/[0.02] text-center max-w-2xl mx-auto">
-              <p className="text-sm sm:text-base text-white/90 font-light">
+            <div className="mt-12 p-6 border border-[#E5E5E2] bg-[#F7F7F5] text-center max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base text-[#171717] font-light">
                 “Good businesses shouldn't depend on good memory. <br className="hidden sm:inline" />
-                <span className="text-[#9CA3AF]">A clear system keeps information visible and work easy to follow.”</span>
+                <span className="text-[#555555]">A clear system keeps information visible and work easy to follow.”</span>
               </p>
             </div>
           </div>
@@ -577,40 +577,40 @@ export const NorwayMarketPage: React.FC = () => {
         </section>
 
         {/* BANGALORE DELIVERY MODEL FOR NORWEGIAN ENTERPRISES */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
             <div className="text-xs uppercase tracking-[0.25em] text-[#0D9488] mb-4 font-mono">
               Delivery Architecture
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Engineering anchored in Bangalore. <br />
-              <span className="text-[#9CA3AF]">Zero Scandinavian consultancy inflation.</span>
+              <span className="text-[#555555]">Zero Scandinavian consultancy inflation.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               Mayaa delivers brand design, digital platforms, and custom business systems directly from our technology hub in Bangalore, India. We offer direct engineer access, quiet execution, and rigorous data protection.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
                 <div className="text-xs font-mono text-[#0D9488] uppercase tracking-wider mb-2">01 · TIMEZONE OVERLAP</div>
-                <h3 className="text-lg font-normal text-white mb-2">CET / CEST Alignment</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+                <h3 className="text-lg font-normal text-[#171717] mb-2">CET / CEST Alignment</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   With a 3.5 to 4.5-hour difference, our afternoon hours seamlessly cover Norwegian business mornings for live design critiques, demos, and reviews.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
                 <div className="text-xs font-mono text-[#0D9488] uppercase tracking-wider mb-2">02 · DATA SOVEREIGNTY</div>
-                <h3 className="text-lg font-normal text-white mb-2">Nordic Cloud Deployments</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+                <h3 className="text-lg font-normal text-[#171717] mb-2">Nordic Cloud Deployments</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Workflows and data deploy directly to client-owned European cloud infrastructure (AWS Stockholm, Azure Norway East, Hetzner), strictly adhering to GDPR and Datatilsynet mandates.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
                 <div className="text-xs font-mono text-[#0D9488] uppercase tracking-wider mb-2">03 · COMMERCIAL INTEGRITY</div>
-                <h3 className="text-lg font-normal text-white mb-2">NOK / EUR Milestone Contracts</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+                <h3 className="text-lg font-normal text-[#171717] mb-2">NOK / EUR Milestone Contracts</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Fixed-scope milestone contracts invoiced in NOK or EUR with complete code and intellectual property transfer upon sign-off. Zero recurring software seat fees.
                 </p>
               </div>
@@ -664,27 +664,27 @@ export const NorwayMarketPage: React.FC = () => {
         </section>
 
         {/* 8. FINAL CTA */}
-        <section className="py-28 md:py-36 px-6 md:px-12 relative overflow-hidden">
+        <section className="py-28 md:py-36 px-6 md:px-12 relative overflow-hidden bg-white text-[#171717] border-t border-[#E5E5E2]">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-6xl font-light tracking-tight text-white mb-6">
+            <h2 className="text-4xl sm:text-6xl font-light tracking-tight text-[#171717] mb-6">
               Let's make the business <br />
               <span className="font-normal italic">simpler.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-xl mx-auto mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-xl mx-auto mb-10 leading-relaxed">
               Tell us where your business is losing time, clarity or visibility. We'll start by understanding how it works.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="w-full sm:w-auto px-10 py-4 bg-white text-black font-medium text-xs uppercase tracking-[0.2em] hover:bg-[#E5E7EB] transition-all duration-300 flex items-center justify-center gap-3 group"
+                className="w-full sm:w-auto px-10 py-4 bg-[#111111] text-white font-medium text-xs uppercase tracking-[0.2em] hover:bg-neutral-800 transition-all duration-300 flex items-center justify-center gap-3 group"
               >
                 <span>Start a Conversation</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link
                 to="/contact"
-                className="w-full sm:w-auto px-10 py-4 border border-white/20 text-white font-medium text-xs uppercase tracking-[0.2em] hover:bg-white/[0.05] hover:border-white/40 transition-all duration-300"
+                className="w-full sm:w-auto px-10 py-4 border border-[#CCCCCC] text-[#171717] font-medium text-xs uppercase tracking-[0.2em] hover:bg-[#F0F0EE] hover:border-[#111111] transition-all duration-300"
               >
                 Discuss Your Business
               </Link>

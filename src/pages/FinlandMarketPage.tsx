@@ -134,7 +134,7 @@ export const FinlandMarketPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#070A0E] text-[#F3F4F6] selection:bg-[#A3E635] selection:text-[#070A0E] font-sans antialiased">
       <SEO
-        title="Less Noise. More That Works. | Mayaa Solutions Finland"
+        title="Finland | Strategic Brand, Digital Experiences & Business Systems | Mayaa Solutions"
         description="Brand design, high-clarity websites, and personalised business management systems for Finnish businesses. Engineered for purpose, clarity, and operational momentum across Helsinki, Espoo, Tampere, and Oulu."
         canonicalUrl="https://mayaasolutions.in/global-markets/finland"
         schema={[
@@ -242,29 +242,29 @@ export const FinlandMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          02. SIGNAL VS NOISE INTERACTIVE CONTRAST
+          02. SIGNAL VS NOISE INTERACTIVE CONTRAST (WHITE)
       ========================================================================= */}
-      <section id="signal-contrast" className="py-24 md:py-32 border-b border-[#1A222D] bg-[#0A0E14]">
+      <section id="signal-contrast" className="w-full bg-white text-[#171717] py-24 md:py-32 border-b border-[#E5E5E2]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-[#A3E635]">01 / THE CONTRAST</span>
-            <div className="h-[1px] w-12 bg-[#222E3D]" />
+            <span className="text-xs font-mono text-[#15803D] font-semibold">01 / THE CONTRAST</span>
+            <div className="h-[1px] w-12 bg-[#E5E5E2]" />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div className="lg:col-span-6 space-y-6">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#FAF9F5] leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] leading-tight">
                 CUTTING THROUGH <br />
-                <span className="text-[#A3E635]">SOFTWARE & AGENCY SPRAWL.</span>
+                <span className="text-[#15803D]">SOFTWARE & AGENCY SPRAWL.</span>
               </h2>
 
-              <p className="text-base sm:text-lg text-[#B4BAC6] leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-[#555555] leading-relaxed font-light">
                 Many growing Finnish businesses accumulate tools and digital layers that add administrative drag rather than clarity.
               </p>
 
-              <div className="space-y-3 text-sm text-[#828B99]">
+              <div className="space-y-3 text-sm text-[#666666]">
                 <p>Common operational noise we eliminate:</p>
-                <ul className="space-y-2 border-l border-[#222E3D] pl-4 text-xs font-mono text-[#D1D5DB]">
+                <ul className="space-y-2 border-l border-[#E5E5E2] pl-4 text-xs font-mono text-[#333333]">
                   <li>• Paying per-seat monthly license fees for generic software with 70% unused features.</li>
                   <li>• Websites filled with marketing buzzwords that obscure real engineering capabilities.</li>
                   <li>• Client follow-ups and project tasks scattered across disconnected communication channels.</li>
@@ -273,13 +273,13 @@ export const FinlandMarketPage: React.FC = () => {
 
               {/* Interactive Mode Toggle */}
               <div className="pt-2">
-                <div className="inline-flex p-1 bg-[#101720] border border-[#202E3D] rounded-md text-xs font-mono">
+                <div className="inline-flex p-1 bg-[#F0F0EE] border border-[#E5E5E2] rounded-md text-xs font-mono">
                   <button
                     onClick={() => setSignalMode('noise')}
                     className={`px-4 py-2 rounded transition-all duration-200 cursor-pointer ${
                       signalMode === 'noise'
-                        ? 'bg-[#261517] text-[#F87171] border border-[#451A1D]'
-                        : 'text-[#828B99] hover:text-[#FAF9F5]'
+                        ? 'bg-[#FDF2F2] text-[#B91C1C] border border-[#F87171] font-semibold shadow-xs'
+                        : 'text-[#666666] hover:text-[#171717]'
                     }`}
                   >
                     THE NOISE (CONVENTIONAL)
@@ -288,8 +288,8 @@ export const FinlandMarketPage: React.FC = () => {
                     onClick={() => setSignalMode('signal')}
                     className={`px-4 py-2 rounded transition-all duration-200 cursor-pointer ${
                       signalMode === 'signal'
-                        ? 'bg-[#152312] text-[#A3E635] border border-[#2B4C1E]'
-                        : 'text-[#828B99] hover:text-[#FAF9F5]'
+                        ? 'bg-[#F0FDF4] text-[#15803D] border border-[#86EFAC] font-semibold shadow-xs'
+                        : 'text-[#666666] hover:text-[#171717]'
                     }`}
                   >
                     THE SIGNAL (MAYAA APPROACH)
@@ -300,10 +300,10 @@ export const FinlandMarketPage: React.FC = () => {
 
             {/* Diagnostic Card Container */}
             <div className="lg:col-span-6">
-              <div className="p-8 bg-[#0D131B] border border-[#1E2B38] rounded-xl shadow-xl space-y-5">
-                <div className="flex items-center justify-between text-xs font-mono pb-3 border-b border-[#182330]">
-                  <span className="text-[#828B99]">SYSTEM ARCHITECTURE</span>
-                  <span className={signalMode === 'signal' ? 'text-[#A3E635]' : 'text-[#F87171]'}>
+              <div className="p-8 bg-[#FAFAF9] border border-[#E5E5E2] rounded-xl shadow-xs space-y-5">
+                <div className="flex items-center justify-between text-xs font-mono pb-3 border-b border-[#E5E5E2]">
+                  <span className="text-[#666666]">SYSTEM ARCHITECTURE</span>
+                  <span className={signalMode === 'signal' ? 'text-[#15803D] font-semibold' : 'text-[#B91C1C] font-semibold'}>
                     {signalMode === 'signal' ? 'SIGNAL OPTIMIZED' : 'HIGH NOISE RATIO'}
                   </span>
                 </div>
@@ -317,17 +317,17 @@ export const FinlandMarketPage: React.FC = () => {
                       exit={{ opacity: 0, y: -6 }}
                       className="space-y-3 text-xs"
                     >
-                      <div className="p-4 bg-[#181214] border border-[#3A181C] rounded text-[#F87171] space-y-1">
+                      <div className="p-4 bg-[#FDF2F2] border border-[#FCA5A5] rounded text-[#991B1B] space-y-1">
                         <div className="font-mono font-semibold">BRAND: Generic Fluff</div>
-                        <p className="text-[11px] text-[#C48D93]">Abstract marketing slogans that fail to explain technical substance to enterprise buyers.</p>
+                        <p className="text-[11px] text-[#B91C1C]">Abstract marketing slogans that fail to explain technical substance to enterprise buyers.</p>
                       </div>
-                      <div className="p-4 bg-[#181214] border border-[#3A181C] rounded text-[#F87171] space-y-1">
+                      <div className="p-4 bg-[#FDF2F2] border border-[#FCA5A5] rounded text-[#991B1B] space-y-1">
                         <div className="font-mono font-semibold">WEB: Sluggish Templates</div>
-                        <p className="text-[11px] text-[#C48D93]">Heavy frameworks and third-party scripts that compromise speed and mobile usability.</p>
+                        <p className="text-[11px] text-[#B91C1C]">Heavy frameworks and third-party scripts that compromise speed and mobile usability.</p>
                       </div>
-                      <div className="p-4 bg-[#181214] border border-[#3A181C] rounded text-[#F87171] space-y-1">
+                      <div className="p-4 bg-[#FDF2F2] border border-[#FCA5A5] rounded text-[#991B1B] space-y-1">
                         <div className="font-mono font-semibold">OPS: Monthly License Traps</div>
-                        <p className="text-[11px] text-[#C48D93]">Rigid SaaS software where expanding team access inflates recurring overhead.</p>
+                        <p className="text-[11px] text-[#B91C1C]">Rigid SaaS software where expanding team access inflates recurring overhead.</p>
                       </div>
                     </motion.div>
                   ) : (
@@ -338,17 +338,17 @@ export const FinlandMarketPage: React.FC = () => {
                       exit={{ opacity: 0, y: -6 }}
                       className="space-y-3 text-xs"
                     >
-                      <div className="p-4 bg-[#10190E] border border-[#233D19] rounded text-[#A3E635] space-y-1">
+                      <div className="p-4 bg-[#F0FDF4] border border-[#86EFAC] rounded text-[#166534] space-y-1">
                         <div className="font-mono font-semibold">01. BRAND: Commercial Truth</div>
-                        <p className="text-[11px] text-[#86EFAC]">Clear positioning and visual standards that highlight engineering capability directly.</p>
+                        <p className="text-[11px] text-[#15803D]">Clear positioning and visual standards that highlight engineering capability directly.</p>
                       </div>
-                      <div className="p-4 bg-[#10190E] border border-[#233D19] rounded text-[#A3E635] space-y-1">
+                      <div className="p-4 bg-[#F0FDF4] border border-[#86EFAC] rounded text-[#166534] space-y-1">
                         <div className="font-mono font-semibold">02. WEB: High-Performance React</div>
-                        <p className="text-[11px] text-[#86EFAC]">Sub-second page speeds, clean UI hierarchy, and structured proof for decision-makers.</p>
+                        <p className="text-[11px] text-[#15803D]">Sub-second page speeds, clean UI hierarchy, and structured proof for decision-makers.</p>
                       </div>
-                      <div className="p-4 bg-[#10190E] border border-[#233D19] rounded text-[#A3E635] space-y-1">
+                      <div className="p-4 bg-[#F0FDF4] border border-[#86EFAC] rounded text-[#166534] space-y-1">
                         <div className="font-mono font-semibold">03. OPS: Personalised Business Systems</div>
-                        <p className="text-[11px] text-[#86EFAC]">One custom platform built around your actual workflow with 100% data and code ownership.</p>
+                        <p className="text-[11px] text-[#15803D]">One custom platform built around your actual workflow with 100% data and code ownership.</p>
                       </div>
                     </motion.div>
                   )}
@@ -413,20 +413,20 @@ export const FinlandMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          04. INTERACTIVE PRIORITY SELECTOR
+          04. INTERACTIVE PRIORITY SELECTOR (WHITE)
       ========================================================================= */}
-      <section className="py-24 md:py-32 border-b border-[#1A222D] bg-[#0A0E14]">
+      <section className="w-full bg-white text-[#171717] py-24 md:py-32 border-b border-[#E5E5E2]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-[#A3E635]">03 / OPERATIONAL DIAGNOSTIC</span>
-            <div className="h-[1px] w-12 bg-[#222E3D]" />
+            <span className="text-xs font-mono text-[#15803D] font-semibold">03 / OPERATIONAL DIAGNOSTIC</span>
+            <div className="h-[1px] w-12 bg-[#E5E5E2]" />
           </div>
 
           <div className="max-w-3xl mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#FAF9F5] leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] leading-tight mb-4">
               WHERE DOES YOUR BUSINESS NEED CLARITY?
             </h2>
-            <p className="text-[#828B99] text-sm sm:text-base leading-relaxed">
+            <p className="text-[#555555] text-sm sm:text-base leading-relaxed">
               Select an area of current friction to see our targeted diagnostic remedy.
             </p>
           </div>
@@ -439,36 +439,36 @@ export const FinlandMarketPage: React.FC = () => {
                   onClick={() => setSelectedPriorityId(opt.id)}
                   className={`w-full text-left p-4 rounded-lg text-xs font-mono transition-all cursor-pointer ${
                     selectedPriorityId === opt.id
-                      ? 'bg-[#152312] text-[#FAF9F5] border border-[#A3E635] shadow-md'
-                      : 'bg-[#0D131B] text-[#828B99] border border-[#1E2B38] hover:text-[#FAF9F5]'
+                      ? 'bg-[#F0FDF4] text-[#171717] border border-[#15803D] shadow-xs font-semibold'
+                      : 'bg-[#FAFAF9] text-[#555555] border border-[#E5E5E2] hover:text-[#171717]'
                   }`}
                 >
                   <div className="flex items-center justify-between">
                     <span>{opt.title}</span>
-                    <span className="text-[10px] text-[#A3E635] ml-2">→</span>
+                    <span className="text-[10px] text-[#15803D] ml-2">→</span>
                   </div>
                 </button>
               ))}
             </div>
 
-            <div className="lg:col-span-7 p-8 bg-[#0D131B] border border-[#1E2B38] rounded-xl space-y-6">
-              <div className="flex items-center justify-between text-xs font-mono pb-3 border-b border-[#182330]">
-                <span className="text-[#A3E635] font-semibold">{activePriority.capability}</span>
-                <span className="text-[#828B99]">TARGETED REMEDY</span>
+            <div className="lg:col-span-7 p-8 bg-[#FAFAF9] border border-[#E5E5E2] rounded-xl space-y-6">
+              <div className="flex items-center justify-between text-xs font-mono pb-3 border-b border-[#E5E5E2]">
+                <span className="text-[#15803D] font-semibold">{activePriority.capability}</span>
+                <span className="text-[#666666]">TARGETED REMEDY</span>
               </div>
 
-              <h3 className="text-xl font-medium text-white tracking-tight">
+              <h3 className="text-xl font-medium text-[#171717] tracking-tight">
                 {activePriority.diagnosis}
               </h3>
 
-              <p className="text-sm text-[#B4BAC6] leading-relaxed font-light">
+              <p className="text-sm text-[#555555] leading-relaxed font-light">
                 {activePriority.remedy}
               </p>
 
               <div className="pt-4 flex items-center justify-between">
                 <Link
                   to={activePriority.link}
-                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-white hover:text-[#A3E635] transition-colors"
+                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#171717] hover:text-[#15803D] transition-colors"
                 >
                   <span>Explore this capability</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -476,7 +476,7 @@ export const FinlandMarketPage: React.FC = () => {
 
                 <Link
                   to="/contact"
-                  className="px-5 py-2.5 bg-[#FAF9F5] text-[#070A0E] text-xs font-mono uppercase tracking-wider rounded font-medium hover:bg-[#EAE8E1] transition-all"
+                  className="px-5 py-2.5 bg-[#111111] text-white text-xs font-mono uppercase tracking-wider rounded font-medium hover:bg-neutral-800 transition-all"
                 >
                   Start Discussion
                 </Link>
@@ -542,15 +542,15 @@ export const FinlandMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          06. FINNISH BUYER FAQS
+          06. FINNISH BUYER FAQS (WHITE)
       ========================================================================= */}
-      <section className="py-24 md:py-32 border-b border-[#1A222D] bg-[#0A0E14]">
+      <section className="w-full bg-white text-[#171717] py-24 md:py-32 border-b border-[#E5E5E2]">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#A3E635] block mb-3">
+            <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#15803D] block mb-3 font-semibold">
               Frequently Asked Questions
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] tracking-tight leading-tight">
               Direct answers for Finnish decision-makers.
             </h2>
           </div>
@@ -561,19 +561,19 @@ export const FinlandMarketPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="rounded-xl bg-[#0D131B] border border-[#1E2B38] overflow-hidden transition-colors"
+                  className="rounded-xl bg-[#FAFAF9] border border-[#E5E5E2] overflow-hidden transition-colors"
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
                     className="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer"
                     aria-expanded={isOpen}
                   >
-                    <span className="text-sm sm:text-base font-medium text-white tracking-tight">
+                    <span className="text-sm sm:text-base font-medium text-[#171717] tracking-tight">
                       {faq.question}
                     </span>
                     <ChevronDown
-                      className={`w-4 h-4 text-[#828B99] shrink-0 transition-transform duration-300 ${
-                        isOpen ? 'rotate-180 text-white' : ''
+                      className={`w-4 h-4 text-[#666666] shrink-0 transition-transform duration-300 ${
+                        isOpen ? 'rotate-180 text-[#171717]' : ''
                       }`}
                     />
                   </button>
@@ -585,7 +585,7 @@ export const FinlandMarketPage: React.FC = () => {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <div className="px-6 pb-6 pt-0 text-xs sm:text-sm text-[#828B99] leading-relaxed border-t border-[#182330]">
+                        <div className="px-6 pb-6 pt-0 text-xs sm:text-sm text-[#555555] leading-relaxed border-t border-[#E5E5E2]">
                           <p className="pt-4">{faq.answer}</p>
                         </div>
                       </motion.div>

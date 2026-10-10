@@ -281,11 +281,11 @@ export const BusinessToolsPage: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 flex-wrap"
+                className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 w-full sm:w-auto"
               >
                 <Link
                   to="/contact?service=business-systems"
-                  className="inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 sm:py-4 bg-white text-black font-extrabold text-xs sm:text-[13px] uppercase tracking-wider rounded-xl hover:bg-neutral-200 transition-all duration-300 shadow-md group whitespace-nowrap shrink-0"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 sm:px-7 py-3.5 sm:py-4 bg-white text-black font-extrabold text-[11px] sm:text-[13px] uppercase tracking-wider rounded-xl hover:bg-neutral-200 transition-all duration-300 shadow-md group text-center"
                 >
                   <span>Discuss Operational Requirements</span>
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 shrink-0" />
@@ -293,7 +293,7 @@ export const BusinessToolsPage: React.FC = () => {
 
                 <a
                   href="#systems-demo"
-                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 sm:py-4 bg-neutral-950 text-neutral-300 hover:text-white hover:bg-neutral-900 border border-neutral-800 font-bold text-xs sm:text-[13px] uppercase tracking-wider rounded-xl transition-all whitespace-nowrap shrink-0"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-7 py-3.5 sm:py-4 bg-neutral-950 text-neutral-300 hover:text-white hover:bg-neutral-900 border border-neutral-800 font-bold text-[11px] sm:text-[13px] uppercase tracking-wider rounded-xl transition-all text-center"
                 >
                   <span>Watch Interface Demo ↓</span>
                 </a>

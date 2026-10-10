@@ -131,7 +131,7 @@ export const SwedenMarketPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Innovation Is Only The Beginning | Mayaa Solutions Sweden"
+        title="Sweden | Strategic Brand, Digital Experiences & Business Systems | Mayaa Solutions"
         description="Good ideas deserve better execution. Mayaa helps Swedish businesses turn the quality of what they build into stronger brands, better digital experiences, and business systems designed around how they work across Stockholm, Gothenburg, and Malmö."
         keywords="Mayaa Solutions Sweden, business management systems Sweden, custom business software Sweden, custom CRM Sweden, business automation Sweden, website design Sweden, brand design Sweden, branding agency Sweden, digital experience Sweden, Skräddarsydd programvara, Affärssystem, CRM-system, Automatisering av arbetsflöden, Stockholm digital agency, Gothenburg business software, Malmo tech systems"
         canonicalUrl="https://mayaasolutions.in/global-markets/sweden"
@@ -212,50 +212,50 @@ export const SwedenMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 02. CORE SWEDISH BUSINESS REALITY: COLLABORATION WITHOUT COORDINATION OVERHEAD */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        {/* 02. CORE SWEDISH BUSINESS REALITY: COLLABORATION WITHOUT COORDINATION OVERHEAD (WHITE) */}
+        <section className="w-full bg-white text-[#171717] py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#94A3B8] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-medium">
               Swedish Commercial Context
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-8">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-8">
               Autonomy requires <br />
-              <span className="text-[#94A3B8] italic">shared operational truth.</span>
+              <span className="text-[#555555] italic">shared operational truth.</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start mt-12">
-              <div className="md:col-span-7 space-y-6 text-[#94A3B8] text-base sm:text-lg font-light leading-relaxed">
+              <div className="md:col-span-7 space-y-6 text-[#555555] text-base sm:text-lg font-light leading-relaxed">
                 <p>
                   Swedish work culture values trust, consensus, flat hierarchies, and autonomous decision-making. But when teams lack a unified operational system, autonomy can unintentionally create information silos.
                 </p>
                 <p>
                   Colleagues spend valuable hours in status meetings just to understand what another department is doing. Costing formulas, customer commitments, and delivery milestones stay locked inside personal memory or isolated documents.
                 </p>
-                <div className="p-6 border-l-2 border-white/40 bg-white/[0.02] text-white font-normal text-lg sm:text-xl">
+                <div className="p-6 border-l-2 border-[#171717] bg-[#FAFAF9] text-[#171717] font-normal text-lg sm:text-xl">
                   “The objective is not to impose rigid bureaucracy. <br className="hidden sm:inline" />
-                  <span className="text-[#9CA3AF]">It is to give autonomous teams clear visibility.”</span>
+                  <span className="text-[#666666]">It is to give autonomous teams clear visibility.”</span>
                 </div>
               </div>
 
-              <div className="md:col-span-5 bg-white/[0.02] border border-white/10 p-8 rounded-sm space-y-4">
-                <div className="text-xs uppercase tracking-[0.2em] text-white/80 font-mono mb-2">
+              <div className="md:col-span-5 bg-[#FAFAF9] border border-[#E5E5E2] p-8 rounded-sm space-y-4">
+                <div className="text-xs uppercase tracking-[0.2em] text-[#171717] font-mono mb-2 font-medium">
                   Where Friction Emerges:
                 </div>
-                <ul className="space-y-3 text-xs text-[#9CA3AF] font-light">
+                <ul className="space-y-3 text-xs text-[#555555] font-light">
                   <li className="flex items-start gap-3">
-                    <span className="text-[#38BDF8] font-mono">-</span>
+                    <span className="text-[#0284C7] font-mono">-</span>
                     <span>Recurring alignment syncs to confirm who owns specific project deliverables.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#38BDF8] font-mono">-</span>
+                    <span className="text-[#0284C7] font-mono">-</span>
                     <span>High-value commercial proposals delayed while gathering specs from multiple heads.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#38BDF8] font-mono">-</span>
+                    <span className="text-[#0284C7] font-mono">-</span>
                     <span>Customer context fragmented across personal inboxes, chat, and spreadsheets.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-[#38BDF8] font-mono">-</span>
+                    <span className="text-[#0284C7] font-mono">-</span>
                     <span>Leadership having to compile manual spreadsheets to track quarterly capacity.</span>
                   </li>
                 </ul>
@@ -328,49 +328,49 @@ export const SwedenMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 04. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0C1017]">
+        {/* 04. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL (WHITE) */}
+        <section className="w-full bg-white text-[#171717] py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2]">
           <div className="max-w-5xl mx-auto space-y-12">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] font-mono font-medium">
               Delivery Architecture
             </div>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
               Bangalore engineering depth. <br />
-              <span className="text-[#9CA3AF] italic">Swedish operational clarity.</span>
+              <span className="text-[#555555] italic">Swedish operational clarity.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed">
               We deliver for Swedish enterprises directly from our technology studio in Bangalore, India. We do not manufacture claims of physical branch offices where we do not have them. Instead, we invest in principal-level engineering, full daily timezone overlap, and complete data sovereignty.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="p-6 border border-white/10 bg-white/[0.01]">
-                <Clock className="w-5 h-5 text-[#38BDF8] mb-4" />
-                <h3 className="text-sm font-medium text-white mb-2">CET / CEST Overlap</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm">
+                <Clock className="w-5 h-5 text-[#0284C7] mb-4" />
+                <h3 className="text-sm font-medium text-[#171717] mb-2">CET / CEST Overlap</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Extensive daily working-hour alignment with Stockholm and Gothenburg for standups, architectural reviews, and milestone sign-offs.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.01]">
-                <Cpu className="w-5 h-5 text-[#38BDF8] mb-4" />
-                <h3 className="text-sm font-medium text-white mb-2">Direct Senior Access</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm">
+                <Cpu className="w-5 h-5 text-[#0284C7] mb-4" />
+                <h3 className="text-sm font-medium text-[#171717] mb-2">Direct Senior Access</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Collaborate directly with senior system architects and software engineers. No junior account executives or layers of miscommunicated handoffs.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.01]">
-                <Lock className="w-5 h-5 text-[#38BDF8] mb-4" />
-                <h3 className="text-sm font-medium text-white mb-2">Data Sovereignty</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm">
+                <Lock className="w-5 h-5 text-[#0284C7] mb-4" />
+                <h3 className="text-sm font-medium text-[#171717] mb-2">Data Sovereignty</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   All systems deployed on client-owned cloud accounts (AWS Stockholm / Azure Sweden Central) with 100% intellectual property ownership and strict NDAs.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.01]">
-                <CreditCard className="w-5 h-5 text-[#38BDF8] mb-4" />
-                <h3 className="text-sm font-medium text-white mb-2">SEK / EUR Milestone Billing</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm">
+                <CreditCard className="w-5 h-5 text-[#0284C7] mb-4" />
+                <h3 className="text-sm font-medium text-[#171717] mb-2">SEK / EUR Milestone Billing</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Transparent milestone-governed contracts quoted and invoiced in SEK or EUR with explicit acceptance gates and zero recurring per-user licensing taxes.
                 </p>
               </div>
@@ -432,39 +432,39 @@ export const SwedenMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 06. FINAL CTA */}
-        <section className="py-28 md:py-36 px-6 md:px-12 relative overflow-hidden bg-[#0C1017]">
+        {/* 06. FINAL CTA (WHITE) */}
+        <section className="w-full bg-white text-[#171717] py-28 md:py-36 px-6 md:px-12 relative overflow-hidden border-t border-[#E5E5E2]">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="inline-block px-3.5 py-1.5 bg-white/[0.03] border border-white/10 text-xs font-mono text-white/80 uppercase tracking-widest">
+            <div className="inline-block px-3.5 py-1.5 bg-[#F0F0EE] border border-[#E5E5E2] text-xs font-mono text-[#666666] uppercase tracking-widest font-medium">
               Sweden Consultation
             </div>
 
-            <h2 className="text-4xl sm:text-6xl font-light tracking-tight text-white mb-6">
+            <h2 className="text-4xl sm:text-6xl font-light tracking-tight text-[#171717] mb-6">
               Build what your business <br />
-              <span className="font-normal italic text-[#9CA3AF]">needs next.</span>
+              <span className="font-normal italic text-[#555555]">needs next.</span>
             </h2>
 
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-xl mx-auto leading-relaxed">
               Tell us where your company is growing, where collaborative workflows need stronger systems, or where your digital touchpoints need to improve. We start by understanding the business.
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="w-full sm:w-auto px-10 py-4 bg-white text-black font-medium text-xs uppercase tracking-[0.2em] hover:bg-[#E5E7EB] transition-all duration-300 flex items-center justify-center gap-3 group"
+                className="w-full sm:w-auto px-10 py-4 bg-[#111111] text-white font-medium text-xs uppercase tracking-[0.2em] hover:bg-neutral-800 transition-all duration-300 flex items-center justify-center gap-3 group"
               >
                 <span>Start a Conversation</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link
                 to="/global-markets"
-                className="w-full sm:w-auto px-10 py-4 border border-white/20 text-white font-medium text-xs uppercase tracking-[0.2em] hover:bg-white/[0.05] hover:border-white/40 transition-all duration-300"
+                className="w-full sm:w-auto px-10 py-4 border border-[#E5E5E2] text-[#171717] font-medium text-xs uppercase tracking-[0.2em] hover:bg-[#F0F0EE] hover:border-neutral-400 transition-all duration-300"
               >
                 Explore Global Markets
               </Link>
             </div>
 
-            <div className="pt-8 text-xs font-mono text-white/40 tracking-wider">
+            <div className="pt-8 text-xs font-mono text-[#888888] tracking-wider">
               Serving enterprises across Stockholm, Gothenburg, Malmö, Uppsala, Lund, and throughout Sweden.
             </div>
           </div>

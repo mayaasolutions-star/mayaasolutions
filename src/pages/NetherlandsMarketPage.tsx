@@ -265,35 +265,35 @@ export const NetherlandsMarketPage: React.FC = () => {
         </section>
 
         {/* 06. TYPOGRAPHIC STATEMENT: YOU DON'T NEED ANOTHER TOOL */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#38BDF8] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#0284C7] mb-4 font-mono font-bold">
               Diagnostic Reality
             </div>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-light tracking-tight text-white leading-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-light tracking-tight text-[#171717] leading-tight mb-4">
               You probably have enough software.
             </h2>
-            <p className="text-2xl sm:text-3xl text-[#9CA3AF] font-light mb-16">
+            <p className="text-2xl sm:text-3xl text-[#555555] font-light mb-16">
               The problem is what happens between it.
             </p>
 
             {/* Disconnected Nodes Diagram */}
-            <div className="p-8 border border-white/10 bg-white/[0.01] rounded-sm">
-              <div className="text-xs font-mono uppercase tracking-[0.2em] text-white/40 mb-6 flex justify-between">
+            <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm">
+              <div className="text-xs font-mono uppercase tracking-[0.2em] text-[#666666] mb-6 flex justify-between font-bold">
                 <span>FRAGMENTED APPLICATION LANDSCAPE</span>
-                <span className="text-[#EF4444]">THE GAPS ARE WHERE FRICTION LIVES</span>
+                <span className="text-[#DC2626]">THE GAPS ARE WHERE FRICTION LIVES</span>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-xs font-mono">
                 {['CRM', 'EMAIL', 'PROJECTS', 'FINANCE', 'TEAM CHATS', 'CUSTOMERS'].map((tool, idx) => (
-                  <div key={idx} className="p-4 border border-white/[0.08] bg-white/[0.02] text-center">
-                    <span className="text-white/80 block mb-1">{tool}</span>
-                    <span className="text-[10px] text-[#EF4444]">ISOLATED</span>
+                  <div key={idx} className="p-4 border border-[#E5E5E2] bg-white text-center">
+                    <span className="text-[#171717] font-bold block mb-1">{tool}</span>
+                    <span className="text-[10px] text-[#DC2626] font-medium">ISOLATED</span>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-white/[0.08] text-sm text-[#9CA3AF] font-light leading-relaxed">
+              <div className="mt-8 pt-6 border-t border-[#E5E5E2] text-sm text-[#555555] font-light leading-relaxed">
                 When tools operate in silos, people become the manual bridge: re-entering data, forwarding messages, chasing colleagues for project status, and hunting for files. That friction costs time, clarity and focus.
               </div>
             </div>
@@ -351,54 +351,54 @@ export const NetherlandsMarketPage: React.FC = () => {
         </section>
 
         {/* 08. THE BUSINESS JOURNEY: PERCEPTION → EXPERIENCE → OPERATION */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Connected Capabilities
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-8">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-8">
               Perception. Experience. Operation.
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               Mayaa doesn't treat branding, websites and software as three disconnected agency retainers. They are three stages of one continuous business journey.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-8 border border-white/10 bg-white/[0.02] flex flex-col justify-between">
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between">
                 <div>
-                  <div className="text-[10px] font-mono text-[#38BDF8] uppercase tracking-[0.2em] mb-2">01 · PERCEPTION</div>
-                  <h3 className="text-2xl font-light text-white mb-4">BRAND</h3>
-                  <p className="text-sm text-[#9CA3AF] font-light leading-relaxed mb-6">
+                  <div className="text-[10px] font-mono text-[#0284C7] uppercase tracking-[0.2em] mb-2 font-bold">01 · PERCEPTION</div>
+                  <h3 className="text-2xl font-light text-[#171717] mb-4">BRAND</h3>
+                  <p className="text-sm text-[#555555] font-light leading-relaxed mb-6">
                     Before someone works with you, they need to understand you. Good design removes cognitive effort and signals your true level of capability immediately.
                   </p>
                 </div>
-                <div className="pt-4 border-t border-white/[0.06] text-xs font-mono text-white/70">
+                <div className="pt-4 border-t border-[#E5E5E2] text-xs font-mono text-[#666666] font-medium">
                   CLARITY BEFORE DECORATION
                 </div>
               </div>
 
-              <div className="p-8 border border-white/10 bg-white/[0.02] flex flex-col justify-between">
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between">
                 <div>
-                  <div className="text-[10px] font-mono text-[#38BDF8] uppercase tracking-[0.2em] mb-2">02 · EXPERIENCE</div>
-                  <h3 className="text-2xl font-light text-white mb-4">DIGITAL</h3>
-                  <p className="text-sm text-[#9CA3AF] font-light leading-relaxed mb-6">
+                  <div className="text-[10px] font-mono text-[#0284C7] uppercase tracking-[0.2em] mb-2 font-bold">02 · EXPERIENCE</div>
+                  <h3 className="text-2xl font-light text-[#171717] mb-4">DIGITAL</h3>
+                  <p className="text-sm text-[#555555] font-light leading-relaxed mb-6">
                     When they discover you, the experience must make sense. Clear navigation, rapid page loads, and intuitive paths that make the next step completely obvious.
                   </p>
                 </div>
-                <div className="pt-4 border-t border-white/[0.06] text-xs font-mono text-white/70">
+                <div className="pt-4 border-t border-[#E5E5E2] text-xs font-mono text-[#666666] font-medium">
                   MAKE THE NEXT STEP OBVIOUS
                 </div>
               </div>
 
-              <div className="p-8 border border-white/10 bg-white/[0.02] flex flex-col justify-between">
+              <div className="p-8 border border-[#E5E5E2] bg-[#FAFAF9] flex flex-col justify-between">
                 <div>
-                  <div className="text-[10px] font-mono text-[#38BDF8] uppercase tracking-[0.2em] mb-2">03 · OPERATION</div>
-                  <h3 className="text-2xl font-light text-white mb-4">SYSTEM</h3>
-                  <p className="text-sm text-[#9CA3AF] font-light leading-relaxed mb-6">
+                  <div className="text-[10px] font-mono text-[#0284C7] uppercase tracking-[0.2em] mb-2 font-bold">03 · OPERATION</div>
+                  <h3 className="text-2xl font-light text-[#171717] mb-4">SYSTEM</h3>
+                  <p className="text-sm text-[#555555] font-light leading-relaxed mb-6">
                     Once they become a client, the business needs to deliver consistently. Bespoke workflows that keep leads, projects, teams and management in sync.
                   </p>
                 </div>
-                <div className="pt-4 border-t border-white/[0.06] text-xs font-mono text-white/70">
+                <div className="pt-4 border-t border-[#E5E5E2] text-xs font-mono text-[#666666] font-medium">
                   CONNECT WHAT WORKS
                 </div>
               </div>
@@ -442,16 +442,16 @@ export const NetherlandsMarketPage: React.FC = () => {
         </section>
 
         {/* 11. THE SYSTEM MAP: WHAT IF THE BUSINESS WORKED AS ONE SYSTEM? */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-6xl mx-auto">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="text-xs uppercase tracking-[0.25em] text-[#38BDF8] mb-3 font-mono">
+              <div className="text-xs uppercase tracking-[0.25em] text-[#0284C7] mb-3 font-mono font-bold">
                 Interactive Architecture
               </div>
-              <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white mb-4">
+              <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] mb-4">
                 What if the business worked as one system?
               </h2>
-              <p className="text-base text-[#9CA3AF] font-light">
+              <p className="text-base text-[#555555] font-light">
                 Click any operational node to inspect how it connects into the wider workflow.
               </p>
             </div>
@@ -464,11 +464,11 @@ export const NetherlandsMarketPage: React.FC = () => {
                   onClick={() => setActiveSystemNode(node.id)}
                   className={`p-4 border text-left transition-all rounded-sm flex flex-col justify-between h-28 ${
                     activeSystemNode === node.id 
-                      ? 'border-[#38BDF8] bg-[#38BDF8]/10 text-white' 
-                      : 'border-white/10 bg-white/[0.02] text-[#9CA3AF] hover:border-white/30'
+                      ? 'border-[#0284C7] bg-[#0284C7]/10 text-[#171717] font-bold' 
+                      : 'border-[#E5E5E2] bg-[#FAFAF9] text-[#555555] hover:border-[#CCCCCC]'
                   }`}
                 >
-                  <div className="text-[10px] font-mono opacity-60">{node.status}</div>
+                  <div className="text-[10px] font-mono opacity-80">{node.status}</div>
                   <div className="text-xs font-mono font-medium tracking-wide">{node.title}</div>
                 </button>
               ))}
@@ -476,19 +476,19 @@ export const NetherlandsMarketPage: React.FC = () => {
 
             {/* Node Inspection Detail Card */}
             {systemNodes.find(n => n.id === activeSystemNode) && (
-              <div className="p-8 border border-[#38BDF8]/30 bg-[#38BDF8]/[0.02] rounded-sm max-w-3xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+              <div className="p-8 border border-[#0284C7]/30 bg-[#FAFAF9] rounded-sm max-w-3xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
                 <div>
-                  <div className="text-xs font-mono text-[#38BDF8] uppercase tracking-widest mb-1">
+                  <div className="text-xs font-mono text-[#0284C7] uppercase tracking-widest mb-1 font-bold">
                     INSPECTING: {activeSystemNode}
                   </div>
-                  <h3 className="text-xl font-light text-white mb-2">
+                  <h3 className="text-xl font-light text-[#171717] mb-2">
                     {systemNodes.find(n => n.id === activeSystemNode)?.title}
                   </h3>
-                  <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                  <p className="text-sm text-[#555555] font-light leading-relaxed">
                     {systemNodes.find(n => n.id === activeSystemNode)?.desc}
                   </p>
                 </div>
-                <div className="px-4 py-2 border border-[#38BDF8]/40 text-[#38BDF8] font-mono text-xs whitespace-nowrap flex-shrink-0">
+                <div className="px-4 py-2 border border-[#0284C7]/40 text-[#0284C7] font-mono text-xs whitespace-nowrap flex-shrink-0 font-bold">
                   STATUS: {systemNodes.find(n => n.id === activeSystemNode)?.status}
                 </div>
               </div>
@@ -539,39 +539,39 @@ export const NetherlandsMarketPage: React.FC = () => {
         </section>
 
         {/* 14 & 15. INNOVATION WITHOUT NOISE & RESPONSIBILITY */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#666666] mb-4 font-mono font-bold">
               Pragmatic Technology
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Innovation should earn its place.
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               No technology for show. We only deploy AI, automation or custom data models when they solve a genuine operational bottleneck and make life easier for the team.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-[#38BDF8] mb-2">USEFUL AUTOMATION</div>
-                <h3 className="text-base font-medium text-white mb-2">Automate the Repetitive</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#0284C7] mb-2 font-bold">USEFUL AUTOMATION</div>
+                <h3 className="text-base font-medium text-[#171717] mb-2">Automate the Repetitive</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Lead routing, follow-up reminders and document notifications handled quietly by the system, freeing your team for judgment and relationships.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-[#38BDF8] mb-2">OPERATIONAL LEANLINESS</div>
-                <h3 className="text-base font-medium text-white mb-2">Efficiency is Responsibility</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#0284C7] mb-2 font-bold">OPERATIONAL LEANLINESS</div>
+                <h3 className="text-base font-medium text-[#171717] mb-2">Efficiency is Responsibility</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Removing duplicated manual admin, wasted compute on unused SaaS seats, and fragile multi-file copies creates sustainable operations.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-[#38BDF8] mb-2">GOVERNANCE & DATA</div>
-                <h3 className="text-base font-medium text-white mb-2">Privacy & Access Control</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9]">
+                <div className="text-xs font-mono text-[#0284C7] mb-2 font-bold">GOVERNANCE & DATA</div>
+                <h3 className="text-base font-medium text-[#171717] mb-2">Privacy & Access Control</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Role-based visibility, permission tiers and secure authentication ensuring sensitive commercial calculations stay protected.
                 </p>
               </div>
@@ -617,15 +617,15 @@ export const NetherlandsMarketPage: React.FC = () => {
         </section>
 
         {/* 19. MANAGEMENT VISIBILITY: WHAT DO YOU NEED TO KNOW RIGHT NOW? */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#38BDF8] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#0284C7] mb-4 font-mono font-bold">
               Executive Pulse
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-4">
               What do you need to know right now?
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-12">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-12">
               A good system does not give management more information. It gives management the right information.
             </p>
 
@@ -638,8 +638,8 @@ export const NetherlandsMarketPage: React.FC = () => {
                     onClick={() => setActiveQuestion(idx)}
                     className={`w-full p-4 text-left border rounded-sm transition-all text-xs font-mono flex items-center justify-between ${
                       activeQuestion === idx 
-                        ? 'border-[#38BDF8] bg-[#38BDF8]/10 text-white' 
-                        : 'border-white/10 bg-white/[0.02] text-[#9CA3AF] hover:border-white/20'
+                        ? 'border-[#0284C7] bg-[#0284C7]/10 text-[#171717] font-bold' 
+                        : 'border-[#E5E5E2] bg-[#FAFAF9] text-[#555555] hover:border-[#CCCCCC]'
                     }`}
                   >
                     <span>{item.q}</span>
@@ -649,19 +649,19 @@ export const NetherlandsMarketPage: React.FC = () => {
               </div>
 
               {/* Answer Card */}
-              <div className="md:col-span-7 p-8 border border-white/20 bg-white/[0.03] rounded-sm min-h-[220px] flex flex-col justify-between">
+              <div className="md:col-span-7 p-8 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm min-h-[220px] flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-mono text-[#38BDF8] uppercase tracking-widest mb-2">
+                  <div className="text-xs font-mono text-[#0284C7] uppercase tracking-widest mb-2 font-bold">
                     {managementQuestions[activeQuestion].tag}
                   </div>
-                  <h3 className="text-xl font-light text-white mb-4">
+                  <h3 className="text-xl font-light text-[#171717] mb-4">
                     {managementQuestions[activeQuestion].q}
                   </h3>
-                  <p className="text-sm text-[#9CA3AF] font-light leading-relaxed">
+                  <p className="text-sm text-[#555555] font-light leading-relaxed">
                     {managementQuestions[activeQuestion].answer}
                   </p>
                 </div>
-                <div className="pt-4 border-t border-white/[0.08] text-xs font-mono text-white/50">
+                <div className="pt-4 border-t border-[#E5E5E2] text-xs font-mono text-[#666666]">
                   REAL-TIME EXECUTIVE VISIBILITY · ZERO MANUAL SPREADSHEETS
                 </div>
               </div>
@@ -700,40 +700,40 @@ export const NetherlandsMarketPage: React.FC = () => {
         </section>
 
         {/* BANGALORE DELIVERY MODEL FOR DUTCH ENTERPRISES */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#EA580C] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#EA580C] mb-4 font-mono font-bold">
               Delivery Model
             </div>
-            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
               Engineering anchored in Bangalore. <br />
-              <span className="text-[#9CA3AF]">Zero Dutch agency markups.</span>
+              <span className="text-[#666666]">Zero Dutch agency markups.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
               Mayaa operates from Bangalore, India, delivering high-calibre systems directly to Dutch enterprises. We provide transparent technical execution, principal-to-engineer communication, and complete European data sovereignty.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-[#EA580C] uppercase tracking-wider mb-2">01 · TIMEZONE OVERLAP</div>
-                <h3 className="text-lg font-normal text-white mb-2">CET / CEST Collaboration</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-lg shadow-sm">
+                <div className="text-xs font-mono text-[#EA580C] uppercase tracking-wider mb-2 font-bold">01 · TIMEZONE OVERLAP</div>
+                <h3 className="text-lg font-medium text-[#171717] mb-2">CET / CEST Collaboration</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   With only a 3.5 to 4.5-hour time difference, our working afternoons directly match Dutch mornings and core business hours for live standups, demos, and reviews.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-[#EA580C] uppercase tracking-wider mb-2">02 · DATA SOVEREIGNTY</div>
-                <h3 className="text-lg font-normal text-white mb-2">Client Cloud Tenancies</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-lg shadow-sm">
+                <div className="text-xs font-mono text-[#EA580C] uppercase tracking-wider mb-2 font-bold">02 · DATA SOVEREIGNTY</div>
+                <h3 className="text-lg font-medium text-[#171717] mb-2">Client Cloud Tenancies</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   All databases and applications reside on your own European infrastructure (AWS Frankfurt, Azure Amsterdam, Hetzner) complying fully with EU GDPR mandates.
                 </p>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/[0.02]">
-                <div className="text-xs font-mono text-[#EA580C] uppercase tracking-wider mb-2">03 · COMMERCIAL TERMS</div>
-                <h3 className="text-lg font-normal text-white mb-2">Milestone Billing in EUR</h3>
-                <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
+              <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-lg shadow-sm">
+                <div className="text-xs font-mono text-[#EA580C] uppercase tracking-wider mb-2 font-bold">03 · COMMERCIAL TERMS</div>
+                <h3 className="text-lg font-medium text-[#171717] mb-2">Milestone Billing in EUR</h3>
+                <p className="text-xs text-[#555555] font-light leading-relaxed">
                   Fixed-scope agreements invoiced in Euros (EUR) tied to concrete milestones. 100% intellectual property rights transfer to you upon completion.
                 </p>
               </div>
@@ -742,9 +742,9 @@ export const NetherlandsMarketPage: React.FC = () => {
         </section>
 
         {/* FREQUENTLY ASKED QUESTIONS */}
-        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08]">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
           <div className="max-w-4xl mx-auto">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#EA580C] mb-4 font-mono">
+            <div className="text-xs uppercase tracking-[0.25em] text-[#EA580C] mb-4 font-mono font-bold">
               Dutch Decision-Maker FAQs
             </div>
             <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-12">
@@ -787,15 +787,15 @@ export const NetherlandsMarketPage: React.FC = () => {
         </section>
 
         {/* 23. FINAL CTA: INTERACTIVE DECISION INTERFACE */}
-        <section className="py-28 md:py-36 px-6 md:px-12 relative overflow-hidden bg-[#0A0E15]">
+        <section className="py-28 md:py-36 px-6 md:px-12 relative overflow-hidden bg-white text-[#171717]">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#38BDF8] mb-4">
+            <div className="text-xs font-mono uppercase tracking-[0.25em] text-[#0284C7] mb-4 font-bold">
               Decision Interface
             </div>
-            <h2 className="text-4xl sm:text-6xl font-light tracking-tight text-white mb-6">
+            <h2 className="text-4xl sm:text-6xl font-light tracking-tight text-[#171717] mb-6">
               Where is the friction?
             </h2>
-            <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-xl mx-auto mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#555555] font-light max-w-xl mx-auto mb-10 leading-relaxed">
               Select the area where your business currently loses time, clarity or momentum:
             </p>
 
@@ -807,39 +807,39 @@ export const NetherlandsMarketPage: React.FC = () => {
                   onClick={() => setSelectedFriction(opt.id)}
                   className={`p-5 border rounded-sm transition-all text-xs font-mono flex items-start gap-3 ${
                     selectedFriction === opt.id 
-                      ? 'border-[#38BDF8] bg-[#38BDF8]/10 text-white' 
-                      : 'border-white/10 bg-white/[0.02] text-[#9CA3AF] hover:border-white/20'
+                      ? 'border-[#0284C7] bg-[#0284C7]/10 text-[#171717] font-bold' 
+                      : 'border-[#E5E5E2] bg-[#FAFAF9] text-[#555555] hover:border-[#CCCCCC]'
                   }`}
                 >
                   <div className={`w-4 h-4 rounded-full border mt-0.5 flex items-center justify-center flex-shrink-0 ${
-                    selectedFriction === opt.id ? 'border-[#38BDF8] bg-[#38BDF8]' : 'border-white/30'
+                    selectedFriction === opt.id ? 'border-[#0284C7] bg-[#0284C7]' : 'border-[#CCCCCC]'
                   }`}>
-                    {selectedFriction === opt.id && <Check className="w-2.5 h-2.5 text-black" />}
+                    {selectedFriction === opt.id && <Check className="w-2.5 h-2.5 text-white" />}
                   </div>
                   <div>
-                    <div className="text-white font-medium mb-1">{opt.label}</div>
-                    <div className="text-[11px] text-[#9CA3AF] font-light">{opt.desc}</div>
+                    <div className="text-[#171717] font-medium mb-1">{opt.label}</div>
+                    <div className="text-[11px] text-[#555555] font-light">{opt.desc}</div>
                   </div>
                 </button>
               ))}
             </div>
 
-            <div className="p-6 border border-white/10 bg-white/[0.02] rounded-sm max-w-xl mx-auto mb-8">
-              <div className="text-xs font-mono text-white/50 mb-1">SELECTED FOCUS: {selectedFriction}</div>
-              <div className="text-lg text-white font-normal">Let's look at it.</div>
+            <div className="p-6 border border-[#E5E5E2] bg-[#FAFAF9] rounded-sm max-w-xl mx-auto mb-8">
+              <div className="text-xs font-mono text-[#666666] mb-1">SELECTED FOCUS: {selectedFriction}</div>
+              <div className="text-lg text-[#171717] font-normal">Let's look at it.</div>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="w-full sm:w-auto px-10 py-4 bg-white text-black font-medium text-xs uppercase tracking-[0.2em] hover:bg-[#E5E7EB] transition-all duration-300 flex items-center justify-center gap-3 group"
+                className="w-full sm:w-auto px-10 py-4 bg-[#111111] text-white font-medium text-xs uppercase tracking-[0.2em] hover:bg-neutral-800 transition-all duration-300 flex items-center justify-center gap-3 group"
               >
                 <span>Start a Conversation</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link
                 to="/contact"
-                className="w-full sm:w-auto px-10 py-4 border border-white/20 text-white font-medium text-xs uppercase tracking-[0.2em] hover:bg-white/[0.05] hover:border-white/40 transition-all duration-300"
+                className="w-full sm:w-auto px-10 py-4 border border-[#CCCCCC] text-[#171717] font-medium text-xs uppercase tracking-[0.2em] hover:bg-[#F0F0EE] transition-all duration-300"
               >
                 Discuss Your Workflow
               </Link>

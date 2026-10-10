@@ -147,7 +147,7 @@ export const SwitzerlandMarketPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#0C0F14] text-[#F8F8F6] selection:bg-[#C2413A] selection:text-white font-sans antialiased">
       <SEO
-        title="The Standard Is in the Details | Mayaa Solutions Switzerland"
+        title="Switzerland | Strategic Brand, Digital Experiences & Business Systems | Mayaa Solutions"
         description="Brand design, high-clarity websites, and personalised business management systems for ambitious Swiss businesses. Built for precision engineering, life sciences, professional services, and architecture across Zurich, Basel, Geneva, and Lausanne."
         canonicalUrl="https://mayaasolutions.in/global-markets/switzerland"
         schema={[
@@ -255,48 +255,48 @@ export const SwitzerlandMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          02. THE DISCONNECT: MISALIGNMENT VS COHERENCE
+          02. THE DISCONNECT: MISALIGNMENT VS COHERENCE (WHITE)
       ========================================================================= */}
-      <section id="disconnect" className="py-24 md:py-32 border-b border-[#1E2532] bg-[#0E1218]">
+      <section id="disconnect" className="w-full bg-white text-[#171717] py-24 md:py-32 border-b border-[#E5E5E2]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-[#C2413A]">01 / COMMERCIAL ALIGNMENT</span>
-            <div className="h-[1px] w-12 bg-[#252E3E]" />
+            <span className="text-xs font-mono text-[#C2413A] font-semibold">01 / COMMERCIAL ALIGNMENT</span>
+            <div className="h-[1px] w-12 bg-[#E5E5E2]" />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div className="lg:col-span-6 space-y-6">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#FAF9F5] leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] leading-tight">
                 WHEN THE WORK IS RIGOROUS, <br />
-                <span className="text-[#E08A85]">THE EXPERIENCE SHOULD BE TOO.</span>
+                <span className="text-[#C2413A] font-normal">THE EXPERIENCE SHOULD BE TOO.</span>
               </h2>
 
-              <p className="text-base sm:text-lg text-[#B9BFCB] leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-[#555555] leading-relaxed font-light">
                 A company can deliver exceptional physical or professional work and still leave significant commercial conviction on the table.
               </p>
 
-              <div className="space-y-3 text-sm text-[#8E95A2]">
+              <div className="space-y-3 text-sm text-[#666666]">
                 <p>In practice, disconnects accumulate quietly:</p>
-                <ul className="space-y-2 border-l border-[#242D3C] pl-4 text-xs font-mono text-[#D8DAE0]">
+                <ul className="space-y-2 border-l border-[#E5E5E2] pl-4 text-xs font-mono text-[#333333]">
                   <li>• Specialist capabilities are obscured behind generic web copy.</li>
                   <li>• Outdated brand presentation fails to justify premium billing rates.</li>
                   <li>• High-value inquiries and project handoffs rely on manual email chasing.</li>
                 </ul>
               </div>
 
-              <p className="text-sm text-[#8E95A2] leading-relaxed">
-                When tools and touchpoints are fragmented, <span className="text-white font-medium">the experience of doing business becomes less coherent than the business itself.</span> Mayaa brings brand presentation, web architecture, and back-office pipelines into unified alignment.
+              <p className="text-sm text-[#555555] leading-relaxed">
+                When tools and touchpoints are fragmented, <span className="text-[#171717] font-medium">the experience of doing business becomes less coherent than the business itself.</span> Mayaa brings brand presentation, web architecture, and back-office pipelines into unified alignment.
               </p>
 
               {/* Toggle Controls */}
               <div className="pt-2">
-                <div className="inline-flex p-1 bg-[#141821] border border-[#232B39] rounded-md text-xs font-mono">
+                <div className="inline-flex p-1 bg-[#F0F0EE] border border-[#E5E5E2] rounded-md text-xs font-mono">
                   <button
                     onClick={() => setAlignmentState('disconnected')}
                     className={`px-4 py-2 rounded transition-all duration-200 cursor-pointer ${
                       alignmentState === 'disconnected'
-                        ? 'bg-[#2A1719] text-[#E58B88] border border-[#4E2428]'
-                        : 'text-[#8E95A2] hover:text-[#FAF9F5]'
+                        ? 'bg-[#FAFAF9] text-[#C2413A] border border-[#E5E5E2] font-semibold shadow-xs'
+                        : 'text-[#666666] hover:text-[#171717]'
                     }`}
                   >
                     THE DISCONNECT
@@ -305,8 +305,8 @@ export const SwitzerlandMarketPage: React.FC = () => {
                     onClick={() => setAlignmentState('aligned')}
                     className={`px-4 py-2 rounded transition-all duration-200 cursor-pointer ${
                       alignmentState === 'aligned'
-                        ? 'bg-[#18261F] text-[#71C7A5] border border-[#27483C]'
-                        : 'text-[#8E95A2] hover:text-[#FAF9F5]'
+                        ? 'bg-[#FAFAF9] text-[#0E9F6E] border border-[#E5E5E2] font-semibold shadow-xs'
+                        : 'text-[#666666] hover:text-[#171717]'
                     }`}
                   >
                     COHERENT ALIGNMENT
@@ -317,10 +317,10 @@ export const SwitzerlandMarketPage: React.FC = () => {
 
             {/* Diagnostic Card Container */}
             <div className="lg:col-span-6">
-              <div className="p-8 bg-[#11151D] border border-[#212836] rounded-xl shadow-xl space-y-5">
-                <div className="flex items-center justify-between text-xs font-mono pb-3 border-b border-[#1C2330]">
-                  <span className="text-[#8E95A2]">ARCHITECTURE STATE</span>
-                  <span className={alignmentState === 'aligned' ? 'text-[#71C7A5]' : 'text-[#E58B88]'}>
+              <div className="p-8 bg-[#FAFAF9] border border-[#E5E5E2] rounded-xl shadow-xs space-y-5">
+                <div className="flex items-center justify-between text-xs font-mono pb-3 border-b border-[#E5E5E2]">
+                  <span className="text-[#666666]">ARCHITECTURE STATE</span>
+                  <span className={alignmentState === 'aligned' ? 'text-[#0E9F6E] font-semibold' : 'text-[#C2413A] font-semibold'}>
                     {alignmentState === 'aligned' ? 'SYNCHRONIZED' : 'FRICTION DETECTED'}
                   </span>
                 </div>
@@ -334,17 +334,17 @@ export const SwitzerlandMarketPage: React.FC = () => {
                       exit={{ opacity: 0, y: -6 }}
                       className="space-y-3 text-xs"
                     >
-                      <div className="p-4 bg-[#181316] border border-[#3A1E24] rounded text-[#E58B88] space-y-1">
+                      <div className="p-4 bg-[#FDF2F2] border border-[#F8B4B4] rounded text-[#9B1C1C] space-y-1">
                         <div className="font-mono font-semibold">BRAND: Generic Market Presence</div>
-                        <p className="text-[11px] text-[#C48D93]">Looks like every other competitor, forcing unnecessary price negotiations.</p>
+                        <p className="text-[11px] text-[#C81E1E]">Looks like every other competitor, forcing unnecessary price negotiations.</p>
                       </div>
-                      <div className="p-4 bg-[#181316] border border-[#3A1E24] rounded text-[#E58B88] space-y-1">
+                      <div className="p-4 bg-[#FDF2F2] border border-[#F8B4B4] rounded text-[#9B1C1C] space-y-1">
                         <div className="font-mono font-semibold">WEBSITE: Dense & Opaque Hierarchy</div>
-                        <p className="text-[11px] text-[#C48D93]">International decision-makers struggle to locate technical specifications quickly.</p>
+                        <p className="text-[11px] text-[#C81E1E]">International decision-makers struggle to locate technical specifications quickly.</p>
                       </div>
-                      <div className="p-4 bg-[#181316] border border-[#3A1E24] rounded text-[#E58B88] space-y-1">
+                      <div className="p-4 bg-[#FDF2F2] border border-[#F8B4B4] rounded text-[#9B1C1C] space-y-1">
                         <div className="font-mono font-semibold">SYSTEMS: Fragmented SaaS & Spreadsheets</div>
-                        <p className="text-[11px] text-[#C48D93]">Leadership spends hours chasing teams for status updates and billing milestones.</p>
+                        <p className="text-[11px] text-[#C81E1E]">Leadership spends hours chasing teams for status updates and billing milestones.</p>
                       </div>
                     </motion.div>
                   ) : (
@@ -355,17 +355,17 @@ export const SwitzerlandMarketPage: React.FC = () => {
                       exit={{ opacity: 0, y: -6 }}
                       className="space-y-3 text-xs"
                     >
-                      <div className="p-4 bg-[#121E18] border border-[#214333] rounded text-[#71C7A5] space-y-1">
+                      <div className="p-4 bg-[#F3FAF7] border border-[#84E1BC] rounded text-[#0E9F6E] space-y-1">
                         <div className="font-mono font-semibold">01. BRAND: Authoritative Gravitas</div>
-                        <p className="text-[11px] text-[#A3C9B8]">Immediate recognition of capability, quality, and distinctive positioning.</p>
+                        <p className="text-[11px] text-[#046C4E]">Immediate recognition of capability, quality, and distinctive positioning.</p>
                       </div>
-                      <div className="p-4 bg-[#121E18] border border-[#214333] rounded text-[#71C7A5] space-y-1">
+                      <div className="p-4 bg-[#F3FAF7] border border-[#84E1BC] rounded text-[#0E9F6E] space-y-1">
                         <div className="font-mono font-semibold">02. WEBSITE: Frictionless Evaluation</div>
-                        <p className="text-[11px] text-[#A3C9B8]">Transparent capabilities, technical proof, and direct consultation pathways.</p>
+                        <p className="text-[11px] text-[#046C4E]">Transparent capabilities, technical proof, and direct consultation pathways.</p>
                       </div>
-                      <div className="p-4 bg-[#121E18] border border-[#214333] rounded text-[#71C7A5] space-y-1">
+                      <div className="p-4 bg-[#F3FAF7] border border-[#84E1BC] rounded text-[#0E9F6E] space-y-1">
                         <div className="font-mono font-semibold">03. SYSTEMS: Unified Operational Pipeline</div>
-                        <p className="text-[11px] text-[#A3C9B8]">Inquiries, milestones, and executive metrics united in one custom platform.</p>
+                        <p className="text-[11px] text-[#046C4E]">Inquiries, milestones, and executive metrics united in one custom platform.</p>
                       </div>
                     </motion.div>
                   )}
@@ -430,20 +430,20 @@ export const SwitzerlandMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          04. INTERACTIVE DIAGNOSTIC EXPLORER
+          04. INTERACTIVE DIAGNOSTIC EXPLORER (WHITE)
       ========================================================================= */}
-      <section className="py-24 md:py-32 border-b border-[#1E2532] bg-[#0E1218]">
+      <section className="w-full bg-white text-[#171717] py-24 md:py-32 border-b border-[#E5E5E2]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-[#C2413A]">03 / OPERATIONAL DIAGNOSTIC</span>
-            <div className="h-[1px] w-12 bg-[#252E3E]" />
+            <span className="text-xs font-mono text-[#C2413A] font-semibold">03 / OPERATIONAL DIAGNOSTIC</span>
+            <div className="h-[1px] w-12 bg-[#E5E5E2]" />
           </div>
 
           <div className="max-w-3xl mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#FAF9F5] leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] leading-tight mb-4">
               WHAT IS SLOWING YOUR BUSINESS DOWN?
             </h2>
-            <p className="text-[#8E95A2] text-sm sm:text-base leading-relaxed">
+            <p className="text-[#555555] text-sm sm:text-base leading-relaxed">
               Select an area of operational or commercial friction to review our diagnostic evaluation and recommended architecture.
             </p>
           </div>
@@ -457,8 +457,8 @@ export const SwitzerlandMarketPage: React.FC = () => {
                   onClick={() => setSelectedFrictionId(opt.id)}
                   className={`w-full text-left p-4 rounded-lg text-xs font-mono transition-all cursor-pointer ${
                     selectedFrictionId === opt.id
-                      ? 'bg-[#181E29] text-[#FAF9F5] border border-[#C2413A] shadow-md'
-                      : 'bg-[#11151D] text-[#8E95A2] border border-[#1F2634] hover:text-[#FAF9F5]'
+                      ? 'bg-[#F0F0EE] text-[#171717] border border-[#C2413A] shadow-xs font-semibold'
+                      : 'bg-[#FAFAF9] text-[#555555] border border-[#E5E5E2] hover:text-[#171717]'
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -470,24 +470,24 @@ export const SwitzerlandMarketPage: React.FC = () => {
             </div>
 
             {/* Diagnostic advice card (7 cols) */}
-            <div className="lg:col-span-7 p-8 bg-[#11151D] border border-[#212836] rounded-xl space-y-6">
-              <div className="flex items-center justify-between text-xs font-mono pb-3 border-b border-[#1C2330]">
-                <span className="text-[#E08A85] font-semibold">{activeFriction.capability}</span>
-                <span className="text-[#8E95A2]">DIAGNOSTIC ADVICE</span>
+            <div className="lg:col-span-7 p-8 bg-[#FAFAF9] border border-[#E5E5E2] rounded-xl space-y-6">
+              <div className="flex items-center justify-between text-xs font-mono pb-3 border-b border-[#E5E5E2]">
+                <span className="text-[#C2413A] font-semibold">{activeFriction.capability}</span>
+                <span className="text-[#666666]">DIAGNOSTIC ADVICE</span>
               </div>
 
-              <h3 className="text-xl font-medium text-white tracking-tight">
+              <h3 className="text-xl font-medium text-[#171717] tracking-tight">
                 {activeFriction.diagnosis}
               </h3>
 
-              <p className="text-sm text-[#B9BFCB] leading-relaxed font-light">
+              <p className="text-sm text-[#555555] leading-relaxed font-light">
                 {activeFriction.advice}
               </p>
 
               <div className="pt-4 flex items-center justify-between">
                 <Link
                   to={activeFriction.link}
-                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-white hover:text-[#E08A85] transition-colors"
+                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#171717] hover:text-[#C2413A] transition-colors"
                 >
                   <span>Explore this capability</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -495,7 +495,7 @@ export const SwitzerlandMarketPage: React.FC = () => {
 
                 <Link
                   to="/contact"
-                  className="px-5 py-2.5 bg-[#FAF9F5] text-[#0C0F14] text-xs font-mono uppercase tracking-wider rounded font-medium hover:bg-[#EAE8E1] transition-all"
+                  className="px-5 py-2.5 bg-[#111111] text-white text-xs font-mono uppercase tracking-wider rounded font-medium hover:bg-neutral-800 transition-all"
                 >
                   Discuss Mandate
                 </Link>
@@ -561,15 +561,15 @@ export const SwitzerlandMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          06. SWISS BUYER FAQS
+          06. SWISS BUYER FAQS (WHITE)
       ========================================================================= */}
-      <section className="py-24 md:py-32 border-b border-[#1E2532] bg-[#0E1218]">
+      <section className="w-full bg-white text-[#171717] py-24 md:py-32 border-b border-[#E5E5E2]">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#C2413A] block mb-3">
+            <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#C2413A] block mb-3 font-semibold">
               Frequently Asked Questions
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#171717] tracking-tight leading-tight">
               Direct answers for Swiss decision-makers.
             </h2>
           </div>
@@ -580,19 +580,19 @@ export const SwitzerlandMarketPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="rounded-xl bg-[#11151D] border border-[#1F2634] overflow-hidden transition-colors"
+                  className="rounded-xl bg-[#FAFAF9] border border-[#E5E5E2] overflow-hidden transition-colors"
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
                     className="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer"
                     aria-expanded={isOpen}
                   >
-                    <span className="text-sm sm:text-base font-medium text-white tracking-tight">
+                    <span className="text-sm sm:text-base font-medium text-[#171717] tracking-tight">
                       {faq.question}
                     </span>
                     <ChevronDown
-                      className={`w-4 h-4 text-[#8E95A2] shrink-0 transition-transform duration-300 ${
-                        isOpen ? 'rotate-180 text-white' : ''
+                      className={`w-4 h-4 text-[#666666] shrink-0 transition-transform duration-300 ${
+                        isOpen ? 'rotate-180 text-[#171717]' : ''
                       }`}
                     />
                   </button>
@@ -604,7 +604,7 @@ export const SwitzerlandMarketPage: React.FC = () => {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <div className="px-6 pb-6 pt-0 text-xs sm:text-sm text-[#8E95A2] leading-relaxed border-t border-[#1C2330]">
+                        <div className="px-6 pb-6 pt-0 text-xs sm:text-sm text-[#555555] leading-relaxed border-t border-[#E5E5E2]">
                           <p className="pt-4">{faq.answer}</p>
                         </div>
                       </motion.div>

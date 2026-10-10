@@ -117,7 +117,7 @@ export const PaymentSuccessPage: React.FC = () => {
               </div>
               <p className="text-xs text-red-600 font-medium">{error}</p>
               <p className="text-[11px] text-studio-400">
-                If you completed payment, please email us at <a href="mailto:contact@mayaasolutions.com" className="text-studio-100 font-bold underline">contact@mayaasolutions.com</a> with your transaction reference.
+                If you completed payment, please email us at <a href="mailto:contact@mayaasolutions.in" className="text-studio-100 font-bold underline">contact@mayaasolutions.in</a> with your transaction reference.
               </p>
             </div>
           ) : (
