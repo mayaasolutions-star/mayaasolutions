@@ -32,9 +32,9 @@ interface FAQItem {
 
 const USA_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for US companies from Bangalore without an on-the-ground US office?',
+    question: 'How does Mayaa deliver for US companies from India without an on-the-ground US office?',
     answer:
-      'We work directly with US founders, managing directors, and operations executives through structured US morning overlap windows (covering EST and PST working hours). Daily work is coordinated directly through dedicated Slack/Teams channels, interactive Figma boards, and weekly recorded sprint walkthroughs in fluent American English. We do not manufacture claims of physical offices in Manhattan or Silicon Valley where we do not have them. By anchoring senior engineering at our Bangalore headquarters, we provide direct principal-to-engineer communication with exceptional velocity, architectural rigor, and without US agency markups.',
+      'We work directly with US founders, managing directors, and operations executives through structured US morning overlap windows (covering EST and PST working hours). Daily work is coordinated directly through dedicated Slack/Teams channels, interactive Figma boards, and weekly recorded sprint walkthroughs in fluent American English. We do not manufacture claims of physical offices in Manhattan or Silicon Valley where we do not have them. By anchoring senior engineering at our India headquarters, we provide direct principal-to-engineer communication with exceptional velocity, architectural rigor, and without US agency markups.',
   },
   {
     question: 'How do you handle US data privacy, CCPA, and cloud data sovereignty?',
@@ -814,18 +814,18 @@ export const UsaMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* BANGALORE DELIVERY MODEL FOR US ENTERPRISES */}
+        {/* DELIVERY MODEL FOR */}
         <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
             <div className="text-xs uppercase tracking-[0.25em] text-[#2563EB] mb-4 font-mono font-semibold">
               Engineering Delivery
             </div>
             <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
-              Engineering anchored in Bangalore. <br />
+              Engineering built around clear execution. <br />
               <span className="text-[#666666]">Zero US agency markups.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
-              Mayaa delivers brand systems, conversion-driven websites, and bespoke business management systems directly from Bangalore, India. We offer direct engineer access, high velocity, and full US cloud sovereignty.
+              Mayaa delivers brand systems, conversion-driven websites, and bespoke business management systems directly from India. We offer direct engineer access, high velocity, and full US cloud sovereignty.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

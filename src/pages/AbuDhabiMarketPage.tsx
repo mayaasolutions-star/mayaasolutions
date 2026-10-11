@@ -33,9 +33,9 @@ interface FAQItem {
 
 const ABU_DHABI_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Abu Dhabi organisations from Bangalore without an on-the-ground local office?',
+    question: 'How does Mayaa deliver for Abu Dhabi organisations from India without an on-the-ground local office?',
     answer:
-      'We work directly with Abu Dhabi managing directors, partners, and operational leaders through scheduled Gulf Standard Time (GST) collaboration windows, clear technical documentation, and milestone reviews. With only a 1.5-hour timezone difference between Abu Dhabi (UTC+4) and our Bangalore technology studio (UTC+5:30), our teams share continuous working-day overlap. We do not claim local Abu Dhabi offices where we do not have them. By concentrating our senior systems architects and engineers in Bangalore, we provide direct principal access with institutional rigor and zero inflated agency overhead.',
+      'We work directly with Abu Dhabi managing directors, partners, and operational leaders through scheduled Gulf Standard Time (GST) collaboration windows, clear technical documentation, and milestone reviews. With only a 1.5-hour timezone difference between Abu Dhabi (UTC+4) and our India technology studio (UTC+5:30), our teams share continuous working-day overlap. We do not claim local Abu Dhabi offices where we do not have them. By concentrating our senior systems architects and engineers in India, we provide direct principal access with institutional rigor and zero inflated agency overhead.',
   },
   {
     question: 'How do you handle confidentiality, role-based governance, and data sovereignty for Abu Dhabi enterprises?',
@@ -477,18 +477,18 @@ export const AbuDhabiMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 6. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL */}
+        {/* 6. ENGINEERING ENGINE & DELIVERY MODEL */}
         <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto space-y-12">
             <div className="text-xs uppercase tracking-[0.25em] text-[#666666] font-mono">
               Delivery Architecture
             </div>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
-              Bangalore engineering depth. <br />
+              Senior engineering depth. <br />
               <span className="text-[#555555] italic">Abu Dhabi institutional standards.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed">
-              We deliver for Abu Dhabi organisations directly from our technology studio in Bangalore, India. We do not manufacture claims of physical branch offices where we do not have them. Instead, we invest in principal-level engineering, scheduled timezone alignment, and complete data sovereignty.
+              We deliver for Abu Dhabi organisations directly from our technology studio in India. We do not manufacture claims of physical branch offices where we do not have them. Instead, we invest in principal-level engineering, scheduled timezone alignment, and complete data sovereignty.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -496,7 +496,7 @@ export const AbuDhabiMarketPage: React.FC = () => {
                 <Clock className="w-5 h-5 text-[#171717] mb-4" />
                 <h3 className="text-sm font-medium text-[#171717] mb-2">GST Timezone Alignment</h3>
                 <p className="text-xs text-[#555555] font-light leading-relaxed">
-                  Only 1.5 hours difference between Abu Dhabi (UTC+4) and Bangalore (UTC+5:30). Full daily working-hour overlap for sprint reviews and architectural sign-offs.
+                  Only 1.5 hours difference between Abu Dhabi (UTC+4) and our India studio (UTC+5:30). Full daily working-hour overlap for sprint reviews and architectural sign-offs.
                 </p>
               </div>
 

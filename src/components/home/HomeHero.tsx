@@ -96,7 +96,7 @@ export const HomeHero: React.FC = () => {
           className="mt-14 sm:mt-16 pt-8 border-t border-neutral-900/80 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs font-mono text-neutral-500 uppercase tracking-widest"
         >
           <div className="flex items-center gap-2">
-            <span className="text-neutral-400">Bangalore, India HQ</span>
+            <span className="text-neutral-400">India HQ</span>
           </div>
           <span className="hidden sm:inline text-neutral-800">•</span>
           <div className="flex items-center gap-2">

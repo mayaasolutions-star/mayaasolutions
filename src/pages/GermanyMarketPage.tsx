@@ -34,9 +34,9 @@ interface FAQItem {
 
 const GERMANY_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for German Mittelstand businesses from Bangalore without a local branch office?',
+    question: 'How does Mayaa deliver for German Mittelstand businesses from India without a local branch office?',
     answer:
-      'We work directly with German Managing Directors (Geschäftsführer), technical heads, and operations leaders through scheduled Central European Time (CET/CEST) overlap, rigorous technical documentation, and clear asynchronous sprint reviews. We do not manufacture claims of German branch offices where we do not have them. By anchoring senior engineering in our Bangalore technology hub, we offer direct principal-to-engineer communication with exceptional precision and without inflated agency overhead.',
+      'We work directly with German Managing Directors (Geschäftsführer), technical heads, and operations leaders through scheduled Central European Time (CET/CEST) overlap, rigorous technical documentation, and clear asynchronous sprint reviews. We do not manufacture claims of German branch offices where we do not have them. By anchoring senior engineering in our India technology hub, we offer direct principal-to-engineer communication with exceptional precision and without inflated agency overhead.',
   },
   {
     question: 'How do you handle data protection, GDPR (DSGVO), and data sovereignty for German companies?',
@@ -689,18 +689,18 @@ export const GermanyMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 11. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL */}
+        {/* 11. ENGINEERING ENGINE & DELIVERY MODEL */}
         <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08]">
           <div className="max-w-5xl mx-auto">
             <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] mb-4 font-mono">
               Delivery Architecture
             </div>
             <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
-              Bangalore engineering depth. <br />
+              Senior engineering depth. <br />
               <span className="text-[#9CA3AF]">German operational discipline.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
-              We deliver for German enterprises directly from our technology studio in Bangalore, India. We do not pretend to maintain costly local German agency offices. Instead, we invest in senior engineering capability, transparent communication, and complete infrastructure sovereignty.
+              We deliver for German enterprises directly from our technology studio in India. We do not pretend to maintain costly local German agency offices. Instead, we invest in senior engineering capability, transparent communication, and complete infrastructure sovereignty.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -23,9 +23,9 @@ interface FAQItem {
 
 const PARIS_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Parisian ateliers, luxury brands, and practices from Bangalore without an office in Paris?',
+    question: 'How does Mayaa deliver for Parisian ateliers, luxury brands, and practices from India without an office in Paris?',
     answer:
-      'We work directly with Parisian directeurs généraux, artistic directors, and studio heads through structured CET/CEST working hours (with only a 3.5 to 4.5-hour timezone difference). Communications occur in fluent English via dedicated Slack/Teams channels, interactive Figma canvases, and recorded sprint walkthroughs. We do not manufacture claims of physical offices on Rue du Faubourg Saint-Honoré or Place Vendôme where we do not have them. By anchoring technical engineering at our Bangalore headquarters, we provide direct principal-to-engineer collaboration with exceptional craft, rigor, and without Parisian agency fee escalation.',
+      'We work directly with Parisian directeurs généraux, artistic directors, and studio heads through structured CET/CEST working hours (with only a 3.5 to 4.5-hour timezone difference). Communications occur in fluent English via dedicated Slack/Teams channels, interactive Figma canvases, and recorded sprint walkthroughs. We do not manufacture claims of physical offices on Rue du Faubourg Saint-Honoré or Place Vendôme where we do not have them. By anchoring technical engineering at our India headquarters, we provide direct principal-to-engineer collaboration with exceptional craft, rigor, and without Parisian agency fee escalation.',
   },
   {
     question: 'How do you handle French and EU data privacy, GDPR, and hosting sovereignty?',
@@ -654,8 +654,7 @@ export const ParisMarketPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            08. BANGALORE DELIVERY MODEL FOR PARIS PRACTICES
-        ================================================== */}
+            08. DELIVERY MODEL FOR ================================================== */}
         <section className="py-24 sm:py-32 border-t border-neutral-900 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto">
           <div className="space-y-12">
             <div className="max-w-3xl space-y-4">
@@ -663,11 +662,11 @@ export const ParisMarketPage: React.FC = () => {
                 DELIVERY ARCHITECTURE
               </span>
               <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.02]">
-                BANGALORE ENGINEERING. <br />
+                SENIOR ENGINEERING. <br />
                 <span className="text-[#8E8E8A]">PARISIAN AESTHETIC INTEGRITY.</span>
               </h2>
               <p className="text-sm sm:text-base text-neutral-300 font-normal leading-relaxed">
-                Mayaa delivers high-standard brand design, digital experiences, and custom management systems directly from Bangalore, India. We offer direct engineer access, high design discipline, and total European data compliance without agency escalation.
+                Mayaa delivers high-standard brand design, digital experiences, and custom management systems directly from India. We offer direct engineer access, high design discipline, and total European data compliance without agency escalation.
               </p>
             </div>
 

@@ -30,12 +30,12 @@ const MARKETS_LIST: MarketCardItem[] = [
     description: 'Distinctive brand building, professional digital flagships, and custom business management software.',
   },
   {
-    id: 'dubai',
-    slug: 'dubai',
-    name: 'Dubai',
+    id: 'uae',
+    slug: 'uae',
+    name: 'UAE',
     country: 'United Arab Emirates',
     flag: '/flags/ae.svg',
-    description: 'Brand strategy, digital flagships, and operational management systems for high-growth enterprises.',
+    description: 'Strategic brand building, digital flagships, and operational management systems across Dubai, Abu Dhabi, and the Emirates.',
   },
   {
     id: 'usa',
@@ -108,14 +108,6 @@ const MARKETS_LIST: MarketCardItem[] = [
     country: 'Denmark',
     flag: '/flags/dk.svg',
     description: 'Minimalist digital aesthetics, clear brand communication, and unbloated software workflows.',
-  },
-  {
-    id: 'abu-dhabi',
-    slug: 'abu-dhabi',
-    name: 'Abu Dhabi',
-    country: 'United Arab Emirates',
-    flag: '/flags/ae.svg',
-    description: 'Institutional brand authority, secure web experiences, and disciplined operational governance platforms.',
   },
   {
     id: 'sweden',

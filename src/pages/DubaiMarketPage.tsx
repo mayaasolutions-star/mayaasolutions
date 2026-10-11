@@ -33,16 +33,16 @@ interface FAQItem {
   answer: string;
 }
 
-const DUBAI_FAQS: FAQItem[] = [
+const UAE_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Dubai businesses from Bangalore without an on-the-ground local office?',
+    question: 'How does Mayaa deliver for UAE businesses from India without an on-the-ground local office?',
     answer:
-      'We collaborate directly with Dubai managing directors, business owners, and operations leads via scheduled Gulf Standard Time (GST) overlap, asynchronous video reviews, and structured milestones. With only a 1.5-hour timezone difference between Dubai (UTC+4) and our Bangalore technology studio (UTC+5:30), our working days align almost completely. We do not claim physical offices in Business Bay or DIFC where we do not have them. By anchoring senior engineering in Bangalore, we provide direct principal-to-engineer communication with exceptional speed and zero inflated local agency overhead.',
+      'We collaborate directly with UAE managing directors, business owners, and operations leads across Dubai, Abu Dhabi, and the wider Emirates via scheduled Gulf Standard Time (GST) overlap, asynchronous video reviews, and structured milestones. With only a 1.5-hour timezone difference between the UAE (UTC+4) and our India technology studio (UTC+5:30), our working days align almost completely. We do not claim physical branch offices where we do not have them. By anchoring senior engineering in India, we provide direct principal-to-engineer communication with exceptional speed and zero inflated local agency overhead.',
   },
   {
     question: 'Can your business systems integrate with WhatsApp Business and our current workflow?',
     answer:
-      'Yes. In Dubai, WhatsApp is the dominant commercial communication channel. We engineer tailored connectors using the official WhatsApp Business Cloud API to capture incoming inquiries, assign them to team members, trigger automated follow-up cadences, and log conversations directly into your centralized client workspace, eliminating lost messages and unassigned leads.',
+      'Yes. In the UAE, particularly in commercial hubs like Dubai and Abu Dhabi, WhatsApp is the dominant business communication channel. We engineer tailored connectors using the official WhatsApp Business Cloud API to capture incoming inquiries, assign them to team members, trigger automated follow-up cadences, and log conversations directly into your centralized client workspace, eliminating lost messages and unassigned leads.',
   },
   {
     question: 'How do you ensure data confidentiality and infrastructure security for UAE companies?',
@@ -50,13 +50,13 @@ const DUBAI_FAQS: FAQItem[] = [
       'All custom business management systems and client software are deployed directly on client-owned cloud infrastructure (such as AWS UAE / Bahrain, Microsoft Azure UAE Central, or client-specified private virtual servers). Mayaa does not retain, process, or monetize your company or client data. You retain 100% intellectual property ownership of all custom code and complete data sovereignty under binding non-disclosure agreements.',
   },
   {
-    question: 'How are commercial agreements and invoicing structured for Dubai businesses?',
+    question: 'How are commercial agreements and invoicing structured for UAE businesses?',
     answer:
       'We quote and invoice transparently in UAE Dirhams (AED) on fixed-scope, milestone-based agreements. Each development phase, from workflow mapping to production deployment, has defined acceptance criteria. Furthermore, our bespoke systems carry zero perpetual per-user software licensing fees, giving your business predictable capital expenditure.',
   },
 ];
 
-// Dubai Target Industry Workflows
+// UAE Target Industry Workflows
 const industryWorkflows = [
   {
     id: 'architecture-interiors',
@@ -189,7 +189,7 @@ export const DubaiMarketPage: React.FC = () => {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: DUBAI_FAQS.map((faq) => ({
+    mainEntity: UAE_FAQS.map((faq) => ({
       '@type': 'Question',
       name: faq.question,
       acceptedAnswer: {
@@ -202,16 +202,16 @@ export const DubaiMarketPage: React.FC = () => {
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Home', urlPath: '/' },
     { name: 'Global Markets', urlPath: '/global-markets' },
-    { name: 'Dubai', urlPath: '/global-markets/dubai' },
+    { name: 'UAE', urlPath: '/global-markets/uae' },
   ]);
 
   return (
     <>
       <SEO
-        title="Strategic Brand, Digital Experience & Business Systems for Dubai | Mayaa Solutions"
-        description="Built around how Dubai businesses actually operate. Strategic brand design, high-conversion digital experiences, and personalised business management systems for architecture, interior fit-out, construction, real estate, and B2B enterprises."
-        keywords="Dubai business management systems, Dubai business software, custom CRM Dubai, website design Dubai, branding Dubai, Dubai architecture software, Dubai fit out systems, Mayaa Solutions Dubai, custom business software Dubai"
-        canonicalUrl="https://mayaasolutions.in/global-markets/dubai"
+        title="Business Management Systems & Digital Solutions UAE | Mayaa Solutions"
+        description="Mayaa Solutions helps businesses across the UAE build stronger brands, high-clarity digital experiences, and custom business management systems. Serving companies in Dubai, Abu Dhabi, and across the Emirates."
+        keywords="Mayaa Solutions UAE, business management systems UAE, brand building agency UAE, website development UAE, digital solutions UAE, growth management UAE, business management systems Dubai, brand building agency Dubai, website development Dubai, digital solutions Dubai, business systems Dubai, custom CRM UAE"
+        canonicalUrl="https://mayaasolutions.in/global-markets/uae"
         ogImage="/images/uae-commercial-hero.jpg"
         schema={[breadcrumbSchema, faqSchema]}
       />
@@ -236,7 +236,7 @@ export const DubaiMarketPage: React.FC = () => {
                 <span className="text-white/20">/</span>
                 <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#D97706]/30 bg-[#1C160C] text-xs font-mono text-[#FCD34D] uppercase tracking-widest">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse" />
-                  Dubai · Commercial Velocity
+                  UAE · Commercial Velocity
                 </span>
               </div>
 
@@ -247,7 +247,7 @@ export const DubaiMarketPage: React.FC = () => {
                 className="text-4xl sm:text-6xl lg:text-7xl font-light text-white tracking-tight leading-[1.05]"
               >
                 Built around how your <br />
-                <span className="font-medium text-white">Dubai business</span> <br />
+                <span className="font-medium text-white">UAE business</span> <br />
                 <span className="italic text-[#FCD34D]">actually works.</span>
               </motion.h1>
 
@@ -257,7 +257,7 @@ export const DubaiMarketPage: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.15 }}
                 className="text-base sm:text-xl text-[#9CA3AF] font-light leading-relaxed max-w-2xl"
               >
-                From the first WhatsApp inquiry to the signed milestone handover, Mayaa builds the brand identity, high-conversion digital experiences, and bespoke management systems that give fast-moving Dubai enterprises operational control.
+                From the first inquiry to the signed milestone handover, Mayaa builds the brand identity, high-conversion digital experiences, and bespoke management systems that give fast-moving UAE enterprises—across Dubai, Abu Dhabi, and beyond—complete operational control.
               </motion.p>
 
               {/* Core Offerings Pill Tags */}
@@ -311,13 +311,13 @@ export const DubaiMarketPage: React.FC = () => {
               >
                 <img
                   src="/images/uae-commercial-hero.jpg"
-                  alt="Modern commercial and architectural landscape in Dubai"
+                  alt="Modern commercial and architectural landscape in the UAE"
                   className="w-full h-auto aspect-[4/3] object-cover grayscale contrast-125"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#07090E] via-transparent to-transparent opacity-90" />
                 <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between text-xs font-mono text-[#CBD5E1]">
                   <span className="uppercase tracking-wider text-white">COMMERCIAL VELOCITY</span>
-                  <span className="text-[#FCD34D]">DUBAI, UAE</span>
+                  <span className="text-[#FCD34D]">UAE · DUBAI & ABU DHABI</span>
                 </div>
               </motion.div>
             </div>
@@ -326,21 +326,21 @@ export const DubaiMarketPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            02. DUBAI-SPECIFIC REALITY: THE WHATSAPP DISCONNECT (WHITE)
+            02. UAE COMMERCIAL REALITY: THE WHATSAPP DISCONNECT (WHITE)
         ================================================== */}
         <section className="w-full bg-white text-[#171717] border-b border-[#E5E5E2] py-20 sm:py-28 lg:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-14 sm:space-y-16">
             
             <div className="max-w-3xl space-y-4">
               <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#B45309] font-medium block">
-                Dubai Commercial Reality
+                UAE Commercial Reality
               </span>
               <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
                 WhatsApp is convenient. <br />
                 <span className="text-[#555555] italic">It is not a business management system.</span>
               </h2>
               <p className="text-base sm:text-lg text-[#555555] font-light leading-relaxed">
-                In Dubai’s high-speed market, commercial conversations happen in seconds. But when deals scale, informal messaging without structured systems turns velocity into chaos.
+                Across the UAE's high-speed commercial landscape, client conversations happen in seconds. But when deals scale across Dubai, Abu Dhabi, and regional markets, informal messaging without structured systems turns velocity into operational bottlenecks.
               </p>
             </div>
 
@@ -393,10 +393,10 @@ export const DubaiMarketPage: React.FC = () => {
                   </div>
 
                   <p className="text-sm sm:text-base text-[#555555] leading-relaxed font-light">
-                    Scaling in Dubai should mean larger contracts and higher margins, not having leadership chase five people to find the status of one invoice or delivery milestone.
+                    Scaling across the UAE should mean larger contracts and higher margins, not having leadership chase five people to find the status of one invoice or delivery milestone.
                   </p>
                   <p className="text-sm sm:text-base text-[#555555] leading-relaxed font-light">
-                    Mayaa builds the bespoke operational layer: capturing incoming interest, coordinating team responsibilities, and giving owners continuous visibility.
+                    Mayaa builds the bespoke operational layer: capturing incoming interest, coordinating team responsibilities, and giving business leaders continuous visibility.
                   </p>
 
                   <div className="pt-6 border-t border-[#E5E5E2]">
@@ -444,7 +444,7 @@ export const DubaiMarketPage: React.FC = () => {
               <span className="text-[#9CA3AF] italic">management systems.</span>
             </h2>
             <p className="text-base sm:text-xl text-[#9CA3AF] font-light leading-relaxed pt-2">
-              Software built around the way your company actually works. Not generic off-the-shelf software with bloated subscription fees, but an owned operational foundation tailored for Dubai businesses managing multiple clients, teams, and high-value projects.
+              Software built around the way your company actually works. Not generic off-the-shelf software with bloated subscription fees, but an owned operational foundation tailored for UAE businesses managing multiple clients, teams, and high-value projects.
             </p>
           </div>
 
@@ -594,7 +594,7 @@ export const DubaiMarketPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            05. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL
+            05. ENGINEERING ENGINE & DELIVERY MODEL
         ================================================== */}
         <section className="py-24 sm:py-32 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto border-b border-white/[0.08]">
           <div className="max-w-5xl mx-auto space-y-12">
@@ -602,11 +602,11 @@ export const DubaiMarketPage: React.FC = () => {
               Delivery Architecture
             </div>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
-              Bangalore engineering depth. <br />
-              <span className="text-[#9CA3AF] italic">Dubai commercial velocity.</span>
+              Senior engineering depth. <br />
+              <span className="text-[#9CA3AF] italic">UAE commercial velocity.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed">
-              We deliver for Dubai enterprises directly from our technology studio in Bangalore, India. We do not pretend to maintain costly local offices in Business Bay or DIFC. Instead, we invest in senior engineering capability, immediate timezone alignment, and complete client cloud sovereignty.
+              We deliver for UAE enterprises directly from our technology studio in India. We do not pretend to maintain costly branch offices where we do not have them. Instead, we invest in senior engineering capability, immediate Gulf Standard Time alignment, and complete client cloud sovereignty.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -614,7 +614,7 @@ export const DubaiMarketPage: React.FC = () => {
                 <Clock className="w-5 h-5 text-[#F59E0B] mb-4" />
                 <h3 className="text-sm font-medium text-white mb-2">GST Timezone Alignment</h3>
                 <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
-                  Only 1.5 hours difference between Dubai (UTC+4) and Bangalore (UTC+5:30). Full daily working-hour overlap for sprint reviews and live collaboration.
+                  Only 1.5 hours difference between the UAE (UTC+4) and our India studio (UTC+5:30). Full daily working-hour overlap for sprint reviews and live collaboration.
                 </p>
               </div>
 
@@ -655,15 +655,15 @@ export const DubaiMarketPage: React.FC = () => {
                 Clarity & Due Diligence
               </div>
               <h2 className="text-3xl sm:text-5xl font-light text-[#171717] leading-tight mb-4">
-                Questions Dubai executives ask.
+                Questions UAE executives ask.
               </h2>
               <p className="text-base text-[#555555] font-light">
-                Straightforward answers regarding delivery model, WhatsApp integrations, data security, and commercial structure.
+                Straightforward answers regarding delivery model, WhatsApp integrations, data security, and commercial structure across the Emirates.
               </p>
             </div>
 
             <div className="space-y-4">
-              {DUBAI_FAQS.map((faq, idx) => (
+              {UAE_FAQS.map((faq, idx) => (
                 <div 
                   key={idx} 
                   className="border border-[#E5E5E2] bg-[#FAFAF9] overflow-hidden"
@@ -707,7 +707,7 @@ export const DubaiMarketPage: React.FC = () => {
         <section className="py-28 sm:py-36 px-6 md:px-12 lg:px-16 max-w-[1400px] mx-auto text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="inline-block px-3.5 py-1.5 bg-[#1C160C] border border-[#D97706]/30 text-xs font-mono text-[#FCD34D] uppercase tracking-widest">
-              Dubai Consultation
+              UAE Consultation
             </div>
 
             <h2 className="text-4xl sm:text-6xl md:text-7xl font-light text-white tracking-tight leading-[1.05]">
@@ -740,7 +740,7 @@ export const DubaiMarketPage: React.FC = () => {
             </div>
 
             <div className="pt-8 text-xs font-mono text-white/40 tracking-wider">
-              Serving enterprises across Downtown Dubai, Business Bay, DIFC, Dubai Marina, Al Quoz, and throughout the UAE.
+              Serving enterprises across Dubai, Abu Dhabi, and throughout the United Arab Emirates.
             </div>
           </div>
         </section>

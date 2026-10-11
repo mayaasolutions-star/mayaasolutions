@@ -34,9 +34,9 @@ interface FAQItem {
 
 const UK_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for UK businesses from Bangalore without an on-the-ground UK office?',
+    question: 'How does Mayaa deliver for UK businesses from India without an on-the-ground UK office?',
     answer:
-      'We collaborate directly with UK managing directors, partners, and operations heads through scheduled UK working-hour collaboration windows (GMT/BST), clear written specifications, and structured sprint reviews. With a manageable 4.5 to 5.5-hour timezone difference, our afternoon overlap covers UK mornings and core business hours seamlessly. We do not manufacture claims of physical offices in Mayfair or the City where we do not have them. By anchoring senior engineering in Bangalore, we provide direct principal-to-engineer communication with exceptional rigor and without London agency fee inflation.',
+      'We collaborate directly with UK managing directors, partners, and operations heads through scheduled UK working-hour collaboration windows (GMT/BST), clear written specifications, and structured sprint reviews. With a manageable 4.5 to 5.5-hour timezone difference, our afternoon overlap covers UK mornings and core business hours seamlessly. We do not manufacture claims of physical offices in Mayfair or the City where we do not have them. By anchoring senior engineering in India, we provide direct principal-to-engineer communication with exceptional rigor and without London agency fee inflation.',
   },
   {
     question: 'How do you handle data privacy, UK GDPR, and infrastructure sovereignty?',
@@ -366,18 +366,18 @@ export const UkMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 05. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL */}
+        {/* 05. ENGINEERING ENGINE & DELIVERY MODEL */}
         <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08]">
           <div className="max-w-5xl mx-auto space-y-12">
             <div className="text-xs uppercase tracking-[0.25em] text-[#9CA3AF] font-mono">
               Delivery Architecture
             </div>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
-              Bangalore engineering depth. <br />
+              Senior engineering depth. <br />
               <span className="text-[#9CA3AF] italic">British commercial standards.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed">
-              We deliver for UK enterprises directly from our technology studio in Bangalore, India. We do not pretend to hold expensive Mayfair offices. Instead, we invest in senior engineering talent, reliable working-hour overlap, and complete data sovereignty.
+              We deliver for UK enterprises directly from our technology studio in India. We do not pretend to hold expensive Mayfair offices. Instead, we invest in senior engineering talent, reliable working-hour overlap, and complete data sovereignty.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -385,7 +385,7 @@ export const UkMarketPage: React.FC = () => {
                 <Clock className="w-5 h-5 text-white mb-4" />
                 <h3 className="text-sm font-medium text-white mb-2">GMT / BST Overlap</h3>
                 <p className="text-xs text-[#9CA3AF] font-light leading-relaxed">
-                  Only 4.5 to 5.5 hours difference with Bangalore. Extensive daily working-hour overlap for standups, architectural reviews, and milestone sign-offs.
+                  Only 4.5 to 5.5 hours difference with India. Extensive daily working-hour overlap for standups, architectural reviews, and milestone sign-offs.
                 </p>
               </div>
 

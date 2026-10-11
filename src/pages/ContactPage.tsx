@@ -51,7 +51,7 @@ const MARKET_NAME_MAP: Record<string, string> = {
   'india': 'India',
   'dubai': 'UAE / Dubai',
   'uae': 'UAE / Dubai',
-  'abu-dhabi': 'Abu Dhabi',
+  'abu-dhabi': 'UAE / Dubai',
   'usa': 'United States',
   'us': 'United States',
   'uk': 'United Kingdom',
@@ -529,7 +529,6 @@ export const ContactPage: React.FC = () => {
                             <option value="United States">United States</option>
                             <option value="United Kingdom">United Kingdom</option>
                             <option value="UAE / Dubai">UAE / Dubai</option>
-                            <option value="Abu Dhabi">Abu Dhabi</option>
                             <option value="Saudi Arabia">Saudi Arabia</option>
                             <option value="Singapore">Singapore</option>
                             <option value="Australia">Australia</option>

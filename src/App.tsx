@@ -37,7 +37,6 @@ import { SingaporeMarketPage } from './pages/SingaporeMarketPage';
 import { GermanyMarketPage } from './pages/GermanyMarketPage';
 import { ParisMarketPage } from './pages/ParisMarketPage';
 import { SaudiArabiaMarketPage } from './pages/SaudiArabiaMarketPage';
-import { AbuDhabiMarketPage } from './pages/AbuDhabiMarketPage';
 import { NorwayMarketPage } from './pages/NorwayMarketPage';
 import { IrelandMarketPage } from './pages/IrelandMarketPage';
 import { AustriaMarketPage } from './pages/AustriaMarketPage';
@@ -121,8 +120,8 @@ const AppContent: React.FC<{
             <Route path="/global-markets" element={<GlobalMarketsPage />} />
             <Route path="/global-markets/india" element={<IndiaMarketPage />} />
             <Route path="/global-markets/bharat" element={<Navigate to="/global-markets/india" replace />} />
-            <Route path="/global-markets/dubai" element={<DubaiMarketPage />} />
-            <Route path="/global-markets/uae" element={<Navigate to="/global-markets/dubai" replace />} />
+            <Route path="/global-markets/uae" element={<DubaiMarketPage />} />
+            <Route path="/global-markets/dubai" element={<Navigate to="/global-markets/uae" replace />} />
             <Route path="/global-markets/usa" element={<UsaMarketPage />} />
             <Route path="/global-markets/australia" element={<AustraliaMarketPage />} />
             <Route path="/global-markets/uk" element={<UkMarketPage />} />
@@ -132,7 +131,7 @@ const AppContent: React.FC<{
             <Route path="/global-markets/netherlands" element={<NetherlandsMarketPage />} />
             <Route path="/global-markets/saudi-arabia" element={<SaudiArabiaMarketPage />} />
             <Route path="/global-markets/denmark" element={<DenmarkMarketPage />} />
-            <Route path="/global-markets/abu-dhabi" element={<AbuDhabiMarketPage />} />
+            <Route path="/global-markets/abu-dhabi" element={<Navigate to="/global-markets/uae" replace />} />
             <Route path="/global-markets/sweden" element={<SwedenMarketPage />} />
             <Route path="/global-markets/norway" element={<NorwayMarketPage />} />
             <Route path="/global-markets/switzerland" element={<SwitzerlandMarketPage />} />

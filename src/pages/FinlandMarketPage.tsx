@@ -29,9 +29,9 @@ interface FAQItem {
 
 const FINLAND_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver software and digital experiences for Finnish enterprises from Bangalore?',
+    question: 'How does Mayaa deliver software and digital experiences for Finnish enterprises from India?',
     answer:
-      'We collaborate directly with Finnish founders, technical leads, and operations managers through scheduled daily timezone overlap (EET/EEST), detailed written engineering specifications, and recorded code/design walkthroughs. We do not claim local Finnish satellite offices. Concentrating senior engineers and brand designers in our Bangalore studio allows us to deliver high-velocity, clean software without agency overhead.',
+      'We collaborate directly with Finnish founders, technical leads, and operations managers through scheduled daily timezone overlap (EET/EEST), detailed written engineering specifications, and recorded code/design walkthroughs. We do not claim local Finnish satellite offices. Concentrating senior engineers and brand designers in our India studio allows us to deliver high-velocity, clean software without agency overhead.',
   },
   {
     question: 'How do you avoid the typical bloat found in generic digital agency projects?',
@@ -194,7 +194,7 @@ export const FinlandMarketPage: React.FC = () => {
               </p>
 
               <p className="text-sm text-[#828B99] leading-relaxed max-w-lg font-normal">
-                Based in Bangalore, our engineering and design studio partners with Finnish companies to strip away digital clutter, articulate specialist value, and build tailored operating software without subscription bloat.
+                Based in India, our engineering and design studio partners with Finnish companies to strip away digital clutter, articulate specialist value, and build tailored operating software without subscription bloat.
               </p>
 
               {/* Action Buttons */}
@@ -487,7 +487,7 @@ export const FinlandMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          05. BANGALORE ENGINEERING ENGINE & DELIVERY
+          05. ENGINEERING ENGINE & DELIVERY
       ========================================================================= */}
       <section className="py-24 md:py-32 border-b border-[#1A222D]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -501,7 +501,7 @@ export const FinlandMarketPage: React.FC = () => {
               HONEST CROSS-BORDER COLLABORATION.
             </h2>
             <p className="text-[#828B99] text-sm sm:text-base leading-relaxed">
-              No middle-tier account managers. Finnish technical teams collaborate directly with senior engineers and designers in our Bangalore studio.
+              No middle-tier account managers. Finnish technical teams collaborate directly with senior engineers and designers in our India studio.
             </p>
           </div>
 

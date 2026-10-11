@@ -36,9 +36,9 @@ interface FAQItem {
 
 const BELGIUM_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Belgian organisations from Bangalore without a local Belgian branch office?',
+    question: 'How does Mayaa deliver for Belgian organisations from India without a local Belgian branch office?',
     answer:
-      'We work directly with Belgian managing directors, partners, and technical leads via scheduled Central European Time (CET/CEST) collaboration windows, clear written sprint specifications, and asynchronous video reviews. We do not claim local physical offices in Brussels or Antwerp where we do not have them. By concentrating our senior systems architects and engineers in Bangalore, we provide direct principal-to-engineer communication with exceptional agility and zero inflated agency overhead.',
+      'We work directly with Belgian managing directors, partners, and technical leads via scheduled Central European Time (CET/CEST) collaboration windows, clear written sprint specifications, and asynchronous video reviews. We do not claim local physical offices in Brussels or Antwerp where we do not have them. By concentrating our senior systems architects and engineers in India, we provide direct principal-to-engineer communication with exceptional agility and zero inflated agency overhead.',
   },
   {
     question: 'Can your business systems accommodate bilingual and cross-regional requirements (Dutch, French, English)?',
@@ -314,18 +314,18 @@ export const BelgiumMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 04. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL (WHITE) */}
+        {/* 04. ENGINEERING ENGINE & DELIVERY MODEL (WHITE) */}
         <section className="w-full bg-white text-[#171717] py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2]">
           <div className="max-w-5xl mx-auto space-y-12">
             <div className="text-xs uppercase tracking-[0.25em] text-[#666666] font-mono font-medium">
               Delivery Architecture
             </div>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
-              Bangalore engineering depth. <br />
+              Senior engineering depth. <br />
               <span className="text-[#555555] italic">Belgian European execution.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed">
-              We deliver for Belgian enterprises directly from our technology studio in Bangalore, India. We do not claim local physical offices in Brussels or Antwerp where we do not have them. Instead, we invest in principal-level engineering, full daily timezone overlap, and complete data sovereignty.
+              We deliver for Belgian enterprises directly from our technology studio in India. We do not claim local physical offices in Brussels or Antwerp where we do not have them. Instead, we invest in principal-level engineering, full daily timezone overlap, and complete data sovereignty.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

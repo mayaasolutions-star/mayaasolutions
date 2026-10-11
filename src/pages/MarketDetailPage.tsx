@@ -22,7 +22,6 @@ import { SingaporeMarketPage } from './SingaporeMarketPage';
 import { GermanyMarketPage } from './GermanyMarketPage';
 import { ParisMarketPage } from './ParisMarketPage';
 import { SaudiArabiaMarketPage } from './SaudiArabiaMarketPage';
-import { AbuDhabiMarketPage } from './AbuDhabiMarketPage';
 import { NorwayMarketPage } from './NorwayMarketPage';
 import { IrelandMarketPage } from './IrelandMarketPage';
 import { AustriaMarketPage } from './AustriaMarketPage';
@@ -43,8 +42,12 @@ export const MarketDetailPage: React.FC<MarketDetailPageProps> = ({ marketId }) 
   const { countrySlug } = useParams<{ countrySlug: string }>();
   const slug = (marketId || countrySlug || '').toLowerCase();
 
-  if (slug === 'dubai' || slug === 'uae') {
+  if (slug === 'uae' || slug === 'united-arab-emirates' || slug === 'united_arab_emirates') {
     return <DubaiMarketPage />;
+  }
+
+  if (slug === 'dubai') {
+    return <Navigate to="/global-markets/uae" replace />;
   }
 
   if (slug === 'usa' || slug === 'us' || slug === 'united-states' || slug === 'united_states') {
@@ -76,7 +79,7 @@ export const MarketDetailPage: React.FC<MarketDetailPageProps> = ({ marketId }) 
   }
 
   if (slug === 'abu-dhabi' || slug === 'abu_dhabi' || slug === 'abudhabi') {
-    return <AbuDhabiMarketPage />;
+    return <Navigate to="/global-markets/uae" replace />;
   }
 
   if (slug === 'norway' || slug === 'norge') {

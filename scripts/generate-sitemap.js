@@ -31,7 +31,7 @@ export const CANONICAL_ROUTES = [
   // Global Markets Hub & Country/City Specific Pages
   { path: 'global-markets', changefreq: 'weekly', priority: '0.9' },
   { path: 'global-markets/india', changefreq: 'monthly', priority: '0.85' },
-  { path: 'global-markets/dubai', changefreq: 'monthly', priority: '0.85' },
+  { path: 'global-markets/uae', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/usa', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/australia', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/uk', changefreq: 'monthly', priority: '0.85' },
@@ -41,7 +41,6 @@ export const CANONICAL_ROUTES = [
   { path: 'global-markets/netherlands', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/saudi-arabia', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/denmark', changefreq: 'monthly', priority: '0.85' },
-  { path: 'global-markets/abu-dhabi', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/sweden', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/norway', changefreq: 'monthly', priority: '0.85' },
   { path: 'global-markets/switzerland', changefreq: 'monthly', priority: '0.85' },

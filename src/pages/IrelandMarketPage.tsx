@@ -24,9 +24,9 @@ interface FAQItem {
 
 const IRELAND_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Irish businesses from Bangalore without an on-the-ground presence in Dublin or Cork?',
+    question: 'How does Mayaa deliver for Irish businesses from India without an on-the-ground presence in Dublin or Cork?',
     answer:
-      'We work directly with Irish managing directors, operations partners, and commercial leads through convenient GMT/IST overlapping windows (only a 4.5 to 5.5-hour timezone difference). Live sprint demos and planning sessions occur during Irish mornings and core working hours, complemented by direct Slack/Teams access and collaborative Figma boards. We do not manufacture claims of physical offices on Silicon Docks or Grand Canal Square where we do not have them. By anchoring technical engineering at our Bangalore headquarters, we provide direct principal-to-engineer communication with exceptional rigor and without Dublin agency price premiums.',
+      'We work directly with Irish managing directors, operations partners, and commercial leads through convenient GMT/IST overlapping windows (only a 4.5 to 5.5-hour timezone difference). Live sprint demos and planning sessions occur during Irish mornings and core working hours, complemented by direct Slack/Teams access and collaborative Figma boards. We do not manufacture claims of physical offices on Silicon Docks or Grand Canal Square where we do not have them. By anchoring technical engineering at our India headquarters, we provide direct principal-to-engineer communication with exceptional rigor and without Dublin agency price premiums.',
   },
   {
     question: 'How do you handle Irish and EU data privacy, GDPR, and host jurisdiction?',
@@ -616,18 +616,18 @@ export const IrelandMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* BANGALORE DELIVERY MODEL FOR IRISH ENTERPRISES */}
+        {/* DELIVERY MODEL FOR */}
         <section className="py-24 md:py-32 px-6 md:px-12 border-b border-white/[0.08] bg-[#0A0E15]">
           <div className="max-w-5xl mx-auto">
             <div className="text-xs uppercase tracking-[0.25em] text-[#16A34A] mb-4 font-mono">
               Engineering Delivery
             </div>
             <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight mb-6">
-              Engineering anchored in Bangalore. <br />
+              Engineering built around clear execution. <br />
               <span className="text-[#9CA3AF]">Zero Dublin agency overhead.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#9CA3AF] font-light max-w-3xl leading-relaxed mb-16">
-              Mayaa delivers brand architecture, web experiences, and bespoke business systems directly from Bangalore, India. We offer direct engineer collaboration, rapid turnarounds, and full EU compliance.
+              Mayaa delivers brand architecture, web experiences, and bespoke business systems directly from India. We offer direct engineer collaboration, rapid turnarounds, and full EU compliance.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

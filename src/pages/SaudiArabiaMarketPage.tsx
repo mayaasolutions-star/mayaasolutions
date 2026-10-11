@@ -33,9 +33,9 @@ interface FAQItem {
 
 const SAUDI_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Saudi Arabian enterprises from Bangalore without an on-the-ground local entity?',
+    question: 'How does Mayaa deliver for Saudi Arabian enterprises from India without an on-the-ground local entity?',
     answer:
-      'We collaborate directly with Saudi business owners, managing directors, and technical leads through scheduled Arabian Standard Time (AST) collaboration windows, clear technical sprint documentation, and regular video walkthroughs. With only a 2.5-hour timezone difference between Saudi Arabia (UTC+3) and our Bangalore studio (UTC+5:30), our teams share continuous working-day overlap. We do not manufacture claims of physical branch offices in Riyadh or Jeddah where we do not have them. By anchoring senior engineering in Bangalore, we provide direct principal-to-engineer communication with exceptional agility and without inflated local agency markups.',
+      'We collaborate directly with Saudi business owners, managing directors, and technical leads through scheduled Arabian Standard Time (AST) collaboration windows, clear technical sprint documentation, and regular video walkthroughs. With only a 2.5-hour timezone difference between Saudi Arabia (UTC+3) and our India studio (UTC+5:30), our teams share continuous working-day overlap. We do not manufacture claims of physical branch offices in Riyadh or Jeddah where we do not have them. By anchoring senior engineering in India, we provide direct principal-to-engineer communication with exceptional agility and without inflated local agency markups.',
   },
   {
     question: 'Can your business systems accommodate bilingual English and Arabic operational requirements?',
@@ -642,7 +642,7 @@ export const SaudiArabiaMarketPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            06. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL
+            06. ENGINEERING ENGINE & DELIVERY MODEL
         ================================================== */}
         <section className="bg-white text-[#171717] border-b border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-5xl mx-auto space-y-12">
@@ -650,11 +650,11 @@ export const SaudiArabiaMarketPage: React.FC = () => {
               Delivery Architecture
             </div>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
-              Bangalore engineering depth. <br />
+              Senior engineering depth. <br />
               <span className="text-[#555555] italic">Saudi operational expansion.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed">
-              We deliver for Saudi Arabian enterprises directly from our technology studio in Bangalore, India. We do not claim local offices in Riyadh or Jeddah where we do not have them. Instead, we invest in principal-level engineering, full daily timezone alignment, and complete client data sovereignty.
+              We deliver for Saudi Arabian enterprises directly from our technology studio in India. We do not claim local offices in Riyadh or Jeddah where we do not have them. Instead, we invest in principal-level engineering, full daily timezone alignment, and complete client data sovereignty.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -662,7 +662,7 @@ export const SaudiArabiaMarketPage: React.FC = () => {
                 <Clock className="w-5 h-5 text-[#059669] mb-4" />
                 <h3 className="text-sm font-medium text-[#171717] mb-2">AST Timezone Overlap</h3>
                 <p className="text-xs text-[#555555] font-light leading-relaxed">
-                  Only 2.5 hours difference between Saudi Arabia (UTC+3) and Bangalore (UTC+5:30). Extensive daily working-hour overlap for sprint reviews and live collaboration.
+                  Only 2.5 hours difference between Saudi Arabia (UTC+3) and our India studio (UTC+5:30). Extensive daily working-hour overlap for sprint reviews and live collaboration.
                 </p>
               </div>
 

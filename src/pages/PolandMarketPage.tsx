@@ -25,9 +25,9 @@ interface FAQItem {
 
 const POLAND_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Polish enterprises from Bangalore without an on-the-ground office in Warsaw or Kraków?',
+    question: 'How does Mayaa deliver for Polish enterprises from India without an on-the-ground office in Warsaw or Kraków?',
     answer:
-      'We work directly with Polish prezesi, operational dyrektorzy, and engineering managers through structured CET/CEST working hours (with only a 3.5 to 4.5-hour timezone difference). Communications occur in English via dedicated Slack/Teams workspaces, interactive Figma canvases, and recorded sprint walkthroughs. We do not manufacture claims of physical offices in Warsaw Spire or Kraków Old Town where we do not have them. By anchoring senior engineering at our Bangalore headquarters, we provide direct principal-to-engineer collaboration with exceptional rigor, velocity, and cost efficiency.',
+      'We work directly with Polish prezesi, operational dyrektorzy, and engineering managers through structured CET/CEST working hours (with only a 3.5 to 4.5-hour timezone difference). Communications occur in English via dedicated Slack/Teams workspaces, interactive Figma canvases, and recorded sprint walkthroughs. We do not manufacture claims of physical offices in Warsaw Spire or Kraków Old Town where we do not have them. By anchoring senior engineering at our India headquarters, we provide direct principal-to-engineer collaboration with exceptional rigor, velocity, and cost efficiency.',
   },
   {
     question: 'How do you ensure GDPR (RODO) compliance and European data governance for Polish companies?',
@@ -664,18 +664,18 @@ export const PolandMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* BANGALORE DELIVERY MODEL FOR POLISH ENTERPRISES */}
+        {/* DELIVERY MODEL FOR */}
         <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
             <div className="text-xs uppercase tracking-[0.25em] text-[#E11D48] mb-4 font-mono font-bold">
               Engineering Delivery
             </div>
             <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
-              Engineering anchored in Bangalore. <br />
+              Engineering built around clear execution. <br />
               <span className="text-[#666666]">Zero bloated agency markups.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
-              Mayaa delivers brand identity, digital platforms, and custom business systems directly from Bangalore, India. We offer direct engineer access, high velocity, and full European data compliance.
+              Mayaa delivers brand identity, digital platforms, and custom business systems directly from India. We offer direct engineer access, high velocity, and full European data compliance.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

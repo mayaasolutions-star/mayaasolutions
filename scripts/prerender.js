@@ -308,7 +308,7 @@ const ROUTE_METADATA = {
 // Country Markets
 const MARKETS_LIST = [
   { slug: 'india', name: 'India (Bharat)', title: 'India (Bharat) | Brand Building, Websites & Custom Business Systems | Mayaa Solutions', desc: 'Mayaa Solutions helps businesses across India build distinctive brands, professional digital experiences, and custom operational software designed for sustainable growth.' },
-  { slug: 'dubai', name: 'Dubai', title: 'Strategic Brand, Digital Experience & Business Systems for Dubai | Mayaa Solutions', desc: 'Built around how Dubai businesses actually operate. Strategic brand design, high-conversion digital experiences, and personalised business management systems.' },
+  { slug: 'uae', name: 'UAE', title: 'Business Management Systems & Digital Solutions UAE | Mayaa Solutions', desc: 'Mayaa Solutions helps businesses across the UAE build stronger brands, high-clarity digital experiences, and custom business management systems. Serving companies in Dubai, Abu Dhabi, and across the Emirates.' },
   { slug: 'usa', name: 'United States', title: 'Brand, Digital Experiences & Business Systems for USA | Mayaa Solutions', desc: 'Your business is moving fast. Your system should too. Mayaa builds brands, high-performing digital experiences, and personalized business management systems for growing US businesses.' },
   { slug: 'australia', name: 'Australia', title: 'Brand, Digital Experiences & Business Systems for Australia | Mayaa Solutions', desc: 'Built around how Australian businesses actually operate. Strategic brand design, high-clarity websites, and personalised business management systems.' },
   { slug: 'uk', name: 'United Kingdom', title: 'Brand, Digital Experiences & Business Systems for the UK | Mayaa Solutions', desc: 'Good business should feel good to deal with. Mayaa helps UK businesses bring their brand, digital experience and internal operations into better alignment.' },
@@ -318,7 +318,6 @@ const MARKETS_LIST = [
   { slug: 'netherlands', name: 'Netherlands', title: 'Brand, Digital Experiences & Business Systems for the Netherlands | Mayaa Solutions', desc: 'Built for practical innovation. Mayaa designs distinctive brands, digital experiences and personalised business systems for Dutch companies.' },
   { slug: 'saudi-arabia', name: 'Saudi Arabia', title: 'Brand, Digital Experiences & Business Systems for Saudi Arabia | Mayaa Solutions', desc: 'Built for businesses growing in Saudi Arabia. Strategic brand design, high-clarity websites, and personalised business management systems.' },
   { slug: 'denmark', name: 'Denmark', title: 'Denmark | Strategic Brand, Digital Experiences & Business Systems | Mayaa Solutions', desc: 'Clarity, functionality, and calm design. Mayaa builds brands, digital experiences and personalised business management systems for Danish businesses.' },
-  { slug: 'abu-dhabi', name: 'Abu Dhabi', title: 'Brand, Digital Experiences & Business Systems for Abu Dhabi | Mayaa Solutions', desc: 'Built for businesses operating in Abu Dhabi. Strategic brand design, high-clarity digital experiences, and personalised business management systems.' },
   { slug: 'sweden', name: 'Sweden', title: 'Sweden | Strategic Brand, Digital Experiences & Business Systems | Mayaa Solutions', desc: 'Good ideas deserve better execution. Mayaa helps Swedish businesses turn quality into stronger brands, better digital experiences, and tailored business systems.' },
   { slug: 'norway', name: 'Norway', title: 'Brand, Digital Experiences & Business Systems for Norway | Mayaa Solutions', desc: 'Good technology should make business simpler. Mayaa builds brands, digital experiences and personalised business systems for Norwegian businesses.' },
   { slug: 'switzerland', name: 'Switzerland', title: 'Switzerland | Strategic Brand, Digital Experiences & Business Systems | Mayaa Solutions', desc: 'Brand design, high-clarity websites, and personalised business management systems for ambitious Swiss businesses. Built for precision engineering and services.' },
@@ -446,7 +445,9 @@ export function prerender() {
     const canonicalUrl = routePath ? `${BASE_URL}/${routePath}` : `${BASE_URL}/`;
     const ogImage = meta.ogImage.startsWith('http') ? meta.ogImage : `${BASE_URL}${meta.ogImage}`;
 
-    let html = baseHtml;
+    let html = baseHtml
+      .replace(/\r{2,}\n/g, '\r\n')
+      .replace(/^[ \t]+$/gm, '');
 
     // Replace Title
     html = html.replace(/<title>.*?<\/title>/s, `<title>${meta.title}</title>`);
@@ -480,7 +481,34 @@ export function prerender() {
     }
   }
 
-  console.log(`Prerendering complete! Generated ${generatedCount} static HTML entrypoints in dist/`);
+  // Generate permanent redirect entrypoints for deprecated Dubai and Abu Dhabi pages -> /global-markets/uae
+  const deprecatedRoutes = [
+    { from: 'dubai', message: 'The Dubai market page has been consolidated into our UAE country page.' },
+    { from: 'abu-dhabi', message: 'The Abu Dhabi market has been consolidated into our UAE country page.' },
+  ];
+
+  for (const dep of deprecatedRoutes) {
+    const redirectTargetDir = path.join(distDir, 'global-markets', dep.from);
+    fs.mkdirSync(redirectTargetDir, { recursive: true });
+    const redirectHtml = `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting to UAE Market | Mayaa Solutions</title>
+    <meta http-equiv="refresh" content="0; url=/global-markets/uae" />
+    <link rel="canonical" href="${BASE_URL}/global-markets/uae" />
+    <script type="text/javascript">
+      window.location.replace('/global-markets/uae');
+    </script>
+  </head>
+  <body>
+    <p>${dep.message} Redirecting to <a href="/global-markets/uae">/global-markets/uae</a>...</p>
+  </body>
+</html>`;
+    fs.writeFileSync(path.join(redirectTargetDir, 'index.html'), redirectHtml, 'utf8');
+  }
+
+  console.log(`Prerendering complete! Generated ${generatedCount} static HTML entrypoints in dist/ (plus ${deprecatedRoutes.length} redirect entrypoints)`);
 }
 
 prerender();

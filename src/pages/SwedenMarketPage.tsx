@@ -35,9 +35,9 @@ interface FAQItem {
 
 const SWEDEN_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Swedish enterprises from Bangalore without an on-the-ground local office?',
+    question: 'How does Mayaa deliver for Swedish enterprises from India without an on-the-ground local office?',
     answer:
-      'We collaborate directly with Swedish founders, technical leaders, and operational directors via scheduled Central European Time (CET/CEST) collaboration windows, asynchronous video walkthroughs, and clear written sprint milestones. We do not claim physical offices in Stockholm or Gothenburg where we do not have them. By concentrating our senior systems architects and engineers in Bangalore, we provide direct principal-to-engineer communication with disciplined Swedish execution and zero agency overhead.',
+      'We collaborate directly with Swedish founders, technical leaders, and operational directors via scheduled Central European Time (CET/CEST) collaboration windows, asynchronous video walkthroughs, and clear written sprint milestones. We do not claim physical offices in Stockholm or Gothenburg where we do not have them. By concentrating our senior systems architects and engineers in India, we provide direct principal-to-engineer communication with disciplined Swedish execution and zero agency overhead.',
   },
   {
     question: 'How do you ensure data sovereignty, GDPR compliance, and security for Swedish companies?',
@@ -328,18 +328,18 @@ export const SwedenMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 04. BANGALORE ENGINEERING ENGINE & DELIVERY MODEL (WHITE) */}
+        {/* 04. ENGINEERING ENGINE & DELIVERY MODEL (WHITE) */}
         <section className="w-full bg-white text-[#171717] py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2]">
           <div className="max-w-5xl mx-auto space-y-12">
             <div className="text-xs uppercase tracking-[0.25em] text-[#666666] font-mono font-medium">
               Delivery Architecture
             </div>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#171717] tracking-tight leading-[1.08]">
-              Bangalore engineering depth. <br />
+              Senior engineering depth. <br />
               <span className="text-[#555555] italic">Swedish operational clarity.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed">
-              We deliver for Swedish enterprises directly from our technology studio in Bangalore, India. We do not manufacture claims of physical branch offices where we do not have them. Instead, we invest in principal-level engineering, full daily timezone overlap, and complete data sovereignty.
+              We deliver for Swedish enterprises directly from our technology studio in India. We do not manufacture claims of physical branch offices where we do not have them. Instead, we invest in principal-level engineering, full daily timezone overlap, and complete data sovereignty.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

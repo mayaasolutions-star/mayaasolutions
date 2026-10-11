@@ -25,9 +25,9 @@ interface FAQItem {
 
 const AUSTRIA_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Austrian businesses from Bangalore without a local office in Vienna or Salzburg?',
+    question: 'How does Mayaa deliver for Austrian businesses from India without a local office in Vienna or Salzburg?',
     answer:
-      'We work directly with Austrian Geschäftsführer, operational directors, and technical leads through structured CET/CEST working hours (with only a 3.5 to 4.5-hour timezone difference). Communications occur in English via dedicated Slack/Teams workspaces, interactive Figma canvases, and recorded sprint walkthroughs. We do not manufacture claims of physical offices on the Ringstraße or in Salzburg where we do not have them. By anchoring senior engineering at our Bangalore headquarters, we provide direct principal-to-engineer collaboration with exceptional rigor and without Austrian agency overhead.',
+      'We work directly with Austrian Geschäftsführer, operational directors, and technical leads through structured CET/CEST working hours (with only a 3.5 to 4.5-hour timezone difference). Communications occur in English via dedicated Slack/Teams workspaces, interactive Figma canvases, and recorded sprint walkthroughs. We do not manufacture claims of physical offices on the Ringstraße or in Salzburg where we do not have them. By anchoring senior engineering at our India headquarters, we provide direct principal-to-engineer collaboration with exceptional rigor and without Austrian agency overhead.',
   },
   {
     question: 'How do you ensure GDPR compliance and European data governance for Austrian enterprises?',
@@ -573,18 +573,18 @@ export const AustriaMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* BANGALORE DELIVERY MODEL FOR AUSTRIAN ENTERPRISES */}
+        {/* DELIVERY MODEL FOR */}
         <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
             <div className="text-xs uppercase tracking-[0.25em] text-[#2563EB] mb-4 font-mono">
               Engineering Architecture
             </div>
             <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
-              Engineering anchored in Bangalore. <br />
+              Engineering built around clear execution. <br />
               <span className="text-[#555555]">Zero Vienna agency surcharges.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
-              Mayaa delivers brand design, digital platforms, and custom business systems directly from our technology hub in Bangalore, India. We offer direct engineer access, quiet execution, and rigorous data protection.
+              Mayaa delivers brand design, digital platforms, and custom business systems directly from our technology hub in India. We offer direct engineer access, quiet execution, and rigorous data protection.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

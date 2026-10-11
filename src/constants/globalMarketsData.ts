@@ -70,19 +70,19 @@ export const RELEVANT_WORK_DATA: RelevantProject[] = [
 ];
 
 export const TARGET_MARKETS: Record<string, TargetMarket> = {
-  dubai: {
-    id: 'dubai',
-    slug: 'dubai',
-    name: 'Dubai',
-    displayName: 'Dubai',
-    navLabel: 'Dubai',
-    marketType: 'emirate',
+  uae: {
+    id: 'uae',
+    slug: 'uae',
+    name: 'UAE',
+    displayName: 'UAE',
+    navLabel: 'UAE',
+    marketType: 'country',
     country: 'United Arab Emirates',
     flag: '/flags/ae.svg',
-    sublabel: 'Emirate · UAE',
-    seoTitle: 'Strategic Brand, Digital Experience & Business Systems for Dubai | Mayaa Solutions',
-    seoDescription: 'Built around how Dubai businesses actually operate. Strategic brand design, high-conversion digital experiences, and personalised business management systems.',
-    keywords: 'Dubai business systems, Dubai business software, custom CRM Dubai, website design Dubai, branding Dubai, Dubai architecture software, Dubai fit out systems, Mayaa Solutions Dubai',
+    sublabel: 'Country · Middle East',
+    seoTitle: 'Business Management Systems & Digital Solutions UAE | Mayaa Solutions',
+    seoDescription: 'Mayaa Solutions helps businesses across the UAE build stronger brands, high-clarity digital experiences, and custom business management systems. Serving companies in Dubai, Abu Dhabi, and across the Emirates.',
+    keywords: 'Mayaa Solutions UAE, business management systems UAE, brand building agency UAE, website development UAE, digital solutions UAE, growth management UAE, business management systems Dubai, brand building agency Dubai, website development Dubai, digital solutions Dubai, business systems Dubai, custom CRM UAE',
   },
 
   usa: {
@@ -355,13 +355,14 @@ export const TARGET_MARKETS: Record<string, TargetMarket> = {
 };
 
 // Aliases for safe property indexing
-TARGET_MARKETS.uae = TARGET_MARKETS.dubai;
+TARGET_MARKETS.dubai = TARGET_MARKETS.uae;
 TARGET_MARKETS.saudi_arabia = TARGET_MARKETS['saudi-arabia'];
-TARGET_MARKETS.abu_dhabi = TARGET_MARKETS['abu-dhabi'];
+TARGET_MARKETS.abu_dhabi = TARGET_MARKETS.uae;
+TARGET_MARKETS['abu-dhabi'] = TARGET_MARKETS.uae;
 
-// The exact 20 Target Markets in specified order
+// The exact Target Markets in specified order
 export const TARGET_MARKETS_LIST: TargetMarket[] = [
-  TARGET_MARKETS.dubai,
+  TARGET_MARKETS.uae,
   TARGET_MARKETS.usa,
   TARGET_MARKETS.australia,
   TARGET_MARKETS.uk,
@@ -371,7 +372,6 @@ export const TARGET_MARKETS_LIST: TargetMarket[] = [
   TARGET_MARKETS.netherlands,
   TARGET_MARKETS['saudi-arabia'],
   TARGET_MARKETS.denmark,
-  TARGET_MARKETS['abu-dhabi'],
   TARGET_MARKETS.sweden,
   TARGET_MARKETS.norway,
   TARGET_MARKETS.switzerland,

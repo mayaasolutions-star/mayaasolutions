@@ -8,7 +8,10 @@ declare global {
   }
 }
 
-export const GA_MEASUREMENT_ID = 'G-ZS0J3Y4ZJM';
+export const GA_MEASUREMENT_ID =
+  ((import.meta as any)?.env?.VITE_GA_MEASUREMENT_ID as string) ||
+  ((import.meta as any)?.env?.NEXT_PUBLIC_GA_MEASUREMENT_ID as string) ||
+  'G-WP6SQZRNDD';
 
 export const AnalyticsTracker: React.FC = () => {
   const location = useLocation();

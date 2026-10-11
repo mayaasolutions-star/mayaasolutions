@@ -21,7 +21,7 @@ const BRAND_FAQS: FAQItem[] = [
   {
     question: 'How do you ensure our brand communicates effectively in both India and international markets?',
     answer:
-      'We analyze international competitor landscapes and cross-border commercial expectations without stripping away your authentic identity. We ensure typography supports international legibility, color palettes align with cultural nuances, and messaging communicates institutional credibility whether your client is in Bangalore, London, or Dubai.',
+      'We analyze international competitor landscapes and cross-border commercial expectations without stripping away your authentic identity. We ensure typography supports international legibility, color palettes align with cultural nuances, and messaging communicates institutional credibility across markets, industries, and customer segments.',
   },
   {
     question: 'Do we receive full copyright and original vector master files?',

@@ -31,9 +31,9 @@ interface FAQItem {
 
 const SWISS_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Swiss businesses from Bangalore without a local Swiss office?',
+    question: 'How does Mayaa deliver for Swiss businesses from India without a local Swiss office?',
     answer:
-      'We work directly with Swiss founders, partners, and operational leaders through scheduled daily timezone overlap, clear written specifications, and asynchronous video walkthroughs. We do not claim local Swiss offices where we do not have them. By concentrating our senior engineering and brand designers in our Bangalore studio, we eliminate expensive agency overhead while delivering rigorous, disciplined execution.',
+      'We work directly with Swiss founders, partners, and operational leaders through scheduled daily timezone overlap, clear written specifications, and asynchronous video walkthroughs. We do not claim local Swiss offices where we do not have them. By concentrating our senior engineering and brand designers in our India studio, we eliminate expensive agency overhead while delivering rigorous, disciplined execution.',
   },
   {
     question: 'How do you ensure data confidentiality and security for Swiss clients?',
@@ -207,7 +207,7 @@ export const SwitzerlandMarketPage: React.FC = () => {
               </p>
 
               <p className="text-sm text-[#8E95A2] leading-relaxed max-w-lg font-normal">
-                Headquartered in Bangalore, our studio collaborates with Swiss commercial leaders and practices to engineer software and digital platforms that operate with quiet reliability.
+                Headquartered in India, our studio collaborates with Swiss commercial leaders and practices to engineer software and digital platforms that operate with quiet reliability.
               </p>
 
               {/* Action Buttons */}
@@ -506,7 +506,7 @@ export const SwitzerlandMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          05. COLLABORATION STANDARDS & BANGALORE ENGINE
+          05. COLLABORATION STANDARDS & DELIVERY ENGINE
       ========================================================================= */}
       <section className="py-24 md:py-32 border-b border-[#1E2532]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -520,7 +520,7 @@ export const SwitzerlandMarketPage: React.FC = () => {
               CROSS-BORDER COLLABORATION BUILT ON TRUST.
             </h2>
             <p className="text-[#8E95A2] text-sm sm:text-base leading-relaxed">
-              We operate without superficial agency posturing. Our centralized Bangalore studio works directly with Swiss teams through predictable, disciplined routines.
+              We operate without superficial agency posturing. Our centralized India studio works directly with Swiss teams through predictable, disciplined routines.
             </p>
           </div>
 

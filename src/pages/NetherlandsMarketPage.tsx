@@ -28,9 +28,9 @@ interface FAQItem {
 
 const NETHERLANDS_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Dutch enterprises from Bangalore without a local office in the Randstad?',
+    question: 'How does Mayaa deliver for Dutch enterprises from India without a local office in the Randstad?',
     answer:
-      'We work directly with Dutch directeurs, operations managers, and technical leads through structured CET/CEST overlap windows (with only a 3.5 to 4.5-hour time difference). Daily work happens via direct Slack/Teams channels, shared Figma workspaces, and recorded sprint walkthroughs in English. We do not manufacture claims of physical offices on the Keizersgracht or Zuidas when we do not have them. By anchoring technical engineering at our Bangalore headquarters, we provide direct principal-to-engineer communication with exceptional velocity and without high Amsterdam agency overhead.',
+      'We work directly with Dutch directeurs, operations managers, and technical leads through structured CET/CEST overlap windows (with only a 3.5 to 4.5-hour time difference). Daily work happens via direct Slack/Teams channels, shared Figma workspaces, and recorded sprint walkthroughs in English. We do not manufacture claims of physical offices on the Keizersgracht or Zuidas when we do not have them. By anchoring technical engineering at our India headquarters, we provide direct principal-to-engineer communication with exceptional velocity and without high Amsterdam agency overhead.',
   },
   {
     question: 'How do you handle GDPR compliance and EU data residency for Dutch companies?',
@@ -699,18 +699,18 @@ export const NetherlandsMarketPage: React.FC = () => {
           </div>
         </section>
 
-        {/* BANGALORE DELIVERY MODEL FOR DUTCH ENTERPRISES */}
+        {/* DELIVERY MODEL FOR */}
         <section className="py-24 md:py-32 px-6 md:px-12 border-b border-[#E5E5E2] bg-white text-[#171717]">
           <div className="max-w-5xl mx-auto">
             <div className="text-xs uppercase tracking-[0.25em] text-[#EA580C] mb-4 font-mono font-bold">
               Delivery Model
             </div>
             <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[#171717] leading-tight mb-6">
-              Engineering anchored in Bangalore. <br />
+              Engineering built around clear execution. <br />
               <span className="text-[#666666]">Zero Dutch agency markups.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
-              Mayaa operates from Bangalore, India, delivering high-calibre systems directly to Dutch enterprises. We provide transparent technical execution, principal-to-engineer communication, and complete European data sovereignty.
+              Mayaa operates from India, delivering high-calibre systems directly to Dutch enterprises. We provide transparent technical execution, principal-to-engineer communication, and complete European data sovereignty.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

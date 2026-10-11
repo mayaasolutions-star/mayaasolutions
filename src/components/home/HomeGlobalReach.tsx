@@ -11,7 +11,7 @@ interface MarketItem {
 }
 
 const FEATURED_MARKETS: MarketItem[] = [
-  { name: 'Dubai & UAE', slug: 'dubai', region: 'Middle East', flag: '🇦🇪' },
+  { name: 'UAE', slug: 'uae', region: 'Middle East', flag: '🇦🇪' },
   { name: 'United Kingdom', slug: 'uk', region: 'Europe', flag: '🇬🇧' },
   { name: 'United States', slug: 'usa', region: 'North America', flag: '🇺🇸' },
   { name: 'Germany', slug: 'germany', region: 'Europe', flag: '🇩🇪' },
@@ -31,10 +31,10 @@ export const HomeGlobalReach: React.FC = () => {
             Global Capability & Domestic Engine
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
-            Headquartered in Bangalore. Serving businesses across India and 20 international markets.
+            Serving businesses across India and 20 international markets.
           </h2>
           <p className="text-neutral-400 text-base md:text-lg leading-relaxed">
-            We do not claim satellite offices where we do not have them. Instead, our centralized engineering and brand design studio in Bangalore works collaboratively with founders and leadership teams worldwide through clear documentation, precise roadmaps, and timezone-aligned sprints.
+            We do not claim satellite offices where we do not have them. Instead, our centralized engineering and brand design studio in India works collaboratively with founders and leadership teams worldwide through clear documentation, precise roadmaps, and timezone-aligned sprints.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export const HomeGlobalReach: React.FC = () => {
               <div className="space-y-3 pt-4 border-t border-neutral-900 mb-8">
                 <div className="flex items-center justify-between text-xs font-mono text-neutral-400">
                   <span>Location</span>
-                  <span className="text-white font-semibold">Bangalore, Karnataka, India</span>
+                  <span className="text-white font-semibold">India</span>
                 </div>
                 <div className="flex items-center justify-between text-xs font-mono text-neutral-400">
                   <span>Core Focus</span>
@@ -82,7 +82,7 @@ export const HomeGlobalReach: React.FC = () => {
               to="/contact"
               className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white hover:text-neutral-300 transition-colors"
             >
-              <span>Connect With Bangalore HQ</span>
+              <span>Connect With Our Team</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </motion.div>

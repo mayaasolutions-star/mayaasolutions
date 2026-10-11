@@ -33,9 +33,9 @@ interface FAQItem {
 
 const SINGAPORE_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Singapore enterprises from Bangalore without an on-the-ground office in Singapore?',
+    question: 'How does Mayaa deliver for Singapore enterprises from India without an on-the-ground office in Singapore?',
     answer:
-      'Singapore and Bangalore operate with only a 2.5-hour timezone difference (IST is GMT+5:30, SGT is GMT+8:00), providing near-total business-hour overlap throughout the working day. Collaborations occur in fluent business English via dedicated Slack/Teams channels, shared Figma canvases, and direct video sprint planning. We do not manufacture claims of physical offices at Marina Bay Financial Centre or Raffles Place where we do not have them. By anchoring senior engineering at our Bangalore headquarters, we provide direct principal-to-engineer communication with exceptional velocity, precision, and without Singapore agency price inflation.',
+      'Singapore and India operate with only a 2.5-hour timezone difference (IST is GMT+5:30, SGT is GMT+8:00), providing near-total business-hour overlap throughout the working day. Collaborations occur in fluent business English via dedicated Slack/Teams channels, shared Figma canvases, and direct video sprint planning. We do not manufacture claims of physical offices at Marina Bay Financial Centre or Raffles Place where we do not have them. By anchoring senior engineering at our India headquarters, we provide direct principal-to-engineer communication with exceptional velocity, precision, and without Singapore agency price inflation.',
   },
   {
     question: 'How do you handle data privacy, PDPA compliance, and cloud hosting for Singapore businesses?',
@@ -1256,11 +1256,9 @@ export const SingaporeMarketPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            BANGALORE DELIVERY MODEL FOR SINGAPORE ENTERPRISES
-        ================================================== */}
+            DELIVERY MODEL FOR ================================================== */}
         {/* ==================================================
-            BANGALORE DELIVERY MODEL FOR SINGAPORE ENTERPRISES
-        ================================================== */}
+            DELIVERY MODEL FOR ================================================== */}
         <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-12">
             <div className="max-w-3xl space-y-4">
@@ -1268,11 +1266,11 @@ export const SingaporeMarketPage: React.FC = () => {
                 ENGINEERING DELIVERY
               </span>
               <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
-                BANGALORE CORE. <br />
+                ENGINEERING CORE. <br />
                 <span className="text-[#666666]">SINGAPORE SPEED & ALIGNMENT.</span>
               </h2>
               <p className="text-sm sm:text-base text-[#555555] font-normal leading-relaxed">
-                Mayaa delivers brand architecture, web experiences, and custom business systems directly from our technology headquarters in Bangalore, India. We offer direct engineer collaboration, rapid turnaround, and full regional cloud compliance.
+                Mayaa delivers brand architecture, web experiences, and custom business systems directly from our technology headquarters in India. We offer direct engineer collaboration, rapid turnaround, and full regional cloud compliance.
               </p>
             </div>
 

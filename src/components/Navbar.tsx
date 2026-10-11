@@ -784,7 +784,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   <a href="mailto:contact@mayaasolutions.in" className="hover:text-black font-semibold">
                     contact@mayaasolutions.in
                   </a>
-                  <span>Bangalore, Karnataka, India</span>
+                  <span>India</span>
                 </div>
               </div>
             </motion.div>

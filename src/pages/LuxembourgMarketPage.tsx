@@ -35,9 +35,9 @@ interface FAQItem {
 
 const LUXEMBOURG_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Luxembourg businesses from Bangalore without an on-the-ground local office?',
+    question: 'How does Mayaa deliver for Luxembourg businesses from India without an on-the-ground local office?',
     answer:
-      'We collaborate directly with Luxembourg managing directors, partners, and operational leaders via scheduled Central European Time (CET/CEST) overlap, asynchronous video reviews, and structured milestones. We do not manufacture claims of physical offices on Boulevard Royal or Kirchberg. Anchoring our senior engineering studio in Bangalore provides direct access to principal architects with disciplined execution and zero inflated agency overhead.',
+      'We collaborate directly with Luxembourg managing directors, partners, and operational leaders via scheduled Central European Time (CET/CEST) overlap, asynchronous video reviews, and structured milestones. We do not manufacture claims of physical offices on Boulevard Royal or Kirchberg. Anchoring our senior engineering studio in India provides direct access to principal architects with disciplined execution and zero inflated agency overhead.',
   },
   {
     question: 'How do you handle confidentiality and data sovereignty for Luxembourg organisations?',
@@ -879,7 +879,7 @@ export const LuxembourgMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          06: BANGALORE ENGINEERING ENGINE & DELIVERY ARCHITECTURE
+          06: ENGINEERING ENGINE & DELIVERY ARCHITECTURE
           ========================================================================= */}
       <section className="py-24 lg:py-32 border-b border-[#E5E5E2] relative bg-white text-[#171717]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -887,11 +887,11 @@ export const LuxembourgMarketPage: React.FC = () => {
             06 // DELIVERY ARCHITECTURE
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-[#171717] leading-tight mb-6">
-            Bangalore engineering depth. <br />
+            Senior engineering depth. <br />
             <span className="font-serif italic text-[#555555]">Luxembourg European standards.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#555555] font-light max-w-3xl leading-relaxed mb-16">
-            We deliver for Luxembourg organisations directly from our technology studio in Bangalore, India. We do not pretend to hold expensive local offices on Boulevard Royal. Instead, we invest in principal-level engineering, scheduled timezone alignment, and complete data sovereignty.
+            We deliver for Luxembourg organisations directly from our technology studio in India. We do not pretend to hold expensive local offices on Boulevard Royal. Instead, we invest in principal-level engineering, scheduled timezone alignment, and complete data sovereignty.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

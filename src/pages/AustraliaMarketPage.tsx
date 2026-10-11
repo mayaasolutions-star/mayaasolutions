@@ -31,9 +31,9 @@ interface FAQItem {
 
 const AUSTRALIA_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Australian businesses from Bangalore without an on-the-ground office in Sydney or Melbourne?',
+    question: 'How does Mayaa deliver for Australian businesses from India without an on-the-ground office in Sydney or Melbourne?',
     answer:
-      'We work directly with Australian company directors, estimators, and operations heads across structured morning collaboration windows (AEST/AEDT is 4.5 to 5.5 hours ahead of Bangalore). Live standups, sprint reviews, and demos occur during Australian afternoons and business hours, supported by direct Slack/Teams workspaces and shared Figma canvases in fluent English. We do not manufacture claims of physical offices on Martin Place or Collins Street where we do not have them. By anchoring senior engineering at our Bangalore headquarters, we provide direct principal-to-engineer communication with exceptional velocity, rigor, and without Australian agency fee inflation.',
+      'We work directly with Australian company directors, estimators, and operations heads across structured morning collaboration windows (AEST/AEDT is 4.5 to 5.5 hours ahead of India). Live standups, sprint reviews, and demos occur during Australian afternoons and business hours, supported by direct Slack/Teams workspaces and shared Figma canvases in fluent English. We do not manufacture claims of physical offices on Martin Place or Collins Street where we do not have them. By anchoring senior engineering at our India headquarters, we provide direct principal-to-engineer communication with exceptional velocity, rigor, and without Australian agency fee inflation.',
   },
   {
     question: 'How do you handle Australian data privacy and cloud sovereignty?',
@@ -1134,11 +1134,9 @@ export const AustraliaMarketPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            BANGALORE DELIVERY MODEL FOR AUSTRALIAN ENTERPRISES
-        ================================================== */}
+            DELIVERY MODEL FOR ================================================== */}
         {/* ==================================================
-            BANGALORE DELIVERY MODEL FOR AUSTRALIAN ENTERPRISES
-        ================================================== */}
+            DELIVERY MODEL FOR ================================================== */}
         <section className="bg-white text-[#171717] border-y border-[#E5E5E2] py-24 sm:py-32 px-6 md:px-12 lg:px-16">
           <div className="max-w-[1400px] mx-auto space-y-12">
             <div className="max-w-3xl space-y-4">
@@ -1146,11 +1144,11 @@ export const AustraliaMarketPage: React.FC = () => {
                 ENGINEERING DELIVERY
               </span>
               <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#171717] tracking-tight uppercase leading-[1.02]">
-                BANGALORE ENGINEERING. <br />
+                SENIOR ENGINEERING. <br />
                 <span className="text-[#666666]">AUSTRALIAN OPERATIONAL SPEED.</span>
               </h2>
               <p className="text-sm sm:text-base text-[#555555] font-normal leading-relaxed">
-                Mayaa delivers brand systems, high-clarity websites, and custom business management systems directly from Bangalore, India. We offer direct engineer collaboration, rapid turnaround, and full Australian data compliance without agency escalation.
+                Mayaa delivers brand systems, high-clarity websites, and custom business management systems directly from India. We offer direct engineer collaboration, rapid turnaround, and full Australian data compliance without agency escalation.
               </p>
             </div>
 
@@ -1163,7 +1161,7 @@ export const AustraliaMarketPage: React.FC = () => {
                   AEST / AEDT COLLABORATION
                 </h3>
                 <p className="text-sm text-[#555555] leading-relaxed">
-                  Australian business hours run 4.5 to 5.5 hours ahead of Bangalore, meaning our morning overlap covers your afternoons perfectly for live sprint reviews, demos, and instant Slack/Teams support.
+                  Australian business hours run 4.5 to 5.5 hours ahead of India, meaning our morning overlap covers your afternoons perfectly for live sprint reviews, demos, and instant Slack/Teams support.
                 </p>
               </div>
 

@@ -32,9 +32,9 @@ interface FAQItem {
 
 const DENMARK_FAQS: FAQItem[] = [
   {
-    question: 'How does Mayaa deliver for Danish companies from Bangalore without a local office in Copenhagen or Aarhus?',
+    question: 'How does Mayaa deliver for Danish companies from India without a local office in Copenhagen or Aarhus?',
     answer:
-      'We work directly with Danish founders, operational partners, and technical leads via structured CET/CEST working-hour windows (a modest 3.5 to 4.5-hour timezone difference). Collaborations are conducted in English using direct Slack/Teams workspaces, Figma reviews, and asynchronous recorded sprint walkthroughs. We do not manufacture claims of physical studios in Indre By or Aarhus Ø where we do not have them. By anchoring technical engineering at our Bangalore headquarters, we provide direct principal-to-engineer communication with exceptional rigor and without Danish consultancy markups.',
+      'We work directly with Danish founders, operational partners, and technical leads via structured CET/CEST working-hour windows (a modest 3.5 to 4.5-hour timezone difference). Collaborations are conducted in English using direct Slack/Teams workspaces, Figma reviews, and asynchronous recorded sprint walkthroughs. We do not manufacture claims of physical studios in Indre By or Aarhus Ø where we do not have them. By anchoring technical engineering at our India headquarters, we provide direct principal-to-engineer communication with exceptional rigor and without Danish consultancy markups.',
   },
   {
     question: 'How do you ensure GDPR compliance and data privacy for Danish businesses?',
@@ -1243,8 +1243,7 @@ export const DenmarkMarketPage: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          BANGALORE DELIVERY MODEL FOR DANISH BUSINESSES
-      ========================================================================= */}
+          DELIVERY MODEL FOR ========================================================================= */}
       <section className="py-24 md:py-32 bg-[#0E1319] border-t border-[#1E252E] px-6 sm:px-8 lg:px-12">
         <div className="max-w-5xl mx-auto space-y-12">
           <div>
@@ -1252,11 +1251,11 @@ export const DenmarkMarketPage: React.FC = () => {
               DELIVERY MODEL
             </div>
             <h2 className="text-3xl sm:text-5xl font-light text-[#FAF9F5] tracking-tight mb-4">
-              Engineering anchored in Bangalore. <br />
+              Engineering built around clear execution. <br />
               <span className="text-[#8E95A0]">Zero Copenhagen agency overhead.</span>
             </h2>
             <p className="text-base text-[#9FA6B2] max-w-2xl font-light leading-relaxed">
-              Mayaa delivers senior engineering, brand architecture, and custom systems directly from Bangalore, India. We offer direct principal-to-engineer communication without junior account layers.
+              Mayaa delivers senior engineering, brand architecture, and custom systems directly from India. We offer direct principal-to-engineer communication without junior account layers.
             </p>
           </div>
 
