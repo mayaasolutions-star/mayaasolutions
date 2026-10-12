@@ -70,16 +70,39 @@ const PROFESSIONAL_SERVICE_SCHEMA = {
   priceRange: '₹₹₹',
 };
 
-function getBreadcrumbSchema(items) {
+function getBreadcrumbSchema(items, id) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    ...(id ? { '@id': id } : {}),
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
       item: item.urlPath.startsWith('http') ? item.urlPath : `${BASE_URL}${item.urlPath.startsWith('/') ? item.urlPath : `/${item.urlPath}`}`,
     })),
+  };
+}
+
+function getWebPageSchema({ name, description, urlPath }) {
+  const fullUrl = `${BASE_URL}/${urlPath.replace(/^\//, '')}`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${fullUrl}#webpage`,
+    url: fullUrl,
+    name,
+    description,
+    isPartOf: {
+      '@id': `${BASE_URL}/#website`,
+    },
+    about: {
+      '@id': `${BASE_URL}/#organization`,
+    },
+    inLanguage: 'en',
+    breadcrumb: {
+      '@id': `${fullUrl}#breadcrumb`,
+    },
   };
 }
 
@@ -216,8 +239,22 @@ const ROUTE_METADATA = {
   'services/ai-video-content': {
     title: 'AI Video & Visual Content for Brands | Mayaa Solutions',
     description: 'Explore AI-powered advertising films and visual content for real estate, architecture, interiors, hospitality, fashion, jewellery and product brands.',
+    keywords: 'AI video production, AI visual content, commercial films, brand films, architectural visualization, 3D luxury visual content, Mayaa Solutions',
     ogImage: '/images/og-image.jpg',
     schemas: [
+      getWebPageSchema({
+        name: 'AI Video & Visual Content for Brands | Mayaa Solutions',
+        description: 'Explore AI-powered advertising films and visual content for real estate, architecture, interiors, hospitality, fashion, jewellery and product brands.',
+        urlPath: 'services/ai-video-content',
+      }),
+      getBreadcrumbSchema(
+        [
+          { name: 'Home', urlPath: '/' },
+          { name: 'Services', urlPath: '/services' },
+          { name: 'AI Video & Visual Content', urlPath: '/services/ai-video-content' },
+        ],
+        `${BASE_URL}/services/ai-video-content#breadcrumb`
+      ),
       getServiceSchema({
         id: 'services-ai-video-content',
         name: 'AI Video & Visual Content Creation',
@@ -225,11 +262,6 @@ const ROUTE_METADATA = {
         serviceType: 'Visual Production & AI Film Direction',
         url: `${BASE_URL}/services/ai-video-content`,
       }),
-      getBreadcrumbSchema([
-        { name: 'Home', urlPath: '/' },
-        { name: 'Services', urlPath: '/services' },
-        { name: 'AI Video & Visual Content', urlPath: '/services/ai-video-content' },
-      ]),
     ],
   },
   'industries': {
@@ -473,6 +505,11 @@ export function prerender() {
 
     // Replace Meta Description
     html = html.replace(/<meta name="description" content=".*?" \/>/s, `<meta name="description" content="${meta.description}" />`);
+
+    // Replace Meta Keywords if specified
+    if (meta.keywords) {
+      html = html.replace(/<meta name="keywords" content=".*?" \/>/s, `<meta name="keywords" content="${meta.keywords}" />`);
+    }
 
     // Replace Open Graph Tags
     html = html.replace(/<meta property="og:url" content=".*?" \/>/s, `<meta property="og:url" content="${canonicalUrl}" />`);

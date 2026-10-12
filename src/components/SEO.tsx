@@ -70,6 +70,8 @@ export const SEO: React.FC<SEOProps> = ({
     setMetaTag('meta[property="og:description"]', 'property', 'og:description', description);
     setMetaTag('meta[property="og:url"]', 'property', 'og:url', currentUrl);
     setMetaTag('meta[property="og:image"]', 'property', 'og:image', ogImage.startsWith('http') ? ogImage : `https://mayaasolutions.in${ogImage}`);
+    setMetaTag('meta[property="og:site_name"]', 'property', 'og:site_name', 'Mayaa Solutions');
+    setMetaTag('meta[property="og:locale"]', 'property', 'og:locale', 'en_US');
 
     // 5. Twitter Card Tags
     setMetaTag('meta[name="twitter:card"]', 'name', 'twitter:card', 'summary_large_image');

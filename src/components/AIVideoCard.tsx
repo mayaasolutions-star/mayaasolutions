@@ -9,18 +9,71 @@ interface AIVideoCardProps {
 
 export const AIVideoCard: React.FC<AIVideoCardProps> = ({ video }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showControlOverlay, setShowControlOverlay] = useState(false);
+  const [isInView, setIsInView] = useState(false);
+
+  // Lazy loading observer for efficient media loading
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setIsInView(true);
+              observer.disconnect();
+            }
+          });
+        },
+        { rootMargin: '300px 0px' }
+      );
+      observer.observe(el);
+      return () => observer.disconnect();
+    } else {
+      setIsInView(true);
+    }
+  }, []);
 
   useEffect(() => {
     const el = videoRef.current;
     if (!el) return;
 
-    const onPlay = () => setIsPlaying(true);
-    const onPause = () => setIsPlaying(false);
+    const onPlay = () => {
+      setIsPlaying(true);
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'video_start', {
+          video_title: video.title,
+          video_provider: 'html5',
+          video_current_time: Math.round(el.currentTime),
+          video_duration: video.durationSec,
+        });
+      }
+    };
+
+    const onPause = () => {
+      setIsPlaying(false);
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'video_pause', {
+          video_title: video.title,
+          video_provider: 'html5',
+          video_current_time: Math.round(el.currentTime),
+        });
+      }
+    };
+
     const onEnded = () => {
       setIsPlaying(false);
       el.currentTime = 0;
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'video_complete', {
+          video_title: video.title,
+          video_provider: 'html5',
+        });
+      }
     };
 
     el.addEventListener('play', onPlay);
@@ -32,7 +85,7 @@ export const AIVideoCard: React.FC<AIVideoCardProps> = ({ video }) => {
       el.removeEventListener('pause', onPause);
       el.removeEventListener('ended', onEnded);
     };
-  }, []);
+  }, [video.title, video.durationSec]);
 
   const togglePlay = (e?: React.MouseEvent | React.KeyboardEvent) => {
     if (e) {
@@ -61,6 +114,7 @@ export const AIVideoCard: React.FC<AIVideoCardProps> = ({ video }) => {
     >
       {/* Video Container (Strictly inline, no modals or fullscreen) */}
       <div
+        ref={containerRef}
         className="relative aspect-video w-full bg-neutral-950 overflow-hidden cursor-pointer"
         onClick={togglePlay}
         onKeyDown={(e) => {
@@ -70,15 +124,18 @@ export const AIVideoCard: React.FC<AIVideoCardProps> = ({ video }) => {
         }}
         tabIndex={0}
         role="button"
+        aria-pressed={isPlaying}
         aria-label={`${isPlaying ? 'Pause' : 'Play'} ${video.title}`}
       >
         <video
           ref={videoRef}
           src={`${video.videoSrc}#t=0.01`}
-          preload="metadata"
+          preload={isInView ? 'metadata' : 'none'}
           muted
           loop
           playsInline
+          title={video.title}
+          aria-label={video.title}
           // Disable picture-in-picture, download, and remote playback
           disablePictureInPicture
           controlsList="nodownload noremoteplayback noplaybackrate nofullscreen"
@@ -88,6 +145,7 @@ export const AIVideoCard: React.FC<AIVideoCardProps> = ({ video }) => {
 
         {/* Ambient Vignette Overlay */}
         <div
+          aria-hidden="true"
           className={`absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-300 ${
             isPlaying ? 'opacity-30' : 'opacity-70'
           }`}
@@ -95,6 +153,7 @@ export const AIVideoCard: React.FC<AIVideoCardProps> = ({ video }) => {
 
         {/* Custom Minimal Play / Pause Indicator */}
         <div
+          aria-hidden="true"
           className={`absolute inset-0 flex items-center justify-center transition-all duration-300 pointer-events-none ${
             !isPlaying || showControlOverlay ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           }`}

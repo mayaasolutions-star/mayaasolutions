@@ -31,6 +31,11 @@ export const ServicesPage: React.FC = () => {
       path: '/websites',
     },
     {
+      title: 'AI VIDEO CONTENT',
+      question: 'Need premium video content that makes your brand stand out?',
+      path: '/services/ai-video-content',
+    },
+    {
       title: 'BUSINESS MANAGEMENT SYSTEMS',
       question: 'Need one connected system to manage leads, tasks, teams, and workflows?',
       path: '/business-systems',

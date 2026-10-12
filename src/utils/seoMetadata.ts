@@ -109,16 +109,76 @@ export function getServiceSchema(
 /**
  * Generate BreadcrumbList Schema
  */
-export function getBreadcrumbSchema(items: { name: string; urlPath: string }[]) {
+export function getBreadcrumbSchema(items: { name: string; urlPath: string }[], id?: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    ...(id ? { '@id': id } : {}),
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
       item: `${BASE_URL}${item.urlPath}`,
     })),
+  };
+}
+
+/**
+ * Generate WebPage Schema
+ */
+export function getWebPageSchema(params: {
+  name: string;
+  description: string;
+  urlPath: string;
+  breadcrumbUrl?: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${BASE_URL}${params.urlPath}#webpage`,
+    url: `${BASE_URL}${params.urlPath}`,
+    name: params.name,
+    description: params.description,
+    isPartOf: {
+      '@id': `${BASE_URL}/#website`,
+    },
+    about: {
+      '@id': `${BASE_URL}/#organization`,
+    },
+    inLanguage: 'en',
+    ...(params.breadcrumbUrl
+      ? {
+          breadcrumb: {
+            '@id': params.breadcrumbUrl,
+          },
+        }
+      : {}),
+  };
+}
+
+/**
+ * Generate VideoObject Schema for verified video portfolio items
+ */
+export function getVideoObjectSchema(video: {
+  title: string;
+  description: string;
+  filename: string;
+  duration?: string;
+  uploadDate?: string;
+  thumbnailUrl?: string;
+}) {
+  const contentUrl = `${BASE_URL}/images/${video.filename}`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    '@id': `${contentUrl}#video`,
+    name: video.title,
+    description: video.description,
+    contentUrl,
+    inLanguage: 'en',
+    ...(video.duration ? { duration: video.duration } : {}),
+    ...(video.uploadDate ? { uploadDate: video.uploadDate } : {}),
+    ...(video.thumbnailUrl ? { thumbnailUrl: video.thumbnailUrl } : {}),
   };
 }
 

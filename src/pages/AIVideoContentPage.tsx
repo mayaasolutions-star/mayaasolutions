@@ -1,24 +1,41 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
-import { getBreadcrumbSchema, getServiceSchema } from '../utils/seoMetadata';
+import { getBreadcrumbSchema, getServiceSchema, getWebPageSchema } from '../utils/seoMetadata';
 import { AI_VIDEOS } from '../constants/aiVideoData';
 import { AIVideoCard } from '../components/AIVideoCard';
 
 export const AIVideoContentPage: React.FC = () => {
+  const shouldReduceMotion = useReducedMotion();
+
+  const getTransition = (duration: number, delay: number = 0) =>
+    shouldReduceMotion ? { duration: 0 } : { duration, delay };
+
   return (
     <>
       <SEO
         title="AI Video & Visual Content for Brands | Mayaa Solutions"
         description="Explore AI-powered advertising films and visual content for real estate, architecture, interiors, hospitality, fashion, jewellery and product brands."
+        keywords="AI video production, AI visual content, commercial films, brand films, architectural visualization, 3D luxury visual content, Mayaa Solutions"
         canonicalUrl="https://mayaasolutions.in/services/ai-video-content"
+        ogImage="https://mayaasolutions.in/images/og-image.jpg"
+        robots="index, follow"
         schema={[
-          getBreadcrumbSchema([
-            { name: 'Home', urlPath: '/' },
-            { name: 'Services', urlPath: '/services' },
-            { name: 'AI Video & Visual Content', urlPath: '/services/ai-video-content' },
-          ]),
+          getWebPageSchema({
+            name: 'AI Video & Visual Content for Brands | Mayaa Solutions',
+            description: 'Explore AI-powered advertising films and visual content for real estate, architecture, interiors, hospitality, fashion, jewellery and product brands.',
+            urlPath: '/services/ai-video-content',
+            breadcrumbUrl: 'https://mayaasolutions.in/services/ai-video-content#breadcrumb',
+          }),
+          getBreadcrumbSchema(
+            [
+              { name: 'Home', urlPath: '/' },
+              { name: 'Services', urlPath: '/services' },
+              { name: 'AI Video & Visual Content', urlPath: '/services/ai-video-content' },
+            ],
+            'https://mayaasolutions.in/services/ai-video-content#breadcrumb'
+          ),
           getServiceSchema(
             'AI Video & Visual Content Creation',
             'AI-powered films and visual content crafted for brands that want to stand apart. High-impact commercial films for architecture, real estate, hospitality, fashion, jewelry, and luxury products.',
@@ -38,9 +55,9 @@ export const AIVideoContentPage: React.FC = () => {
 
             {/* Minimal Editorial Category Badge */}
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={getTransition(0.5)}
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 text-xs font-mono uppercase tracking-widest"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-white" />
@@ -49,9 +66,9 @@ export const AIVideoContentPage: React.FC = () => {
 
             {/* Main Headline */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.08 }}
+              transition={getTransition(0.6, 0.08)}
               className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.08] text-center max-w-4xl"
             >
               Visuals That Make Brands Impossible to Ignore.
@@ -59,9 +76,9 @@ export const AIVideoContentPage: React.FC = () => {
 
             {/* Supporting Subheadline */}
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.16 }}
+              transition={getTransition(0.6, 0.16)}
               className="text-lg sm:text-xl md:text-2xl text-neutral-400 font-normal leading-relaxed max-w-2xl mx-auto text-center"
             >
               AI-powered films and visual content crafted for brands that want to stand apart.
@@ -69,9 +86,9 @@ export const AIVideoContentPage: React.FC = () => {
 
             {/* Primary Hero CTA */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.24 }}
+              transition={getTransition(0.6, 0.24)}
               className="pt-2 flex justify-center"
             >
               <Link
@@ -110,10 +127,10 @@ export const AIVideoContentPage: React.FC = () => {
               {AI_VIDEOS.map((video, idx) => (
                 <motion.div
                   key={video.id}
-                  initial={{ opacity: 0, y: 24 }}
+                  initial={shouldReduceMotion ? false : { opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-60px' }}
-                  transition={{ duration: 0.5, delay: idx * 0.08 }}
+                  transition={getTransition(0.5, idx * 0.08)}
                 >
                   <AIVideoCard
                     video={video}

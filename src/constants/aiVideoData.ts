@@ -6,6 +6,8 @@ export interface AIVideoItem {
   videoSrc: string;
   description: string;
   tags: string[];
+  duration: string; // ISO 8601 duration
+  durationSec: number;
 }
 
 export const AI_VIDEOS: AIVideoItem[] = [
@@ -17,6 +19,8 @@ export const AI_VIDEOS: AIVideoItem[] = [
     videoSrc: '/images/AI-Video-Automative.mp4',
     description: 'Dynamic automotive sequences emphasizing aerodynamics, engineered finishes, and high-energy motion aesthetics.',
     tags: ['Automotive', 'Engineering', 'Dynamic Motion'],
+    duration: 'PT6S',
+    durationSec: 6.43,
   },
   {
     id: 'fashion',
@@ -26,6 +30,8 @@ export const AI_VIDEOS: AIVideoItem[] = [
     videoSrc: '/images/AI-Video-Fashion.mp4',
     description: 'Editorial-grade runway aesthetics, fluid fabric physics, and minimalist styling tailored for apparel collections.',
     tags: ['Fashion', 'Editorial', 'Runway'],
+    duration: 'PT12S',
+    durationSec: 12.04,
   },
   {
     id: 'interior-fitout',
@@ -35,6 +41,8 @@ export const AI_VIDEOS: AIVideoItem[] = [
     videoSrc: '/images/AI-Video-Interior-Fitout.mp4',
     description: 'Curated architectural walkthroughs highlighting materiality, bespoke joinery, and ambient interior lighting.',
     tags: ['Interior Design', 'Architecture', 'Spatial Fit-Out'],
+    duration: 'PT6S',
+    durationSec: 6.43,
   },
   {
     id: 'jewellery',
@@ -44,6 +52,8 @@ export const AI_VIDEOS: AIVideoItem[] = [
     videoSrc: '/images/AI-Video-Jewellery.mp4',
     description: 'Ultra-refined macro details, gem brilliance, and artisanal gold craftsmanship for heritage and contemporary jewelers.',
     tags: ['Haute Joaillerie', 'Precious Metals', 'Macro Craft'],
+    duration: 'PT9S',
+    durationSec: 9.43,
   },
   {
     id: 'perfume',
@@ -53,6 +63,8 @@ export const AI_VIDEOS: AIVideoItem[] = [
     videoSrc: '/images/AI-Video-Perfume.mp4',
     description: 'Atmospheric visual storytelling exploring fluid glass refraction, botanicals, and high-fashion perfume campaigns.',
     tags: ['Fragrance', 'Sensory Branding', 'Luxury Packaging'],
+    duration: 'PT12S',
+    durationSec: 12.04,
   },
   {
     id: 'real-estate',
@@ -62,6 +74,8 @@ export const AI_VIDEOS: AIVideoItem[] = [
     videoSrc: '/images/AI-Video-RealEstate.mp4',
     description: 'Cinematic perspectives capturing landmark structures, natural elevation, and high-end residential living environments.',
     tags: ['Real Estate', 'Developments', 'Cinematic Architecture'],
+    duration: 'PT8S',
+    durationSec: 8.43,
   },
   {
     id: 'hospitality',
@@ -71,6 +85,8 @@ export const AI_VIDEOS: AIVideoItem[] = [
     videoSrc: '/images/AI-Video-Hospitality.mp4',
     description: 'Immersive travel cinematography, boutique resort atmospheres, and serene destination storytelling.',
     tags: ['Luxury Travel', 'Hospitality', 'Destination'],
+    duration: 'PT10S',
+    durationSec: 10.04,
   },
   {
     id: 'restaurant',
@@ -80,5 +96,7 @@ export const AI_VIDEOS: AIVideoItem[] = [
     videoSrc: '/images/AI-Video-Restaurant.mp4',
     description: 'Sensory gastronomy narratives, table styling, and curated dining hospitality designed to evoke taste and luxury.',
     tags: ['Gastronomy', 'Culinary Arts', 'Fine Dining'],
+    duration: 'PT10S',
+    durationSec: 10.04,
   },
 ];
