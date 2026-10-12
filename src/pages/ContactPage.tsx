@@ -340,7 +340,7 @@ export const ContactPage: React.FC = () => {
                   <span className="text-[10px] font-mono font-bold text-studio-400 uppercase tracking-widest block mb-3">
                     CONNECT WITH US
                   </span>
-                  <div className="flex items-center gap-3.5">
+                  <div className="grid grid-cols-3 gap-3.5">
                     {OFFICIAL_SOCIAL_LINKS.map((social) => {
                       const IconComponent = social.icon;
                       return (
@@ -351,7 +351,7 @@ export const ContactPage: React.FC = () => {
                           rel="noopener noreferrer"
                           aria-label={`Mayaa Solutions on ${social.name}`}
                           title={`Mayaa Solutions on ${social.name}`}
-                          className={`w-11 h-11 rounded-xl bg-studio-900 border border-studio-850 flex items-center justify-center text-studio-300 hover:bg-white hover:shadow-xs transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-studio-100 ${social.hoverColorClass}`}
+                          className={`w-full h-11 rounded-xl bg-studio-900 border border-studio-850 flex items-center justify-center text-studio-300 hover:bg-white hover:shadow-xs transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-studio-100 ${social.hoverColorClass}`}
                         >
                           <IconComponent className="w-5 h-5 shrink-0" />
                         </a>
@@ -362,6 +362,53 @@ export const ContactPage: React.FC = () => {
 
                 {/* Contact Information Cards */}
                 <div className="mt-7 space-y-4 text-sm text-studio-300">
+                  <div className="p-5 rounded-2xl bg-studio-900 border border-studio-850 space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="p-2.5 rounded-xl bg-white text-studio-100 border border-studio-850 shrink-0 shadow-sm flex items-center justify-center">
+                        <svg
+                          viewBox="0 0 24 24"
+                          width="16"
+                          height="16"
+                          fill="#25D366"
+                          aria-hidden="true"
+                          className="w-4 h-4 shrink-0"
+                        >
+                          <path d="M20.52 3.48A11.93 11.93 0 0012.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.14 1.59 5.95L0 24l6.32-1.66a11.89 11.89 0 005.74 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.18-3.47-8.41zm-8.46 17.75h-.01a9.88 9.88 0 01-5.04-1.38l-.36-.21-3.75.98 1-3.65-.24-.38a9.86 9.86 0 01-1.51-5.26c0-5.46 4.45-9.91 9.92-9.91 2.65 0 5.13 1.03 7 2.91a9.84 9.84 0 012.9 7c0 5.46-4.44 9.9-9.92 9.9zm5.44-7.43c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.13 4.54.72.31 1.28.5 1.71.64.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.12-.28-.2-.58-.35z" />
+                        </svg>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <span className="text-[10px] font-bold text-studio-400 uppercase tracking-widest block">
+                          WHATSAPP CHAT
+                        </span>
+                        <span className="text-studio-100 font-bold text-sm sm:text-base block">
+                          Chat with our Strategy Team
+                        </span>
+                        <span className="text-xs text-studio-400 block mt-1">
+                          Direct messaging for quick discussions & consultations
+                        </span>
+                      </div>
+                    </div>
+
+                    <a
+                      href="https://wa.me/918888986172?text=Hi%2C%20I%E2%80%99d%20like%20to%20explore%20how%20Mayaa%20Solutions%20can%20help%20my%20business."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full inline-flex items-center justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white border border-[#25D366] hover:border-[#20bd5a] font-semibold text-xs sm:text-sm shadow-xs transition-all duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366]"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="w-4 h-4 shrink-0 transition-transform duration-200 group-hover:scale-110 text-white"
+                      >
+                        <path d="M20.52 3.48A11.93 11.93 0 0012.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.14 1.59 5.95L0 24l6.32-1.66a11.89 11.89 0 005.74 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.18-3.47-8.41zm-8.46 17.75h-.01a9.88 9.88 0 01-5.04-1.38l-.36-.21-3.75.98 1-3.65-.24-.38a9.86 9.86 0 01-1.51-5.26c0-5.46 4.45-9.91 9.92-9.91 2.65 0 5.13 1.03 7 2.91a9.84 9.84 0 012.9 7c0 5.46-4.44 9.9-9.92 9.9zm5.44-7.43c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.13 4.54.72.31 1.28.5 1.71.64.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.12-.28-.2-.58-.35z" />
+                      </svg>
+                      <span>Chat on WhatsApp</span>
+                    </a>
+                  </div>
+
                   <div className="flex items-start gap-4 p-5 rounded-2xl bg-studio-900 border border-studio-850">
                     <div className="p-2.5 rounded-xl bg-white text-studio-100 border border-studio-850 shrink-0 shadow-sm">
                       <Mail className="w-4 h-4" />
