@@ -40,6 +40,12 @@ const SERVICE_MENU_ITEMS: ServiceSublink[] = [
     path: '/services/growth',
     badge: 'Growth'
   },
+  {
+    name: 'AI Video & Visual Content',
+    desc: 'Cinematic AI films and advertising visuals for luxury & product brands',
+    path: '/services/ai-video-content',
+    badge: 'Creative'
+  },
 ];
 
 const HOMEPAGE_DRAWER_LINKS = [
@@ -150,7 +156,8 @@ export const Navbar: React.FC<NavbarProps> = () => {
       location.pathname === '/websites' ||
       location.pathname.startsWith('/services/website') ||
       location.pathname.startsWith('/services/growth') ||
-      location.pathname.startsWith('/services/marketing')
+      location.pathname.startsWith('/services/marketing') ||
+      location.pathname.startsWith('/services/ai-video-content')
     );
   };
 

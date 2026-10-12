@@ -16,6 +16,7 @@ export const CANONICAL_ROUTES = [
   { path: 'services', changefreq: 'weekly', priority: '0.8' },
   { path: 'services/marketing', changefreq: 'monthly', priority: '0.8' },
   { path: 'services/growth', changefreq: 'monthly', priority: '0.8' },
+  { path: 'services/ai-video-content', changefreq: 'monthly', priority: '0.8' },
 
   // Intent Specific Landing Pages
   { path: 'intent/build-my-brand', changefreq: 'monthly', priority: '0.7' },

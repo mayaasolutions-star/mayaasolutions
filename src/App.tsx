@@ -14,6 +14,7 @@ import { ServiceBrandingPage } from './pages/ServiceBrandingPage';
 import { ServiceWebsitePage } from './pages/ServiceWebsitePage';
 import { ServiceMarketingPage } from './pages/ServiceMarketingPage';
 import { ServiceGrowthPage } from './pages/ServiceGrowthPage';
+import { AIVideoContentPage } from './pages/AIVideoContentPage';
 import { BusinessToolsPage } from './pages/BusinessToolsPage';
 import { WebsitesPage } from './pages/WebsitesPage';
 import { ProductsPage } from './pages/ProductsPage';
@@ -111,6 +112,7 @@ const AppContent: React.FC<{
             <Route path="/services/digital-design" element={<Navigate to="/websites" replace />} />
             <Route path="/services/marketing" element={<ServiceMarketingPage />} />
             <Route path="/services/growth" element={<ServiceGrowthPage />} />
+            <Route path="/services/ai-video-content" element={<AIVideoContentPage />} />
             <Route path="/business-systems" element={<BusinessToolsPage />} />
             <Route path="/business-tools" element={<Navigate to="/business-systems" replace />} />
             <Route path="/services/business-growth" element={<Navigate to="/business-systems" replace />} />

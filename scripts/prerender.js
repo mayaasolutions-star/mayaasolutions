@@ -213,6 +213,25 @@ const ROUTE_METADATA = {
       ]),
     ],
   },
+  'services/ai-video-content': {
+    title: 'AI Video & Visual Content for Brands | Mayaa Solutions',
+    description: 'Explore AI-powered advertising films and visual content for real estate, architecture, interiors, hospitality, fashion, jewellery and product brands.',
+    ogImage: '/images/og-image.jpg',
+    schemas: [
+      getServiceSchema({
+        id: 'services-ai-video-content',
+        name: 'AI Video & Visual Content Creation',
+        description: 'AI-powered advertising films and visual content crafted for brands that want to stand apart. High-impact commercial films for architecture, real estate, hospitality, fashion, jewellery, and luxury products.',
+        serviceType: 'Visual Production & AI Film Direction',
+        url: `${BASE_URL}/services/ai-video-content`,
+      }),
+      getBreadcrumbSchema([
+        { name: 'Home', urlPath: '/' },
+        { name: 'Services', urlPath: '/services' },
+        { name: 'AI Video & Visual Content', urlPath: '/services/ai-video-content' },
+      ]),
+    ],
+  },
   'industries': {
     title: 'Tailored Industry Solutions & Workflows | Mayaa Solutions',
     description: 'Specialized digital infrastructure, branding, and management systems engineered for manufacturing, healthcare, professional services, retail, and real estate.',
