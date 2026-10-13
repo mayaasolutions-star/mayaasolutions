@@ -5,6 +5,7 @@ import { SEO } from '../components/SEO';
 import { getBreadcrumbSchema, getServiceSchema, getWebPageSchema } from '../utils/seoMetadata';
 import { AI_VIDEOS } from '../constants/aiVideoData';
 import { AIVideoCard } from '../components/AIVideoCard';
+import { AIReelsShowcase } from '../components/AIReelShowcase';
 
 export const AIVideoContentPage: React.FC = () => {
   const shouldReduceMotion = useReducedMotion();
@@ -104,7 +105,12 @@ export const AIVideoContentPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            SECTION 2: VIDEO PORTFOLIO GRID (SELECTED WORKS - WHITE BACKGROUND)
+            SECTION 2: SHORT-FORM REELS (HORIZONTAL SCROLL SHOWCASE)
+        ================================================== */}
+        <AIReelsShowcase />
+
+        {/* ==================================================
+            SECTION 3: VIDEO PORTFOLIO GRID (SELECTED WORKS - WHITE BACKGROUND)
         ================================================== */}
         <section className="w-full bg-white text-[#171717] border-t border-[#E5E5E2] py-20 sm:py-24 md:py-32 px-6 md:px-12">
           <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
@@ -144,7 +150,7 @@ export const AIVideoContentPage: React.FC = () => {
         </section>
 
         {/* ==================================================
-            SECTION 3: CLOSING CTA
+            SECTION 4: CLOSING CTA
         ================================================== */}
         <section className="py-20 sm:py-24 md:py-28 bg-black border-t border-neutral-900 text-center relative overflow-hidden">
           <div className="max-w-4xl mx-auto px-6 md:px-12 space-y-6 sm:space-y-8 relative z-10">
