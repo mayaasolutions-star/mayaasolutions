@@ -564,7 +564,16 @@ export function prerender() {
     fs.writeFileSync(path.join(redirectTargetDir, 'index.html'), redirectHtml, 'utf8');
   }
 
-  console.log(`Prerendering complete! Generated ${generatedCount} static HTML entrypoints in dist/ (plus ${deprecatedRoutes.length} redirect entrypoints)`);
+  // Generate standalone noindex entrypoint for /emailunsubscribe (excluded from sitemap)
+  const unsubDir = path.join(distDir, 'emailunsubscribe');
+  fs.mkdirSync(unsubDir, { recursive: true });
+  let unsubHtml = baseHtml
+    .replace(/<title>.*?<\/title>/s, `<title>Unsubscribe from emails | Mayaa Solutions</title>`)
+    .replace(/<meta name="description" content=".*?" \/>/s, `<meta name="description" content="Unsubscribe from Mayaa Solutions emails." />`)
+    .replace('</head>', `    <meta name="robots" content="noindex, nofollow" />\n  </head>`);
+  fs.writeFileSync(path.join(unsubDir, 'index.html'), unsubHtml, 'utf8');
+
+  console.log(`Prerendering complete! Generated ${generatedCount} static HTML entrypoints in dist/ (plus ${deprecatedRoutes.length} redirect entrypoints and 1 noindex unsubscribe entrypoint)`);
 }
 
 prerender();

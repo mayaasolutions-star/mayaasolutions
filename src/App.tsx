@@ -27,6 +27,7 @@ import { ArticlesPage } from './pages/ArticlesPage';
 import { ArticleDetailPage } from './pages/ArticleDetailPage';
 import { TermsPage } from './pages/TermsPage';
 import { PaymentSuccessPage } from './pages/PaymentSuccessPage';
+import { EmailUnsubscribePage } from './pages/EmailUnsubscribePage';
 import { GlobalMarketsPage } from './pages/GlobalMarketsPage';
 import { MarketDetailPage } from './pages/MarketDetailPage';
 import { IndiaMarketPage } from './pages/IndiaMarketPage';
@@ -206,6 +207,7 @@ const AppContent: React.FC<{
             {/* Legal & Utility */}
             <Route path="/terms-conditions" element={<TermsPage />} />
             <Route path="/payment-success" element={<PaymentSuccessPage />} />
+            <Route path="/emailunsubscribe" element={<EmailUnsubscribePage />} />
 
             {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />
